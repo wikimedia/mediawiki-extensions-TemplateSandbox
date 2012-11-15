@@ -1,18 +1,18 @@
 <?php
 /**
- * Internationalisation for templatesandbox
+ * Internationalisation for TemplateSandbox
  *
  * @file
  * @ingroup Extensions
  */
 $messages = array();
- 
+
 /** English
  * @author Brad Jorsch
  */
 $messages['en'] = array(
 	'templatesandbox' => "TemplateSandbox", // Important! This is the string that appears on Special:SpecialPages
-	'templatesandbox-desc' => "[[Special:TemplateSandbox|Renders a page]] transcluding templates from a sandbox.",
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renders a page]] transcluding templates from a sandbox',
 
 	'templatesandbox-suffix' => 'sandbox',
 	'templatesandbox-legend' => 'Template Sandbox',
@@ -42,7 +42,7 @@ Your changes have not yet been saved!",
 	'templatesandbox-editform-invalid-title' => 'The title you specified for previewing is invalid.',
 	'templatesandbox-editform-title-not-exists' => 'The title you specified for previewing does not exist.',
 );
- 
+
 /** Message documentation
  * @author Brad Jorsch
  */
