@@ -8,9 +8,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author <your username>
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
-        'TemplateSandbox' => array( 'TemplateSandbox' ),
+	'TemplateSandbox' => array( 'TemplateSandbox' ),
 );
