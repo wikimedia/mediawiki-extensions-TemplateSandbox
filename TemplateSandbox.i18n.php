@@ -45,11 +45,11 @@ Your changes have not yet been saved!",
 
 /** Message documentation (Message documentation)
  * @author Brad Jorsch
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'templatesandbox' => 'The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
-	'templatesandbox-desc' => 'The description of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].
-{{desc}}',
+	'templatesandbox-desc' => '{{desc|name=Template Sandbox|url=http://www.mediawiki.org/wiki/Extension:TemplateSandbox}}',
 	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.",
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
 	'templatesandbox-text' => 'Text displayed in the input form.',
@@ -62,6 +62,74 @@ $messages['qqq'] = array(
 	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form',
 	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. $1 is the page being previewed.',
 	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
+);
+
+/** German (Deutsch)
+ * @author Metalhead64
+ */
+$messages['de'] = array(
+	'templatesandbox' => 'Vorlagenspielwiese',
+	'templatesandbox-desc' => 'Ergänzt eine Spielwiese zum [[Special:TemplateSandbox|Rendern von Seiten]], die Vorlagen enthalten',
+	'templatesandbox-suffix' => 'Spielwiese',
+	'templatesandbox-legend' => 'Vorlagenspielwiese',
+	'templatesandbox-prefix-label' => 'Spielwiesenpräfix:',
+	'templatesandbox-page-label' => 'Seite rendern:',
+	'templatesandbox-revid-label' => 'Version rendern:',
+	'templatesandbox-text-label' => 'Wikitext rendern:',
+	'templatesandbox-submit' => 'Ansicht',
+	'templatesandbox-title-output' => 'Vorlagenspielwiese: $1',
+	'templatesandbox-editform-legend' => 'Vorschau der Seite mit dieser Vorlage anzeigen',
+	'templatesandbox-editform-page-label' => 'Seitentitel:',
+	'templatesandbox-editform-view-label' => 'Vorschau zeigen',
+	'templatesandbox-preview' => 'Vorschau von $2',
+	'templatesandbox-previewnote' => "'''Dies ist nur eine Vorschau von [[:$1]].'''
+Deine Änderungen wurden noch nicht gespeichert!",
+	'templatesandbox-invalid-title' => 'Der angegebene Titel ist ungültig.',
+	'templatesandbox-title-not-exists' => 'Der angegebene Titel ist nicht vorhanden.',
+	'templatesandbox-revision-not-exists' => 'Die angegebene Version ist nicht vorhanden.',
+	'templatesandbox-invalid-prefix' => 'Das angegebene Spielwiesenpräfix ist ungültig.',
+	'templatesandbox-prefix-not-local' => 'Das angegebene Spielwiesenpräfix ist nicht lokal.',
+	'templatesandbox-page-or-revid' => 'Es ist entweder ein Seitentitel oder eine Version erforderlich.',
+	'templatesandbox-editform-need-title' => 'Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.',
+	'templatesandbox-editform-invalid-title' => 'Der angegebene Titel zur Vorschau ist ungültig.',
+	'templatesandbox-editform-title-not-exists' => 'Der angegebene Titel zur Vorschau ist nicht vorhanden.',
+);
+
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'templatesandbox' => 'Zona de pruebas para las plantillas',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza una página]] con la transclusión de las plantillas de una zona de pruebas',
+	'templatesandbox-suffix' => 'Zona de pruebas',
+	'templatesandbox-legend' => 'Zona de pruebas para las plantillas',
+	'templatesandbox-prefix-label' => 'Prefijo de la zona de pruebas',
+	'templatesandbox-page-label' => 'Renderizar la página:',
+	'templatesandbox-revid-label' => 'Renderizar la revisión:',
+	'templatesandbox-text-label' => 'Renderizar el wikitexto:',
+	'templatesandbox-submit' => 'Ver',
+	'templatesandbox-title-output' => 'Zona de pruebas para las plantillas: $1',
+	'templatesandbox-editform-legend' => 'Vista previa de la página con esta plantilla',
+	'templatesandbox-editform-page-label' => 'Título de la página:',
+	'templatesandbox-editform-view-label' => 'Mostrar vista previa',
+	'templatesandbox-preview' => 'Vista previa de $2',
+	'templatesandbox-previewnote' => "'''Recuerda que esto es solo una previsualización de [[:$1]].'''
+¡Tus cambios aún no se han guardado!",
+	'templatesandbox-invalid-title' => 'El título que has especificado no es válido.',
+	'templatesandbox-title-not-exists' => 'El título especificado no existe.',
+	'templatesandbox-revision-not-exists' => 'La revisión especificada no existe.',
+	'templatesandbox-invalid-prefix' => 'El prefijo de zona de pruebas que has especificado no es válido.',
+	'templatesandbox-prefix-not-local' => 'El prefijo de zona de pruebas que has especificado no es local.',
+	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
+	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
+	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
+);
+
+/** Finnish (suomi)
+ * @author Stryn
+ */
+$messages['fi'] = array(
+	'templatesandbox-suffix' => 'hiekkalaatikko',
 );
 
 /** Galician (galego)
@@ -93,4 +161,86 @@ Aínda non gardou os seus cambios!",
 	'templatesandbox-editform-need-title' => 'Para ollar a vista previa doutra páxina con este modelo, cómpre especificar un título de páxina.',
 	'templatesandbox-editform-invalid-title' => 'O título que especificou para a vista previa non é válido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que especificou para a vista previa non existe.',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-suffix' => 'sandbox',
+	'templatesandbox-submit' => 'Visualizza',
+	'templatesandbox-editform-legend' => 'Anteprima della pagina con questo template',
+	'templatesandbox-editform-page-label' => 'Titolo della pagina:',
+	'templatesandbox-editform-view-label' => 'Visualizza anteprima',
+	'templatesandbox-preview' => 'Anteprima di $2',
+	'templatesandbox-previewnote' => "'''Ricorda che questa è solo un'anteprima di [[:$1]].'''
+Le tue modifiche NON sono ancora state salvate!",
+	'templatesandbox-invalid-title' => 'Il titolo che hai specificato non è valido.',
+	'templatesandbox-title-not-exists' => 'Il titolo che hai specificato non esiste.',
+	'templatesandbox-revision-not-exists' => 'La revisione che hai specificato non esiste.',
+	'templatesandbox-editform-invalid-title' => "Il titolo che hai specificato per l'anteprima non è valido.",
+	'templatesandbox-editform-title-not-exists' => "Il titolo che hai specificato per l'anteprima non esiste.",
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'templatesandbox' => 'テンプレートのサンドボックス',
+	'templatesandbox-desc' => 'テンプレートを参照読み込みして[[Special:TemplateSandbox|ページをレンダリング]]できるサンドボックス',
+	'templatesandbox-suffix' => 'サンドボックス',
+	'templatesandbox-legend' => 'テンプレートのサンドボックス',
+	'templatesandbox-prefix-label' => 'サンドボックスの接頭辞:',
+	'templatesandbox-page-label' => '使用するページ:',
+	'templatesandbox-revid-label' => '使用する版:',
+	'templatesandbox-text-label' => '使用するウィキテキスト:',
+	'templatesandbox-submit' => '表示',
+	'templatesandbox-title-output' => 'テンプレートのサンドボックス: $1',
+	'templatesandbox-editform-legend' => 'このテンプレートでページをプレビュー',
+	'templatesandbox-editform-page-label' => 'ページ名:',
+	'templatesandbox-editform-view-label' => 'プレビューを表示',
+	'templatesandbox-preview' => '$2 のプレビュー',
+	'templatesandbox-previewnote' => "'''これは [[:$1]] のプレビューです。'''
+変更内容はまだ保存されていません!",
+	'templatesandbox-invalid-title' => '指定したページ名は無効です。',
+	'templatesandbox-title-not-exists' => '指定したページは存在しません。',
+	'templatesandbox-revision-not-exists' => '指定した版は存在しません。',
+	'templatesandbox-invalid-prefix' => '指定したサンドボックス接頭辞は無効です。',
+	'templatesandbox-prefix-not-local' => '指定したサンドボックス接頭辞はローカルではありません。',
+	'templatesandbox-page-or-revid' => 'ページ名と版 ID のいずれかが必要です。',
+	'templatesandbox-editform-need-title' => 'このテンプレートで別のページのプレビューを表示するには、そのページ名を指定してください。',
+	'templatesandbox-editform-invalid-title' => 'プレビューに指定したページ名は無効です。',
+	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'templatesandbox' => 'ШаблонскиПесочник',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Испишува страница]] превметнувајќи шаблони од песочник',
+	'templatesandbox-suffix' => 'песочник',
+	'templatesandbox-legend' => 'Шаблонски песочник',
+	'templatesandbox-prefix-label' => 'Префикс на песочникот:',
+	'templatesandbox-page-label' => 'Страница за испис:',
+	'templatesandbox-revid-label' => 'Ревизија на исписот:',
+	'templatesandbox-text-label' => 'Викитекст на исписот:',
+	'templatesandbox-submit' => 'Преглед',
+	'templatesandbox-title-output' => 'ШаблонскиПесочник: $1',
+	'templatesandbox-editform-legend' => 'Преглед на страница со шаблонов',
+	'templatesandbox-editform-page-label' => 'Наслов на страницата:',
+	'templatesandbox-editform-view-label' => 'Прик. преглед',
+	'templatesandbox-preview' => 'Преглед на $2',
+	'templatesandbox-previewnote' => "'''Имајте предвид дека ова е само преглед на [[:$1]].'''
+Промените сè уште не се зачувани!",
+	'templatesandbox-invalid-title' => 'Наведениот наслов е неважечки.',
+	'templatesandbox-title-not-exists' => 'Наведениот наслов не постои.',
+	'templatesandbox-revision-not-exists' => 'Наведената ревизија не постои.',
+	'templatesandbox-invalid-prefix' => 'Наведениот префикс за песочник не постои.',
+	'templatesandbox-prefix-not-local' => 'Наведениот префикс за песочник не е локален.',
+	'templatesandbox-page-or-revid' => 'Мора да наведете назнака на страница или ревизија.',
+	'templatesandbox-editform-need-title' => 'За да прегледате друга страница со шаблонов, мора да наведете наслов.',
+	'templatesandbox-editform-invalid-title' => 'Наведениот наслов за преглед е неважечки.',
+	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
 );
