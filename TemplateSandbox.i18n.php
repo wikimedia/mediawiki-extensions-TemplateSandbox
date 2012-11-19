@@ -132,6 +132,37 @@ $messages['fi'] = array(
 	'templatesandbox-suffix' => 'hiekkalaatikko',
 );
 
+/** French (français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => "[[Special:TemplateSandbox|Afficher le rendu d'une page]] en traduisant les modèles depuis un bac à sable",
+	'templatesandbox-suffix' => 'bac à sable',
+	'templatesandbox-legend' => 'Bac à sable de modèle',
+	'templatesandbox-prefix-label' => 'Préfixe de bac à sable:',
+	'templatesandbox-page-label' => 'Rendu de la page:',
+	'templatesandbox-revid-label' => 'Rendu de la révision:',
+	'templatesandbox-text-label' => 'Rendu du wikitexte:',
+	'templatesandbox-submit' => 'Afficher',
+	'templatesandbox-title-output' => 'TemplateSandbox: $1',
+	'templatesandbox-editform-legend' => 'Aperçu de la page avec ce modèle',
+	'templatesandbox-editform-page-label' => 'Titre de la page:',
+	'templatesandbox-editform-view-label' => "Afficher l'aperçu",
+	'templatesandbox-preview' => 'Aperçu de $2',
+	'templatesandbox-previewnote' => "'''Souvenez-vous que ce n’est qu’un aperçu de [[:$1]].'''
+Vos modifications n’ont pas encore été enregistrées!",
+	'templatesandbox-invalid-title' => "Le titre que vous avez spécifié n'est pas valide.",
+	'templatesandbox-title-not-exists' => "Le titre que vous avez spécifié n'existe pas.",
+	'templatesandbox-revision-not-exists' => "La révision que vous avez spécifiée n'existe pas.",
+	'templatesandbox-invalid-prefix' => "Le préfixe de bac à sable que vous avez spécifié n'est pas valide.",
+	'templatesandbox-prefix-not-local' => "Le préfixe de bac à sable que vous avez spécifié n'est pas local.",
+	'templatesandbox-page-or-revid' => "Soit la page, soit l'identifiant de révision, est obligatoire.",
+	'templatesandbox-editform-need-title' => "Pour afficher l'aperçu d'une autre page avec ce modèle, un titre de page doit être fourni.",
+	'templatesandbox-editform-invalid-title' => "Le titre que vous avez spécifié pour l'aperçu n'est pas valide.",
+	'templatesandbox-editform-title-not-exists' => "Le titre que vous avez spécifié pour l'aperçu n'existe pas.",
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -214,6 +245,18 @@ $messages['ja'] = array(
 	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'templatesandbox' => 'Schabloun-Sandkëscht',
+	'templatesandbox-suffix' => 'Sandkëscht',
+	'templatesandbox-legend' => 'Schabloun vun der Sandkëscht',
+	'templatesandbox-submit' => 'Weisen',
+	'templatesandbox-editform-page-label' => 'Titel vun der Säit:',
+	'templatesandbox-editform-view-label' => 'Kucken ouni ofzespäicheren',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -243,4 +286,12 @@ $messages['mk'] = array(
 	'templatesandbox-editform-need-title' => 'За да прегледате друга страница со шаблонов, мора да наведете наслов.',
 	'templatesandbox-editform-invalid-title' => 'Наведениот наслов за преглед е неважечки.',
 	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
+);
+
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'templatesandbox-submit' => 'کتل',
+	'templatesandbox-editform-page-label' => 'مخ سرليک:',
 );
