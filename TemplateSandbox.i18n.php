@@ -288,6 +288,22 @@ $messages['mk'] = array(
 	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'templatesandbox' => 'Sjabloonzandbak',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Rendert een pagina]] door sjablonen uit een testomgeving te transcluderen',
+	'templatesandbox-suffix' => 'zandbak',
+	'templatesandbox-legend' => 'Sjabloonzandbak',
+	'templatesandbox-prefix-label' => 'Zandbakvoorvoegsel:',
+	'templatesandbox-page-label' => 'Te renderen pagina:',
+	'templatesandbox-revid-label' => 'Te renderen versie:',
+	'templatesandbox-text-label' => 'Te renderen wikitekst:',
+	'templatesandbox-submit' => 'Bekijken',
+	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
