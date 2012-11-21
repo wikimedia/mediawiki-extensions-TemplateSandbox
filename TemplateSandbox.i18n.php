@@ -302,6 +302,19 @@ $messages['nl'] = array(
 	'templatesandbox-text-label' => 'Te renderen wikitekst:',
 	'templatesandbox-submit' => 'Bekijken',
 	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
+	'templatesandbox-editform-view-label' => 'Voorvertoning weergeven',
+	'templatesandbox-preview' => 'Voorvertoning van $2',
+	'templatesandbox-previewnote' => "'''Dit is een voorvertoning van [[:$1]].'''
+Uw wijzigingen zijn nog niet opgeslagen!",
+	'templatesandbox-invalid-title' => 'De opgegeven pagina is ongeldig.',
+	'templatesandbox-title-not-exists' => 'De titel die u hebt opgegeven bestaat niet.',
+	'templatesandbox-revision-not-exists' => 'De versie die u hebt opgegeven bestaat niet.',
+	'templatesandbox-invalid-prefix' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.',
+	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
+	'templatesandbox-page-or-revid' => 'Het is verplicht een pagina of versienummer op te geven.',
+	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
+	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
+	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
 );
 
 /** Pashto (پښتو)
