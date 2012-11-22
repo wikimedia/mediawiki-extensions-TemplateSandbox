@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'TemplateSandbox' => array( 'Vorlagenspielwiese' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'TemplateSandbox' => array( '틀연습장' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'TemplateSandbox' => array( 'ШаблонскиПесочник' ),

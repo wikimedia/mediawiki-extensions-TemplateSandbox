@@ -245,6 +245,37 @@ $messages['ja'] = array(
 	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'templatesandbox' => '틀연습장',
+	'templatesandbox-desc' => '연습장에 틀을 포함하는 [[Special:TemplateSandbox|문서 렌더]]',
+	'templatesandbox-suffix' => '연습장',
+	'templatesandbox-legend' => '틀 연습장',
+	'templatesandbox-prefix-label' => '연습장 접두어:',
+	'templatesandbox-page-label' => '문서 렌더:',
+	'templatesandbox-revid-label' => '판 렌더:',
+	'templatesandbox-text-label' => '위키텍스트 렌더:',
+	'templatesandbox-submit' => '보기',
+	'templatesandbox-title-output' => '틀연습장: $1',
+	'templatesandbox-editform-legend' => '이 틀로 문서 미리 보기',
+	'templatesandbox-editform-page-label' => '문서 제목:',
+	'templatesandbox-editform-view-label' => '미리 보기',
+	'templatesandbox-preview' => '$2의 미리 보기',
+	'templatesandbox-previewnote' => "'''이 화면은 [[:$1]]의 미리 보기입니다.'''
+편집한 내용은 아직 저장하지 않았습니다!",
+	'templatesandbox-invalid-title' => '지정한 제목이 잘못되었습니다.',
+	'templatesandbox-title-not-exists' => '지정한 제목이 존재하지 않습니다.',
+	'templatesandbox-revision-not-exists' => '지정한 판이 존재하지 않습니다.',
+	'templatesandbox-invalid-prefix' => '지정한 연습장 접두어가 잘못되었습니다.',
+	'templatesandbox-prefix-not-local' => '지정한 연습장 접두어가 로컬이 아닙니다.',
+	'templatesandbox-page-or-revid' => '문서나 판id 중 하나가 필요합니다.',
+	'templatesandbox-editform-need-title' => '이 틀로 다른 문서를 미리 보려면 문서 제목을 지정해야 합니다.',
+	'templatesandbox-editform-invalid-title' => '미리 보기 위해 지정한 제목이 잘못되었습니다.',
+	'templatesandbox-editform-title-not-exists' => '미리 보기 위해 지정한 제목이 존재하지 않습니다.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
