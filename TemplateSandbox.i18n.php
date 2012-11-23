@@ -120,6 +120,7 @@ $messages['es'] = array(
 	'templatesandbox-revision-not-exists' => 'La revisión especificada no existe.',
 	'templatesandbox-invalid-prefix' => 'El prefijo de zona de pruebas que has especificado no es válido.',
 	'templatesandbox-prefix-not-local' => 'El prefijo de zona de pruebas que has especificado no es local.',
+	'templatesandbox-page-or-revid' => 'Debe indicar la página o el identificador de revisión.',
 	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
 	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
