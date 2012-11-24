@@ -64,6 +64,26 @@ $messages['qqq'] = array(
 	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'templatesandbox-suffix' => 'poull-traezh',
+	'templatesandbox-legend' => 'Poull-traezh ar patromoù',
+	'templatesandbox-submit' => 'Gwelet',
+	'templatesandbox-editform-legend' => 'Rakwelet ar bajenn gant ar patrom-mañ',
+	'templatesandbox-editform-page-label' => 'Titl ar bajenn :',
+	'templatesandbox-editform-view-label' => 'Rakwelet',
+	'templatesandbox-preview' => 'Rakwelet $2',
+	'templatesandbox-previewnote' => "'''Diwallit mat, an destenn-mañ n'eo ken ur rakweled eus [[:$1]].'''
+N'eo ket bet enrollet ho kemmoù evit c'hoazh !",
+	'templatesandbox-invalid-title' => "Kamm eo an titl hoc'h eus merket.",
+	'templatesandbox-title-not-exists' => "N'eus ket eus an titl spisaet ganeoc'h.",
+	'templatesandbox-revision-not-exists' => "N'eus ket eus an adweladenn spisaet ganeoc'h.",
+	'templatesandbox-editform-invalid-title' => "N'eo ket reizh an titl ho peus spisaet evit ar rakweled.",
+	'templatesandbox-editform-title-not-exists' => "N'eus ket eus an titl ho peus spisaet evit ar rakweled.",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
