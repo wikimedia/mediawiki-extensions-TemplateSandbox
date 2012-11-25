@@ -115,6 +115,22 @@ Deine Änderungen wurden noch nicht gespeichert!",
 	'templatesandbox-editform-title-not-exists' => 'Der angegebene Titel zur Vorschau ist nicht vorhanden.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'templatesandbox' => 'QumdorŞablon',
+	'templatesandbox-suffix' => 'qumdor',
+	'templatesandbox-legend' => 'Qumdorê Şabloni',
+	'templatesandbox-prefix-label' => 'Veroley qumdor:',
+	'templatesandbox-submit' => 'Bıvin',
+	'templatesandbox-title-output' => 'QumdorŞablon:$1',
+	'templatesandbox-editform-legend' => 'Verasayışê pele da ena şablon',
+	'templatesandbox-editform-page-label' => 'Sernamey pela:',
+	'templatesandbox-editform-view-label' => 'Verasayışi bıvin',
+	'templatesandbox-preview' => 'Verasayışê $2',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -144,6 +160,13 @@ $messages['es'] = array(
 	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
 	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
+);
+
+/** Persian (فارسی)
+ * @author ZxxZxxZ
+ */
+$messages['fa'] = array(
+	'templatesandbox-editform-page-label' => 'عنوان صفحه:',
 );
 
 /** Finnish (suomi)
@@ -375,4 +398,14 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 $messages['ps'] = array(
 	'templatesandbox-submit' => 'کتل',
 	'templatesandbox-editform-page-label' => 'مخ سرليک:',
+);
+
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'templatesandbox-suffix' => 'грамайданчик',
+	'templatesandbox-prefix-label' => 'Префыкс грамайданчика:',
+	'templatesandbox-submit' => 'Перегляд',
+	'templatesandbox-editform-page-label' => 'Заголовок сторінки:',
 );
