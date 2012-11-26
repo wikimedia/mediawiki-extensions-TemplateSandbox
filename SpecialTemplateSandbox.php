@@ -2,6 +2,10 @@
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = array();
 	private $oldTemplateCallback = null;
+
+	/**
+	 * @var null|ParserOutput
+	 */
 	private $output = null;
 
 	function __construct() {
@@ -76,6 +80,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @param $value string|null
+	 * @param $allData
+	 * @return bool|String
+	 */
 	function validatePageParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
@@ -90,6 +99,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $value string|null
+	 * @param $allData
+	 * @return bool|String
+	 */
 	function validateRevidParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
@@ -101,6 +115,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $value
+	 * @param $allData
+	 * @return bool|String
+	 */
 	function validatePrefixParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
@@ -119,6 +138,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $data array
+	 * @param $form
+	 * @return bool|String
+	 */
 	public function onSubmit( $data, $form ) {
 		if ( $data['revid'] !== '' && $data['revid'] !== null ) {
 			$rev = Revision::newFromId( $data['revid'] );
@@ -150,6 +174,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		return false;
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $parser Parser|bool
+	 * @return mixed
+	 */
 	function templateCallback( $title, $parser = false ) {
 		$found = false;
 		foreach ( $this->prefixes as $prefix ) {
@@ -165,7 +194,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 			foreach ( $this->prefixes as $prefix ) {
 				$newtitle = Title::newFromText( $prefix . '/' . $rtitle->getFullText() );
 				if ( $newtitle instanceof Title && $newtitle->exists() ) {
-					$found = true;
 					$title = $newtitle;
 					break;
 				}

@@ -1,17 +1,29 @@
 <?php
 class TemplateSandboxHooks {
 	private static $template = null;
+
+	/**
+	 * @var Content
+	 */
 	private static $content = null;
+
+	/**
+	 * @var callback
+	 */
 	private static $oldTemplateCallback = null;
 
-	// Hook for EditPage::importFormData to parse our new form fields, and if
-	// necessary put $editpage into "preview" mode.
-	//
-	// Note we specifically do not check $wgTemplateSandboxEditNamespaces here,
-	// to allow users to create gadgets to enable this for other namespaces.
+	/**
+	 * Hook for EditPage::importFormData to parse our new form fields, and if
+	 * necessary put $editpage into "preview" mode.
+	 *
+	 * Note we specifically do not check $wgTemplateSandboxEditNamespaces here,
+	 * to allow users to create gadgets to enable this for other namespaces.
+	 *
+	 * @param $editpage EditPage
+	 * @param $request WebRequest
+	 * @return bool
+	 */
 	public static function importFormData( $editpage, $request ) {
-		global $wgHooks;
-
 		if ( $request->wasPosted() ) {
 			$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
@@ -26,16 +38,28 @@ class TemplateSandboxHooks {
 		return true;
 	}
 
+	/**
+	 * @param $msg string
+	 * @return string
+	 */
 	private static function wrapErrorMsg( $msg ) {
 		return "<div id='mw-$msg'>\n"
 			. wfMessage( $msg )->parseAsBlock()
 			. "\n</div>";
 	}
 
-	// Hook for AlternateEditPreview to output an entirely different preview
-	// when our button was clicked.
+	/**
+	 * Hook for AlternateEditPreview to output an entirely different preview
+	 * when our button was clicked.
+	 *
+	 * @param $editpage EditPage
+	 * @param $content Content
+	 * @param $out OutputPage
+	 * @param $parserOutput ParserOutput
+	 * @return bool
+	 */
 	public static function templateSandboxPreview( $editpage, &$content, &$out, &$parserOutput ) {
-		global $wgOut, $wgUser, $wgRawHtml, $wgLang;
+		global $wgOut, $wgUser, $wgLang;
 
 		wfProfileIn( __METHOD__ );
 
@@ -108,7 +132,7 @@ class TemplateSandboxHooks {
 				$editpage->contentModel, $editpage->contentFormat, $ex->getMessage()
 			);
 			$note .= "\n\n" . $m->parse();
-			$previewHTML = '';
+			$out = '';
 		}
 
 		$dtitle = $dtitle === false ? $title->getFullText() : $dtitle;
@@ -127,6 +151,11 @@ class TemplateSandboxHooks {
 		return false;
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $parser Parser|bool
+	 * @return array|mixed
+	 */
 	static function templateCallback( $title, $parser = false ) {
 		$match = ( $title->getFullText() == TemplateSandboxHooks::$template );
 		$rtitle = null;
@@ -160,8 +189,15 @@ class TemplateSandboxHooks {
 		return call_user_func( TemplateSandboxHooks::$oldTemplateCallback, $title, $parser );
 	}
 
-	// Hook for EditPage::showStandardInputs:options to add our form fields to
-	// the "editOptions" area of the page.
+	/**
+	 * Hook for EditPage::showStandardInputs:options to add our form fields to
+	 * the "editOptions" area of the page.
+	 *
+	 * @param $editpage EditPage
+	 * @param $output OutputPage
+	 * @param $tabindex
+	 * @return bool
+	 */
 	public static function injectOptions( $editpage, $output, &$tabindex ) {
 		global $wgTemplateSandboxEditNamespaces;
 
