@@ -23,6 +23,11 @@ $specialPageAliases['de'] = array(
 	'TemplateSandbox' => array( 'Vorlagenspielwiese' ),
 );
 
+/** Finnish (suomi) */
+$specialPageAliases['fi'] = array(
+	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'TemplateSandbox' => array( '틀연습장' ),
