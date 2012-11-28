@@ -40,5 +40,5 @@ $specialPageAliases['mk'] = array(
 
 /** Punjabi (ਪੰਜਾਬੀ) */
 $specialPageAliases['pa'] = array(
-	'TemplateSandbox' => array( 'ਫਰਮਾ_ਕੱਚਾ-ਖਾਕਾ' ),
+	'TemplateSandbox' => array( 'ਸਾਂਚਾ_ਕੱਚਾ-ਖਾਕਾ' ),
 );
