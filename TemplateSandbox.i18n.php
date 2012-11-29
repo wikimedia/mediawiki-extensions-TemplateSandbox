@@ -16,7 +16,7 @@ $messages['en'] = array(
 
 	'templatesandbox-suffix' => 'sandbox',
 	'templatesandbox-legend' => 'Template Sandbox',
-	'templatesandbox-text' => 'You can use this special page to preview how a given page would look with a different set of templates.',
+	'templatesandbox-text' => "You can choose a set of templates saved in your sandbox space by using an appropriate sandbox prefix.  For example, if you want to preview a version of Template:Test that you have saved as 'User:Foo/sandbox/Template:Test', use 'User:Foo/sandbox' as the prefix.",
 	'templatesandbox-prefix-label' => 'Sandbox prefix:',
 	'templatesandbox-page-label' => 'Render page:',
 	'templatesandbox-revid-label' => 'Render revision:',
