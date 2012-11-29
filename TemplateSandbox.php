@@ -61,3 +61,10 @@ $wgSpecialPageGroups['TemplateSandbox'] = 'wiki';
 $wgHooks['EditPage::importFormData'][] = 'TemplateSandboxHooks::importFormData';
 $wgHooks['EditPage::showStandardInputs:options'][] = 'TemplateSandboxHooks::injectOptions';
 $wgHooks['AlternateEditPreview'][] = 'TemplateSandboxHooks::templateSandboxPreview';
+
+$wgResourceModules['ext.TemplateSandbox'] = array(
+	'scripts' => 'ext.TemplateSandbox.js',
+	'position' => 'bottom',
+	'localBasePath' => __DIR__ . '/modules',
+	'remoteExtPath' => 'TemplateSandbox/modules'
+);

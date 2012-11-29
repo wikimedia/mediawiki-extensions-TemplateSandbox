@@ -24,6 +24,8 @@ class TemplateSandboxHooks {
 	 * @return bool
 	 */
 	public static function importFormData( $editpage, $request ) {
+		$editpage->templatesandbox_page = '';
+
 		if ( $request->wasPosted() ) {
 			$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
@@ -244,6 +246,7 @@ class TemplateSandboxHooks {
 			$html, array( 'id' => 'templatesandbox-editform' )
 		);
 		$output->addHtml( $html . "\n" );
+		$output->addModules( 'ext.TemplateSandbox' );
 
 		return true;
 	}
