@@ -16,7 +16,7 @@ $messages['en'] = array(
 
 	'templatesandbox-suffix' => 'sandbox',
 	'templatesandbox-legend' => 'Template Sandbox',
-	'templatesandbox-text' => '',
+	'templatesandbox-text' => 'You can use this special page to preview how a given page would look with a different set of templates.',
 	'templatesandbox-prefix-label' => 'Sandbox prefix:',
 	'templatesandbox-page-label' => 'Render page:',
 	'templatesandbox-revid-label' => 'Render revision:',
