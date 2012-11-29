@@ -64,6 +64,37 @@ $messages['qqq'] = array(
 	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
 );
 
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Адлюстроўвае старонку]], уключыўшы на яе шаблён зь пясочніцы',
+	'templatesandbox-suffix' => 'пясочніца',
+	'templatesandbox-legend' => 'Пясочніца для шаблёнаў',
+	'templatesandbox-prefix-label' => 'Прэфікс пясочніцы:',
+	'templatesandbox-page-label' => 'Паказаць на старонцы:',
+	'templatesandbox-revid-label' => 'Вэрсія для адлюстраваньня:',
+	'templatesandbox-text-label' => 'Дадаць вікітэкст:',
+	'templatesandbox-submit' => 'Паказаць',
+	'templatesandbox-title-output' => 'TemplateSandbox: $1',
+	'templatesandbox-editform-legend' => 'Паказаць старонку з гэтым шаблёнам',
+	'templatesandbox-editform-page-label' => 'Назва старонкі:',
+	'templatesandbox-editform-view-label' => 'Праглядзець',
+	'templatesandbox-preview' => 'Прагляд «$2»',
+	'templatesandbox-previewnote' => "'''Памятайце, што гэта толькі папярэдні прагляд [[:$1]].'''
+Вышыя зьмены яшчэ не захаваныя!",
+	'templatesandbox-invalid-title' => 'Пазначаная няслушная назва.',
+	'templatesandbox-title-not-exists' => 'Пазначаная старонка не існуе.',
+	'templatesandbox-revision-not-exists' => 'Пазначаная вэрсія не існуе.',
+	'templatesandbox-invalid-prefix' => 'Пазначаны няслушны прэфікс пясочніцы',
+	'templatesandbox-prefix-not-local' => 'Мусіць быць пазначаны лякальны прэфікс пясочніцы.',
+	'templatesandbox-page-or-revid' => 'Трэба пазначыць старонку або вэрсію.',
+	'templatesandbox-editform-need-title' => 'Каб пабачыць іншую старонку з гэтым шаблёнам, трэба пазначыць назву старонкі.',
+	'templatesandbox-editform-invalid-title' => 'Пазначаная для прагляду старонка няслушная.',
+	'templatesandbox-editform-title-not-exists' => 'Пазначаная для прагляду старонка не існуе.',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
@@ -170,41 +201,49 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Nedergard
  * @author Stryn
  */
 $messages['fi'] = array(
 	'templatesandbox-suffix' => 'hiekkalaatikko',
+	'templatesandbox-prefix-label' => 'Hiekkalaatikko etuliite',
+	'templatesandbox-editform-page-label' => 'Sivun nimi',
+	'templatesandbox-editform-view-label' => 'Näytä esikatselu',
+	'templatesandbox-preview' => 'Sivun $2 esikatselu',
+	'templatesandbox-previewnote' => "'''Muista, että tämä on sivun [[:$1]] esikatselu.'''
+Muutoksia ei ole tallennettu!",
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Gomoko
  */
 $messages['fr'] = array(
 	'templatesandbox' => 'TemplateSandbox',
-	'templatesandbox-desc' => "[[Special:TemplateSandbox|Afficher le rendu d'une page]] en traduisant les modèles depuis un bac à sable",
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en traduisant les modèles depuis un bac à sable',
 	'templatesandbox-suffix' => 'bac à sable',
 	'templatesandbox-legend' => 'Bac à sable de modèle',
-	'templatesandbox-prefix-label' => 'Préfixe de bac à sable:',
-	'templatesandbox-page-label' => 'Rendu de la page:',
-	'templatesandbox-revid-label' => 'Rendu de la révision:',
-	'templatesandbox-text-label' => 'Rendu du wikitexte:',
+	'templatesandbox-prefix-label' => 'Préfixe de bac à sable :',
+	'templatesandbox-page-label' => 'Rendu de la page :',
+	'templatesandbox-revid-label' => 'Rendu de la révision :',
+	'templatesandbox-text-label' => 'Rendu du wikitexte :',
 	'templatesandbox-submit' => 'Afficher',
 	'templatesandbox-title-output' => 'TemplateSandbox: $1',
 	'templatesandbox-editform-legend' => 'Aperçu de la page avec ce modèle',
-	'templatesandbox-editform-page-label' => 'Titre de la page:',
-	'templatesandbox-editform-view-label' => "Afficher l'aperçu",
+	'templatesandbox-editform-page-label' => 'Titre de la page :',
+	'templatesandbox-editform-view-label' => 'Afficher l’aperçu',
 	'templatesandbox-preview' => 'Aperçu de $2',
 	'templatesandbox-previewnote' => "'''Souvenez-vous que ce n’est qu’un aperçu de [[:$1]].'''
 Vos modifications n’ont pas encore été enregistrées!",
-	'templatesandbox-invalid-title' => "Le titre que vous avez spécifié n'est pas valide.",
-	'templatesandbox-title-not-exists' => "Le titre que vous avez spécifié n'existe pas.",
-	'templatesandbox-revision-not-exists' => "La révision que vous avez spécifiée n'existe pas.",
-	'templatesandbox-invalid-prefix' => "Le préfixe de bac à sable que vous avez spécifié n'est pas valide.",
-	'templatesandbox-prefix-not-local' => "Le préfixe de bac à sable que vous avez spécifié n'est pas local.",
-	'templatesandbox-page-or-revid' => "Soit la page, soit l'identifiant de révision, est obligatoire.",
-	'templatesandbox-editform-need-title' => "Pour afficher l'aperçu d'une autre page avec ce modèle, un titre de page doit être fourni.",
-	'templatesandbox-editform-invalid-title' => "Le titre que vous avez spécifié pour l'aperçu n'est pas valide.",
-	'templatesandbox-editform-title-not-exists' => "Le titre que vous avez spécifié pour l'aperçu n'existe pas.",
+	'templatesandbox-invalid-title' => 'Le titre que vous avez spécifié n’est pas valide.',
+	'templatesandbox-title-not-exists' => 'Le titre que vous avez spécifié n’existe pas.',
+	'templatesandbox-revision-not-exists' => 'La révision que vous avez spécifiée n’existe pas.',
+	'templatesandbox-invalid-prefix' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas valide.',
+	'templatesandbox-prefix-not-local' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas local.',
+	'templatesandbox-page-or-revid' => 'Soit la page, soit l’identifiant de révision, est obligatoire.',
+	'templatesandbox-editform-need-title' => 'Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.',
+	'templatesandbox-editform-invalid-title' => 'Le titre que vous avez spécifié pour l’aperçu n’est pas valide.',
+	'templatesandbox-editform-title-not-exists' => 'Le titre que vous avez spécifié pour l’aperçu n’existe pas.',
 );
 
 /** Galician (galego)
@@ -236,6 +275,37 @@ Aínda non gardou os seus cambios!",
 	'templatesandbox-editform-need-title' => 'Para ollar a vista previa doutra páxina con este modelo, cómpre especificar un título de páxina.',
 	'templatesandbox-editform-invalid-title' => 'O título que especificou para a vista previa non é válido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que especificou para a vista previa non existe.',
+);
+
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'templatesandbox' => 'ארגז חול לתבניות',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|מציג דף]] שמכליל תבניות מארגז חול',
+	'templatesandbox-suffix' => 'ארגז חול',
+	'templatesandbox-legend' => 'ארגז חול לטיוטות',
+	'templatesandbox-prefix-label' => 'תחילית לארגז חול:',
+	'templatesandbox-page-label' => 'להציג את הדף:',
+	'templatesandbox-revid-label' => 'להציג את הגרסה:',
+	'templatesandbox-text-label' => 'להציג קוד ויקי:',
+	'templatesandbox-submit' => 'להציג',
+	'templatesandbox-title-output' => 'ארגז חול לתבניות: $1',
+	'templatesandbox-editform-legend' => 'תצוגה מקדימה של הדף עם התבנית הזאת',
+	'templatesandbox-editform-page-label' => 'כותרת הדף:',
+	'templatesandbox-editform-view-label' => 'תצוגה מקדימה',
+	'templatesandbox-preview' => 'תצוגה מקדימה של $2',
+	'templatesandbox-previewnote' => "'''זוהי רק תצוגה מקדימה של [[:$1]].'''
+השינויים שלך טרם נשמרו!",
+	'templatesandbox-invalid-title' => 'הכותבת שציינת אינה תקינה.',
+	'templatesandbox-title-not-exists' => 'הכותרת שציינת אינה קיימת.',
+	'templatesandbox-revision-not-exists' => 'הגרסה שציינת אינה קיימת.',
+	'templatesandbox-invalid-prefix' => 'תחילית ארגז החול שציינת אינה קיימת.',
+	'templatesandbox-prefix-not-local' => 'תחילית ארגז החול שציינת אינה מקומית.',
+	'templatesandbox-page-or-revid' => 'יש לציין דף (page) או מזהה גרסה (revid).',
+	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
+	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
+	'templatesandbox-editform-title-not-exists' => 'הכותרת שציינת לתצוגה מקדימה אינה קיימת.',
 );
 
 /** Italian (italiano)
@@ -402,10 +472,42 @@ $messages['ps'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author Wizardist
  */
 $messages['uk'] = array(
 	'templatesandbox-suffix' => 'грамайданчик',
-	'templatesandbox-prefix-label' => 'Префыкс грамайданчика:',
+	'templatesandbox-prefix-label' => 'Префикс грамайданчика:',
 	'templatesandbox-submit' => 'Перегляд',
 	'templatesandbox-editform-page-label' => 'Заголовок сторінки:',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'templatesandbox' => 'Chỗ thử bản mẫu',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Kết xuất một trang]] bằng cách lấy các bản mẫu từ chỗ thử',
+	'templatesandbox-suffix' => 'chỗ thử',
+	'templatesandbox-legend' => 'Chỗ thử bản mẫu',
+	'templatesandbox-prefix-label' => 'Tiền tố chỗ thử:',
+	'templatesandbox-page-label' => 'Kết xuất trang:',
+	'templatesandbox-revid-label' => 'Kết xuất phiên bản:',
+	'templatesandbox-text-label' => 'Kết xuất văn bản wiki:',
+	'templatesandbox-submit' => 'Xem',
+	'templatesandbox-title-output' => 'Chỗ thử bản mẫu: $1',
+	'templatesandbox-editform-legend' => 'Xem thử trang dùng bản mẫu này',
+	'templatesandbox-editform-page-label' => 'Tên trang:',
+	'templatesandbox-editform-view-label' => 'Xem thử',
+	'templatesandbox-preview' => 'Xem thử $2',
+	'templatesandbox-previewnote' => "'''Đây chỉ mới là xem thử [[:$1]].'''
+Các thay đổi của bạn vẫn chưa được lưu!",
+	'templatesandbox-invalid-title' => 'Tên trang chỉ định không hợp lệ.',
+	'templatesandbox-title-not-exists' => 'Tên trang chỉ định không tồn tại.',
+	'templatesandbox-revision-not-exists' => 'Phiên bản chỉ định không tồn tại.',
+	'templatesandbox-invalid-prefix' => 'Tiền tố chỗ thử chỉ định không hợp lệ.',
+	'templatesandbox-prefix-not-local' => 'Tiền tố chỗ thử chỉ định không có trực thuộc wiki này.',
+	'templatesandbox-page-or-revid' => 'Cần chỉ định trang hoặc ID của phiên bản.',
+	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem thử trang khác dùng bản mẫu này.',
+	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem thử không hợp lệ.',
+	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
 );
