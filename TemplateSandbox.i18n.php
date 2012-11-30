@@ -36,7 +36,7 @@ Your changes have not yet been saved!",
 	'templatesandbox-revision-not-exists' => 'The revision you specified does not exist.',
 	'templatesandbox-invalid-prefix' => 'The sandbox prefix you specified is invalid.',
 	'templatesandbox-prefix-not-local' => 'The sandbox prefix you specified is not local.',
-	'templatesandbox-page-or-revid' => 'Either page or revid is required.',
+	'templatesandbox-page-or-revid' => 'You must enter either a page title or a revision ID number.',
 
 	'templatesandbox-editform-need-title' => 'To preview another page with this template, a page title must be specified.',
 	'templatesandbox-editform-invalid-title' => 'The title you specified for previewing is invalid.',
