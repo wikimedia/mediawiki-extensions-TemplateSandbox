@@ -89,7 +89,7 @@ $messages['be-tarask'] = array(
 	'templatesandbox-revision-not-exists' => 'Пазначаная вэрсія не існуе.',
 	'templatesandbox-invalid-prefix' => 'Пазначаны няслушны прэфікс пясочніцы',
 	'templatesandbox-prefix-not-local' => 'Мусіць быць пазначаны лякальны прэфікс пясочніцы.',
-	'templatesandbox-page-or-revid' => 'Трэба пазначыць старонку або вэрсію.',
+	'templatesandbox-page-or-revid' => 'Трэба пазначыць старонку або вэрсію.', # Fuzzy
 	'templatesandbox-editform-need-title' => 'Каб пабачыць іншую старонку з гэтым шаблёнам, трэба пазначыць назву старонкі.',
 	'templatesandbox-editform-invalid-title' => 'Пазначаная для прагляду старонка няслушная.',
 	'templatesandbox-editform-title-not-exists' => 'Пазначаная для прагляду старонка не існуе.',
@@ -113,6 +113,37 @@ N'eo ket bet enrollet ho kemmoù evit c'hoazh !",
 	'templatesandbox-revision-not-exists' => "N'eus ket eus an adweladenn spisaet ganeoc'h.",
 	'templatesandbox-editform-invalid-title' => "N'eo ket reizh an titl ho peus spisaet evit ar rakweled.",
 	'templatesandbox-editform-title-not-exists' => "N'eus ket eus an titl ho peus spisaet evit ar rakweled.",
+);
+
+/** Czech (česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'templatesandbox' => 'Šablonové pískoviště',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Vykreslování stránek]], které aplikuje šablony z pískoviště',
+	'templatesandbox-suffix' => 'pískoviště',
+	'templatesandbox-legend' => 'Šablonové pískoviště',
+	'templatesandbox-prefix-label' => 'Prefix pískoviště:',
+	'templatesandbox-page-label' => 'Vykreslit stránku:',
+	'templatesandbox-revid-label' => 'Vykreslit revizi:',
+	'templatesandbox-text-label' => 'Vykreslit wikitext:',
+	'templatesandbox-submit' => 'Zobrazit',
+	'templatesandbox-title-output' => 'Šablonové pískoviště: $1',
+	'templatesandbox-editform-legend' => 'Náhled stránky s touto šablonou',
+	'templatesandbox-editform-page-label' => 'Název stránky:',
+	'templatesandbox-editform-view-label' => 'Ukázat náhled',
+	'templatesandbox-preview' => 'Náhled stránky $2',
+	'templatesandbox-previewnote' => "'''Pamatujte, že toto je pouze náhled stránky [[:$1]].'''
+Změny zatím nebyly uloženy!",
+	'templatesandbox-invalid-title' => 'Zadaný název je neplatný.',
+	'templatesandbox-title-not-exists' => 'Zadaný název neexistuje.',
+	'templatesandbox-revision-not-exists' => 'Zadaná revize neexistuje.',
+	'templatesandbox-invalid-prefix' => 'Zadaný prefix pískoviště je neplatný.',
+	'templatesandbox-prefix-not-local' => 'Zadaný prefix pískoviště není místní.',
+	'templatesandbox-page-or-revid' => 'Vyžadována stránka nebo číslo revize.', # Fuzzy
+	'templatesandbox-editform-need-title' => 'Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název stránky.',
+	'templatesandbox-editform-invalid-title' => 'Zadaný název stránky pro náhled je neplatný.',
+	'templatesandbox-editform-title-not-exists' => 'Zadaný název stránky pro náhled neexistuje.',
 );
 
 /** German (Deutsch)
@@ -187,7 +218,7 @@ $messages['es'] = array(
 	'templatesandbox-revision-not-exists' => 'La revisión especificada no existe.',
 	'templatesandbox-invalid-prefix' => 'El prefijo de zona de pruebas que has especificado no es válido.',
 	'templatesandbox-prefix-not-local' => 'El prefijo de zona de pruebas que has especificado no es local.',
-	'templatesandbox-page-or-revid' => 'Debe indicar la página o el identificador de revisión.',
+	'templatesandbox-page-or-revid' => 'Debe indicar la página o el identificador de revisión.', # Fuzzy
 	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
 	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
@@ -202,25 +233,45 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Nedergard
+ * @author Olli
  * @author Stryn
  */
 $messages['fi'] = array(
+	'templatesandbox' => 'Mallinehiekkalaatikko',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderöi sivun]] ottaen mukaan mallineet hiekkalaatikosta',
 	'templatesandbox-suffix' => 'hiekkalaatikko',
-	'templatesandbox-prefix-label' => 'Hiekkalaatikko etuliite',
+	'templatesandbox-legend' => 'Mallinehiekkalaatikko',
+	'templatesandbox-prefix-label' => 'Hiekkalaatikon etuliite:',
+	'templatesandbox-page-label' => 'Renderöi sivu:',
+	'templatesandbox-revid-label' => 'Renderöi versio:',
+	'templatesandbox-text-label' => 'Renderöi wikiteksti:',
+	'templatesandbox-submit' => 'Näytä',
+	'templatesandbox-title-output' => 'Mallinehiekkalaatikko: $1',
+	'templatesandbox-editform-legend' => 'Esikatsele sivua tätä mallinetta käyttäen',
 	'templatesandbox-editform-page-label' => 'Sivun nimi',
 	'templatesandbox-editform-view-label' => 'Näytä esikatselu',
 	'templatesandbox-preview' => 'Sivun $2 esikatselu',
 	'templatesandbox-previewnote' => "'''Muista, että tämä on sivun [[:$1]] esikatselu.'''
 Muutoksia ei ole tallennettu!",
+	'templatesandbox-invalid-title' => 'Määrittämäsi otsikko ei kelpaa.',
+	'templatesandbox-title-not-exists' => 'Määrittämääsi otsikkoa ei ole.',
+	'templatesandbox-revision-not-exists' => 'Määrittämääsi versiota ei ole.',
+	'templatesandbox-invalid-prefix' => 'Määrittämääsi hiekkalaatikon etuliitettä ei ole.',
+	'templatesandbox-prefix-not-local' => 'Määrittämäsi hiekkalaatikon etuliite ei sijaitse tällä sivustolla.',
+	'templatesandbox-page-or-revid' => 'Ole hyvä ja anna sivu tai versio.', # Fuzzy
+	'templatesandbox-editform-need-title' => 'Esikatsellaksesi toista sivua tällä mallineella, täytyy sivun otsikko olla annettuna.',
+	'templatesandbox-editform-invalid-title' => 'Esikatselua varten määrittämäsi otsikko ei kelpaa.',
+	'templatesandbox-editform-title-not-exists' => 'Esikatselua varten määrittämääsi otsikkoa ei ole.',
 );
 
 /** French (français)
+ * @author Arkanosis
  * @author Crochet.david
  * @author Gomoko
  */
 $messages['fr'] = array(
 	'templatesandbox' => 'TemplateSandbox',
-	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en traduisant les modèles depuis un bac à sable',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en utilisant les modèles présents dans un bac à sable',
 	'templatesandbox-suffix' => 'bac à sable',
 	'templatesandbox-legend' => 'Bac à sable de modèle',
 	'templatesandbox-prefix-label' => 'Préfixe de bac à sable :',
@@ -240,7 +291,7 @@ Vos modifications n’ont pas encore été enregistrées!",
 	'templatesandbox-revision-not-exists' => 'La révision que vous avez spécifiée n’existe pas.',
 	'templatesandbox-invalid-prefix' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas valide.',
 	'templatesandbox-prefix-not-local' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas local.',
-	'templatesandbox-page-or-revid' => 'Soit la page, soit l’identifiant de révision, est obligatoire.',
+	'templatesandbox-page-or-revid' => 'Soit la page, soit l’identifiant de révision, est obligatoire.', # Fuzzy
 	'templatesandbox-editform-need-title' => 'Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.',
 	'templatesandbox-editform-invalid-title' => 'Le titre que vous avez spécifié pour l’aperçu n’est pas valide.',
 	'templatesandbox-editform-title-not-exists' => 'Le titre que vous avez spécifié pour l’aperçu n’existe pas.',
@@ -302,7 +353,7 @@ $messages['he'] = array(
 	'templatesandbox-revision-not-exists' => 'הגרסה שציינת אינה קיימת.',
 	'templatesandbox-invalid-prefix' => 'תחילית ארגז החול שציינת אינה קיימת.',
 	'templatesandbox-prefix-not-local' => 'תחילית ארגז החול שציינת אינה מקומית.',
-	'templatesandbox-page-or-revid' => 'יש לציין דף (page) או מזהה גרסה (revid).',
+	'templatesandbox-page-or-revid' => 'יש לציין דף (page) או מזהה גרסה (revid).', # Fuzzy
 	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
 	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
 	'templatesandbox-editform-title-not-exists' => 'הכותרת שציינת לתצוגה מקדימה אינה קיימת.',
@@ -470,13 +521,51 @@ $messages['ps'] = array(
 	'templatesandbox-editform-page-label' => 'مخ سرليک:',
 );
 
+/** Romanian (română)
+ * @author Minisarm
+ */
+$messages['ro'] = array(
+	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afișează o pagină randată]] folosind formatele prezente într-o cutie cu nisip',
+	'templatesandbox-suffix' => 'cutie cu nisip',
+	'templatesandbox-legend' => 'Cutie cu nisip pentru formate',
+	'templatesandbox-prefix-label' => 'Prefixul cutiei cu nisip:',
+	'templatesandbox-page-label' => 'Pagina de randat:',
+	'templatesandbox-revid-label' => 'Versiunea de randat:',
+	'templatesandbox-text-label' => 'Text wiki de randat:',
+	'templatesandbox-submit' => 'Vizualizare',
+	'templatesandbox-title-output' => 'TemplateSandbox: $1',
+	'templatesandbox-editform-legend' => 'Previzualizare pagină cu acest format',
+	'templatesandbox-editform-page-label' => 'Titlul paginii:',
+	'templatesandbox-editform-view-label' => 'Arată previzualizarea',
+	'templatesandbox-preview' => 'Previzualizare $2',
+	'templatesandbox-previewnote' => "'''Țineți cont că aceasta este doar o previzualizare a paginii [[:$1]].'''
+Modificările dumneavoastră nu au fost încă salvate!",
+	'templatesandbox-invalid-title' => 'Titlul specificat nu este corect.',
+	'templatesandbox-title-not-exists' => 'Titlul specificat nu există.',
+	'templatesandbox-revision-not-exists' => 'Versiunea specificată nu există.',
+	'templatesandbox-invalid-prefix' => 'Prefixul cutiei cu nisip specificat nu este corect.',
+	'templatesandbox-prefix-not-local' => 'Prefixul cutiei cu nisip specificat nu este local.',
+	'templatesandbox-page-or-revid' => 'Este obligatorie fie pagina, fie codul versiunii.', # Fuzzy
+	'templatesandbox-editform-need-title' => 'Pentru a previzualiza o altă pagină cu acest format, trebuie specificat un alt titlu de pagină.',
+	'templatesandbox-editform-invalid-title' => 'Titlul specificat pentru previzualizare nu este corect.',
+	'templatesandbox-editform-title-not-exists' => 'Titlul specificat pentru previzualizare nu există.',
+);
+
+/** Russian (русский)
+ * @author Olli
+ */
+$messages['ru'] = array(
+	'templatesandbox' => 'Mallinehiekkalaatikko',
+);
+
 /** Ukrainian (українська)
  * @author Base
  * @author Wizardist
  */
 $messages['uk'] = array(
 	'templatesandbox-suffix' => 'грамайданчик',
-	'templatesandbox-prefix-label' => 'Префикс грамайданчика:',
+	'templatesandbox-prefix-label' => 'Префікс грамайданчика:',
 	'templatesandbox-submit' => 'Перегляд',
 	'templatesandbox-editform-page-label' => 'Заголовок сторінки:',
 );
@@ -506,8 +595,39 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-revision-not-exists' => 'Phiên bản chỉ định không tồn tại.',
 	'templatesandbox-invalid-prefix' => 'Tiền tố chỗ thử chỉ định không hợp lệ.',
 	'templatesandbox-prefix-not-local' => 'Tiền tố chỗ thử chỉ định không có trực thuộc wiki này.',
-	'templatesandbox-page-or-revid' => 'Cần chỉ định trang hoặc ID của phiên bản.',
+	'templatesandbox-page-or-revid' => 'Cần chỉ định trang hoặc ID của phiên bản.', # Fuzzy
 	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem thử trang khác dùng bản mẫu này.',
 	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem thử không hợp lệ.',
 	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'templatesandbox' => '模版沙盒',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|在頁面]]套用沙盒的模版',
+	'templatesandbox-suffix' => '沙盒',
+	'templatesandbox-legend' => '模版沙盒',
+	'templatesandbox-prefix-label' => '沙盒前綴：',
+	'templatesandbox-page-label' => '呈現頁面：',
+	'templatesandbox-revid-label' => '呈現修訂：',
+	'templatesandbox-text-label' => '呈現wiki代碼：',
+	'templatesandbox-submit' => '檢視',
+	'templatesandbox-title-output' => '模版沙盒：$1',
+	'templatesandbox-editform-legend' => '在頁面預覽此模版',
+	'templatesandbox-editform-page-label' => '頁面標題：',
+	'templatesandbox-editform-view-label' => '顯示預覽',
+	'templatesandbox-preview' => '$2的預覽',
+	'templatesandbox-previewnote' => "'''請記住這只是[[:$1]]的預覽。'''
+您的更改尚未儲存！",
+	'templatesandbox-invalid-title' => '所指定標題無效。',
+	'templatesandbox-title-not-exists' => '所指定的標題不存在。',
+	'templatesandbox-revision-not-exists' => '所指定的修訂不存在。',
+	'templatesandbox-invalid-prefix' => '所指定的沙盒前綴無效。',
+	'templatesandbox-prefix-not-local' => '所指定的沙盒前綴不是本地的。',
+	'templatesandbox-page-or-revid' => '需要頁面或revid。', # Fuzzy
+	'templatesandbox-editform-need-title' => '在另一頁面上預覽此模版，請指定該頁面標題。',
+	'templatesandbox-editform-invalid-title' => '所指定的預覽標題無效。',
+	'templatesandbox-editform-title-not-exists' => '所指定的預覽標題不存在。',
 );
