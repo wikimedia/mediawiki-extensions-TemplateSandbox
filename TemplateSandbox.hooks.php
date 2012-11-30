@@ -118,11 +118,17 @@ class TemplateSandboxHooks {
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
 			$content = $content->preSaveTransform( $editpage->mTitle, $wgUser, $popts );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
-			$out = $parserOutput->getText();
 			$wgOut->addParserOutputNoText( $parserOutput );
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
+
+			$rt = $content->getRedirectChain();
+			if ( $rt ) {
+				$out = $editpage->getArticle()->viewRedirect( $rt );
+			} else {
+				$out = $parserOutput->getText();
+			}
 
 			if ( count( $parserOutput->getWarnings() ) ) {
 				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
