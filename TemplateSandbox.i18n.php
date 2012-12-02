@@ -115,6 +115,37 @@ N'eo ket bet enrollet ho kemmoù evit c'hoazh !",
 	'templatesandbox-editform-title-not-exists' => "N'eus ket eus an titl ho peus spisaet evit ar rakweled.",
 );
 
+/** Catalan (català)
+ * @author Vriullop
+ */
+$messages['ca'] = array(
+	'templatesandbox' => 'Proves de plantilles',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Mostra una pàgina]] utilitzant plantilles de proves',
+	'templatesandbox-suffix' => 'proves',
+	'templatesandbox-legend' => 'Proves de plantilles',
+	'templatesandbox-prefix-label' => 'Prefix de proves:',
+	'templatesandbox-page-label' => 'Genera la pàgina:',
+	'templatesandbox-revid-label' => 'Genera la revisió:',
+	'templatesandbox-text-label' => 'Genera el text wiki:',
+	'templatesandbox-submit' => 'Mostra',
+	'templatesandbox-title-output' => 'Proves de plantilles: $1',
+	'templatesandbox-editform-legend' => "Previsualització d'una pàgina amb aquesta plantilla",
+	'templatesandbox-editform-page-label' => 'Títol de la pàgina:',
+	'templatesandbox-editform-view-label' => 'Mostra previsualització',
+	'templatesandbox-preview' => 'Previsualització de $2',
+	'templatesandbox-previewnote' => "'''Això només és una previsualització de la pàgina [[:$1]].'''
+Els vostres canvis encara no han estat desats!",
+	'templatesandbox-invalid-title' => 'El títol que heu especificat no és vàlid.',
+	'templatesandbox-title-not-exists' => 'El títol que heu especificat no existeix.',
+	'templatesandbox-revision-not-exists' => 'La revisió que heu especificat no existeix.',
+	'templatesandbox-invalid-prefix' => 'El prefix de proves que heu especificat no és vàlid.',
+	'templatesandbox-prefix-not-local' => 'El prefix de proves que heu especificat no és local.',
+	'templatesandbox-page-or-revid' => "Heu d'introduir un títol de pàgina o un número d'identificació de revisió.",
+	'templatesandbox-editform-need-title' => "Per previsualitzar una altra pàgina amb aquesta plantilla, heu d'especificar un títol de pàgina.",
+	'templatesandbox-editform-invalid-title' => 'El títol que heu especificat per a la previsualització no és vàlid.',
+	'templatesandbox-editform-title-not-exists' => 'El títol que heu especificat per a la previsualització no existeix.',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
@@ -171,7 +202,7 @@ Deine Änderungen wurden noch nicht gespeichert!",
 	'templatesandbox-revision-not-exists' => 'Die angegebene Version ist nicht vorhanden.',
 	'templatesandbox-invalid-prefix' => 'Das angegebene Spielwiesenpräfix ist ungültig.',
 	'templatesandbox-prefix-not-local' => 'Das angegebene Spielwiesenpräfix ist nicht lokal.',
-	'templatesandbox-page-or-revid' => 'Es ist entweder ein Seitentitel oder eine Version erforderlich.',
+	'templatesandbox-page-or-revid' => 'Du musst entweder einen Seitentitel oder eine Versionskennung angeben.',
 	'templatesandbox-editform-need-title' => 'Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.',
 	'templatesandbox-editform-invalid-title' => 'Der angegebene Titel zur Vorschau ist ungültig.',
 	'templatesandbox-editform-title-not-exists' => 'Der angegebene Titel zur Vorschau ist nicht vorhanden.',
@@ -218,7 +249,7 @@ $messages['es'] = array(
 	'templatesandbox-revision-not-exists' => 'La revisión especificada no existe.',
 	'templatesandbox-invalid-prefix' => 'El prefijo de zona de pruebas que has especificado no es válido.',
 	'templatesandbox-prefix-not-local' => 'El prefijo de zona de pruebas que has especificado no es local.',
-	'templatesandbox-page-or-revid' => 'Debe indicar la página o el identificador de revisión.', # Fuzzy
+	'templatesandbox-page-or-revid' => 'Debe indicar el título de la página o el número identificador de revisión.',
 	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
 	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
@@ -404,7 +435,7 @@ $messages['ja'] = array(
 	'templatesandbox-revision-not-exists' => '指定した版は存在しません。',
 	'templatesandbox-invalid-prefix' => '指定したサンドボックス接頭辞は無効です。',
 	'templatesandbox-prefix-not-local' => '指定したサンドボックス接頭辞はローカルではありません。',
-	'templatesandbox-page-or-revid' => 'ページ名と版 ID のいずれかが必要です。',
+	'templatesandbox-page-or-revid' => 'ページ名または版 ID を入力してください。',
 	'templatesandbox-editform-need-title' => 'このテンプレートで別のページのプレビューを表示するには、そのページ名を指定してください。',
 	'templatesandbox-editform-invalid-title' => 'プレビューに指定したページ名は無効です。',
 	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
@@ -478,13 +509,14 @@ $messages['mk'] = array(
 	'templatesandbox-revision-not-exists' => 'Наведената ревизија не постои.',
 	'templatesandbox-invalid-prefix' => 'Наведениот префикс за песочник не постои.',
 	'templatesandbox-prefix-not-local' => 'Наведениот префикс за песочник не е локален.',
-	'templatesandbox-page-or-revid' => 'Мора да наведете назнака на страница или ревизија.',
+	'templatesandbox-page-or-revid' => 'Мора да внесете наслов на страницата или број (назнака) на ревизијата.',
 	'templatesandbox-editform-need-title' => 'За да прегледате друга страница со шаблонов, мора да наведете наслов.',
 	'templatesandbox-editform-invalid-title' => 'Наведениот наслов за преглед е неважечки.',
 	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
 );
 
 /** Dutch (Nederlands)
+ * @author Romaine
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -498,6 +530,7 @@ $messages['nl'] = array(
 	'templatesandbox-text-label' => 'Te renderen wikitekst:',
 	'templatesandbox-submit' => 'Bekijken',
 	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
+	'templatesandbox-editform-page-label' => 'Paginatitel',
 	'templatesandbox-editform-view-label' => 'Voorvertoning weergeven',
 	'templatesandbox-preview' => 'Voorvertoning van $2',
 	'templatesandbox-previewnote' => "'''Dit is een voorvertoning van [[:$1]].'''
@@ -507,7 +540,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-revision-not-exists' => 'De versie die u hebt opgegeven bestaat niet.',
 	'templatesandbox-invalid-prefix' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.',
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
-	'templatesandbox-page-or-revid' => 'Het is verplicht een pagina of versienummer op te geven.',
+	'templatesandbox-page-or-revid' => 'Het is verplicht een pagina of versienummer op te geven.', # Fuzzy
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
@@ -553,10 +586,11 @@ Modificările dumneavoastră nu au fost încă salvate!",
 );
 
 /** Russian (русский)
+ * @author Eleferen
  * @author Olli
  */
 $messages['ru'] = array(
-	'templatesandbox' => 'Mallinehiekkalaatikko',
+	'templatesandbox' => 'TemplateSandbox',
 );
 
 /** Ukrainian (українська)
@@ -602,6 +636,7 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -625,8 +660,8 @@ $messages['zh-hant'] = array(
 	'templatesandbox-title-not-exists' => '所指定的標題不存在。',
 	'templatesandbox-revision-not-exists' => '所指定的修訂不存在。',
 	'templatesandbox-invalid-prefix' => '所指定的沙盒前綴無效。',
-	'templatesandbox-prefix-not-local' => '所指定的沙盒前綴不是本地的。',
-	'templatesandbox-page-or-revid' => '需要頁面或revid。', # Fuzzy
+	'templatesandbox-prefix-not-local' => '所指定的沙盒前綴並非本地。',
+	'templatesandbox-page-or-revid' => '您必需輸入一個頁面標題或版本ID號碼。',
 	'templatesandbox-editform-need-title' => '在另一頁面上預覽此模版，請指定該頁面標題。',
 	'templatesandbox-editform-invalid-title' => '所指定的預覽標題無效。',
 	'templatesandbox-editform-title-not-exists' => '所指定的預覽標題不存在。',
