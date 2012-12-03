@@ -11,18 +11,18 @@ $messages = array();
  * @author Brad Jorsch
  */
 $messages['en'] = array(
-	'templatesandbox' => "TemplateSandbox", // Important! This is the string that appears on Special:SpecialPages
+	'templatesandbox' => 'Template sandbox', // Important! This is the string that appears on Special:SpecialPages
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renders a page]] transcluding templates from a sandbox',
 
 	'templatesandbox-suffix' => 'sandbox',
-	'templatesandbox-legend' => 'Template Sandbox',
+	'templatesandbox-legend' => 'Template sandbox',
 	'templatesandbox-text' => "You can choose a set of templates saved in your sandbox space by using an appropriate sandbox prefix.  For example, if you want to preview a version of Template:Test that you have saved as 'User:Foo/sandbox/Template:Test', use 'User:Foo/sandbox' as the prefix.",
 	'templatesandbox-prefix-label' => 'Sandbox prefix:',
 	'templatesandbox-page-label' => 'Render page:',
 	'templatesandbox-revid-label' => 'Render revision:',
 	'templatesandbox-text-label' => 'Render wikitext:',
 	'templatesandbox-submit' => 'View',
-	'templatesandbox-title-output' => 'TemplateSandbox: $1',
+	'templatesandbox-title-output' => 'Template sandbox: $1',
 
 	'templatesandbox-editform-legend' => 'Preview page with this template',
 	'templatesandbox-editform-page-label' => 'Page title:',
