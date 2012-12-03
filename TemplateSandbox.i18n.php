@@ -322,7 +322,7 @@ Vos modifications n’ont pas encore été enregistrées!",
 	'templatesandbox-revision-not-exists' => 'La révision que vous avez spécifiée n’existe pas.',
 	'templatesandbox-invalid-prefix' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas valide.',
 	'templatesandbox-prefix-not-local' => 'Le préfixe de bac à sable que vous avez spécifié n’est pas local.',
-	'templatesandbox-page-or-revid' => 'Soit la page, soit l’identifiant de révision, est obligatoire.', # Fuzzy
+	'templatesandbox-page-or-revid' => "Vous devez saisir soit un titre de page, soit un numéro d'identifiant de révision.",
 	'templatesandbox-editform-need-title' => 'Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.',
 	'templatesandbox-editform-invalid-title' => 'Le titre que vous avez spécifié pour l’aperçu n’est pas valide.',
 	'templatesandbox-editform-title-not-exists' => 'Le titre que vous avez spécifié pour l’aperçu n’existe pas.',
@@ -388,6 +388,14 @@ $messages['he'] = array(
 	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
 	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
 	'templatesandbox-editform-title-not-exists' => 'הכותרת שציינת לתצוגה מקדימה אינה קיימת.',
+);
+
+/** Hungarian (magyar)
+ * @author Tgr
+ */
+$messages['hu'] = array(
+	'templatesandbox' => 'SablonHomokozó',
+	'templatesandbox-suffix' => 'homokozó',
 );
 
 /** Italian (italiano)
@@ -530,7 +538,7 @@ $messages['nl'] = array(
 	'templatesandbox-text-label' => 'Te renderen wikitekst:',
 	'templatesandbox-submit' => 'Bekijken',
 	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
-	'templatesandbox-editform-page-label' => 'Paginatitel',
+	'templatesandbox-editform-page-label' => 'Paginanaam:',
 	'templatesandbox-editform-view-label' => 'Voorvertoning weergeven',
 	'templatesandbox-preview' => 'Voorvertoning van $2',
 	'templatesandbox-previewnote' => "'''Dit is een voorvertoning van [[:$1]].'''
@@ -540,7 +548,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-revision-not-exists' => 'De versie die u hebt opgegeven bestaat niet.',
 	'templatesandbox-invalid-prefix' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.',
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
-	'templatesandbox-page-or-revid' => 'Het is verplicht een pagina of versienummer op te geven.', # Fuzzy
+	'templatesandbox-page-or-revid' => 'U moet een paginanaam of versienummer opgeven.',
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
