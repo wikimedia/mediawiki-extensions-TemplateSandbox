@@ -643,6 +643,28 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
 );
 
+/** Simplified Chinese (中文（简体）‎)
+ * @author Shizhao
+ */
+$messages['zh-hans'] = array(
+	'templatesandbox' => '模板沙盒',
+	'templatesandbox-suffix' => '沙盒',
+	'templatesandbox-legend' => '模板沙盒',
+	'templatesandbox-prefix-label' => '沙盒前缀：',
+	'templatesandbox-page-label' => 'Render page:',
+	'templatesandbox-submit' => '查看',
+	'templatesandbox-title-output' => '模板沙盒：$1',
+	'templatesandbox-editform-legend' => '预览使用本模板的页面',
+	'templatesandbox-editform-page-label' => '页面标题：',
+	'templatesandbox-editform-view-label' => '显示预览',
+	'templatesandbox-preview' => '$2的预览',
+	'templatesandbox-previewnote' => "'''请记住这仅为[[:$1]]的预览。'''
+您的更改还未保存！",
+	'templatesandbox-invalid-title' => '你指定的标题无效。',
+	'templatesandbox-title-not-exists' => '你指定的标题不存在。',
+	'templatesandbox-editform-need-title' => '要预览使用本模板的其他页面，必须指定一个页面标题，',
+);
+
 /** Traditional Chinese (中文（繁體）‎)
  * @author Justincheng12345
  * @author Simon Shek

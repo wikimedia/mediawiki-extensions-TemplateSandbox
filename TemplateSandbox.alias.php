@@ -23,6 +23,11 @@ $specialPageAliases['de'] = array(
 	'TemplateSandbox' => array( 'Vorlagenspielwiese' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'TemplateSandbox' => array( 'GavlanêŞablon' ),
+);
+
 /** Finnish (suomi) */
 $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
