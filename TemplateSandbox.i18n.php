@@ -361,12 +361,13 @@ Aínda non gardou os seus cambios!",
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author קיפודנחש
  */
 $messages['he'] = array(
 	'templatesandbox' => 'ארגז חול לתבניות',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|מציג דף]] שמכליל תבניות מארגז חול',
 	'templatesandbox-suffix' => 'ארגז חול',
-	'templatesandbox-legend' => 'ארגז חול לטיוטות',
+	'templatesandbox-legend' => 'ארגז חול לתבניות',
 	'templatesandbox-prefix-label' => 'תחילית לארגז חול:',
 	'templatesandbox-page-label' => 'להציג את הדף:',
 	'templatesandbox-revid-label' => 'להציג את הגרסה:',
@@ -560,6 +561,23 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 $messages['ps'] = array(
 	'templatesandbox-submit' => 'کتل',
 	'templatesandbox-editform-page-label' => 'مخ سرليک:',
+);
+
+/** Portuguese (português)
+ * @author Lijealso
+ */
+$messages['pt'] = array(
+	'templatesandbox-submit' => 'Ver',
+	'templatesandbox-editform-page-label' => 'Título da página:',
+	'templatesandbox-editform-view-label' => 'Pré-Visualizar',
+	'templatesandbox-previewnote' => "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''
+As modificações ainda não foram gravadas!",
+	'templatesandbox-invalid-title' => 'O título especificado é inválido.',
+	'templatesandbox-title-not-exists' => 'O título que especificou não existe.',
+	'templatesandbox-revision-not-exists' => 'A revisão que especificou não existe.',
+	'templatesandbox-page-or-revid' => 'Você deve digitar um título de página ou de um número de ID de revisão.',
+	'templatesandbox-editform-invalid-title' => 'O título que você especificou para pré-visualização é inválido.',
+	'templatesandbox-editform-title-not-exists' => 'O título que você especificou para pré-visualizar não existe.',
 );
 
 /** Romanian (română)
