@@ -264,6 +264,7 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Nedergard
+ * @author Nike
  * @author Olli
  * @author Stryn
  */
@@ -289,7 +290,7 @@ Muutoksia ei ole tallennettu!",
 	'templatesandbox-revision-not-exists' => 'Määrittämääsi versiota ei ole.',
 	'templatesandbox-invalid-prefix' => 'Määrittämääsi hiekkalaatikon etuliitettä ei ole.',
 	'templatesandbox-prefix-not-local' => 'Määrittämäsi hiekkalaatikon etuliite ei sijaitse tällä sivustolla.',
-	'templatesandbox-page-or-revid' => 'Ole hyvä ja anna sivu tai versio.', # Fuzzy
+	'templatesandbox-page-or-revid' => 'Anna joko sivun otsikko tai muokkaustunniste.',
 	'templatesandbox-editform-need-title' => 'Esikatsellaksesi toista sivua tällä mallineella, täytyy sivun otsikko olla annettuna.',
 	'templatesandbox-editform-invalid-title' => 'Esikatselua varten määrittämäsi otsikko ei kelpaa.',
 	'templatesandbox-editform-title-not-exists' => 'Esikatselua varten määrittämääsi otsikkoa ei ole.',
@@ -385,7 +386,7 @@ $messages['he'] = array(
 	'templatesandbox-revision-not-exists' => 'הגרסה שציינת אינה קיימת.',
 	'templatesandbox-invalid-prefix' => 'תחילית ארגז החול שציינת אינה קיימת.',
 	'templatesandbox-prefix-not-local' => 'תחילית ארגז החול שציינת אינה מקומית.',
-	'templatesandbox-page-or-revid' => 'יש לציין דף (page) או מזהה גרסה (revid).', # Fuzzy
+	'templatesandbox-page-or-revid' => 'יש לציין כותרת דף או מספר מזהה של גרסה.',
 	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
 	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
 	'templatesandbox-editform-title-not-exists' => 'הכותרת שציינת לתצוגה מקדימה אינה קיימת.',
@@ -399,12 +400,49 @@ $messages['hu'] = array(
 	'templatesandbox-suffix' => 'homokozó',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'templatesandbox' => 'Pagipadasan ti plantilia',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Agipaay ti panid]] a mangilak-am kadagiti plantilia manipud ti pagipadasan',
+	'templatesandbox-suffix' => 'pagipadasan',
+	'templatesandbox-legend' => 'Pagipadasan ti plantilia',
+	'templatesandbox-prefix-label' => 'Pasaruno ti pagipadasan:',
+	'templatesandbox-page-label' => 'Ipaay ti panid:',
+	'templatesandbox-revid-label' => 'Ipaay ti binaliwan:',
+	'templatesandbox-text-label' => 'Ipaay ti wiki a testo:',
+	'templatesandbox-submit' => 'Kitaen',
+	'templatesandbox-title-output' => 'Pagipadasan ti plantilia: $1',
+	'templatesandbox-editform-legend' => 'Ipadas ti panid iti daytoy a plantilia',
+	'templatesandbox-editform-page-label' => 'Titulo ti panid:',
+	'templatesandbox-editform-view-label' => 'Ipakita ti Ipadas',
+	'templatesandbox-preview' => 'Pannakaipadas ti $2',
+	'templatesandbox-previewnote' => "'''Laglagipem a daytoy ket panagipadas laeng ti [[:$1]].'''
+Dagiti binalbaliwam ket saan pay a naidulin!",
+	'templatesandbox-invalid-title' => 'Ti titulo a nainaganam ket imbalido.',
+	'templatesandbox-title-not-exists' => 'Awan met dayta titulo a nainaganam.',
+	'templatesandbox-revision-not-exists' => 'Awan met ti pinagbaliw dayta titulo a nainaganam.',
+	'templatesandbox-invalid-prefix' => 'Ti pasaruno ti pagipadasan a nainaganam ket saan a husto.',
+	'templatesandbox-prefix-not-local' => 'Ti pasaruno ti pagipadasan a nainaganam ket saan a lokal.',
+	'templatesandbox-page-or-revid' => 'Nasken nga agikabilka ti titulo ti panid wenno ID a numero ti panagbalbaliw.',
+	'templatesandbox-editform-need-title' => 'Ti panagipadas ti sabali a panid iti daytoy a plantilia, nasken a mainaganan ti titulo ti panid.',
+	'templatesandbox-editform-invalid-title' => 'Ti titulo a nainaganam para iti panagipadas ket saan nga husto.',
+	'templatesandbox-editform-title-not-exists' => 'Ti titulo a nainaganam para iti panagipadas ket awan.',
+);
+
 /** Italian (italiano)
  * @author Beta16
+ * @author Codicorumus
  */
 $messages['it'] = array(
 	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualizza una pagina]] includendovi le versioni dei template contenute in una sandbox',
 	'templatesandbox-suffix' => 'sandbox',
+	'templatesandbox-prefix-label' => 'Prefisso della sandbox:',
+	'templatesandbox-page-label' => 'Pagina da visualizzare:',
+	'templatesandbox-revid-label' => 'Versione da visualizzare:',
+	'templatesandbox-text-label' => 'Wikicode da visualizzare:',
 	'templatesandbox-submit' => 'Visualizza',
 	'templatesandbox-editform-legend' => 'Anteprima della pagina con questo template',
 	'templatesandbox-editform-page-label' => 'Titolo della pagina:',
@@ -415,6 +453,10 @@ Le tue modifiche NON sono ancora state salvate!",
 	'templatesandbox-invalid-title' => 'Il titolo che hai specificato non è valido.',
 	'templatesandbox-title-not-exists' => 'Il titolo che hai specificato non esiste.',
 	'templatesandbox-revision-not-exists' => 'La revisione che hai specificato non esiste.',
+	'templatesandbox-invalid-prefix' => 'Il prefisso di sandbox che hai indicato non è valido.',
+	'templatesandbox-prefix-not-local' => 'Il prefisso di sandbox che hai indicato non è locale.',
+	'templatesandbox-page-or-revid' => 'Devi inserire un titolo di pagina oppure un numero di versione.',
+	'templatesandbox-editform-need-title' => "Per visualizzare l'anteprima di un'altra pagina con questo template, devi specificare un titolo di pagina.",
 	'templatesandbox-editform-invalid-title' => "Il titolo che hai specificato per l'anteprima non è valido.",
 	'templatesandbox-editform-title-not-exists' => "Il titolo che hai specificato per l'anteprima non esiste.",
 );
@@ -524,6 +566,37 @@ $messages['mk'] = array(
 	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'templatesandbox' => 'Kotak pasir templat',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Mempersembahkan halaman]] yang mentransklusikan templat dari kotak pasir',
+	'templatesandbox-suffix' => 'kotak pasir',
+	'templatesandbox-legend' => 'Kotak pasir templat',
+	'templatesandbox-prefix-label' => 'Awalan kotak pasir:',
+	'templatesandbox-page-label' => 'Halaman persembahan:',
+	'templatesandbox-revid-label' => 'Semakan persembahan:',
+	'templatesandbox-text-label' => 'Teks wiki persembahan:',
+	'templatesandbox-submit' => 'Paparkan',
+	'templatesandbox-title-output' => 'Kotak pasir templat: $1',
+	'templatesandbox-editform-legend' => 'Pralihatkan halaman ini dengan templat ini',
+	'templatesandbox-editform-page-label' => 'Tajuk halaman:',
+	'templatesandbox-editform-view-label' => 'Paparkan Pralihat',
+	'templatesandbox-preview' => 'Pralihat $2',
+	'templatesandbox-previewnote' => "'''Ingat, ini hanya pralihat [[:$1]].'''
+Suntngan anda belum disimpan!",
+	'templatesandbox-invalid-title' => 'Tajuk yang anda nyatakan tidak sah.',
+	'templatesandbox-title-not-exists' => 'Tajuk yang anda nyatakan tidak wujud.',
+	'templatesandbox-revision-not-exists' => 'Semakan yang anda nyatakan tidak wujud.',
+	'templatesandbox-invalid-prefix' => 'Awalan kotak pasir yang anda nyatakan tidak sah.',
+	'templatesandbox-prefix-not-local' => 'Awalan kotak pasir yang anda nyatakan tidak setempat.',
+	'templatesandbox-page-or-revid' => 'Anda mesti memasukkan sama ada tajuk halaman atau nombor ID semakan.',
+	'templatesandbox-editform-need-title' => 'Untuk mempralihatkan satu lagi halaman dengan templat ini, tajuk halaman mesti dinyatakan.',
+	'templatesandbox-editform-invalid-title' => 'Halaman yang anda nyatakan untuk pratayang adalah tidak sah.',
+	'templatesandbox-editform-title-not-exists' => 'Halaman yang anda nyatakan untuk pralihat tidak wujud.',
+);
+
 /** Dutch (Nederlands)
  * @author Romaine
  * @author Siebrand
@@ -553,6 +626,17 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
+);
+
+/** Polish (polski)
+ * @author WTM
+ */
+$messages['pl'] = array(
+	'templatesandbox-editform-page-label' => 'Tytuł strony:',
+	'templatesandbox-editform-view-label' => 'Pokaż podgląd',
+	'templatesandbox-preview' => 'Podgląd strony $2',
+	'templatesandbox-previewnote' => "'''To jest tylko podgląd strony [[:$1]].'''
+Zmiany nie zostały jeszcze zapisane!",
 );
 
 /** Pashto (پښتو)
