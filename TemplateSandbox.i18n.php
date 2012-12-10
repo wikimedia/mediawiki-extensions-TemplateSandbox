@@ -26,7 +26,7 @@ $messages['en'] = array(
 
 	'templatesandbox-editform-legend' => 'Preview page with this template',
 	'templatesandbox-editform-page-label' => 'Page title:',
-	'templatesandbox-editform-view-label' => 'Show Preview',
+	'templatesandbox-editform-view-label' => 'Show preview',
 	'templatesandbox-preview' => "Preview of $2",
 	'templatesandbox-previewnote' => "'''Remember that this is only a preview of [[:$1]].'''
 Your changes have not yet been saved!",
