@@ -47,3 +47,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['pa'] = array(
 	'TemplateSandbox' => array( 'ਸਾਂਚਾ_ਕੱਚਾ-ਖਾਕਾ' ),
 );
+
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'TemplateSandbox' => array( 'Пісочниця_шаблону' ),
+);

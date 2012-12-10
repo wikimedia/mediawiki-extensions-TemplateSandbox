@@ -54,25 +54,14 @@ $messages['qqq'] = array(
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
 	'templatesandbox-text' => 'Text displayed in the input form.',
 	'templatesandbox-prefix-label' => 'Label for the "prefix" input field.',
-	'templatesandbox-page-label' => 'Label for the "page" input field on the special page.',
-	'templatesandbox-revid-label' => 'Label for the "revid" input field on the special page.',
-	'templatesandbox-text-label' => 'Label for the "text" input field on the special page.',
-	'templatesandbox-submit' => 'Label for the submit button on the special page.',
+	'templatesandbox-page-label' => 'Label for the "page" input field on the editpage form.',
+	'templatesandbox-revid-label' => 'Label for the "revid" input field.',
+	'templatesandbox-text-label' => 'Label for the "text" input field.',
+	'templatesandbox-submit' => 'Label for the submit button',
 	'templatesandbox-title-output' => 'Message used when displaying the parsed page title. $1 is the parsed page title.',
-	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form.',
-	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.',
-	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.',
-	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. $1 is the page being previewed. $2 is the title set by the DISPLAYTITLE magic word.',
+	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form',
+	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. $1 is the page being previewed.',
 	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
-	'templatesandbox-invalid-title' => 'Error message displayed when the title specified in the special page is invalid.',
-	'templatesandbox-title-not-exists' => 'Error message displayed when the title specified in the special page does not exist.',
-	'templatesandbox-revision-not-exists' => 'Error message displayed when the rev_id specified in the special page does not exist.',
-	'templatesandbox-invalid-prefix' => 'Error message displayed when the sandbox prefix specified in the special page is invalid.',
-	'templatesandbox-prefix-not-local' => 'Error message displayed when the sandbox prefix specified in the special page is not local.',
-	'templatesandbox-page-or-revid' => 'Error message displayed when neither a page title nor rev_id is given in the special page.',
-	'templatesandbox-editform-need-title' => 'Error message displayed when no page title is given for the editpage form.',
-	'templatesandbox-editform-invalid-title' => 'Error message displayed when the title specified for the editpage form is invalid.',
-	'templatesandbox-editform-title-not-exists' => 'Error message displayed when the title specified for the editpage form does not exist.',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -450,11 +439,13 @@ $messages['it'] = array(
 	'templatesandbox' => 'TemplateSandbox',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualizza una pagina]] includendovi le versioni dei template contenute in una sandbox',
 	'templatesandbox-suffix' => 'sandbox',
+	'templatesandbox-legend' => 'Template sandbox',
 	'templatesandbox-prefix-label' => 'Prefisso della sandbox:',
 	'templatesandbox-page-label' => 'Pagina da visualizzare:',
 	'templatesandbox-revid-label' => 'Versione da visualizzare:',
 	'templatesandbox-text-label' => 'Wikicode da visualizzare:',
 	'templatesandbox-submit' => 'Visualizza',
+	'templatesandbox-title-output' => 'Prova template: $1',
 	'templatesandbox-editform-legend' => 'Anteprima della pagina con questo template',
 	'templatesandbox-editform-page-label' => 'Titolo della pagina:',
 	'templatesandbox-editform-view-label' => 'Visualizza anteprima',
@@ -716,11 +707,13 @@ $messages['ru'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author DixonD
  * @author Wizardist
  */
 $messages['uk'] = array(
-	'templatesandbox-suffix' => 'грамайданчик',
-	'templatesandbox-prefix-label' => 'Префікс грамайданчика:',
+	'templatesandbox' => 'Пісочниця шаблона',
+	'templatesandbox-suffix' => 'пісочниця',
+	'templatesandbox-prefix-label' => 'Префікс пісочниці:',
 	'templatesandbox-submit' => 'Перегляд',
 	'templatesandbox-editform-page-label' => 'Заголовок сторінки:',
 );
