@@ -171,7 +171,7 @@ Změny zatím nebyly uloženy!",
 	'templatesandbox-revision-not-exists' => 'Zadaná revize neexistuje.',
 	'templatesandbox-invalid-prefix' => 'Zadaný prefix pískoviště je neplatný.',
 	'templatesandbox-prefix-not-local' => 'Zadaný prefix pískoviště není místní.',
-	'templatesandbox-page-or-revid' => 'Vyžadována stránka nebo číslo revize.', # Fuzzy
+	'templatesandbox-page-or-revid' => 'Musíte zadat název stránky nebo číslo revize.',
 	'templatesandbox-editform-need-title' => 'Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název stránky.',
 	'templatesandbox-editform-invalid-title' => 'Zadaný název stránky pro náhled je neplatný.',
 	'templatesandbox-editform-title-not-exists' => 'Zadaný název stránky pro náhled neexistuje.',
@@ -362,6 +362,7 @@ Aínda non gardou os seus cambios!",
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author פוילישער
  * @author קיפודנחש
  */
 $messages['he'] = array(
@@ -381,7 +382,7 @@ $messages['he'] = array(
 	'templatesandbox-preview' => 'תצוגה מקדימה של $2',
 	'templatesandbox-previewnote' => "'''זוהי רק תצוגה מקדימה של [[:$1]].'''
 השינויים שלך טרם נשמרו!",
-	'templatesandbox-invalid-title' => 'הכותבת שציינת אינה תקינה.',
+	'templatesandbox-invalid-title' => 'הכותרת שציינת אינה תקינה.',
 	'templatesandbox-title-not-exists' => 'הכותרת שציינת אינה קיימת.',
 	'templatesandbox-revision-not-exists' => 'הגרסה שציינת אינה קיימת.',
 	'templatesandbox-invalid-prefix' => 'תחילית ארגז החול שציינת אינה קיימת.',
@@ -390,6 +391,37 @@ $messages['he'] = array(
 	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
 	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
 	'templatesandbox-editform-title-not-exists' => 'הכותרת שציינת לתצוגה מקדימה אינה קיימת.',
+);
+
+/** Croatian (hrvatski)
+ * @author SpeedyGonsales
+ */
+$messages['hr'] = array(
+	'templatesandbox' => 'Testiranje predložaka',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Prikazuje stranicu]] s testnim predloškom',
+	'templatesandbox-suffix' => 'stranica za testiranje',
+	'templatesandbox-legend' => 'Stranica za testiranje predložaka',
+	'templatesandbox-prefix-label' => 'Prefiks:',
+	'templatesandbox-page-label' => 'Testna stranica:',
+	'templatesandbox-revid-label' => 'Uređivanje:',
+	'templatesandbox-text-label' => 'Prikaži wikitekst:',
+	'templatesandbox-submit' => 'Vidi',
+	'templatesandbox-title-output' => 'Stranica za testiranje predložaka: $1',
+	'templatesandbox-editform-legend' => 'Vidi stranicu s ovim predloškom',
+	'templatesandbox-editform-page-label' => 'Ime stranice:',
+	'templatesandbox-editform-view-label' => 'Prikaži kako će izgledati',
+	'templatesandbox-preview' => 'Pregled predloška $2',
+	'templatesandbox-previewnote' => "'''Ne zaboravite da je ovo samo pregled predloška [[:$1]].'''
+Vaše uređivanje još nije snimljeno!",
+	'templatesandbox-invalid-title' => 'Naslov koji ste naveli nije valjan.',
+	'templatesandbox-title-not-exists' => 'Naslov koji ste naveli ne postoji.',
+	'templatesandbox-revision-not-exists' => 'Uređivanje koje ste naveli ne postoji.',
+	'templatesandbox-invalid-prefix' => 'Prefiks testne stranice nije valjan.',
+	'templatesandbox-prefix-not-local' => 'Prefiks testne stranice koji ste naveli ne nalazi se ovdje.',
+	'templatesandbox-page-or-revid' => 'Navedite ime stranice odnosno članka ili ID broj uređivanja.',
+	'templatesandbox-editform-need-title' => 'Kako bi vidjeli neku drugu stranicu s ovim predloškom, navedite ime stranice.',
+	'templatesandbox-editform-invalid-title' => 'Specificirano ime nije valjano.',
+	'templatesandbox-editform-title-not-exists' => 'Stranica koju ste naveli ne postoji.',
 );
 
 /** Hungarian (magyar)
@@ -631,14 +663,19 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 );
 
 /** Polish (polski)
+ * @author Odie2
  * @author WTM
  */
 $messages['pl'] = array(
+	'templatesandbox' => 'Szablon piaskownicy',
+	'templatesandbox-legend' => 'Szablon piaskownicy: $1', # Fuzzy
+	'templatesandbox-title-output' => 'Szablon piaskownicy: $1',
 	'templatesandbox-editform-page-label' => 'Tytuł strony:',
 	'templatesandbox-editform-view-label' => 'Pokaż podgląd',
 	'templatesandbox-preview' => 'Podgląd strony $2',
 	'templatesandbox-previewnote' => "'''To jest tylko podgląd strony [[:$1]].'''
 Zmiany nie zostały jeszcze zapisane!",
+	'templatesandbox-page-or-revid' => 'Musisz wpisać tytuł strony lub ID-numer wersji.',
 );
 
 /** Pashto (پښتو)
@@ -709,13 +746,34 @@ $messages['ru'] = array(
  * @author Base
  * @author DixonD
  * @author Wizardist
+ * @author Ата
  */
 $messages['uk'] = array(
 	'templatesandbox' => 'Пісочниця шаблона',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з грамайданчика',
 	'templatesandbox-suffix' => 'пісочниця',
+	'templatesandbox-legend' => 'Пісочниця шаблона',
 	'templatesandbox-prefix-label' => 'Префікс пісочниці:',
+	'templatesandbox-page-label' => 'Відобразити сторінку:',
+	'templatesandbox-revid-label' => 'Відобразити версію:',
+	'templatesandbox-text-label' => 'Відобразити вікітекст:',
 	'templatesandbox-submit' => 'Перегляд',
+	'templatesandbox-title-output' => 'Пісочниця шаблона: $1',
+	'templatesandbox-editform-legend' => 'Попередній перегляд сторінки з цим шаблоном',
 	'templatesandbox-editform-page-label' => 'Заголовок сторінки:',
+	'templatesandbox-editform-view-label' => 'Попередній перегляд',
+	'templatesandbox-preview' => 'Попередній перегляд $2',
+	'templatesandbox-previewnote' => "'''Це лише попередній перегляд [[:$1]].'''
+Ваші зміни ще не збережено!",
+	'templatesandbox-invalid-title' => 'Вказана назва неприпустима.',
+	'templatesandbox-title-not-exists' => 'Вказана назва не існує.',
+	'templatesandbox-revision-not-exists' => 'Вказаної версії не існує.',
+	'templatesandbox-invalid-prefix' => 'Вказаний префікс пісочниці некоректний.',
+	'templatesandbox-prefix-not-local' => 'Вказаний префікс пісочниці не є локальним.',
+	'templatesandbox-page-or-revid' => 'Ви повинні ввести назву сторінки або ID-номер версії.',
+	'templatesandbox-editform-need-title' => 'Потрібно вказати заголовок сторінки для перегляду іншої сторінки з цим шаблоном.',
+	'templatesandbox-editform-invalid-title' => 'Вказаний заголовок для попереднього перегляду некоректний.',
+	'templatesandbox-editform-title-not-exists' => 'Вказаний заголовок для попереднього перегляду не існує.',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -747,6 +805,37 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem thử trang khác dùng bản mẫu này.',
 	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem thử không hợp lệ.',
 	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'templatesandbox' => 'מוסטער זאמדקאסטן',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|ווייזט א בלאט]] אריבערשליסנדיק מוסטערן פון א זאמדקאסטן',
+	'templatesandbox-suffix' => 'זאמדקאסטן',
+	'templatesandbox-legend' => 'מוסטער זאמדקאסטן',
+	'templatesandbox-prefix-label' => 'זאמדקאסטן פרעפיקס:',
+	'templatesandbox-page-label' => 'ווייזן בלאט:',
+	'templatesandbox-revid-label' => 'ווײַזן רעוויזיע:',
+	'templatesandbox-text-label' => 'ווײַזן וויקיטעקסט:',
+	'templatesandbox-submit' => 'ווייזן',
+	'templatesandbox-title-output' => 'מוסטער זאמדקאסטן: $1',
+	'templatesandbox-editform-legend' => 'פארויסשטעלן בלאט מיט דעם מוסטער',
+	'templatesandbox-editform-page-label' => 'בלאט קעפל:',
+	'templatesandbox-editform-view-label' => 'ווייזן פארויסשטעלונג',
+	'templatesandbox-preview' => 'פארויסשטעלונג פון $2',
+	'templatesandbox-previewnote' => "'''געדענקט אז דאס איז נאָר אין אַ פֿאָרויסשטעלונג פון [[:$1]].'''
+אייערע ענדערונגען זענען נאָך נישט געהיט!",
+	'templatesandbox-invalid-title' => 'דאס קעפל איר האט ספעציפירט איז אומגילטיק.',
+	'templatesandbox-title-not-exists' => 'דאס קעפל וואס איר האט ספעציפֿירט עקזיסטירט נישט.',
+	'templatesandbox-revision-not-exists' => 'די רעוויזיע וואס איר האט ספעציפֿירט עקזיסטירט נישט.',
+	'templatesandbox-invalid-prefix' => 'דער זאמדקאסטן פרעפיקס איר האט ספעציפירט איז אומגילטיק.',
+	'templatesandbox-prefix-not-local' => 'דער זאמדקאסטן פרעפיקס איר האט ספעציפירט איז נישט לאקאל.',
+	'templatesandbox-page-or-revid' => 'איר דארפט אריינגעבן אדער א בלאט קעפל אדער א רעוויזיע אידענטיפיצירן נומער.',
+	'templatesandbox-editform-need-title' => 'כדי פארויסשטעלן אן אנדער בלאט מיט דעם מוסטער, דארפט איר ספעציפירן א בלאט קעפל.',
+	'templatesandbox-editform-invalid-title' => 'דאס קעפל וואס איר האט ספעציפירט פארויסצושטעלן איז אומגילטיק.',
+	'templatesandbox-editform-title-not-exists' => 'דאס קעפל וואס איר האט ספעציפירט פארויסצושטעלן עקזיסטירט נישט.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
