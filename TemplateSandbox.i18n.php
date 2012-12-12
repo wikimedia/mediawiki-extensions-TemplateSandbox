@@ -646,6 +646,7 @@ $messages['nl'] = array(
 	'templatesandbox-text-label' => 'Te renderen wikitekst:',
 	'templatesandbox-submit' => 'Bekijken',
 	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
+	'templatesandbox-editform-legend' => 'Voorvertoning weergeven met deze sjabloon',
 	'templatesandbox-editform-page-label' => 'Paginanaam:',
 	'templatesandbox-editform-view-label' => 'Voorvertoning weergeven',
 	'templatesandbox-preview' => 'Voorvertoning van $2',
@@ -667,15 +668,23 @@ Uw wijzigingen zijn nog niet opgeslagen!",
  * @author WTM
  */
 $messages['pl'] = array(
-	'templatesandbox' => 'Szablon piaskownicy',
-	'templatesandbox-legend' => 'Szablon piaskownicy: $1', # Fuzzy
-	'templatesandbox-title-output' => 'Szablon piaskownicy: $1',
+	'templatesandbox' => 'Szablonowy brudnopis',
+	'templatesandbox-suffix' => 'brudnopis',
+	'templatesandbox-legend' => 'Szablonowy brudnopis',
+	'templatesandbox-prefix-label' => 'Prefiks do brudnopisu:',
+	'templatesandbox-submit' => 'Podgląd',
+	'templatesandbox-title-output' => 'Szablonowy brudnopis: $1',
+	'templatesandbox-editform-legend' => 'Podgląd strony z tym szablonem',
 	'templatesandbox-editform-page-label' => 'Tytuł strony:',
 	'templatesandbox-editform-view-label' => 'Pokaż podgląd',
 	'templatesandbox-preview' => 'Podgląd strony $2',
 	'templatesandbox-previewnote' => "'''To jest tylko podgląd strony [[:$1]].'''
 Zmiany nie zostały jeszcze zapisane!",
-	'templatesandbox-page-or-revid' => 'Musisz wpisać tytuł strony lub ID-numer wersji.',
+	'templatesandbox-invalid-title' => 'Wprowadzony tytuł jest nieprawidłowy.',
+	'templatesandbox-title-not-exists' => 'Podany tytuł nie istnieje.',
+	'templatesandbox-revision-not-exists' => 'Wybrana wersja nie istnieje.',
+	'templatesandbox-invalid-prefix' => 'Podany prefiks do brudnopisu nie istnieje.',
+	'templatesandbox-page-or-revid' => 'Musisz wpisać nazwę strony albo numer ID wersji.',
 );
 
 /** Pashto (پښتو)
@@ -735,11 +744,15 @@ Modificările dumneavoastră nu au fost încă salvate!",
 );
 
 /** Russian (русский)
+ * @author Anonim.one
  * @author Eleferen
  * @author Olli
  */
 $messages['ru'] = array(
 	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-editform-legend' => 'Предварительный просмотр страницы с этим шаблоном',
+	'templatesandbox-editform-page-label' => 'Название страницы:',
+	'templatesandbox-editform-view-label' => 'Предварительный просмотр',
 );
 
 /** Ukrainian (українська)
@@ -750,7 +763,7 @@ $messages['ru'] = array(
  */
 $messages['uk'] = array(
 	'templatesandbox' => 'Пісочниця шаблона',
-	'templatesandbox-desc' => '[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з грамайданчика',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з пісочниці',
 	'templatesandbox-suffix' => 'пісочниця',
 	'templatesandbox-legend' => 'Пісочниця шаблона',
 	'templatesandbox-prefix-label' => 'Префікс пісочниці:',
