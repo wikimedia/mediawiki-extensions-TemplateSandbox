@@ -664,6 +664,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 );
 
 /** Polish (polski)
+ * @author Matma Rex
  * @author Odie2
  * @author WTM
  */
@@ -672,6 +673,9 @@ $messages['pl'] = array(
 	'templatesandbox-suffix' => 'brudnopis',
 	'templatesandbox-legend' => 'Szablonowy brudnopis',
 	'templatesandbox-prefix-label' => 'Prefiks do brudnopisu:',
+	'templatesandbox-page-label' => 'Przetestuj stronę:',
+	'templatesandbox-revid-label' => 'Przetestuj wersję:',
+	'templatesandbox-text-label' => 'Przetestuj wikitekst:',
 	'templatesandbox-submit' => 'Podgląd',
 	'templatesandbox-title-output' => 'Szablonowy brudnopis: $1',
 	'templatesandbox-editform-legend' => 'Podgląd strony z tym szablonem',
@@ -753,6 +757,15 @@ $messages['ru'] = array(
 	'templatesandbox-editform-legend' => 'Предварительный просмотр страницы с этим шаблоном',
 	'templatesandbox-editform-page-label' => 'Название страницы:',
 	'templatesandbox-editform-view-label' => 'Предварительный просмотр',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'templatesandbox-editform-page-label' => 'పేజీ శీర్షిక:',
+	'templatesandbox-editform-view-label' => 'మునుజూపును చూపించు',
+	'templatesandbox-preview' => '$2 యొక్క మునుజూపు',
 );
 
 /** Ukrainian (українська)
