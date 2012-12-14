@@ -4,9 +4,19 @@ class SpecialTemplateSandbox extends SpecialPage {
 	private $oldTemplateCallback = null;
 
 	/**
+	 * @var null|Title
+	 */
+	private $title = null;
+
+	/**
 	 * @var null|ParserOutput
 	 */
 	private $output = null;
+
+	/**
+	 * @var null|array
+	 */
+	private $redirectChain = null;
 
 	function __construct() {
 		parent::__construct( 'TemplateSandbox' );
@@ -72,7 +82,13 @@ class SpecialTemplateSandbox extends SpecialPage {
 		if ( $this->output !== null ) {
 			$output = $this->getOutput();
 
-			$output->addParserOutput( $this->output );
+			if ( $this->redirectChain ) {
+				$article = Article::newFromTitle( $this->title, $this->getContext() );
+				$output->addHTML( $article->viewRedirect( $this->redirectChain ) );
+				$output->addParserOutputNoText( $this->output );
+			} else {
+				$output->addParserOutput( $this->output );
+			}
 			$titleText = $this->output->getTitleText();
 			if ( strval( $titleText ) !== '' ) {
 				$output->setPageTitle( $this->msg( 'templatesandbox-title-output', $titleText ) );
@@ -167,7 +183,9 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
 		$this->oldTemplateCallback = $popts->setTemplateCallback( array( $this, 'templateCallback' ) );
+		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
+		$this->redirectChain = $content->getRedirectChain();
 
 		wfProfileOut( __METHOD__ );
 
