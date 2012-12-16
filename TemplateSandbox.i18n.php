@@ -663,6 +663,18 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
 );
 
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
+ * @author Njardarlogar
+ */
+$messages['nn'] = array(
+	'templatesandbox-editform-legend' => 'Førehandsvis ei side med denne malen',
+	'templatesandbox-editform-page-label' => 'Sidetittel:',
+	'templatesandbox-editform-view-label' => 'Førehandsvis',
+	'templatesandbox-preview' => 'Førehandsvising av $2',
+	'templatesandbox-previewnote' => "'''Hugsa at dette berre er ei førehandsvising av [[:$1]].'''
+Endringane dine er ikkje lagra enno!",
+);
+
 /** Polish (polski)
  * @author Matma Rex
  * @author Odie2
@@ -688,6 +700,7 @@ Zmiany nie zostały jeszcze zapisane!",
 	'templatesandbox-title-not-exists' => 'Podany tytuł nie istnieje.',
 	'templatesandbox-revision-not-exists' => 'Wybrana wersja nie istnieje.',
 	'templatesandbox-invalid-prefix' => 'Podany prefiks do brudnopisu nie istnieje.',
+	'templatesandbox-prefix-not-local' => 'Podany prefiks do brudnopisu nie jest lokalny.',
 	'templatesandbox-page-or-revid' => 'Musisz wpisać nazwę strony albo numer ID wersji.',
 );
 
