@@ -63,7 +63,9 @@ $messages['qqq'] = array(
 	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form.',
 	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.',
 	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.',
-	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. $1 is the page being previewed. $2 is the title set by the DISPLAYTITLE magic word.',
+	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. Parameters:
+* $1 - the page being previewed
+* $2 - the title set by the DISPLAYTITLE magic word',
 	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
 	'templatesandbox-invalid-title' => 'Error message displayed when the title specified in the special page is invalid.',
 	'templatesandbox-title-not-exists' => 'Error message displayed when the title specified in the special page does not exist.',
@@ -536,6 +538,22 @@ $messages['ja'] = array(
 	'templatesandbox-editform-need-title' => 'このテンプレートで別のページのプレビューを表示するには、そのページ名を指定してください。',
 	'templatesandbox-editform-invalid-title' => 'プレビューに指定したページ名は無効です。',
 	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'templatesandbox' => 'თარგის ქვიშის დაფა',
+	'templatesandbox-suffix' => 'ქვიშის დაფა',
+	'templatesandbox-legend' => 'თარგის ქვიშის დაფა',
+	'templatesandbox-prefix-label' => 'ქვიშის დაფის პრეფიქსი:',
+	'templatesandbox-submit' => 'ხილვა',
+	'templatesandbox-title-output' => 'თარგის ქვიშის დაფა: $1',
+	'templatesandbox-editform-legend' => 'გვერდის წინასწარი გადახედვა ამ თარგით',
+	'templatesandbox-editform-page-label' => 'გვერდის სათაური:',
+	'templatesandbox-editform-view-label' => 'წინასწარი გადახედვა',
+	'templatesandbox-preview' => '$2-ის წინასწარი გადახედვა',
 );
 
 /** Korean (한국어)
