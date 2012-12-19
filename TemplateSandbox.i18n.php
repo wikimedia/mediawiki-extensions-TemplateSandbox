@@ -743,18 +743,33 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Helder.wiki
  * @author Lijealso
  */
 $messages['pt'] = array(
+	'templatesandbox' => 'Teste de predefinições',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza uma página]] transcluindo as predefinições a partir de uma página de testes',
+	'templatesandbox-suffix' => 'Testes',
+	'templatesandbox-legend' => 'Página para testar predefinições',
+	'templatesandbox-prefix-label' => 'Prefixo da página de testes:',
+	'templatesandbox-page-label' => 'Renderizar a página:',
+	'templatesandbox-revid-label' => 'Renderizar a revisão:',
+	'templatesandbox-text-label' => 'Renderizar o código wiki:',
 	'templatesandbox-submit' => 'Ver',
+	'templatesandbox-title-output' => 'Página para testar predefinições: $1',
+	'templatesandbox-editform-legend' => 'Pré-visualizar a página com esta predefinição',
 	'templatesandbox-editform-page-label' => 'Título da página:',
 	'templatesandbox-editform-view-label' => 'Pré-Visualizar',
+	'templatesandbox-preview' => 'Pré-visualização de $2',
 	'templatesandbox-previewnote' => "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''
 As modificações ainda não foram gravadas!",
 	'templatesandbox-invalid-title' => 'O título especificado é inválido.',
 	'templatesandbox-title-not-exists' => 'O título que especificou não existe.',
 	'templatesandbox-revision-not-exists' => 'A revisão que especificou não existe.',
+	'templatesandbox-invalid-prefix' => 'O prefixo que especificou para a página de testes é inválido',
+	'templatesandbox-prefix-not-local' => 'O prefixo que especificou para a página de testes não é local.',
 	'templatesandbox-page-or-revid' => 'Você deve digitar um título de página ou de um número de ID de revisão.',
+	'templatesandbox-editform-need-title' => 'Para pré-visualizar outra página com esta predefinição, é preciso especificar um título.',
 	'templatesandbox-editform-invalid-title' => 'O título que você especificou para pré-visualização é inválido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que você especificou para pré-visualizar não existe.',
 );
