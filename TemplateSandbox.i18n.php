@@ -368,7 +368,7 @@ Aínda non gardou os seus cambios!",
 	'templatesandbox-revision-not-exists' => 'A revisión que especificou non existe.',
 	'templatesandbox-invalid-prefix' => 'O prefixo da zona de probas que especificou non é válido.',
 	'templatesandbox-prefix-not-local' => 'O prefixo da zona de probas que especificou non é local.',
-	'templatesandbox-page-or-revid' => 'Cómpre indicar a páxina ou ben o identificador de revisión.',
+	'templatesandbox-page-or-revid' => 'Cómpre indicar un título de páxina ou ben un número de identificación de revisión.',
 	'templatesandbox-editform-need-title' => 'Para ollar a vista previa doutra páxina con este modelo, cómpre especificar un título de páxina.',
 	'templatesandbox-editform-invalid-title' => 'O título que especificou para a vista previa non é válido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que especificou para a vista previa non existe.',
@@ -808,13 +808,16 @@ Modificările dumneavoastră nu au fost încă salvate!",
 /** Russian (русский)
  * @author Anonim.one
  * @author Eleferen
+ * @author NBS
  * @author Olli
  */
 $messages['ru'] = array(
 	'templatesandbox' => 'TemplateSandbox',
-	'templatesandbox-editform-legend' => 'Предварительный просмотр страницы с этим шаблоном',
+	'templatesandbox-editform-legend' => 'Предварительный просмотр страницы с использованием этого шаблона',
 	'templatesandbox-editform-page-label' => 'Название страницы:',
 	'templatesandbox-editform-view-label' => 'Предварительный просмотр',
+	'templatesandbox-previewnote' => "'''Помните, что это только предварительный просмотр страницы [[:$1]].''' Ваши изменения в шаблоне ещё не были сохранены!",
+	'templatesandbox-editform-need-title' => 'Чтобы просмотреть другую страницу с использованием этого шаблона, название страницы должно быть указано.',
 );
 
 /** Telugu (తెలుగు)

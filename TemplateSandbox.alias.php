@@ -52,3 +52,8 @@ $specialPageAliases['pa'] = array(
 $specialPageAliases['uk'] = array(
 	'TemplateSandbox' => array( 'Пісочниця_шаблону' ),
 );
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'TemplateSandbox' => array( 'Chỗ_thử_bản_mẫu' ),
+);
