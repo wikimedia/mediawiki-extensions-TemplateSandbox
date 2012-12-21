@@ -25,8 +25,10 @@ $messages['en'] = array(
 	'templatesandbox-title-output' => 'Template sandbox: $1',
 
 	'templatesandbox-editform-legend' => 'Preview page with this template',
+	'templatesandbox-editform-text' => '',
 	'templatesandbox-editform-page-label' => 'Page title:',
 	'templatesandbox-editform-view-label' => 'Show preview',
+	'templatesandbox-editform-helptext' => '',
 	'templatesandbox-preview' => "Preview of $2",
 	'templatesandbox-previewnote' => "'''Remember that this is only a preview of [[:$1]].'''
 Your changes have not yet been saved!",
@@ -61,8 +63,10 @@ $messages['qqq'] = array(
 	'templatesandbox-submit' => 'Label for the submit button on the special page.',
 	'templatesandbox-title-output' => 'Message used when displaying the parsed page title. $1 is the parsed page title.',
 	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form.',
+	'templatesandbox-editform-text' => 'Text displayed in the form on the editpage.',
 	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.',
 	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.',
+	'templatesandbox-editform-helptext' => 'Text displayed after the submit button on the editpage form.',
 	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. Parameters:
 * $1 - the page being previewed
 * $2 - the title set by the DISPLAYTITLE magic word',

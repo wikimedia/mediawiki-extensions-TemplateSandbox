@@ -222,14 +222,21 @@ class TemplateSandboxHooks {
 			'spellcheck' => 'true',
 		);
 
-		$labelText = wfMessage( 'templatesandbox-editform-page-label' )->parse();
-		if ( $labelText ) {
+		$text = wfMessage( 'templatesandbox-editform-text' );
+		if ( !$text->isDisabled() ) {
+			$textAttrs = array(
+				'class' => 'mw-templatesandbox-editform-text',
+			);
+			$html .= Xml::tags( 'div', $textAttrs, $text->parse() ) . "\n";
+		}
+
+		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
+		if ( !$labelText->isDisabled() ) {
 			$spanLabelAttrs = array(
 				'class' => 'mw-templatesandbox-page',
 				'id' => "wpTemplateSandboxPageLabel"
 			);
-
-			$label = Xml::tags( 'label', array( 'for' => $inputAttrs['id'] ), $labelText );
+			$label = Xml::tags( 'label', array( 'for' => $inputAttrs['id'] ), $labelText->parse() );
 			$label = Xml::tags( 'span', $spanLabelAttrs, $label );
 			$html .= $label . " ";
 		}
@@ -247,9 +254,18 @@ class TemplateSandboxHooks {
 		);
 		$html .= Xml::element( 'input', $attrs, '' );
 
+		$helptext = wfMessage( 'templatesandbox-editform-helptext' );
+		if ( !$helptext->isDisabled() ) {
+			$helptextAttrs = array(
+				'class' => 'mw-templatesandbox-editform-helptext',
+			);
+			$html .= ' ' . Xml::tags( 'span', $helptextAttrs, $helptext->parse() );
+		}
+
 		// Make fieldset
 		$fieldSet = Xml::openElement( 'fieldset', array( 'id' => 'templatesandbox-editform' ) );
-		$fieldSet .= Html::rawElement( 'legend', null, wfMessage( 'templatesandbox-editform-legend' )->parse() );
+		$fieldSet .= Html::rawElement( 'legend', null,
+			wfMessage( 'templatesandbox-editform-legend' )->parse() );
 		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
 
 		$output->addHtml( $fieldSet . "\n" );
