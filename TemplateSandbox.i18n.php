@@ -199,6 +199,7 @@ $messages['de'] = array(
 	'templatesandbox-desc' => 'Ergänzt eine Spielwiese zum [[Special:TemplateSandbox|Rendern von Seiten]], die Vorlagen enthalten',
 	'templatesandbox-suffix' => 'Spielwiese',
 	'templatesandbox-legend' => 'Vorlagenspielwiese',
+	'templatesandbox-text' => 'Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest. Wenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als „{{ns:User}}:Foo/Spielwiese/{{ns:Template}}:Test“ gespeichert hast, benutze als Präfix „{{ns:User}}:Foo/Spielwiese“.',
 	'templatesandbox-prefix-label' => 'Spielwiesenpräfix:',
 	'templatesandbox-page-label' => 'Seite rendern:',
 	'templatesandbox-revid-label' => 'Version rendern:',
@@ -517,6 +518,7 @@ $messages['ja'] = array(
 	'templatesandbox-desc' => 'テンプレートを参照読み込みして[[Special:TemplateSandbox|ページをレンダリング]]できるサンドボックス',
 	'templatesandbox-suffix' => 'サンドボックス',
 	'templatesandbox-legend' => 'テンプレートのサンドボックス',
+	'templatesandbox-text' => 'テンプレートを自分の利用者サンドボックスに sandbox 接頭辞付きで保存している場合は、それらを指定できます。例えば、{{ns:Template}}:Test を「{{ns:User}}:Hoge/sandbox/{{ns:Template}}:Test」として保存していてそれをプレビューする場合は、接頭辞として「{{ns:User}}:Hoge/sandbox」を使用してください。',
 	'templatesandbox-prefix-label' => 'サンドボックスの接頭辞:',
 	'templatesandbox-page-label' => '使用するページ:',
 	'templatesandbox-revid-label' => '使用する版:',
@@ -670,6 +672,7 @@ $messages['nl'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Rendert een pagina]] door sjablonen uit een testomgeving te transcluderen',
 	'templatesandbox-suffix' => 'zandbak',
 	'templatesandbox-legend' => 'Sjabloonzandbak',
+	'templatesandbox-text' => 'U kunt een verzameling sjablonen kiezen om in uw zandbakruimte op te slaan door het bijbehorende zandbakvoorvoegsel te gebruiken. Als u bijvoorbeeld een voorvertoning wilt zien van {{ns:Template}}:Test dat u hebt opgeslagen als "{{ns:User}}:Gebruikersnaam/zandbak/{{ns:Template}}:Test", gebruik dan "{{ns:User}}:Gebruikersnaam/zandbak" als het voorvoegsel.',
 	'templatesandbox-prefix-label' => 'Zandbakvoorvoegsel:',
 	'templatesandbox-page-label' => 'Te renderen pagina:',
 	'templatesandbox-revid-label' => 'Te renderen versie:',
@@ -701,7 +704,7 @@ $messages['nn'] = array(
 	'templatesandbox-editform-page-label' => 'Sidetittel:',
 	'templatesandbox-editform-view-label' => 'Førehandsvis',
 	'templatesandbox-preview' => 'Førehandsvising av $2',
-	'templatesandbox-previewnote' => "'''Hugsa at dette berre er ei førehandsvising av [[:$1]].'''
+	'templatesandbox-previewnote' => "'''Hugs at dette berre er ei førehandsvising av [[:$1]].'''
 Endringane dine er ikkje lagra enno!",
 );
 
