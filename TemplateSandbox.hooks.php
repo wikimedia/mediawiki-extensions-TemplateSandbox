@@ -247,11 +247,12 @@ class TemplateSandboxHooks {
 		);
 		$html .= Xml::element( 'input', $attrs, '' );
 
-		$html = Xml::fieldset(
-			wfMessage( 'templatesandbox-editform-legend' )->text(),
-			$html, array( 'id' => 'templatesandbox-editform' )
-		);
-		$output->addHtml( $html . "\n" );
+		// Make fieldset
+		$fieldSet = Xml::openElement( 'fieldset', array( 'id' => 'templatesandbox-editform' ) );
+		$fieldSet .= Html::rawElement( 'legend', null, wfMessage( 'templatesandbox-editform-legend' )->parse() );
+		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
+
+		$output->addHtml( $fieldSet . "\n" );
 		$output->addModules( 'ext.TemplateSandbox' );
 
 		return true;
