@@ -271,10 +271,14 @@ $messages['es'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Mjbmr
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
+	'templatesandbox-submit' => 'مشاهده',
 	'templatesandbox-editform-page-label' => 'عنوان صفحه:',
+	'templatesandbox-editform-view-label' => 'نمایش پیش‌نمایش',
+	'templatesandbox-preview' => 'پیش‌نمایش $2',
 );
 
 /** Finnish (suomi)
@@ -315,12 +319,14 @@ Muutoksia ei ole tallennettu!",
  * @author Arkanosis
  * @author Crochet.david
  * @author Gomoko
+ * @author Npettiaux
  */
 $messages['fr'] = array(
 	'templatesandbox' => 'TemplateSandbox',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en utilisant les modèles présents dans un bac à sable',
 	'templatesandbox-suffix' => 'bac à sable',
 	'templatesandbox-legend' => 'Bac à sable de modèle',
+	'templatesandbox-text' => 'Vous pouvez choisir un ensemble de modèles enregistrés dans votre espace de bac à sable à l\'aide d\'un préfixe de sandbox approprié.  Par exemple, si vous souhaitez afficher un aperçu d\'une version de {{ns:Template}}: Test que vous avez enregistré sous « {{ns:User}}: Foo/sandbox / {{ns:Template}}: Test ", utilisez" {{ns:User}}: Foo/bac à sable "comme préfixe.',
 	'templatesandbox-prefix-label' => 'Préfixe de bac à sable :',
 	'templatesandbox-page-label' => 'Rendu de la page :',
 	'templatesandbox-revid-label' => 'Rendu de la révision :',
@@ -640,6 +646,7 @@ $messages['ms'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Mempersembahkan halaman]] yang mentransklusikan templat dari kotak pasir',
 	'templatesandbox-suffix' => 'kotak pasir',
 	'templatesandbox-legend' => 'Kotak pasir templat',
+	'templatesandbox-text' => 'Anda boleh memilih satu set templat yang tersimpan dalam ruang kotak pasir anda dengan menggunakan awalan kotak pasir yang bertepatan.  Misalnya, jika anda ingin mempralihatkan versi {{ns:Template}}:Test yang telah anda simpan sebagai "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", gunakan "{{ns:User}}:Foo/sandbox" sebagai awalan.',
 	'templatesandbox-prefix-label' => 'Awalan kotak pasir:',
 	'templatesandbox-page-label' => 'Halaman persembahan:',
 	'templatesandbox-revid-label' => 'Semakan persembahan:',
