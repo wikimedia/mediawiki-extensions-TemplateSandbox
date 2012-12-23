@@ -109,6 +109,13 @@ $messages['be-tarask'] = array(
 	'templatesandbox-editform-title-not-exists' => 'Пазначаная для прагляду старонка не існуе.',
 );
 
+/** Bulgarian (български)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['bg'] = array(
+	'templatesandbox-submit' => 'Изглед',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
@@ -493,6 +500,7 @@ $messages['it'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualizza una pagina]] includendovi le versioni dei template contenute in una sandbox',
 	'templatesandbox-suffix' => 'sandbox',
 	'templatesandbox-legend' => 'Template sandbox',
+	'templatesandbox-text' => 'Indicando un prefisso per la sandbox, puoi selezionare un gruppo di template salvati nel tuo spazio sandbox. Per esempio, se vuoi fare l\'anteprima di una versione di {{ns:Template}}:Test che hai salvato come "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", usa come prefisso "{{ns:User}}:Foo/sandbox".',
 	'templatesandbox-prefix-label' => 'Prefisso della sandbox:',
 	'templatesandbox-page-label' => 'Pagina da visualizzare:',
 	'templatesandbox-revid-label' => 'Versione da visualizzare:',
@@ -615,6 +623,7 @@ $messages['mk'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Испишува страница]] превметнувајќи шаблони од песочник',
 	'templatesandbox-suffix' => 'песочник',
 	'templatesandbox-legend' => 'Шаблонски песочник',
+	'templatesandbox-text' => 'Можете да изберете збир шаблони зачувани во вашиот песочник, користејќи се со соодветен префикс за песочник. На пример, ако сакате да пергледате верзија на {{ns:Template}}:Test што сте ја зачувале како „{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test“, користете „{{ns:User}}:Foo/sandbox“ како префикс.',
 	'templatesandbox-prefix-label' => 'Префикс на песочникот:',
 	'templatesandbox-page-label' => 'Страница за испис:',
 	'templatesandbox-revid-label' => 'Ревизија на исписот:',
@@ -761,6 +770,7 @@ $messages['pt'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza uma página]] transcluindo as predefinições a partir de uma página de testes',
 	'templatesandbox-suffix' => 'Testes',
 	'templatesandbox-legend' => 'Página para testar predefinições',
+	'templatesandbox-text' => 'Pode escolher um conjunto de predefinições salvas em sua página de testes pessoal fornecendo o prefixo apropriado da página de testes. Por exemplo, se desejar pré-visualizar uma versão de {{ns:Template}}:Teste que salvou sob o título "{{ns:User}}:Foo/Testes/{{ns:Template}}:Teste", utilize "{{ns:User}}:Foo/Testes" como prefixo.',
 	'templatesandbox-prefix-label' => 'Prefixo da página de testes:',
 	'templatesandbox-page-label' => 'Renderizar a página:',
 	'templatesandbox-revid-label' => 'Renderizar a revisão:',
@@ -828,6 +838,35 @@ $messages['ru'] = array(
 	'templatesandbox-editform-view-label' => 'Предварительный просмотр',
 	'templatesandbox-previewnote' => "'''Помните, что это только предварительный просмотр страницы [[:$1]].''' Ваши изменения в шаблоне ещё не были сохранены!",
 	'templatesandbox-editform-need-title' => 'Чтобы просмотреть другую страницу с использованием этого шаблона, название страницы должно быть указано.',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'templatesandbox-submit' => 'දසුන',
+);
+
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'templatesandbox' => 'Mallsandlåda',
+	'templatesandbox-suffix' => 'sandlåda',
+	'templatesandbox-legend' => 'Mallsandlåda',
+	'templatesandbox-submit' => 'Visa',
+	'templatesandbox-title-output' => 'Mallsandlåda: $1',
+	'templatesandbox-editform-legend' => 'Förhandsgranska sida med denna mall',
+	'templatesandbox-editform-page-label' => 'Sidtitel:',
+	'templatesandbox-editform-view-label' => 'Visa förhandsgranskning',
+	'templatesandbox-preview' => 'Förhandsvisning av $2',
+	'templatesandbox-previewnote' => "'''Kom ihåg att detta bara är en förhandsvisning av [[:$1]].'''
+Dina ändringar har ännu inte sparats!",
+	'templatesandbox-invalid-title' => 'Titeln du angav är ogiltig.',
+	'templatesandbox-title-not-exists' => 'Titeln du angav finns inte.',
+	'templatesandbox-revision-not-exists' => 'Versionen du angav finns inte.',
+	'templatesandbox-invalid-prefix' => 'Sandlådeprefixet du angav finns inte.',
+	'templatesandbox-prefix-not-local' => 'Sandlådeprefixet du angav är inte lokal.',
 );
 
 /** Telugu (తెలుగు)
