@@ -277,6 +277,38 @@ $messages['es'] = array(
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
 );
 
+/** Estonian (eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'templatesandbox' => 'Mallide liivakast',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Viimistleb lehekülje]], millel kasutatakse liivakastis olevaid malle.',
+	'templatesandbox-suffix' => 'liivakast',
+	'templatesandbox-legend' => 'Mallide liivakast',
+	'templatesandbox-text' => 'Saad sobiva liivakastieesliite abil valida komplekti oma liivakastiruumis salvestatud malle. Näiteks kui tahad näha malli {{ns:Template}}:Katse versiooni eelvaadet, mille oled salvestanud asukohta "{{ns:User}}:Foo/liivakast/{{ns:Template}}:Katse", kasuta eesliidet "{{ns:User}}:Foo/liivakast".',
+	'templatesandbox-prefix-label' => 'Liivakastieesliide:',
+	'templatesandbox-page-label' => 'Viimistluslehekülg:',
+	'templatesandbox-revid-label' => 'Viimistlusredaktsioon:',
+	'templatesandbox-text-label' => 'Viimistlusvikitekst:',
+	'templatesandbox-submit' => 'Vaata',
+	'templatesandbox-title-output' => 'Mallide liivakast: $1',
+	'templatesandbox-editform-legend' => 'Lehekülje eelvaatus selle malliga',
+	'templatesandbox-editform-page-label' => 'Lehekülje pealkiri:',
+	'templatesandbox-editform-view-label' => 'Näita eelvaadet',
+	'templatesandbox-preview' => 'Lehekülje $2 eelvaade',
+	'templatesandbox-previewnote' => "'''Pea meeles, et see on kõigest lehekülje [[:$1]] eelvaade.'''
+Sinu muudatusi pole veel salvestatud!",
+	'templatesandbox-invalid-title' => 'Määratud pealkiri on vigane.',
+	'templatesandbox-title-not-exists' => 'Määratud pealkirja pole.',
+	'templatesandbox-revision-not-exists' => 'Määratud redaktsiooni pole.',
+	'templatesandbox-invalid-prefix' => 'Määratud liivakastieesliide on vigane.',
+	'templatesandbox-prefix-not-local' => 'Määratud liivakastieesliide pole kohalik.',
+	'templatesandbox-page-or-revid' => 'Pead sisestama kas lehekülje pealkirja või redaktsiooni identifikaatori.',
+	'templatesandbox-editform-need-title' => 'Et näha teise lehekülje eelvaadet selle malliga, tuleb määrata lehekülje pealkiri.',
+	'templatesandbox-editform-invalid-title' => 'Eelvaatuse jaoks määratud pealkiri on vigane.',
+	'templatesandbox-editform-title-not-exists' => 'Eelvaatuse jaoks määratud pealkirja pole.',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  * @author ZxxZxxZ
