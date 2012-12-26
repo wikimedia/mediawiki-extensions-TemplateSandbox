@@ -167,6 +167,18 @@ Els vostres canvis encara no han estat desats!",
 	'templatesandbox-editform-title-not-exists' => 'El títol que heu especificat per a la previsualització no existeix.',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'templatesandbox-editform-legend' => 'پێشبینینی پەڕە لەگەڵ ئەم داڕێژەیە',
+	'templatesandbox-editform-page-label' => 'سەردێڕی پەڕە:',
+	'templatesandbox-editform-view-label' => 'پێشبینین نیشان بدە',
+	'templatesandbox-editform-need-title' => 'بۆ نیشاندانی پێشبینینی پەڕەیەکی تر لەگەڵ ئەم داڕێژەیە، سەردێڕی پەڕەیەک دەبێ دیاری بکرێت.',
+	'templatesandbox-editform-invalid-title' => 'ئەو سەردێڕەی بۆ پێشبینین دیاریت کردووە نادروستە.',
+	'templatesandbox-editform-title-not-exists' => 'ئەو سەردێڕەی بۆ پێشبینین دیاریت کردووە بوونی نییە.',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
@@ -635,6 +647,19 @@ $messages['ko'] = array(
 	'templatesandbox-editform-title-not-exists' => '미리 보기 위해 지정한 제목이 존재하지 않습니다.',
 );
 
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ * @author Calak
+ * @author Gomada
+ */
+$messages['ku-latn'] = array(
+	'templatesandbox-editform-legend' => 'Pêşdîtina rûpelê bi vê şablonê',
+	'templatesandbox-editform-page-label' => 'Sernavê rûpelê:',
+	'templatesandbox-editform-view-label' => 'Pêşdîtinê nîşan bide',
+	'templatesandbox-editform-need-title' => 'Ji bo pêşdîtina rûpeleke din a bi vê şablonê, divê sernavê rûpelê were destnîşankirin.',
+	'templatesandbox-editform-invalid-title' => 'Sernavê ku te ji bo pêşdîtinê nivîsandî nederbasdar e.',
+	'templatesandbox-editform-title-not-exists' => 'Sernavê ku te ji bo pêşdîtinê nivîsandî, nîne.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -861,22 +886,45 @@ Modificările dumneavoastră nu au fost încă salvate!",
  * @author Anonim.one
  * @author Eleferen
  * @author NBS
+ * @author Ole Yves
  * @author Olli
  */
 $messages['ru'] = array(
 	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Выполняет визуализацию страницы]], включая шаблоны из песочницы',
+	'templatesandbox-suffix' => 'песочница',
+	'templatesandbox-legend' => 'Песочница для шаблонов',
+	'templatesandbox-text' => 'Вы можете выбрать набор шаблонов, сохранённых в вашем личном пространстве, используя префикс соответствующей песочницы. Например, если вы хотите просмотреть версию {{ns:Template}}:Тест, которую вы сохранили в качестве «{{ns:User}}:Вася Пупкин/Песочница/{{ns:Template}}:Тест», используйте «{{ns:User}}:Вася Пупкин/Песочница» в качестве префикса.',
+	'templatesandbox-prefix-label' => 'Префикс песочницы:',
+	'templatesandbox-page-label' => 'Показать страницу:',
+	'templatesandbox-revid-label' => 'Версия показа:',
+	'templatesandbox-text-label' => 'Показ вики-текста:',
+	'templatesandbox-submit' => 'Просмотр',
+	'templatesandbox-title-output' => 'Песочница для шаблонов: $1',
 	'templatesandbox-editform-legend' => 'Предварительный просмотр страницы с использованием этого шаблона',
 	'templatesandbox-editform-page-label' => 'Название страницы:',
 	'templatesandbox-editform-view-label' => 'Предварительный просмотр',
+	'templatesandbox-preview' => 'Предварительный просмотр $2',
 	'templatesandbox-previewnote' => "'''Помните, что это только предварительный просмотр страницы [[:$1]].''' Ваши изменения в шаблоне ещё не были сохранены!",
+	'templatesandbox-invalid-title' => 'Указанное вами название недействительно.',
+	'templatesandbox-title-not-exists' => 'Заголовок, который вы указали, не существует.',
+	'templatesandbox-revision-not-exists' => 'Версия, которую вы указали, не существует.',
+	'templatesandbox-invalid-prefix' => 'Указан недействительный префикс песочницы.',
+	'templatesandbox-prefix-not-local' => 'Префикс песочницы, указанный вами, не является локальным.',
+	'templatesandbox-page-or-revid' => 'Вы должны ввести либо название страницы, либо номер версии.',
 	'templatesandbox-editform-need-title' => 'Чтобы просмотреть другую страницу с использованием этого шаблона, название страницы должно быть указано.',
+	'templatesandbox-editform-invalid-title' => 'Заголовок, указанный вами для предварительного просмотра, недействителен.',
+	'templatesandbox-editform-title-not-exists' => 'Заголовок, указанный вами для предварительного просмотра, не существует.',
 );
 
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'templatesandbox-suffix' => 'වැලිපිල්ල',
 	'templatesandbox-submit' => 'දසුන',
+	'templatesandbox-editform-page-label' => 'පිටුවේ මාතෘකාව:',
+	'templatesandbox-editform-view-label' => 'පෙරදසුන පෙන්වන්න',
 );
 
 /** Swedish (svenska)
@@ -899,6 +947,20 @@ Dina ändringar har ännu inte sparats!",
 	'templatesandbox-revision-not-exists' => 'Versionen du angav finns inte.',
 	'templatesandbox-invalid-prefix' => 'Sandlådeprefixet du angav finns inte.',
 	'templatesandbox-prefix-not-local' => 'Sandlådeprefixet du angav är inte lokal.',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'templatesandbox-suffix' => 'மணல்தொட்டி',
+	'templatesandbox-legend' => 'வார்ப்புரு மணல்தொட்டி',
+	'templatesandbox-prefix-label' => 'மணல்தொட்டி முன்னொட்டு:',
+	'templatesandbox-submit' => 'காண்',
+	'templatesandbox-title-output' => 'வார்ப்புரு மணல்தொட்டி :  $1',
+	'templatesandbox-editform-legend' => 'இந்த வார்ப்புருவுடன் பக்கத்தின் முன்தோற்றம் காட்டு',
+	'templatesandbox-editform-page-label' => 'பக்கத்தின் தலைப்பு:',
+	'templatesandbox-editform-view-label' => 'முன்தோற்றம் காட்டு',
 );
 
 /** Telugu (తెలుగు)
