@@ -409,6 +409,7 @@ $messages['gl'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza unha páxina]] coa transclusión dun ou varios modelos desde unha zona de probas',
 	'templatesandbox-suffix' => 'zona de probas',
 	'templatesandbox-legend' => 'Zona de probas para o modelo',
+	'templatesandbox-text' => 'Pode elixir un conxunto de modelos gardados na súa zona de probas utilizando o prefixo axeitado. Por exemplo, se quere ver unha vista previa dunha versión de "{{ns:Template}}:Proba" que gardou como "{{ns:User}}:Exemplo/zona de probas/{{ns:Template}}:Proba", empregue "{{ns:User}}:Exemplo/zona de probas" como prefixo.',
 	'templatesandbox-prefix-label' => 'Prefixo da zona de probas',
 	'templatesandbox-page-label' => 'Páxina de renderización:',
 	'templatesandbox-revid-label' => 'Revisión de renderización:',
@@ -736,6 +737,38 @@ Suntngan anda belum disimpan!",
 	'templatesandbox-editform-title-not-exists' => 'Halaman yang anda nyatakan untuk pralihat tidak wujud.',
 );
 
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ * @author Jeblad
+ */
+$messages['nb'] = array(
+	'templatesandbox' => 'Mal-sandkasse',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse',
+	'templatesandbox-suffix' => 'sandkasse',
+	'templatesandbox-legend' => 'Alternativ for mal-sandkasse',
+	'templatesandbox-text' => 'Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk "{{ns:User}}:Foo/sandbox" som prefiks.',
+	'templatesandbox-prefix-label' => 'Prefiks for sandkasse:',
+	'templatesandbox-page-label' => 'Tegn ut siden:',
+	'templatesandbox-revid-label' => 'Tegn ut revisjonen:',
+	'templatesandbox-text-label' => 'Tegn ut wikitekst:',
+	'templatesandbox-submit' => 'Vis',
+	'templatesandbox-title-output' => 'Mal-sandkasse: $1',
+	'templatesandbox-editform-legend' => 'Forhåndsvis siden med denne malen',
+	'templatesandbox-editform-page-label' => 'Sidetittel:',
+	'templatesandbox-editform-view-label' => 'Forhåndsvisning',
+	'templatesandbox-preview' => 'Forhåndsvisning av $2',
+	'templatesandbox-previewnote' => "'''Husk at dette er bare en forhåndsvisning av [[:$1]].'''
+Endringene er ikke lagret ennå!",
+	'templatesandbox-invalid-title' => 'Tittelen du oppga er ugyldig.',
+	'templatesandbox-title-not-exists' => 'Tittelen du oppga eksisterer ikke.',
+	'templatesandbox-revision-not-exists' => 'Versjonen du oppga eksisterer ikke.',
+	'templatesandbox-invalid-prefix' => 'Sandkasse-prefikset du oppga er ugyldig.',
+	'templatesandbox-prefix-not-local' => 'Sandboks-prefikset du oppga er ikke lokalt.',
+	'templatesandbox-page-or-revid' => 'Du må angi enten en sidetittel eller et revisjonsnummer.',
+	'templatesandbox-editform-need-title' => 'For å forhåndsvise en annen side med denne malen, må du angi en sidetittel.',
+	'templatesandbox-editform-invalid-title' => 'Tittelen du har angitt for forhåndsvisning er ugyldig.',
+	'templatesandbox-editform-title-not-exists' => 'Tittelen du har angitt for forhåndsvisning finnes ikke.',
+);
+
 /** Dutch (Nederlands)
  * @author Romaine
  * @author Siebrand
@@ -770,15 +803,36 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
+ * @author Jeblad
  * @author Njardarlogar
  */
 $messages['nn'] = array(
+	'templatesandbox' => 'Malsandkasse',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualiserer ei side]] som inkluderer malar frå ein sandkasse',
+	'templatesandbox-suffix' => 'sandkasse',
+	'templatesandbox-legend' => 'Alternativ for malsandkasse',
+	'templatesandbox-text' => 'Du kan velja eit sett med malar som er lagra i sandkassen din med hjelp av eit passande sandkasseførefeste. Om du til dømes vil førehandsvisa ein versjon av {{ns:Template}}:Test som du har lagra som «{{ns:User}}:Foo/sandkasse/{{ns:Template}}:Test», så bruk «{{ns:User}}:Foo/sandkasse» som førefeste.',
+	'templatesandbox-prefix-label' => 'Sandkasseførefeste:',
+	'templatesandbox-page-label' => 'Teikn ut side:',
+	'templatesandbox-revid-label' => 'Teikn ut versjon:',
+	'templatesandbox-text-label' => 'Teikn ut wikitekst:',
+	'templatesandbox-submit' => 'Vis',
+	'templatesandbox-title-output' => 'Malsandkasse: $1',
 	'templatesandbox-editform-legend' => 'Førehandsvis ei side med denne malen',
 	'templatesandbox-editform-page-label' => 'Sidetittel:',
 	'templatesandbox-editform-view-label' => 'Førehandsvis',
 	'templatesandbox-preview' => 'Førehandsvising av $2',
 	'templatesandbox-previewnote' => "'''Hugs at dette berre er ei førehandsvising av [[:$1]].'''
 Endringane dine er ikkje lagra enno!",
+	'templatesandbox-invalid-title' => 'Tittelen du oppgav er ugild.',
+	'templatesandbox-title-not-exists' => 'Tittelen du oppgav finst ikkje.',
+	'templatesandbox-revision-not-exists' => 'Versjonen du oppgav finst ikkje.',
+	'templatesandbox-invalid-prefix' => 'Sandkasseførefestet du oppgav er ugildt.',
+	'templatesandbox-prefix-not-local' => 'Sandkasseførefestet du oppgav er ikkje lokalt.',
+	'templatesandbox-page-or-revid' => 'Du må oppgje anten ein tittel for ei side eller eit versjonsnummer.',
+	'templatesandbox-editform-need-title' => 'For å førhandsvise ei anna side med denne malen, må du oppgje ein tittel.',
+	'templatesandbox-editform-invalid-title' => 'Tittelen du oppgav for førehandsvising er ugild.',
+	'templatesandbox-editform-title-not-exists' => 'Tittelen du oppgav for førehandsvising finst ikkje.',
 );
 
 /** Polish (polski)
@@ -921,10 +975,18 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'templatesandbox' => 'සැකිලි වැලිපිල්ල',
 	'templatesandbox-suffix' => 'වැලිපිල්ල',
+	'templatesandbox-legend' => 'සැකිලි වැලිපිල්ල',
+	'templatesandbox-page-label' => 'විදහාපෑම් පිටුව:',
+	'templatesandbox-revid-label' => 'විදහාපෑම් නිරීක්ෂණය:',
+	'templatesandbox-text-label' => 'විදහාපෑම් විකිපාඨය:',
 	'templatesandbox-submit' => 'දසුන',
+	'templatesandbox-title-output' => 'සැකිලි වැලිපිල්ල: $1',
+	'templatesandbox-editform-legend' => 'මෙම සැකිල්ල සමඟ පිටුව පෙරදසුන්ගත කරන්න',
 	'templatesandbox-editform-page-label' => 'පිටුවේ මාතෘකාව:',
 	'templatesandbox-editform-view-label' => 'පෙරදසුන පෙන්වන්න',
+	'templatesandbox-preview' => '$2 හී පෙරදසුන',
 );
 
 /** Swedish (svenska)

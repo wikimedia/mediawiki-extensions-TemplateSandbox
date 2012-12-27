@@ -57,3 +57,8 @@ $specialPageAliases['uk'] = array(
 $specialPageAliases['vi'] = array(
 	'TemplateSandbox' => array( 'Chỗ_thử_bản_mẫu' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'TemplateSandbox' => array( '模版沙盒' ),
+);
