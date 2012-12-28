@@ -673,6 +673,16 @@ $messages['lb'] = array(
 	'templatesandbox-editform-view-label' => 'Kucken ouni ofzespäicheren',
 );
 
+/** Latvian (latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'templatesandbox-submit' => 'Apskatīt',
+	'templatesandbox-editform-page-label' => 'Lapas nosaukums:',
+	'templatesandbox-editform-view-label' => 'Rādīt pirmskatu',
+	'templatesandbox-preview' => '$2 pirmskats',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -862,6 +872,13 @@ Zmiany nie zostały jeszcze zapisane!",
 	'templatesandbox-invalid-prefix' => 'Podany prefiks do brudnopisu nie istnieje.',
 	'templatesandbox-prefix-not-local' => 'Podany prefiks do brudnopisu nie jest lokalny.',
 	'templatesandbox-page-or-revid' => 'Musisz wpisać nazwę strony albo numer ID wersji.',
+);
+
+/** Piedmontese (Piemontèis)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['pms'] = array(
+	'templatesandbox-submit' => 'Vardé',
 );
 
 /** Pashto (پښتو)
