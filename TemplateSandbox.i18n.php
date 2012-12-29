@@ -875,10 +875,36 @@ Zmiany nie zostały jeszcze zapisane!",
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
+	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|A smon na pagina]] trascludend stamp da na sandbox',
+	'templatesandbox-suffix' => 'sandbox',
+	'templatesandbox-legend' => 'Template sandbox',
+	'templatesandbox-text' => 'It peule serne n\'insema dë stamp salvà an tò spassi ëd sandbox dovrand un prefiss ëd sandbox aproprià. Për esempi, s\'it veule mosté na vërsion ëd {{ns:Template}}:Test that you have saved as "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", dòvra "{{ns:User}}:Foo/sandbox" com prefiss.',
+	'templatesandbox-prefix-label' => 'Prefiss ëd sandbox:',
+	'templatesandbox-page-label' => 'Visualisa pagina:',
+	'templatesandbox-revid-label' => 'Visualisa revision:',
+	'templatesandbox-text-label' => 'Visualisa test wiki:',
 	'templatesandbox-submit' => 'Vardé',
+	'templatesandbox-title-output' => 'Template sandbox: $1',
+	'templatesandbox-editform-legend' => 'Preuva pagina con sto stamp',
+	'templatesandbox-editform-page-label' => 'Tìtol ëd la pàgina:',
+	'templatesandbox-editform-view-label' => 'Mostra na preuva',
+	'templatesandbox-preview' => 'Preuva ëd $2',
+	'templatesandbox-previewnote' => "'''Che a ten-a present che costa-sì a l'é mach na preuva ëd [[:$1]].'''
+Ij sò cambi a son anco' pa stàit salvà!",
+	'templatesandbox-invalid-title' => "Ël tìtol ch'a l'ha spessificà a va pa bin.",
+	'templatesandbox-title-not-exists' => "Ël tìtol ch'a l'ha spessificà a esist pa.",
+	'templatesandbox-revision-not-exists' => "La revision che a l'ha spessificà a esist pa.",
+	'templatesandbox-invalid-prefix' => "Ël prefiss ëd sandbox ch'it l'has specificà a l'é pa bon.",
+	'templatesandbox-prefix-not-local' => "Ël prefiss ëd sandbox ch'it l'has specificà a l'é pa local.",
+	'templatesandbox-page-or-revid' => "It deuve o anserì un tìtol ëd pagina o un nùmer d'ID revision.",
+	'templatesandbox-editform-need-title' => "Për prové n'àutra pagina con sto stamp, un tìtol ëd pagina a deuv esse specificà.",
+	'templatesandbox-editform-invalid-title' => "Ël tìtol ch'it l'has specificà për prové a l'é pa bon.",
+	'templatesandbox-editform-title-not-exists' => "Ël tìtol ch'it l'has specificà për prové a esist pa.",
 );
 
 /** Pashto (پښتو)
@@ -995,6 +1021,7 @@ $messages['si'] = array(
 	'templatesandbox' => 'සැකිලි වැලිපිල්ල',
 	'templatesandbox-suffix' => 'වැලිපිල්ල',
 	'templatesandbox-legend' => 'සැකිලි වැලිපිල්ල',
+	'templatesandbox-prefix-label' => 'වැලිපිල්ලේ උපසර්ගය:',
 	'templatesandbox-page-label' => 'විදහාපෑම් පිටුව:',
 	'templatesandbox-revid-label' => 'විදහාපෑම් නිරීක්ෂණය:',
 	'templatesandbox-text-label' => 'විදහාපෑම් විකිපාඨය:',
@@ -1004,6 +1031,9 @@ $messages['si'] = array(
 	'templatesandbox-editform-page-label' => 'පිටුවේ මාතෘකාව:',
 	'templatesandbox-editform-view-label' => 'පෙරදසුන පෙන්වන්න',
 	'templatesandbox-preview' => '$2 හී පෙරදසුන',
+	'templatesandbox-invalid-title' => 'ඔබ සඳහන් කළ මාතෘකාව වලංගු නොවේ.',
+	'templatesandbox-title-not-exists' => 'ඔබ විසින් විශේෂණය කෙරූ මාතෘකාව නොපවතියි.',
+	'templatesandbox-revision-not-exists' => 'ඔබ විසින් විශේෂණය කෙරූ සංශෝධනය නොපවතියි.',
 );
 
 /** Swedish (svenska)
