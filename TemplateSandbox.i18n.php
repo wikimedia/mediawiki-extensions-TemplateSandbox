@@ -258,6 +258,70 @@ $messages['diq'] = array(
 	'templatesandbox-preview' => 'Verasayışê $2',
 );
 
+/** Greek (Ελληνικά)
+ * @author Glavkos
+ */
+$messages['el'] = array(
+	'templatesandbox' => 'Αμμοδοχείο προτύπου',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Αποδίδει μια σελίδα]] ενσωματώνοντας πρότυπα από ένα αμμοδοχείο',
+	'templatesandbox-suffix' => 'αμμοδοχείο',
+	'templatesandbox-legend' => 'Αμμοδοχείο προτύπου',
+	'templatesandbox-text' => 'Μπορείτε να επιλέξετε μια ομάδα προτύπων που έχουν σωθεί στο χώρο του  αμμοδοχείου  σας χρησιμοποιώντας ένα κατάλληλο πρόθεμα αμμοδοχείου.  Για παράδειγμα, αν θέλετε να κάνετε προεπισκόπηση  σε μια έκδοση του {{ns:Template}}:Κάνετε τη δοκιμή με αυτό που έχετε αποθηκεύσει ως "{{ns:User}}:Foo/αμμοδοχείο/{{ns:Template}}:Δοκιμή", κάντε χρήση του  "{{ns:User}}:Foo/αμμοδοχείο" ως πρόθεμα.',
+	'templatesandbox-prefix-label' => 'Πρόθεμα αμμοδοχείου:',
+	'templatesandbox-page-label' => 'Απόδοση σελίδας:',
+	'templatesandbox-revid-label' => 'Απόδοση αναθεώρησης:',
+	'templatesandbox-text-label' => 'Απόδοση βικικειμένου:',
+	'templatesandbox-submit' => 'Προβολή',
+	'templatesandbox-title-output' => 'Αμμοδοχείο προτύπου:$1',
+	'templatesandbox-editform-legend' => 'Προεπισκόπηση σελίδας με αυτό το πρότυπο',
+	'templatesandbox-editform-page-label' => 'Τίτλος σελίδας:',
+	'templatesandbox-editform-view-label' => 'Εμφάνιση προεπισκόπησης',
+	'templatesandbox-preview' => 'Προεπισκόπηση της $2',
+	'templatesandbox-previewnote' => "'''Να θυμάστε ότι αυτό είναι μόνο μια προεπισκόπηση του [[:$1]].'''
+Οι αλλαγές σας δεν έχουν ακόμα αποθηκευτεί!",
+	'templatesandbox-invalid-title' => 'Ο τίτλος που καθορίσατε δεν είναι άκυρος.',
+	'templatesandbox-title-not-exists' => 'Ο τίτλος που καθορίσατε δεν υπάρχει.',
+	'templatesandbox-revision-not-exists' => 'Η έκδοση που καθορίσατε δεν υπάρχει.',
+	'templatesandbox-invalid-prefix' => 'Το πρόθεμα αμμοδοχείου  που καθορίσατε είναι άκυρο.',
+	'templatesandbox-prefix-not-local' => 'Το πρόθεμα αμμοδοχείου που καθορίσατε δεν είναι τοπικό.',
+	'templatesandbox-page-or-revid' => 'Θα πρέπει να εισάγετε είτε έναν τίτλος σελίδας είτε τον αναγνωριστικό αριθμό μιας έκδοσης',
+	'templatesandbox-editform-need-title' => 'Για να κάνετε προεπισκόπηση σε μια άλλη σελίδα με αυτό το πρότυπο, πρέπει να καθοριστεί ένας τίτλος σελίδας.',
+	'templatesandbox-editform-invalid-title' => 'Ο τίτλος που καθορίσατε για την προεπισκόπηση είναι άκυρος.',
+	'templatesandbox-editform-title-not-exists' => 'Ο τίτλος που καθορίσατε για προεπισκόπηση δεν υπάρχει.',
+);
+
+/** Esperanto (Esperanto)
+ * @author ArnoLagrange
+ */
+$messages['eo'] = array(
+	'templatesandbox' => 'Ŝablona provejo',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Montru paĝon]] uzante ŝablonojn el provejo',
+	'templatesandbox-suffix' => 'Provejo',
+	'templatesandbox-legend' => 'Ŝablona provejo',
+	'templatesandbox-text' => 'Vi povas elekti aron da ŝablonoj konservitaj en via proveja spaco uzante taŭgan provejan prefikson. Ekzemple se vi volas antaŭvidi version de {{ns:Template}}:provo kiun vi konservis kiel "{{ns:User}}:uzantonomo/provejo/{{ns:Template}}:provo", uzu "{{ns:User}}:uzantonomo/provejo" kiel prefikso.',
+	'templatesandbox-prefix-label' => 'Proveja prefikso:',
+	'templatesandbox-page-label' => 'Paĝaspekto:',
+	'templatesandbox-revid-label' => 'Aspekto de la versio:',
+	'templatesandbox-text-label' => 'Aspekto de la vikisintakso:',
+	'templatesandbox-submit' => 'Vidi',
+	'templatesandbox-title-output' => 'Ŝablona provejo: $1',
+	'templatesandbox-editform-legend' => 'Antaŭvido de la paĝo kun tiu ŝablono',
+	'templatesandbox-editform-page-label' => 'Titolo de la paĝo:',
+	'templatesandbox-editform-view-label' => 'Montri antaŭrigardon',
+	'templatesandbox-preview' => 'Antaŭvido de $2',
+	'templatesandbox-previewnote' => "'''Memoru, ke ĉi tio estas nur antaŭrigardo de [[:$1]].''' 
+Viaj ŝanĝoj ne ankoraŭ estas konservitaj!",
+	'templatesandbox-invalid-title' => 'La titolo kiun vi enmetis estas malvalida.',
+	'templatesandbox-title-not-exists' => 'La titolo kiun vi menciis ne ekzistas.',
+	'templatesandbox-revision-not-exists' => 'La versio kiun vi menciis ne ekzistas.',
+	'templatesandbox-invalid-prefix' => 'La proveja prefikso kiun vi menciis estas malvalida.',
+	'templatesandbox-prefix-not-local' => 'La proveja prefikso kiun vi menciis ne estas loka.',
+	'templatesandbox-page-or-revid' => 'Vi nepre enigu ĉu paĝtitolon, ĉu identigan numeron.',
+	'templatesandbox-editform-need-title' => 'Por antaŭvidi alian paĝon kun ĉi tiu ŝablono, paĝtitolo nepre estu precizigita.',
+	'templatesandbox-editform-invalid-title' => 'La titolo kiun vi menciis por antaŭrigardo estas malvalida.',
+	'templatesandbox-editform-title-not-exists' => 'La titolo kiun vi menciis por antaŭrigardo ne ekzistas.',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -1034,6 +1098,12 @@ $messages['si'] = array(
 	'templatesandbox-invalid-title' => 'ඔබ සඳහන් කළ මාතෘකාව වලංගු නොවේ.',
 	'templatesandbox-title-not-exists' => 'ඔබ විසින් විශේෂණය කෙරූ මාතෘකාව නොපවතියි.',
 	'templatesandbox-revision-not-exists' => 'ඔබ විසින් විශේෂණය කෙරූ සංශෝධනය නොපවතියි.',
+	'templatesandbox-invalid-prefix' => 'ඔබ විශේෂණය කෙරූ වැලිපිල්ලේ උපසර්ගය වලංගු නොවේ.',
+	'templatesandbox-prefix-not-local' => 'ඔබ විශේෂණය කෙරූ වැලිපිල්ලේ ස්ථානික නොවේ.',
+	'templatesandbox-page-or-revid' => 'කරුණාකර පිටුවේ ශීර්ෂය හෝ සංශෝධන හැඳුනුම් අංකය යොදන්න.',
+	'templatesandbox-editform-need-title' => 'මෙම සැකිල්ල සමඟ වෙනත් පිටුවක පෙරදසුන්ගත කිරීම සඳහා, පිටු ශීර්ෂය විශේෂණය කල යුතු වේ.',
+	'templatesandbox-editform-invalid-title' => 'පෙරදසුන්ගත කිරීම සඳහා ඔබ විශේෂණය කෙරූ ශීර්ෂය වලංගු නොවේ.',
+	'templatesandbox-editform-title-not-exists' => 'පෙරදසුන්ගත කිරීම සඳහා ඔබ විශේෂණය කෙරූ ශීර්ෂය නොපවතී.',
 );
 
 /** Swedish (svenska)
@@ -1079,6 +1149,18 @@ $messages['te'] = array(
 	'templatesandbox-editform-page-label' => 'పేజీ శీర్షిక:',
 	'templatesandbox-editform-view-label' => 'మునుజూపును చూపించు',
 	'templatesandbox-preview' => '$2 యొక్క మునుజూపు',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'templatesandbox-submit' => 'كۆرۈنۈش',
+	'templatesandbox-editform-page-label' => 'بەت ماۋزۇسى:',
+	'templatesandbox-editform-view-label' => 'ئالدىن كۆزىتىشنى كۆرسەت',
+	'templatesandbox-invalid-title' => 'سىز بەلگىلىگەن تېما ئىناۋەتسىز.',
+	'templatesandbox-title-not-exists' => 'سىز بەلگىلىگەن تېما مەۋجۇت ئەمەس.',
+	'templatesandbox-revision-not-exists' => 'سىز بەلگىلىگەن تۈزىتىلگەن نەشرى مەۋجۇت ئەمەس.',
 );
 
 /** Ukrainian (українська)
