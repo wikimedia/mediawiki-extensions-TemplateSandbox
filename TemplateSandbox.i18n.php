@@ -260,6 +260,7 @@ $messages['diq'] = array(
 
 /** Greek (Ελληνικά)
  * @author Glavkos
+ * @author Protnet
  */
 $messages['el'] = array(
 	'templatesandbox' => 'Αμμοδοχείο προτύπου',
@@ -279,7 +280,7 @@ $messages['el'] = array(
 	'templatesandbox-preview' => 'Προεπισκόπηση της $2',
 	'templatesandbox-previewnote' => "'''Να θυμάστε ότι αυτό είναι μόνο μια προεπισκόπηση του [[:$1]].'''
 Οι αλλαγές σας δεν έχουν ακόμα αποθηκευτεί!",
-	'templatesandbox-invalid-title' => 'Ο τίτλος που καθορίσατε δεν είναι άκυρος.',
+	'templatesandbox-invalid-title' => 'Ο τίτλος που καθορίσατε δεν είναι έγκυρος.',
 	'templatesandbox-title-not-exists' => 'Ο τίτλος που καθορίσατε δεν υπάρχει.',
 	'templatesandbox-revision-not-exists' => 'Η έκδοση που καθορίσατε δεν υπάρχει.',
 	'templatesandbox-invalid-prefix' => 'Το πρόθεμα αμμοδοχείου  που καθορίσατε είναι άκυρο.',
