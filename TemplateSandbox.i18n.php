@@ -282,7 +282,7 @@ $messages['el'] = array(
 Οι αλλαγές σας δεν έχουν ακόμα αποθηκευτεί!",
 	'templatesandbox-invalid-title' => 'Ο τίτλος που καθορίσατε δεν είναι έγκυρος.',
 	'templatesandbox-title-not-exists' => 'Ο τίτλος που καθορίσατε δεν υπάρχει.',
-	'templatesandbox-revision-not-exists' => 'Η έκδοση που καθορίσατε δεν υπάρχει.',
+	'templatesandbox-revision-not-exists' => 'Η αναθεώρηση που καθορίσατε δεν υπάρχει.',
 	'templatesandbox-invalid-prefix' => 'Το πρόθεμα αμμοδοχείου  που καθορίσατε είναι άκυρο.',
 	'templatesandbox-prefix-not-local' => 'Το πρόθεμα αμμοδοχείου που καθορίσατε δεν είναι τοπικό.',
 	'templatesandbox-page-or-revid' => 'Θα πρέπει να εισάγετε είτε έναν τίτλος σελίδας είτε τον αναγνωριστικό αριθμό μιας έκδοσης',
