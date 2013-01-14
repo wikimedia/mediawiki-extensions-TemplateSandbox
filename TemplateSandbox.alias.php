@@ -33,6 +33,11 @@ $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
 );
 
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'TemplateSandbox' => array( 'テンプレートサンドボックス' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'TemplateSandbox' => array( '틀연습장' ),

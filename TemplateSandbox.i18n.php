@@ -984,6 +984,7 @@ $messages['ps'] = array(
 /** Portuguese (português)
  * @author Helder.wiki
  * @author Lijealso
+ * @author Opraco
  */
 $messages['pt'] = array(
 	'templatesandbox' => 'Teste de predefinições',
@@ -999,7 +1000,7 @@ $messages['pt'] = array(
 	'templatesandbox-title-output' => 'Página para testar predefinições: $1',
 	'templatesandbox-editform-legend' => 'Pré-visualizar a página com esta predefinição',
 	'templatesandbox-editform-page-label' => 'Título da página:',
-	'templatesandbox-editform-view-label' => 'Pré-Visualizar',
+	'templatesandbox-editform-view-label' => 'Pré-visualizar',
 	'templatesandbox-preview' => 'Pré-visualização de $2',
 	'templatesandbox-previewnote' => "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''
 As modificações ainda não foram gravadas!",
