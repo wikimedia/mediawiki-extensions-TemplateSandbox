@@ -692,6 +692,7 @@ $messages['ko'] = array(
 	'templatesandbox-desc' => '연습장에 틀을 포함하는 [[Special:TemplateSandbox|문서 렌더]]',
 	'templatesandbox-suffix' => '연습장',
 	'templatesandbox-legend' => '틀 연습장',
+	'templatesandbox-text' => '적절한 연습장 접두어를 사용해 내 연습장 공간에 저장한 틀의 집합을 설정할 수 있습니다. 예를 들어 {{ns:Template}}:테스트를 "{{ns:User}}:Foo/연습장/{{ns:Template}}:테스트"로 저장하고 미리 보려면 접두어로 "{{ns:User}}:Foo/연습장"으로 사용하세요.',
 	'templatesandbox-prefix-label' => '연습장 접두어:',
 	'templatesandbox-page-label' => '문서 렌더:',
 	'templatesandbox-revid-label' => '판 렌더:',
