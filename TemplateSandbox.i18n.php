@@ -644,7 +644,8 @@ $messages['ja'] = array(
 	'templatesandbox-desc' => 'テンプレートを参照読み込みして[[Special:TemplateSandbox|ページをレンダリング]]できるサンドボックス',
 	'templatesandbox-suffix' => 'サンドボックス',
 	'templatesandbox-legend' => 'テンプレートのサンドボックス',
-	'templatesandbox-text' => 'テンプレートを自分の利用者サンドボックスに sandbox 接頭辞付きで保存している場合は、それらを指定できます。例えば、{{ns:Template}}:Test を「{{ns:User}}:Hoge/sandbox/{{ns:Template}}:Test」として保存していてそれをプレビューする場合は、接頭辞として「{{ns:User}}:Hoge/sandbox」を使用してください。',
+	'templatesandbox-text' => 'テンプレートを自分の利用者サンドボックスに sandbox 接頭辞付きで保存している場合は、それらを指定できます。
+例えば、{{ns:Template}}:Test を「{{ns:User}}:Hoge/sandbox/{{ns:Template}}:Test」として保存していてそれをプレビューする場合は、接頭辞として「{{ns:User}}:Hoge/sandbox」を使用してください。',
 	'templatesandbox-prefix-label' => 'サンドボックスの接頭辞:',
 	'templatesandbox-page-label' => '使用するページ:',
 	'templatesandbox-revid-label' => '使用する版:',
