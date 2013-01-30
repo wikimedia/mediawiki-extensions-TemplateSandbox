@@ -673,12 +673,12 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
-	'templatesandbox' => 'თარგის ქვიშის დაფა',
-	'templatesandbox-suffix' => 'ქვიშის დაფა',
-	'templatesandbox-legend' => 'თარგის ქვიშის დაფა',
-	'templatesandbox-prefix-label' => 'ქვიშის დაფის პრეფიქსი:',
+	'templatesandbox' => 'თარგის სავარჯიშო',
+	'templatesandbox-suffix' => 'სავარჯიშო',
+	'templatesandbox-legend' => 'თარგის სავარჯიშო',
+	'templatesandbox-prefix-label' => 'სავარჯიშოს პრეფიქსი:',
 	'templatesandbox-submit' => 'ხილვა',
-	'templatesandbox-title-output' => 'თარგის ქვიშის დაფა: $1',
+	'templatesandbox-title-output' => 'თარგის სავარჯიშო: $1',
 	'templatesandbox-editform-legend' => 'გვერდის წინასწარი გადახედვა ამ თარგით',
 	'templatesandbox-editform-page-label' => 'გვერდის სათაური:',
 	'templatesandbox-editform-view-label' => 'წინასწარი გადახედვა',
