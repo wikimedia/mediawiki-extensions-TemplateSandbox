@@ -1062,6 +1062,16 @@ Modificările dumneavoastră nu au fost încă salvate!",
 	'templatesandbox-editform-title-not-exists' => 'Titlul specificat pentru previzualizare nu există.',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'templatesandbox-submit' => "'Ndruche",
+	'templatesandbox-editform-page-label' => "Titole d'a pàgene:",
+	'templatesandbox-editform-view-label' => "Vide l'andeprime",
+	'templatesandbox-preview' => 'Andeprime de $2',
+);
+
 /** Russian (русский)
  * @author Anonim.one
  * @author Eleferen
