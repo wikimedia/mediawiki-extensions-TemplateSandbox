@@ -1290,11 +1290,13 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shizhao
+ * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'templatesandbox' => '模板沙盒',
 	'templatesandbox-suffix' => '沙盒',
 	'templatesandbox-legend' => '模板沙盒',
+	'templatesandbox-text' => '通过使用一个适当的沙盒前缀，您可以选择将一系列的模板保存于您的沙盒空间中。例如，您如果想要预览{{ns:Template}}的一个版本：您可以将其保存为“{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test”，以“{{ns:User}}:Foo/sandbox”为前缀。',
 	'templatesandbox-prefix-label' => '沙盒前缀：',
 	'templatesandbox-page-label' => 'Render page:',
 	'templatesandbox-submit' => '查看',
