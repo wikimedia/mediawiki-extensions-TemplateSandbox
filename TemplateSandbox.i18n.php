@@ -1197,13 +1197,14 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Ahonc
  * @author Base
  * @author DixonD
  * @author Wizardist
  * @author Ата
  */
 $messages['uk'] = array(
-	'templatesandbox' => 'Пісочниця шаблона',
+	'templatesandbox' => 'Пісочниця шаблону',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з пісочниці',
 	'templatesandbox-suffix' => 'пісочниця',
 	'templatesandbox-legend' => 'Пісочниця шаблона',
