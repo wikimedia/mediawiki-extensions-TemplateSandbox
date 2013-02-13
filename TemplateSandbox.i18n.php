@@ -980,34 +980,36 @@ Zmiany nie zostały jeszcze zapisane!",
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
 	'templatesandbox' => 'TemplateSandbox',
-	'templatesandbox-desc' => '[[Special:TemplateSandbox|A smon na pagina]] trascludend stamp da na sandbox',
-	'templatesandbox-suffix' => 'sandbox',
-	'templatesandbox-legend' => 'Template sandbox',
-	'templatesandbox-text' => 'It peule serne n\'insema dë stamp salvà an tò spassi ëd sandbox dovrand un prefiss ëd sandbox aproprià. Për esempi, s\'it veule mosté na vërsion ëd {{ns:Template}}:Test that you have saved as "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", dòvra "{{ns:User}}:Foo/sandbox" com prefiss.',
-	'templatesandbox-prefix-label' => 'Prefiss ëd sandbox:',
-	'templatesandbox-page-label' => 'Visualisa pagina:',
-	'templatesandbox-revid-label' => 'Visualisa revision:',
-	'templatesandbox-text-label' => 'Visualisa test wiki:',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|A smon na pàgina]] an dovrand ij modej present an na sabiera',
+	'templatesandbox-suffix' => 'vasca dla sabia',
+	'templatesandbox-legend' => 'Sabiera ëd model',
+	'templatesandbox-text' => "A peul serne n'ansem dë stamp salvà an tò spassi ëd sabiera an dovrand un prefiss ëd sabiera aproprià.
+Për esempi, s'a veul vëdde na preuva ëd na version ëd {{ns:Template}}:Test ch'a l'ha salvà tanme «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», ch'a deuvra «{{ns:User}}:Foo/sabiera» com prefiss.",
+	'templatesandbox-prefix-label' => 'Prefiss ëd pàgina dle preuve:',
+	'templatesandbox-page-label' => 'Visualisé la pàgina:',
+	'templatesandbox-revid-label' => 'Visualisé la revision:',
+	'templatesandbox-text-label' => 'Visualisé ël test wiki:',
 	'templatesandbox-submit' => 'Vardé',
 	'templatesandbox-title-output' => 'Template sandbox: $1',
-	'templatesandbox-editform-legend' => 'Preuva pagina con sto stamp',
+	'templatesandbox-editform-legend' => 'Preuva dla pàgina con cost ëstamp',
 	'templatesandbox-editform-page-label' => 'Tìtol ëd la pàgina:',
 	'templatesandbox-editform-view-label' => 'Mostra na preuva',
 	'templatesandbox-preview' => 'Preuva ëd $2',
-	'templatesandbox-previewnote' => "'''Che a ten-a present che costa-sì a l'é mach na preuva ëd [[:$1]].'''
-Ij sò cambi a son anco' pa stàit salvà!",
+	'templatesandbox-previewnote' => "'''Che a ten-a da ment che costa-sì a l'é mach na preuva ëd [[:$1]].'''
+Soe modìfiche a son anco' pa stàite salvà!",
 	'templatesandbox-invalid-title' => "Ël tìtol ch'a l'ha spessificà a va pa bin.",
 	'templatesandbox-title-not-exists' => "Ël tìtol ch'a l'ha spessificà a esist pa.",
 	'templatesandbox-revision-not-exists' => "La revision che a l'ha spessificà a esist pa.",
-	'templatesandbox-invalid-prefix' => "Ël prefiss ëd sandbox ch'it l'has specificà a l'é pa bon.",
-	'templatesandbox-prefix-not-local' => "Ël prefiss ëd sandbox ch'it l'has specificà a l'é pa local.",
-	'templatesandbox-page-or-revid' => "It deuve o anserì un tìtol ëd pagina o un nùmer d'ID revision.",
-	'templatesandbox-editform-need-title' => "Për prové n'àutra pagina con sto stamp, un tìtol ëd pagina a deuv esse specificà.",
+	'templatesandbox-invalid-prefix' => "Ël prefiss ëd pàgina dle preuve ch'a l'has specificà a l'é pa bon.",
+	'templatesandbox-prefix-not-local' => "Ël prefiss ëd pàgina dle preuve ch'a l'has specificà a l'é pa local.",
+	'templatesandbox-page-or-revid' => "A dev o bin anserì un tìtol ëd pàgina opura un nùmer d'identificativ ëd revision.",
+	'templatesandbox-editform-need-title' => "Për vëdde la preuva ëd n'àutra pàgina con së stamp, un tìtol ëd pàgina a deuv esse specificà.",
 	'templatesandbox-editform-invalid-title' => "Ël tìtol ch'it l'has specificà për prové a l'é pa bon.",
 	'templatesandbox-editform-title-not-exists' => "Ël tìtol ch'it l'has specificà për prové a esist pa.",
 );
@@ -1052,6 +1054,13 @@ As modificações ainda não foram gravadas!",
 	'templatesandbox-editform-need-title' => 'Para pré-visualizar outra página com esta predefinição, é preciso especificar um título.',
 	'templatesandbox-editform-invalid-title' => 'O título que você especificou para pré-visualização é inválido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que você especificou para pré-visualizar não existe.',
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Opraco
+ */
+$messages['pt-br'] = array(
+	'templatesandbox-editform-view-label' => 'Prever',
 );
 
 /** Romanian (română)
