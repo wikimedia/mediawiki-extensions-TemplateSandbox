@@ -53,6 +53,11 @@ $specialPageAliases['nl'] = array(
 	'TemplateSandbox' => array( 'Sjabloonzandbak' ),
 );
 
+/** Norwegian Nynorsk (norsk nynorsk) */
+$specialPageAliases['nn'] = array(
+	'TemplateSandbox' => array( 'Malsandkasse' ),
+);
+
 /** Punjabi (ਪੰਜਾਬੀ) */
 $specialPageAliases['pa'] = array(
 	'TemplateSandbox' => array( 'ਸਾਂਚਾ_ਕੱਚਾ-ਖਾਕਾ' ),
