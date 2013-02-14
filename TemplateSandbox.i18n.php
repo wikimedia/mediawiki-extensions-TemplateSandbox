@@ -1267,6 +1267,8 @@ $messages['vi'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Kết xuất một trang]] bằng cách lấy các bản mẫu từ chỗ thử',
 	'templatesandbox-suffix' => 'chỗ thử',
 	'templatesandbox-legend' => 'Chỗ thử bản mẫu',
+	'templatesandbox-text' => 'Bạn có thể chọn một loạt bản mẫu được lưu trong không gian thử nghiệm của bạn theo tiền tố.
+Thí dụ để xem thử một phiên bản {{ns:Template}}:Thử được lưu tại “{{ns:User}}:Ví dụ/chỗ thử/{{ns:Template}}:Thử”, hãy sử dụng tiền tố “{{ns:User}}:Ví dụ/chỗ thử”.',
 	'templatesandbox-prefix-label' => 'Tiền tố chỗ thử:',
 	'templatesandbox-page-label' => 'Kết xuất trang:',
 	'templatesandbox-revid-label' => 'Kết xuất phiên bản:',
@@ -1284,7 +1286,7 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-revision-not-exists' => 'Phiên bản chỉ định không tồn tại.',
 	'templatesandbox-invalid-prefix' => 'Tiền tố chỗ thử chỉ định không hợp lệ.',
 	'templatesandbox-prefix-not-local' => 'Tiền tố chỗ thử chỉ định không có trực thuộc wiki này.',
-	'templatesandbox-page-or-revid' => 'Cần chỉ định trang hoặc ID của phiên bản.', # Fuzzy
+	'templatesandbox-page-or-revid' => 'Bạn cần chỉ định tên trang hoặc số phiên bản.',
 	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem thử trang khác dùng bản mẫu này.',
 	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem thử không hợp lệ.',
 	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
