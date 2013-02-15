@@ -393,14 +393,37 @@ Sinu muudatusi pole veel salvestatud!",
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Mjbmr
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
+	'templatesandbox' => 'صفحهٔ تمرین الگو',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|پردازش یک صفحه]] تراگنجایش الگوها از یک صفحهٔ تمرین',
+	'templatesandbox-suffix' => 'صفحهٔ تمرین',
+	'templatesandbox-legend' => 'الگو صفحهٔ تمرین',
+	'templatesandbox-text' => 'شما می‌توانید مجموعه‌ای از الگوهایی که در فضای تمرین شما ذخیره‌شده‌اند را با استفاده از پیشوندی مناسب انتخاب کنید. برای مثال اگر شما می‌خواهید پیش‌نمایشی از یک نسخهٔ {{ns:Template}}:آزمایشی که شما به‌عنوان «{{ns:User}}:فلان/صفحه تمرین/{{ns:Template}}:آزمایشی» داشته باشید، «{{ns:User}}:فلانی/صفحه تمرین» را به‌عنوان پیشوندی استفاده کنید.',
+	'templatesandbox-prefix-label' => 'پیشوند صفحهٔ تمرین:',
+	'templatesandbox-page-label' => 'پردازش صفحه:',
+	'templatesandbox-revid-label' => 'پردازش نسخه:',
+	'templatesandbox-text-label' => 'پردازش ویکی‌متن:',
 	'templatesandbox-submit' => 'مشاهده',
+	'templatesandbox-title-output' => 'الگوی صفحه تمرین: $1',
+	'templatesandbox-editform-legend' => 'پیش‌نمایش صفحه با این الگو',
 	'templatesandbox-editform-page-label' => 'عنوان صفحه:',
 	'templatesandbox-editform-view-label' => 'نمایش پیش‌نمایش',
 	'templatesandbox-preview' => 'پیش‌نمایش $2',
+	'templatesandbox-previewnote' => "'''به یاد داشته‌باشید که این فقط پیش‌نمایشی از [[:$1]] است.'''
+تغییرات شما هنوز ذخیره نشده‌است!",
+	'templatesandbox-invalid-title' => 'عنوانی که مشخص کرده‌اید نامعتبر است.',
+	'templatesandbox-title-not-exists' => 'عنوانی که مشخص کرده‌اید وجود ندارد.',
+	'templatesandbox-revision-not-exists' => 'نسخهٔ مشخص‌شدهٔ شما وجود ندارد.',
+	'templatesandbox-invalid-prefix' => 'پیشوند صفحهٔ تمرین که شما مشخص کرده‌اید نامعتبر است.',
+	'templatesandbox-prefix-not-local' => 'پشوند صفحهٔ تمرین مشخص‌شده توسط شما محلی نیست.',
+	'templatesandbox-page-or-revid' => 'شما می‌بایست یک عنوان صفحه یا یک شمارهٔ شناسایی نسخه را وارد کنید.',
+	'templatesandbox-editform-need-title' => 'برای پیش‌نمایش صفحه با این الگو، می‌بایست یک عنوان صفحه مشخص شده باشد.',
+	'templatesandbox-editform-invalid-title' => 'عنوان مشخص‌شده توسط شما برای پیش‌نمایش نادرست است.',
+	'templatesandbox-editform-title-not-exists' => 'عنوان مشخص‌شده توسط شما برای پیش‌نمایش ناموجود است.',
 );
 
 /** Finnish (suomi)
