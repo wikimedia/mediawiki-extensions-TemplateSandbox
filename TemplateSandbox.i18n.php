@@ -66,7 +66,8 @@ $messages['qqq'] = array(
 	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form.',
 	'templatesandbox-editform-text' => 'Text displayed in the form on the editpage.',
 	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.',
-	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.',
+	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.
+{{Identical|Show preview}}',
 	'templatesandbox-editform-helptext' => 'Text displayed after the submit button on the editpage form.',
 	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. Parameters:
 * $1 - the page being previewed
@@ -841,6 +842,13 @@ $messages['mk'] = array(
 	'templatesandbox-editform-need-title' => 'За да прегледате друга страница со шаблонов, мора да наведете наслов.',
 	'templatesandbox-editform-invalid-title' => 'Наведениот наслов за преглед е неважечки.',
 	'templatesandbox-editform-title-not-exists' => 'Наведениот наслов за преглед не постои.',
+);
+
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'templatesandbox' => 'ഫലക പരീക്ഷണോപാധി',
 );
 
 /** Malay (Bahasa Melayu)
