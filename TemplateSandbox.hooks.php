@@ -65,7 +65,7 @@ class TemplateSandboxHooks {
 
 		wfProfileIn( __METHOD__ );
 
-		if ( !$editpage->templatesandbox_preview ) {
+		if ( empty( $editpage->templatesandbox_preview ) ) {
 			wfProfileOut( __METHOD__ );
 			return true;
 		}
