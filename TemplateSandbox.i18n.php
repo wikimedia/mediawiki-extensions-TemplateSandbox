@@ -84,6 +84,15 @@ $messages['qqq'] = array(
 	'templatesandbox-editform-title-not-exists' => 'Error message displayed when the title specified for the editpage form does not exist.',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'templatesandbox' => 'ܩܠܒܐ ܕܣܢܕܘܩܐ ܕܚܠܐ',
+	'templatesandbox-suffix' => 'ܣܢܕܘܩܐ ܕܚܠܐ',
+	'templatesandbox-legend' => 'ܩܠܒܐ ܕܣܢܕܘܩܐ ܕܚܠܐ',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
