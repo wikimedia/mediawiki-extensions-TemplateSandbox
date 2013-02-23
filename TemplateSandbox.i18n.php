@@ -234,7 +234,8 @@ $messages['de'] = array(
 	'templatesandbox-desc' => 'Ergänzt eine Spielwiese zum [[Special:TemplateSandbox|Rendern von Seiten]], die Vorlagen enthalten',
 	'templatesandbox-suffix' => 'Spielwiese',
 	'templatesandbox-legend' => 'Vorlagenspielwiese',
-	'templatesandbox-text' => 'Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest. Wenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als „{{ns:User}}:Foo/Spielwiese/{{ns:Template}}:Test“ gespeichert hast, benutze als Präfix „{{ns:User}}:Foo/Spielwiese“.',
+	'templatesandbox-text' => 'Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest.
+Wenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“ gespeichert hast, benutze als Präfix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.',
 	'templatesandbox-prefix-label' => 'Spielwiesenpräfix:',
 	'templatesandbox-page-label' => 'Seite rendern:',
 	'templatesandbox-revid-label' => 'Version rendern:',
@@ -378,7 +379,8 @@ $messages['et'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Viimistleb lehekülje]], millel kasutatakse liivakastis olevaid malle.',
 	'templatesandbox-suffix' => 'liivakast',
 	'templatesandbox-legend' => 'Mallide liivakast',
-	'templatesandbox-text' => 'Saad sobiva liivakastieesliite abil valida komplekti oma liivakastiruumis salvestatud malle. Näiteks kui tahad näha malli {{ns:Template}}:Katse versiooni eelvaadet, mille oled salvestanud asukohta "{{ns:User}}:Foo/liivakast/{{ns:Template}}:Katse", kasuta eesliidet "{{ns:User}}:Foo/liivakast".',
+	'templatesandbox-text' => 'Saad sobiva liivakastieesliite abil valida komplekti oma liivakastiruumis salvestatud malle.
+Näiteks kui tahad näha malli {{ns:Template}}:Katse versiooni eelvaadet, mille oled salvestanud asukohta "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Katse", kasuta eesliidet "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}".',
 	'templatesandbox-prefix-label' => 'Liivakastieesliide:',
 	'templatesandbox-page-label' => 'Viimistluslehekülg:',
 	'templatesandbox-revid-label' => 'Viimistlusredaktsioon:',
@@ -513,7 +515,8 @@ $messages['gl'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza unha páxina]] coa transclusión dun ou varios modelos desde unha zona de probas',
 	'templatesandbox-suffix' => 'zona de probas',
 	'templatesandbox-legend' => 'Zona de probas para o modelo',
-	'templatesandbox-text' => 'Pode elixir un conxunto de modelos gardados na súa zona de probas utilizando o prefixo axeitado. Por exemplo, se quere ver unha vista previa dunha versión de "{{ns:Template}}:Proba" que gardou como "{{ns:User}}:Exemplo/zona de probas/{{ns:Template}}:Proba", empregue "{{ns:User}}:Exemplo/zona de probas" como prefixo.',
+	'templatesandbox-text' => 'Pode elixir un conxunto de modelos gardados na súa zona de probas utilizando o prefixo axeitado.
+Por exemplo, se quere ver unha vista previa dunha versión de "{{ns:Template}}:Proba" que gardou como "{{ns:User}}:Exemplo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Proba", empregue "{{ns:User}}:Exemplo/{{int:templatesandbox-suffix}}" como prefixo.',
 	'templatesandbox-prefix-label' => 'Prefixo da zona de probas',
 	'templatesandbox-page-label' => 'Páxina de renderización:',
 	'templatesandbox-revid-label' => 'Revisión de renderización:',
@@ -681,8 +684,8 @@ $messages['ja'] = array(
 	'templatesandbox-desc' => 'テンプレートを参照読み込みして[[Special:TemplateSandbox|ページをレンダリング]]できるサンドボックス',
 	'templatesandbox-suffix' => 'サンドボックス',
 	'templatesandbox-legend' => 'テンプレートのサンドボックス',
-	'templatesandbox-text' => 'テンプレートを自分の利用者サンドボックスに sandbox 接頭辞付きで保存している場合は、それらを指定できます。
-例えば、{{ns:Template}}:Test を「{{ns:User}}:Hoge/sandbox/{{ns:Template}}:Test」として保存していてそれをプレビューする場合は、接頭辞として「{{ns:User}}:Hoge/sandbox」を使用してください。',
+	'templatesandbox-text' => 'テンプレートを自分の利用者サンドボックスにサンドボックスの接頭辞付きで保存している場合は、それらを指定できます。
+例えば、{{ns:Template}}:Test を「{{ns:User}}:Hoge/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test」として保存していてそれをプレビューする場合は、接頭辞として「{{ns:User}}:Hoge/{{int:templatesandbox-suffix}}」を使用してください。',
 	'templatesandbox-prefix-label' => 'サンドボックスの接頭辞:',
 	'templatesandbox-page-label' => '使用するページ:',
 	'templatesandbox-revid-label' => '使用する版:',
@@ -829,7 +832,7 @@ $messages['mk'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Испишува страница]] превметнувајќи шаблони од песочник',
 	'templatesandbox-suffix' => 'песочник',
 	'templatesandbox-legend' => 'Шаблонски песочник',
-	'templatesandbox-text' => 'Можете да изберете збир шаблони зачувани во вашиот песочник, користејќи се со соодветен префикс за песочник. На пример, ако сакате да пергледате верзија на {{ns:Template}}:Test што сте ја зачувале како „{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test“, користете „{{ns:User}}:Foo/sandbox“ како префикс.',
+	'templatesandbox-text' => 'Можете да изберете збир шаблони зачувани во вашиот песочник, користејќи се со соодветен префикс за песочник. На пример, ако сакате да пергледате верзија на {{ns:Template}}:Test што сте ја зачувале како „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“, користете „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“  како префикс.',
 	'templatesandbox-prefix-label' => 'Префикс на песочникот:',
 	'templatesandbox-page-label' => 'Страница за испис:',
 	'templatesandbox-revid-label' => 'Ревизија на исписот:',
