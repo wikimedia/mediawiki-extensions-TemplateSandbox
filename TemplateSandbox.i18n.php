@@ -483,7 +483,8 @@ $messages['fr'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en utilisant les modèles présents dans un bac à sable',
 	'templatesandbox-suffix' => 'bac à sable',
 	'templatesandbox-legend' => 'Bac à sable de modèle',
-	'templatesandbox-text' => 'Vous pouvez choisir un ensemble de modèles enregistrés dans votre espace de bac à sable à l\'aide d\'un préfixe de sandbox approprié.  Par exemple, si vous souhaitez afficher un aperçu d\'une version de {{ns:Template}}: Test que vous avez enregistré sous « {{ns:User}}: Foo/sandbox / {{ns:Template}}: Test ", utilisez" {{ns:User}}: Foo/bac à sable "comme préfixe.',
+	'templatesandbox-text' => 'Vous pouvez choisir un ensemble de modèles enregistrés dans votre espace de bac à sable à l\'aide d\'un préfixe de bac à sable approprié.
+Par exemple, si vous souhaitez afficher un aperçu d\'une version de {{ns:Template}}:Test que vous avez enregistrée sous "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", utilisez "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}" comme préfixe.',
 	'templatesandbox-prefix-label' => 'Préfixe de bac à sable :',
 	'templatesandbox-page-label' => 'Rendu de la page :',
 	'templatesandbox-revid-label' => 'Rendu de la révision :',
@@ -652,7 +653,8 @@ $messages['it'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualizza una pagina]] includendovi le versioni dei template contenute in una sandbox',
 	'templatesandbox-suffix' => 'sandbox',
 	'templatesandbox-legend' => 'Template sandbox',
-	'templatesandbox-text' => 'Indicando un prefisso per la sandbox, puoi selezionare un gruppo di template salvati nel tuo spazio sandbox. Per esempio, se vuoi fare l\'anteprima di una versione di {{ns:Template}}:Test che hai salvato come "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", usa come prefisso "{{ns:User}}:Foo/sandbox".',
+	'templatesandbox-text' => 'Indicando un prefisso per la sandbox, puoi selezionare un gruppo di template salvati nel tuo spazio sandbox.
+Per esempio, se vuoi fare l\'anteprima di una versione di {{ns:Template}}:Test che hai salvato come "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", usa come prefisso "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}".',
 	'templatesandbox-prefix-label' => 'Prefisso della sandbox:',
 	'templatesandbox-page-label' => 'Pagina da visualizzare:',
 	'templatesandbox-revid-label' => 'Versione da visualizzare:',
@@ -871,7 +873,9 @@ $messages['ms'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Mempersembahkan halaman]] yang mentransklusikan templat dari kotak pasir',
 	'templatesandbox-suffix' => 'kotak pasir',
 	'templatesandbox-legend' => 'Kotak pasir templat',
-	'templatesandbox-text' => 'Anda boleh memilih satu set templat yang tersimpan dalam ruang kotak pasir anda dengan menggunakan awalan kotak pasir yang bertepatan.  Misalnya, jika anda ingin mempralihatkan versi {{ns:Template}}:Test yang telah anda simpan sebagai "{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test", gunakan "{{ns:User}}:Foo/sandbox" sebagai awalan.',
+	'templatesandbox-text' => 'Anda boleh memilih satu set templat yang tersimpan dalam ruang kotak pasir anda dengan menggunakan awalan kotak pasir yang bertepatan.
+
+Misalnya, jika anda ingin mempralihatkan versi {{ns:Template}}:Test yang telah anda simpan sebagai "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", gunakan "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}" sebagai awalan.',
 	'templatesandbox-prefix-label' => 'Awalan kotak pasir:',
 	'templatesandbox-page-label' => 'Halaman persembahan:',
 	'templatesandbox-revid-label' => 'Semakan persembahan:',
@@ -936,7 +940,8 @@ $messages['nl'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Rendert een pagina]] door sjablonen uit een testomgeving te transcluderen',
 	'templatesandbox-suffix' => 'zandbak',
 	'templatesandbox-legend' => 'Sjabloonzandbak',
-	'templatesandbox-text' => 'U kunt een verzameling sjablonen kiezen om in uw zandbakruimte op te slaan door het bijbehorende zandbakvoorvoegsel te gebruiken. Als u bijvoorbeeld een voorvertoning wilt zien van {{ns:Template}}:Test dat u hebt opgeslagen als "{{ns:User}}:Gebruikersnaam/zandbak/{{ns:Template}}:Test", gebruik dan "{{ns:User}}:Gebruikersnaam/zandbak" als het voorvoegsel.',
+	'templatesandbox-text' => 'U kunt een verzameling sjablonen kiezen om in uw zandbakruimte op te slaan door het bijbehorende zandbakvoorvoegsel te gebruiken.
+Als u bijvoorbeeld een voorvertoning wilt zien van {{ns:Template}}:Test dat u hebt opgeslagen als "{{ns:User}}:Gebruikersnaam/zandbak/{{ns:Template}}:Test", gebruik dan "{{ns:User}}:Gebruikersnaam/zandbak" als het voorvoegsel.',
 	'templatesandbox-prefix-label' => 'Zandbakvoorvoegsel:',
 	'templatesandbox-page-label' => 'Te renderen pagina:',
 	'templatesandbox-revid-label' => 'Te renderen versie:',
