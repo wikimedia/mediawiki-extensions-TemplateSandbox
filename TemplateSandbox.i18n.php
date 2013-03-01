@@ -97,10 +97,11 @@ $messages['arc'] = array(
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox' => 'Пясочніца для шаблёнаў',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Адлюстроўвае старонку]], уключыўшы на яе шаблён зь пясочніцы',
 	'templatesandbox-suffix' => 'пясочніца',
 	'templatesandbox-legend' => 'Пясочніца для шаблёнаў',
+	'templatesandbox-text' => 'Вы можаце выбраць набор шаблёнаў, захаваных у вашай пясочніцы, скарыстаўшыя адпаведным прэфіксам. Напрыклад, калі вы хочаце праглядзець выгляд {{ns:Template}}:Тэст, які вы захавалі як «{{ns:User}}:Карыстач/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тэст», скарыстайцеся прэфіксам «{{ns:User}}:Карыстач/{{int:templatesandbox-suffix}}».',
 	'templatesandbox-prefix-label' => 'Прэфікс пясочніцы:',
 	'templatesandbox-page-label' => 'Паказаць на старонцы:',
 	'templatesandbox-revid-label' => 'Вэрсія для адлюстраваньня:',
