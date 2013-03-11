@@ -545,6 +545,7 @@ Aínda non gardou os seus cambios!",
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author ערן
  * @author פוילישער
  * @author קיפודנחש
  */
@@ -553,6 +554,7 @@ $messages['he'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|מציג דף]] שמכליל תבניות מארגז חול',
 	'templatesandbox-suffix' => 'ארגז חול',
 	'templatesandbox-legend' => 'ארגז חול לתבניות',
+	'templatesandbox-text' => 'באפשרותך לבחור אוסף תבניות לשמירה בארגז החול שלך באמצעות שימוש בקידומת מתאימה. לדוגמה, לתצוגה מקדימה של גרסה של {{ns:Template}}:בדיקה ששמורה כ"{{ns:User}}:פלוני/{{int:templatesandbox-suffix}}/{{ns:Template}}:בדיקה", יש להשתמש בקידומת "{{ns:User}}:פלוני/{{int:templatesandbox-suffix}}".',
 	'templatesandbox-prefix-label' => 'תחילית לארגז חול:',
 	'templatesandbox-page-label' => 'להציג את הדף:',
 	'templatesandbox-revid-label' => 'להציג את הגרסה:',
