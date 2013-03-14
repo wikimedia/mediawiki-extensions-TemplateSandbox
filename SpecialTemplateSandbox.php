@@ -89,6 +89,13 @@ class SpecialTemplateSandbox extends SpecialPage {
 			} else {
 				$output->addParserOutput( $this->output );
 			}
+
+			if ( is_callable( 'EditPage::getPreviewLimitReport' ) ) {
+				$out .= $output->addHTML( Html::rawElement( 'div', array( 'class' => 'limitreport' ),
+					EditPage::getPreviewLimitReport( $this->output ) ) );
+				$output->addModules( 'mediawiki.collapseFooterLists' );
+			}
+
 			$titleText = $this->output->getTitleText();
 			if ( strval( $titleText ) !== '' ) {
 				$output->setPageTitle( $this->msg( 'templatesandbox-title-output', $titleText ) );

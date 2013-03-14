@@ -90,6 +90,7 @@ class TemplateSandboxHooks {
 
 		$note = '';
 		$dtitle = false;
+		$parserOutput = null;
 
 		try {
 			TemplateSandboxHooks::$template = $editpage->getTitle()->getFullText();
