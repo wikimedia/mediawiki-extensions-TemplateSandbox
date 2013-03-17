@@ -479,9 +479,10 @@ Muutoksia ei ole tallennettu!",
  * @author Crochet.david
  * @author Gomoko
  * @author Npettiaux
+ * @author Seb35
  */
 $messages['fr'] = array(
-	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox' => 'Bac à sable de modèle',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Afficher le rendu d’une page]] en utilisant les modèles présents dans un bac à sable',
 	'templatesandbox-suffix' => 'bac à sable',
 	'templatesandbox-legend' => 'Bac à sable de modèle',
