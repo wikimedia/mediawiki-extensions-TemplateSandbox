@@ -1378,15 +1378,19 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shizhao
+ * @author Yfdyh000
  * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'templatesandbox' => '模板沙盒',
+	'templatesandbox-desc' => '呈现一个有[[Special:TemplateSandbox|传输自沙盒的模板]]的页面',
 	'templatesandbox-suffix' => '沙盒',
 	'templatesandbox-legend' => '模板沙盒',
-	'templatesandbox-text' => '通过使用一个适当的沙盒前缀，您可以选择将一系列的模板保存于您的沙盒空间中。例如，您如果想要预览{{ns:Template}}的一个版本：您可以将其保存为“{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test”，以“{{ns:User}}:Foo/sandbox”为前缀。',
+	'templatesandbox-text' => '通过使用一个适当的沙盒前缀，您可以选择将一系列的模板保存于您的沙盒空间中。例如，您如果想要预览{{ns:Template}}的一个版本：您可以将其保存为“"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test"”，以“{{ns:User}}:Foo/{{int:templatesandbox-suffix}}”为前缀。',
 	'templatesandbox-prefix-label' => '沙盒前缀：',
 	'templatesandbox-page-label' => 'Render page:',
+	'templatesandbox-revid-label' => '呈现版本：',
+	'templatesandbox-text-label' => '呈现wiki文本：',
 	'templatesandbox-submit' => '查看',
 	'templatesandbox-title-output' => '模板沙盒：$1',
 	'templatesandbox-editform-legend' => '预览使用本模板的页面',
@@ -1397,7 +1401,13 @@ $messages['zh-hans'] = array(
 您的更改还未保存！",
 	'templatesandbox-invalid-title' => '你指定的标题无效。',
 	'templatesandbox-title-not-exists' => '你指定的标题不存在。',
+	'templatesandbox-revision-not-exists' => '您指定的修订版本不存在。',
+	'templatesandbox-invalid-prefix' => '您指定的沙盒前缀无效。',
+	'templatesandbox-prefix-not-local' => '您指定的沙盒前缀不在本地。',
+	'templatesandbox-page-or-revid' => '您必须输入一个页面标题或修订版本ID。',
 	'templatesandbox-editform-need-title' => '要预览使用本模板的其他页面，必须指定一个页面标题，',
+	'templatesandbox-editform-invalid-title' => '您为预览指定的标题无效。',
+	'templatesandbox-editform-title-not-exists' => '您为预览指定的标题不存在。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
