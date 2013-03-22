@@ -28,6 +28,11 @@ $specialPageAliases['diq'] = array(
 	'TemplateSandbox' => array( 'GavlanêŞablon' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'TemplateSandbox' => array( 'Provejo_por_ŝablonoj' ),
+);
+
 /** Finnish (suomi) */
 $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
