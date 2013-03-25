@@ -65,7 +65,8 @@ $messages['qqq'] = array(
 	'templatesandbox-title-output' => 'Message used when displaying the parsed page title. $1 is the parsed page title.',
 	'templatesandbox-editform-legend' => 'Text used for the legend on the editpage form.',
 	'templatesandbox-editform-text' => 'Text displayed in the form on the editpage.',
-	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.',
+	'templatesandbox-editform-page-label' => 'Label for the "page" input field on the editpage form.
+{{Identical|Page title}}',
 	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.
 {{Identical|Show preview}}',
 	'templatesandbox-editform-helptext' => 'Text displayed after the submit button on the editpage form.',
@@ -791,6 +792,9 @@ $messages['ku-latn'] = array(
 	'templatesandbox-editform-legend' => 'Pêşdîtina rûpelê bi vê şablonê',
 	'templatesandbox-editform-page-label' => 'Sernavê rûpelê:',
 	'templatesandbox-editform-view-label' => 'Pêşdîtinê nîşan bide',
+	'templatesandbox-preview' => 'Pêşdîtina $2',
+	'templatesandbox-previewnote' => "'''Ji bîr neke ku ev tenê pêşdîtineke [[:$1]] (y)e.'''
+Guhertinên te hê nehatine tomarkirin!",
 	'templatesandbox-editform-need-title' => 'Ji bo pêşdîtina rûpeleke din a bi vê şablonê, divê sernavê rûpelê were destnîşankirin.',
 	'templatesandbox-editform-invalid-title' => 'Sernavê ku te ji bo pêşdîtinê nivîsandî nederbasdar e.',
 	'templatesandbox-editform-title-not-exists' => 'Sernavê ku te ji bo pêşdîtinê nivîsandî, nîne.',
