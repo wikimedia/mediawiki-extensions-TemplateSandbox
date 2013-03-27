@@ -52,7 +52,8 @@ Your changes have not yet been saved!",
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'templatesandbox' => 'The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
+	'templatesandbox' => '{{doc-special|TemplateSandbox}}
+The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
 	'templatesandbox-desc' => '{{desc|name=Template Sandbox|url=http://www.mediawiki.org/wiki/Extension:TemplateSandbox}}',
 	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.",
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
@@ -83,6 +84,39 @@ $messages['qqq'] = array(
 	'templatesandbox-editform-need-title' => 'Error message displayed when no page title is given for the editpage form.',
 	'templatesandbox-editform-invalid-title' => 'Error message displayed when the title specified for the editpage form is invalid.',
 	'templatesandbox-editform-title-not-exists' => 'Error message displayed when the title specified for the editpage form does not exist.',
+);
+
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'templatesandbox' => 'Sjabloonsandput',
+	'templatesandbox-desc' => "[[Special:TemplateSandbox|Vertoon 'n bladsy]] met sjablone vanaf 'n sandput af",
+	'templatesandbox-suffix' => 'sandput',
+	'templatesandbox-legend' => 'Sjabloonsandput',
+	'templatesandbox-text' => 'U kan \'n versameling sjablone wat in u sandput gestoor is kies deur van \'n voorvoegsel gebruik te maak. 
+As u byvoorbeeld \'n voorskou wil sien van {{ns:Template}}:Toets wat u gestoor het as "{{ns:User}}:Gebruikersnaam/sandput/{{ns:Template}}:Toets", gebruik dan "{{ns:User}}:Gebruikersnaam/sandput" as die voorvoegsel.',
+	'templatesandbox-prefix-label' => 'Voorvoegsel vir sandput:',
+	'templatesandbox-page-label' => 'Vertoon bladsy:',
+	'templatesandbox-revid-label' => 'Vertoon weergawe:',
+	'templatesandbox-text-label' => 'Vertoon wikiteks:',
+	'templatesandbox-submit' => 'Wys',
+	'templatesandbox-title-output' => 'Sjabloonsandput: $1',
+	'templatesandbox-editform-legend' => 'Wys voorskou van hierdie sjabloon',
+	'templatesandbox-editform-page-label' => 'Bladsynaam:',
+	'templatesandbox-editform-view-label' => 'Wys voorskou',
+	'templatesandbox-preview' => 'Voorskou van $2',
+	'templatesandbox-previewnote' => "'''Onthou dat hierdie slegs 'n voorskou van [[:$1]] is.'''
+U wysigings is nog nie gestoor nie!",
+	'templatesandbox-invalid-title' => 'Die titel wat u verskaf het is ongeldig.',
+	'templatesandbox-title-not-exists' => 'Die titel wat u verskaf het bestaan ​​nie.',
+	'templatesandbox-revision-not-exists' => 'Die hersiening wat u verskaf het bestaan ​​nie.',
+	'templatesandbox-invalid-prefix' => 'Die voorvoegsel wat u vir die sandput verskaf het is ongeldig.',
+	'templatesandbox-prefix-not-local' => 'Die voorvoegsel wat u vir die sandput verskaf het is nie plaaslik nie.',
+	'templatesandbox-page-or-revid' => "U moet 'n bladsynaam of weergawenommer verskaf.",
+	'templatesandbox-editform-need-title' => "Om 'n ander voorskou van die sjabloon te sien moet 'n titel verskaf word.",
+	'templatesandbox-editform-invalid-title' => "Die titel waarvan u 'n voorskou wil sien is ongeldig.",
+	'templatesandbox-editform-title-not-exists' => "Die titel waarvan u 'n voorskou wil sien bestaan nie.",
 );
 
 /** Aramaic (ܐܪܡܝܐ)
