@@ -1198,6 +1198,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author Anonim.one
  * @author Eleferen
+ * @author Ignatus
  * @author NBS
  * @author Ole Yves
  * @author Olli
@@ -1207,7 +1208,8 @@ $messages['ru'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Выполняет визуализацию страницы]], включая шаблоны из песочницы',
 	'templatesandbox-suffix' => 'песочница',
 	'templatesandbox-legend' => 'Песочница для шаблонов',
-	'templatesandbox-text' => 'Вы можете выбрать набор шаблонов, сохранённых в вашем личном пространстве, используя префикс соответствующей песочницы. Например, если вы хотите просмотреть версию {{ns:Template}}:Тест, которую вы сохранили в качестве «{{ns:User}}:Вася Пупкин/Песочница/{{ns:Template}}:Тест», используйте «{{ns:User}}:Вася Пупкин/Песочница» в качестве префикса.',
+	'templatesandbox-text' => 'Вы можете выбрать набор шаблонов, сохранённых в вашем пространстве песочниц, используя префикс соответствующей песочницы.
+Например, если вы хотите просмотреть версию {{ns:Template}}:Тест, которую вы сохранили в качестве «{{ns:User}}:Вася Пупкин/Песочница/{{ns:Template}}:Тест», используйте «{{ns:User}}:Вася Пупкин/Песочница» в качестве префикса.',
 	'templatesandbox-prefix-label' => 'Префикс песочницы:',
 	'templatesandbox-page-label' => 'Показать страницу:',
 	'templatesandbox-revid-label' => 'Версия показа:',
