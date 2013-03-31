@@ -57,7 +57,9 @@ The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
 	'templatesandbox-desc' => '{{desc|name=Template Sandbox|url=http://www.mediawiki.org/wiki/Extension:TemplateSandbox}}',
 	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.",
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
-	'templatesandbox-text' => 'Text displayed in the input form.', # Fuzzy
+	'templatesandbox-text' => 'Used as header message of the form.
+
+The form has fieldset label {{msg-mw|Templatesandbox-legend}}.',
 	'templatesandbox-prefix-label' => 'Label for the "prefix" input field.',
 	'templatesandbox-page-label' => 'Label for the "page" input field on the special page.',
 	'templatesandbox-revid-label' => 'Label for the "revid" input field on the special page.',
@@ -1361,7 +1363,7 @@ $messages['vi'] = array(
 	'templatesandbox-suffix' => 'chỗ thử',
 	'templatesandbox-legend' => 'Chỗ thử bản mẫu',
 	'templatesandbox-text' => 'Bạn có thể chọn một loạt bản mẫu được lưu trong không gian thử nghiệm của bạn theo tiền tố.
-Thí dụ để xem thử một phiên bản {{ns:Template}}:Thử được lưu tại “{{ns:User}}:Ví dụ/chỗ thử/{{ns:Template}}:Thử”, hãy sử dụng tiền tố “{{ns:User}}:Ví dụ/chỗ thử”.',
+Thí dụ để xem thử một phiên bản {{ns:Template}}:Thử được lưu tại “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}/{{ns:Template}}:Thử”, hãy sử dụng tiền tố “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}”.',
 	'templatesandbox-prefix-label' => 'Tiền tố chỗ thử:',
 	'templatesandbox-page-label' => 'Kết xuất trang:',
 	'templatesandbox-revid-label' => 'Kết xuất phiên bản:',
