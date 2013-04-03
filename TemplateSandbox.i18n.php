@@ -381,12 +381,15 @@ Viaj ŝanĝoj ne ankoraŭ estas konservitaj!",
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Vivaelcelta
  */
 $messages['es'] = array(
 	'templatesandbox' => 'Zona de pruebas para las plantillas',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza una página]] con la transclusión de las plantillas de una zona de pruebas',
 	'templatesandbox-suffix' => 'Zona de pruebas',
 	'templatesandbox-legend' => 'Zona de pruebas para las plantillas',
+	'templatesandbox-text' => 'Puedes eligir un conjunto de plantillas guardadas en tu zona de pruebas utilizando el prefijo apropiado.
+Por ejemplo, si quieres ver una vista previa de una versión de "{{ns:Template}}:Prueba" que has guardado como "{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Prueba", utiliza "{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}" como prefijo.',
 	'templatesandbox-prefix-label' => 'Prefijo de la zona de pruebas',
 	'templatesandbox-page-label' => 'Renderizar la página:',
 	'templatesandbox-revid-label' => 'Renderizar la revisión:',
@@ -558,7 +561,7 @@ $messages['gl'] = array(
 	'templatesandbox-legend' => 'Zona de probas para o modelo',
 	'templatesandbox-text' => 'Pode elixir un conxunto de modelos gardados na súa zona de probas utilizando o prefixo axeitado.
 Por exemplo, se quere ver unha vista previa dunha versión de "{{ns:Template}}:Proba" que gardou como "{{ns:User}}:Exemplo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Proba", empregue "{{ns:User}}:Exemplo/{{int:templatesandbox-suffix}}" como prefixo.',
-	'templatesandbox-prefix-label' => 'Prefixo da zona de probas',
+	'templatesandbox-prefix-label' => 'Prefixo da zona de probas:',
 	'templatesandbox-page-label' => 'Páxina de renderización:',
 	'templatesandbox-revid-label' => 'Revisión de renderización:',
 	'templatesandbox-text-label' => 'Texto wiki de renderización:',
