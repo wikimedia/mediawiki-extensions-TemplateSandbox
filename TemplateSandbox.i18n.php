@@ -46,7 +46,10 @@ Your changes have not yet been saved!",
 	'templatesandbox-editform-title-not-exists' => 'The title you specified for previewing does not exist.',
 );
 
-/** Message documentation (Message documentation)
+/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
+
+It might be easier to translate it as "translation guidelines" or "translation help".
+{{Identical|Message documentation}})
  * @author Brad Jorsch
  * @author Raymond
  * @author Shirayuki
@@ -386,7 +389,7 @@ Viaj ŝanĝoj ne ankoraŭ estas konservitaj!",
 $messages['es'] = array(
 	'templatesandbox' => 'Zona de pruebas para las plantillas',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza una página]] con la transclusión de las plantillas de una zona de pruebas',
-	'templatesandbox-suffix' => 'Zona de pruebas',
+	'templatesandbox-suffix' => 'zona de pruebas',
 	'templatesandbox-legend' => 'Zona de pruebas para las plantillas',
 	'templatesandbox-text' => 'Puedes eligir un conjunto de plantillas guardadas en tu zona de pruebas utilizando el prefijo apropiado.
 Por ejemplo, si quieres ver una vista previa de una versión de "{{ns:Template}}:Prueba" que has guardado como "{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Prueba", utiliza "{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}" como prefijo.',
