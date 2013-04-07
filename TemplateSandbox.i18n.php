@@ -46,10 +46,7 @@ Your changes have not yet been saved!",
 	'templatesandbox-editform-title-not-exists' => 'The title you specified for previewing does not exist.',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Brad Jorsch
  * @author Raymond
  * @author Shirayuki
