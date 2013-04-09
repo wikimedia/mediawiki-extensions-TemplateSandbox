@@ -68,6 +68,11 @@ $specialPageAliases['pa'] = array(
 	'TemplateSandbox' => array( 'ਸਾਂਚਾ_ਕੱਚਾ-ਖਾਕਾ' ),
 );
 
+/** Russian (русский) */
+$specialPageAliases['ru'] = array(
+	'TemplateSandbox' => array( 'Песочница_для_шаблонов' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'TemplateSandbox' => array( 'Пісочниця_шаблону' ),
