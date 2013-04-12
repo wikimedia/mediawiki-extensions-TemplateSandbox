@@ -265,6 +265,39 @@ Změny zatím nebyly uloženy!",
 	'templatesandbox-editform-title-not-exists' => 'Zadaný název stránky pro náhled neexistuje.',
 );
 
+/** Danish (dansk)
+ * @author Byrial
+ */
+$messages['da'] = array(
+	'templatesandbox' => 'Skabelon-sandkasse',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Viser en side]] med brug af skabeloner fra en sandkase',
+	'templatesandbox-suffix' => 'sandkasse',
+	'templatesandbox-legend' => 'Skabelon-sandkasse',
+	'templatesandbox-text' => 'Du kan vælge et sæt skabeloner gemt i dit sandkasse-område ved hjælp af et passende sandkasse-præfiks.
+Hvis du for eksempel vil forhåndsvise en version af {{ns:Template}}:Test som du har gemt som "{{ns:User}}:Foo/{{int:templatesandbox-suffiks}}/{{ns:Template}}:Test", skal du bruge "{{ns:User}}:Foo/{{int:templatesandbox-suffiks}}" som præfiks.',
+	'templatesandbox-prefix-label' => 'Sandkasse-præfiks:',
+	'templatesandbox-page-label' => 'Vis side:',
+	'templatesandbox-revid-label' => 'Vis version:',
+	'templatesandbox-text-label' => 'Vis wikitekst:',
+	'templatesandbox-submit' => 'Vis',
+	'templatesandbox-title-output' => 'Skabelon-sandkasse: $1',
+	'templatesandbox-editform-legend' => 'Forhåndvis en side med denne skabelon',
+	'templatesandbox-editform-page-label' => 'Sidetitel:',
+	'templatesandbox-editform-view-label' => 'Forhåndsvisning',
+	'templatesandbox-preview' => 'Forhåndsvisning af $2',
+	'templatesandbox-previewnote' => "'''Husk at dette er kun en forhåndsvisning af [[:$1]].'''
+Dine ændringer er ikke blevet gemt endnu!",
+	'templatesandbox-invalid-title' => 'Titlen du angav, er ugyldig.',
+	'templatesandbox-title-not-exists' => 'Titlen du angav, findes ikke.',
+	'templatesandbox-revision-not-exists' => 'Versionen du angav, findes ikke.',
+	'templatesandbox-invalid-prefix' => 'Sandkasse-præfikset du angav, er ugyldigt.',
+	'templatesandbox-prefix-not-local' => 'Sandkasse-præfikset du angav, er ikke lokalt.',
+	'templatesandbox-page-or-revid' => 'Du skal angive enten en sidetitel eller et versions-id-nummer.',
+	'templatesandbox-editform-need-title' => 'For at forhåndsvise en anden side med denne skabelon, skal du angive en sidetitel.',
+	'templatesandbox-editform-invalid-title' => 'Titlen du angav for forhåndsvisning er ugyldig.',
+	'templatesandbox-editform-title-not-exists' => 'Titlen du angav for forhåndsvisning findes ikke.',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
