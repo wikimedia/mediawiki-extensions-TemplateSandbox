@@ -267,6 +267,7 @@ Změny zatím nebyly uloženy!",
 
 /** Danish (dansk)
  * @author Byrial
+ * @author Christian List
  */
 $messages['da'] = array(
 	'templatesandbox' => 'Skabelon-sandkasse',
@@ -285,7 +286,7 @@ Hvis du for eksempel vil forhåndsvise en version af {{ns:Template}}:Test som du
 	'templatesandbox-editform-page-label' => 'Sidetitel:',
 	'templatesandbox-editform-view-label' => 'Forhåndsvisning',
 	'templatesandbox-preview' => 'Forhåndsvisning af $2',
-	'templatesandbox-previewnote' => "'''Husk at dette er kun en forhåndsvisning af [[:$1]].'''
+	'templatesandbox-previewnote' => "'''Husk at dette kun er en forhåndsvisning af [[:$1]].'''
 Dine ændringer er ikke blevet gemt endnu!",
 	'templatesandbox-invalid-title' => 'Titlen du angav, er ugyldig.',
 	'templatesandbox-title-not-exists' => 'Titlen du angav, findes ikke.',
@@ -733,13 +734,13 @@ $messages['it'] = array(
 	'templatesandbox-legend' => 'Template sandbox',
 	'templatesandbox-text' => 'Indicando un prefisso per la sandbox, puoi selezionare un gruppo di template salvati nel tuo spazio sandbox.
 Per esempio, se vuoi fare l\'anteprima di una versione di {{ns:Template}}:Test che hai salvato come "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", usa come prefisso "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}".',
-	'templatesandbox-prefix-label' => 'Prefisso della sandbox:',
+	'templatesandbox-prefix-label' => 'Prefisso delle sandbox:',
 	'templatesandbox-page-label' => 'Pagina da visualizzare:',
 	'templatesandbox-revid-label' => 'Versione da visualizzare:',
-	'templatesandbox-text-label' => 'Wikicode da visualizzare:',
+	'templatesandbox-text-label' => 'Wikicodice da visualizzare:',
 	'templatesandbox-submit' => 'Visualizza',
-	'templatesandbox-title-output' => 'Prova template: $1',
-	'templatesandbox-editform-legend' => 'Anteprima della pagina con questo template',
+	'templatesandbox-title-output' => 'Prova template su: $1',
+	'templatesandbox-editform-legend' => 'Anteprima di una pagina con questo template',
 	'templatesandbox-editform-page-label' => 'Titolo della pagina:',
 	'templatesandbox-editform-view-label' => 'Visualizza anteprima',
 	'templatesandbox-preview' => 'Anteprima di $2',
@@ -750,8 +751,8 @@ Le tue modifiche NON sono ancora state salvate!",
 	'templatesandbox-revision-not-exists' => 'La revisione che hai specificato non esiste.',
 	'templatesandbox-invalid-prefix' => 'Il prefisso di sandbox che hai indicato non è valido.',
 	'templatesandbox-prefix-not-local' => 'Il prefisso di sandbox che hai indicato non è locale.',
-	'templatesandbox-page-or-revid' => 'Devi inserire un titolo di pagina oppure un numero di versione.',
-	'templatesandbox-editform-need-title' => "Per visualizzare l'anteprima di un'altra pagina con questo template, devi specificare un titolo di pagina.",
+	'templatesandbox-page-or-revid' => 'Devi inserire il titolo di una pagina oppure un numero di versione.',
+	'templatesandbox-editform-need-title' => "Per visualizzare l'anteprima di un'altra pagina con questo template, devi specificare il titolo di una pagina.",
 	'templatesandbox-editform-invalid-title' => "Il titolo che hai specificato per l'anteprima non è valido.",
 	'templatesandbox-editform-title-not-exists' => "Il titolo che hai specificato per l'anteprima non esiste.",
 );
@@ -906,6 +907,16 @@ $messages['lv'] = array(
 	'templatesandbox-editform-page-label' => 'Lapas nosaukums:',
 	'templatesandbox-editform-view-label' => 'Rādīt pirmskatu',
 	'templatesandbox-preview' => '$2 pirmskats',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'templatesandbox' => 'Bak kasiak templat',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Marender laman]] transklusi templat dari bak kasiak',
+	'templatesandbox-suffix' => 'bak kasiak',
+	'templatesandbox-legend' => 'Bak kasiak templat',
 );
 
 /** Macedonian (македонски)

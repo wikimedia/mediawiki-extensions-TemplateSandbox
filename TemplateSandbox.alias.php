@@ -48,6 +48,11 @@ $specialPageAliases['ko'] = array(
 	'TemplateSandbox' => array( '틀연습장' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'TemplateSandbox' => array( 'Sandkëscht_fir_Schablounen' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'TemplateSandbox' => array( 'ШаблонскиПесочник' ),
