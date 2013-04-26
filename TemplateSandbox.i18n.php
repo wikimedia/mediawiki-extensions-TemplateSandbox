@@ -692,6 +692,22 @@ $messages['hu'] = array(
 	'templatesandbox-suffix' => 'homokozó',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Iwan Novirion
+ */
+$messages['id'] = array(
+	'templatesandbox-editform-legend' => 'Pratayang halaman dengan templat ini',
+	'templatesandbox-editform-page-label' => 'Judul halaman:',
+	'templatesandbox-editform-view-label' => 'Lihat pratayang',
+	'templatesandbox-preview' => 'Pratayang dari halaman $2',
+	'templatesandbox-previewnote' => "'''Ingat ini hanyalah pratayang dari halaman [[:$1]].'''
+Perubahan yang Anda buat belum disimpan!",
+	'templatesandbox-invalid-title' => 'Judul yang Anda masukkan tidak valid.',
+	'templatesandbox-title-not-exists' => 'Judul yang Anda minta tidak ada.',
+	'templatesandbox-editform-need-title' => 'Untuk melihat pratayang halaman yang menggunakan template ini, judul halamannya harus ada.',
+	'templatesandbox-editform-title-not-exists' => 'Judul Anda yang anda masukkan untuk melihat pratayang tidak ada.',
+);
+
 /** Iloko (Ilokano)
  * @author Lam-ang
  */
@@ -917,6 +933,27 @@ $messages['min'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Marender laman]] transklusi templat dari bak kasiak',
 	'templatesandbox-suffix' => 'bak kasiak',
 	'templatesandbox-legend' => 'Bak kasiak templat',
+	'templatesandbox-prefix-label' => 'Awalan bak kasiak:',
+	'templatesandbox-page-label' => 'Laman render:',
+	'templatesandbox-revid-label' => 'Parubahan render:',
+	'templatesandbox-text-label' => 'Teks wiki render:',
+	'templatesandbox-submit' => 'Baco',
+	'templatesandbox-title-output' => 'Templat bak kasiak: $1',
+	'templatesandbox-editform-legend' => 'Pratonton laman jo templat ko',
+	'templatesandbox-editform-page-label' => 'Judul laman:',
+	'templatesandbox-editform-view-label' => 'Pratonton',
+	'templatesandbox-preview' => 'Pratonton dari laman $2',
+	'templatesandbox-previewnote' => "'''Ingek iko hanyolah pratonton dari laman [[:$1]].'''
+Parubahan nan Sanak buek alun disimpan!",
+	'templatesandbox-invalid-title' => 'Judul nan Sanak agiah indak sah.',
+	'templatesandbox-title-not-exists' => 'Judul nan dituju indak basobok.',
+	'templatesandbox-revision-not-exists' => 'Revisi nan dituju indak basobok.',
+	'templatesandbox-invalid-prefix' => 'Awalan bak kasiak nan dituju indak sah.',
+	'templatesandbox-prefix-not-local' => 'Awalan bak kasiak nan dituju indak ad di wiki ko.',
+	'templatesandbox-page-or-revid' => 'Sanak harus masuakan judul laman atau nomor ID parubahan.',
+	'templatesandbox-editform-need-title' => 'Untuak mancaliak pratonton laman nan manggunoan templat iko, judul lamannyo harus ado.',
+	'templatesandbox-editform-invalid-title' => 'Judul nan dituju untuak pratonton indak sah.',
+	'templatesandbox-editform-title-not-exists' => 'Judul nan dituju untuak pratonton indak basobok.',
 );
 
 /** Macedonian (македонски)
