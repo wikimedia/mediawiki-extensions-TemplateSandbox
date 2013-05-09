@@ -744,10 +744,10 @@ Dagiti binalbaliwam ket saan pay a naidulin!",
  * @author Codicorumus
  */
 $messages['it'] = array(
-	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox' => 'Pagina di prova Template',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualizza una pagina]] includendovi le versioni dei template contenute in una sandbox',
 	'templatesandbox-suffix' => 'sandbox',
-	'templatesandbox-legend' => 'Template sandbox',
+	'templatesandbox-legend' => 'Pagina di prova Template',
 	'templatesandbox-text' => 'Indicando un prefisso per la sandbox, puoi selezionare un gruppo di template salvati nel tuo spazio sandbox.
 Per esempio, se vuoi fare l\'anteprima di una versione di {{ns:Template}}:Test che hai salvato come "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", usa come prefisso "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}".',
 	'templatesandbox-prefix-label' => 'Prefisso delle sandbox:',
