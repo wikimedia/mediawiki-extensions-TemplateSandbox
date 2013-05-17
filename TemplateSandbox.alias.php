@@ -58,6 +58,11 @@ $specialPageAliases['mk'] = array(
 	'TemplateSandbox' => array( 'ШаблонскиПесочник' ),
 );
 
+/** Marathi (मराठी) */
+$specialPageAliases['mr'] = array(
+	'TemplateSandbox' => array( 'साचाधूळपाटी' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'TemplateSandbox' => array( 'Sjabloonzandbak' ),
