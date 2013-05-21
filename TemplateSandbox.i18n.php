@@ -130,6 +130,39 @@ $messages['arc'] = array(
 	'templatesandbox-legend' => 'ܩܠܒܐ ܕܣܢܕܘܩܐ ܕܚܠܐ',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'templatesandbox' => 'Zona de prueba pa les plantíes',
+	'templatesandbox-desc' => "[[Special:TemplateSandbox|Amuesa una páxina]] cola tresclusión de plantíes d'una zona de pruebes",
+	'templatesandbox-suffix' => 'zona de pruebes',
+	'templatesandbox-legend' => 'Zona de prueba pa les plantíes',
+	'templatesandbox-text' => 'Pue esbillar un conxuntu de plantíes guardaes nel so espaciu de pruebes usando un prefixu apropiáu pa la zona de pruebes.
+Por exemplu, si quier ver la vista previa d\'una versión de "{{ns:Template}}:Prueba" que guardó como "{{ns:User}}:Exemplu/{{int:templatesandbox-suffix}}/{{ns:Template}}:Prueba", utilice "{{ns:User}}:Exemplu/{{int:templatesandbox-suffix}}" como prefixu.',
+	'templatesandbox-prefix-label' => 'Prefixu de la zona de pruebes:',
+	'templatesandbox-page-label' => 'Representar la páxina:',
+	'templatesandbox-revid-label' => 'Representar la revisión:',
+	'templatesandbox-text-label' => 'Representar el testu wiki:',
+	'templatesandbox-submit' => 'Ver',
+	'templatesandbox-title-output' => 'Zona de prueba pa les plantíes: $1',
+	'templatesandbox-editform-legend' => 'Vista previa de páxina con esta plantía',
+	'templatesandbox-editform-page-label' => 'Títulu de la páxina:',
+	'templatesandbox-editform-view-label' => 'Amosar vista previa',
+	'templatesandbox-preview' => 'Vista previa de $2',
+	'templatesandbox-previewnote' => "'''Alcuerdate de qu'esto ye sólo una vista previa de [[:$1]].'''
+¡Los cambios entá nun se guardaron!",
+	'templatesandbox-invalid-title' => 'El títulu que conseñasti nun ye válidu.',
+	'templatesandbox-title-not-exists' => 'El títulu que conseñasti nun esiste.',
+	'templatesandbox-revision-not-exists' => 'La revisión que conseñasti nun esiste.',
+	'templatesandbox-invalid-prefix' => 'El prefixu de zona de pruebes que conseñasti ye inválidu.',
+	'templatesandbox-prefix-not-local' => 'El prefixu de zona de pruebes que conseñasti nun ye llocal.',
+	'templatesandbox-page-or-revid' => "Tienes d'escribir o'l títulu d'una páxina o un númberu ID de revisión.",
+	'templatesandbox-editform-need-title' => "Pa la vista previa d'otra páxina con esta plantía, tienes de conseñar un títulu de páxina.",
+	'templatesandbox-editform-invalid-title' => 'El títulu que conseñasti pa la vista previa ye inválidu.',
+	'templatesandbox-editform-title-not-exists' => 'El títulu que conseñasti pa la vista previa nun esiste',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
@@ -1239,6 +1272,39 @@ As modificações ainda não foram gravadas!",
  */
 $messages['pt-br'] = array(
 	'templatesandbox-editform-view-label' => 'Prever',
+);
+
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'templatesandbox' => 'Pukllana plantilla',
+	'templatesandbox-desc' => "[[Special:TemplateSandbox|P'anqata rikch'achin]] pukllanamanta plantillakunata ch'aqtaspa",
+	'templatesandbox-suffix' => 'pukllana',
+	'templatesandbox-legend' => 'Pukllana plantilla',
+	'templatesandbox-text' => "Pukllana k'itiykipi waqaychasqa plantillakunamanta akllaytam atinki, pukllanapaq allin qallarina k'askaqninta llamk'achispa.
+Ahinataq, \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\" sutiwan waqaychasqayki {{ns:Template}}:Test nisqamanta musuqchasqata ñawpaqta qhawayta munaspaykiqa, \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" nisqata qallarina k'askaqnin hinata llamk'achiy.",
+	'templatesandbox-prefix-label' => "Pukllanap qallarina k'askaqnin",
+	'templatesandbox-page-label' => "P'anqata rikch'achiy:",
+	'templatesandbox-revid-label' => "Musuqchasqata rikch'achiy:",
+	'templatesandbox-text-label' => "Wiki qillqata rikch'achiy:",
+	'templatesandbox-submit' => 'Qhaway',
+	'templatesandbox-title-output' => 'Pukllana plantilla: $1',
+	'templatesandbox-editform-legend' => "P'anqata ñawpaqta kay plantillawan qhaway",
+	'templatesandbox-editform-page-label' => "P'anqap sutin:",
+	'templatesandbox-editform-view-label' => 'Ñawpaqta qhawallay',
+	'templatesandbox-preview' => '$2-ta ñawpaqta qhawallay',
+	'templatesandbox-previewnote' => "'''Yuyaykuy: Kayqa [[:$1]]-manta qhawariyllam.'''
+Llamk'apusqaykiqa manaraqmi waqaychasqachu!",
+	'templatesandbox-invalid-title' => "Qusqayki p'anqap sutinqa manam allinchu.",
+	'templatesandbox-title-not-exists' => "Qusqayki p'anqap sutinqa manam kanchu.",
+	'templatesandbox-revision-not-exists' => "Qusqayki p'anqa musuqchasqaqa manam kanchu.",
+	'templatesandbox-invalid-prefix' => "Qusqayki pukllanap qallarina k'askaqninqa manam allinchu.",
+	'templatesandbox-prefix-not-local' => "Qusqayki pukllanap qallarina k'askaqninqa manam tiyanallapaqchu.",
+	'templatesandbox-page-or-revid' => "P'anqap sutinta icha musuqchasqapaq ID huchhata yaykuchinaykim tiyan.",
+	'templatesandbox-editform-need-title' => "Kay plantillawan huk p'anqata ñawpaqta qhawanaykipaqqa,  p'anqap sutinta qunaykim tiyan.",
+	'templatesandbox-editform-invalid-title' => 'Qusqayki ñawpaqta qhawanapaq sutiqa manam allinchu.',
+	'templatesandbox-editform-title-not-exists' => 'Qusqayki ñawpaqta qhawanapaq sutiqa manam kanchu.',
 );
 
 /** Romanian (română)
