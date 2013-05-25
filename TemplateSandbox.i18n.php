@@ -1342,6 +1342,9 @@ Modificările dumneavoastră nu au fost încă salvate!",
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'templatesandbox-suffix' => 'buatte de rene',
+	'templatesandbox-legend' => "Template d'a buatte de rene",
+	'templatesandbox-prefix-label' => "Preffise d'a buatte de rene:",
 	'templatesandbox-submit' => "'Ndruche",
 	'templatesandbox-editform-page-label' => "Titole d'a pàgene:",
 	'templatesandbox-editform-view-label' => "Vide l'andeprime",
@@ -1503,6 +1506,13 @@ $messages['uk'] = array(
 	'templatesandbox-editform-need-title' => 'Потрібно вказати заголовок сторінки для перегляду іншої сторінки з цим шаблоном.',
 	'templatesandbox-editform-invalid-title' => 'Вказаний заголовок для попереднього перегляду некоректний.',
 	'templatesandbox-editform-title-not-exists' => 'Вказаний заголовок для попереднього перегляду не існує.',
+);
+
+/** vèneto (vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'templatesandbox' => 'Pagina de prova par i modèi',
 );
 
 /** Vietnamese (Tiếng Việt)
