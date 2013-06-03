@@ -390,7 +390,7 @@ $messages['el'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Αποδίδει μια σελίδα]] ενσωματώνοντας πρότυπα από ένα αμμοδοχείο',
 	'templatesandbox-suffix' => 'αμμοδοχείο',
 	'templatesandbox-legend' => 'Αμμοδοχείο προτύπου',
-	'templatesandbox-text' => 'Μπορείτε να επιλέξετε μια ομάδα προτύπων που έχουν σωθεί στο χώρο του  αμμοδοχείου  σας χρησιμοποιώντας ένα κατάλληλο πρόθεμα αμμοδοχείου.  Για παράδειγμα, αν θέλετε να κάνετε προεπισκόπηση  σε μια έκδοση του {{ns:Template}}:Κάνετε τη δοκιμή με αυτό που έχετε αποθηκεύσει ως "{{ns:User}}:Foo/αμμοδοχείο/{{ns:Template}}:Δοκιμή", κάντε χρήση του  "{{ns:User}}:Foo/αμμοδοχείο" ως πρόθεμα.',
+	'templatesandbox-text' => 'Μπορείτε να επιλέξετε μια ομάδα προτύπων που έχουν σωθεί στο χώρο του  αμμοδοχείου  σας χρησιμοποιώντας ένα κατάλληλο πρόθεμα αμμοδοχείου.  Για παράδειγμα, αν θέλετε να κάνετε προεπισκόπηση  σε μια έκδοση του {{ns:Template}}:Κάνετε τη δοκιμή με αυτό που έχετε αποθηκεύσει ως "{{ns:User}}:Foo/αμμοδοχείο/{{ns:Template}}:Δοκιμή", κάντε χρήση του  "{{ns:User}}:Foo/αμμοδοχείο" ως πρόθεμα.', # Fuzzy
 	'templatesandbox-prefix-label' => 'Πρόθεμα αμμοδοχείου:',
 	'templatesandbox-page-label' => 'Απόδοση σελίδας:',
 	'templatesandbox-revid-label' => 'Απόδοση αναθεώρησης:',
@@ -422,7 +422,7 @@ $messages['eo'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Montru paĝon]] uzante ŝablonojn el provejo',
 	'templatesandbox-suffix' => 'Provejo',
 	'templatesandbox-legend' => 'Ŝablona provejo',
-	'templatesandbox-text' => 'Vi povas elekti aron da ŝablonoj konservitaj en via proveja spaco uzante taŭgan provejan prefikson. Ekzemple se vi volas antaŭvidi version de {{ns:Template}}:provo kiun vi konservis kiel "{{ns:User}}:uzantonomo/provejo/{{ns:Template}}:provo", uzu "{{ns:User}}:uzantonomo/provejo" kiel prefikso.',
+	'templatesandbox-text' => 'Vi povas elekti aron da ŝablonoj konservitaj en via proveja spaco uzante taŭgan provejan prefikson. Ekzemple se vi volas antaŭvidi version de {{ns:Template}}:provo kiun vi konservis kiel "{{ns:User}}:uzantonomo/provejo/{{ns:Template}}:provo", uzu "{{ns:User}}:uzantonomo/provejo" kiel prefikso.', # Fuzzy
 	'templatesandbox-prefix-label' => 'Proveja prefikso:',
 	'templatesandbox-page-label' => 'Paĝaspekto:',
 	'templatesandbox-revid-label' => 'Aspekto de la versio:',
@@ -1064,7 +1064,7 @@ Suntngan anda belum disimpan!",
 	'templatesandbox-editform-title-not-exists' => 'Halaman yang anda nyatakan untuk pralihat tidak wujud.',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Jeblad
  */
 $messages['nb'] = array(
@@ -1072,7 +1072,7 @@ $messages['nb'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse',
 	'templatesandbox-suffix' => 'sandkasse',
 	'templatesandbox-legend' => 'Alternativ for mal-sandkasse',
-	'templatesandbox-text' => 'Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk "{{ns:User}}:Foo/sandbox" som prefiks.',
+	'templatesandbox-text' => 'Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk "{{ns:User}}:Foo/sandbox" som prefiks.', # Fuzzy
 	'templatesandbox-prefix-label' => 'Prefiks for sandkasse:',
 	'templatesandbox-page-label' => 'Tegn ut siden:',
 	'templatesandbox-revid-label' => 'Tegn ut revisjonen:',
@@ -1130,7 +1130,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Jeblad
  * @author Njardarlogar
  */
@@ -1139,7 +1139,7 @@ $messages['nn'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visualiserer ei side]] som inkluderer malar frå ein sandkasse',
 	'templatesandbox-suffix' => 'sandkasse',
 	'templatesandbox-legend' => 'Alternativ for malsandkasse',
-	'templatesandbox-text' => 'Du kan velja eit sett med malar som er lagra i sandkassen din med hjelp av eit passande sandkasseførefeste. Om du til dømes vil førehandsvisa ein versjon av {{ns:Template}}:Test som du har lagra som «{{ns:User}}:Foo/sandkasse/{{ns:Template}}:Test», så bruk «{{ns:User}}:Foo/sandkasse» som førefeste.',
+	'templatesandbox-text' => 'Du kan velja eit sett med malar som er lagra i sandkassen din med hjelp av eit passande sandkasseførefeste. Om du til dømes vil førehandsvisa ein versjon av {{ns:Template}}:Test som du har lagra som «{{ns:User}}:Foo/sandkasse/{{ns:Template}}:Test», så bruk «{{ns:User}}:Foo/sandkasse» som førefeste.', # Fuzzy
 	'templatesandbox-prefix-label' => 'Sandkasseførefeste:',
 	'templatesandbox-page-label' => 'Teikn ut side:',
 	'templatesandbox-revid-label' => 'Teikn ut versjon:',
@@ -1203,7 +1203,7 @@ $messages['pms'] = array(
 	'templatesandbox-suffix' => 'vasca dla sabia',
 	'templatesandbox-legend' => 'Sabiera ëd model',
 	'templatesandbox-text' => "A peul serne n'ansem dë stamp salvà an tò spassi ëd sabiera an dovrand un prefiss ëd sabiera aproprià.
-Për esempi, s'a veul vëdde na preuva ëd na version ëd {{ns:Template}}:Test ch'a l'ha salvà tanme «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», ch'a deuvra «{{ns:User}}:Foo/sabiera» com prefiss.",
+Për esempi, s'a veul vëdde na preuva ëd na version ëd {{ns:Template}}:Test ch'a l'ha salvà tanme «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», ch'a deuvra «{{ns:User}}:Foo/sabiera» com prefiss.", # Fuzzy
 	'templatesandbox-prefix-label' => 'Prefiss ëd pàgina dle preuve:',
 	'templatesandbox-page-label' => 'Visualisé la pàgina:',
 	'templatesandbox-revid-label' => 'Visualisé la revision:',
@@ -1245,7 +1245,7 @@ $messages['pt'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Renderiza uma página]] transcluindo as predefinições a partir de uma página de testes',
 	'templatesandbox-suffix' => 'Testes',
 	'templatesandbox-legend' => 'Página para testar predefinições',
-	'templatesandbox-text' => 'Pode escolher um conjunto de predefinições salvas em sua página de testes pessoal fornecendo o prefixo apropriado da página de testes. Por exemplo, se desejar pré-visualizar uma versão de {{ns:Template}}:Teste que salvou sob o título "{{ns:User}}:Foo/Testes/{{ns:Template}}:Teste", utilize "{{ns:User}}:Foo/Testes" como prefixo.',
+	'templatesandbox-text' => 'Pode escolher um conjunto de predefinições salvas em sua página de testes pessoal fornecendo o prefixo apropriado da página de testes. Por exemplo, se desejar pré-visualizar uma versão de {{ns:Template}}:Teste que salvou sob o título "{{ns:User}}:Foo/Testes/{{ns:Template}}:Teste", utilize "{{ns:User}}:Foo/Testes" como prefixo.', # Fuzzy
 	'templatesandbox-prefix-label' => 'Prefixo da página de testes:',
 	'templatesandbox-page-label' => 'Renderizar a página:',
 	'templatesandbox-revid-label' => 'Renderizar a revisão:',
