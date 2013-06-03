@@ -749,6 +749,8 @@ $messages['ilo'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Agipaay ti panid]] a mangilak-am kadagiti plantilia manipud ti pagipadasan',
 	'templatesandbox-suffix' => 'pagipadasan',
 	'templatesandbox-legend' => 'Pagipadasan ti plantilia',
+	'templatesandbox-text' => 'Mabalinmo ti agpili kadagiti agasmang ti plantilia a naidulin idiay pagipadasam babaen ti panag-usar ti maitunos a pasaruno ti pagipadasan.
+Kas pagarigan, no kayatmo a pagdasen ti bersion iti {{ns:Template}}:Subokan a naidulinmo a kas ti "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Subokan", usaren ti "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}" a kas ti pasaruno.',
 	'templatesandbox-prefix-label' => 'Pasaruno ti pagipadasan:',
 	'templatesandbox-page-label' => 'Ipaay ti panid:',
 	'templatesandbox-revid-label' => 'Ipaay ti binaliwan:',
@@ -1268,9 +1270,11 @@ As modificações ainda não foram gravadas!",
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Luckas
  * @author Opraco
  */
 $messages['pt-br'] = array(
+	'templatesandbox-editform-page-label' => 'Título da página:',
 	'templatesandbox-editform-view-label' => 'Prever',
 );
 
