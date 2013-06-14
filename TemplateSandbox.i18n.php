@@ -202,6 +202,24 @@ $messages['bg'] = array(
 	'templatesandbox-submit' => 'Изглед',
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'templatesandbox-suffix' => 'খেলাঘর',
+	'templatesandbox-legend' => 'টেমপ্লেট খেলাঘর',
+	'templatesandbox-submit' => 'দেখাও',
+	'templatesandbox-title-output' => 'টেমপ্লেট খেলাঘর: $1',
+	'templatesandbox-editform-legend' => 'এই টেমপ্লেট দিয়ে পাতার প্রাকদর্শন',
+	'templatesandbox-editform-page-label' => 'পাতার শিরোনাম:',
+	'templatesandbox-editform-view-label' => 'প্রাকদর্শন দেখাও',
+	'templatesandbox-preview' => '$2 এর প্রাকদর্শন',
+	'templatesandbox-previewnote' => "'''মনে রাখবেন যে এটি শুধুমাত্র [[:$1]] এর একটি প্রাকদর্শন।'''
+আপনার পরিবর্তনসমূহ এখনো সংরক্ষণ করা হয় নি!",
+	'templatesandbox-invalid-title' => 'আপনার নির্দিষ্ট করা শিরোনাম অবৈধ।',
+	'templatesandbox-title-not-exists' => 'আপনার নির্দিষ্ট করা শিরোনামটি বিদ্যমান নয়।',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
@@ -1535,11 +1553,11 @@ Thí dụ để xem thử một phiên bản {{ns:Template}}:Thử được lưu
 	'templatesandbox-text-label' => 'Kết xuất văn bản wiki:',
 	'templatesandbox-submit' => 'Xem',
 	'templatesandbox-title-output' => 'Chỗ thử bản mẫu: $1',
-	'templatesandbox-editform-legend' => 'Xem thử trang dùng bản mẫu này',
+	'templatesandbox-editform-legend' => 'Xem trước trang dùng bản mẫu này',
 	'templatesandbox-editform-page-label' => 'Tên trang:',
-	'templatesandbox-editform-view-label' => 'Xem thử',
-	'templatesandbox-preview' => 'Xem thử $2',
-	'templatesandbox-previewnote' => "'''Đây chỉ mới là xem thử [[:$1]].'''
+	'templatesandbox-editform-view-label' => 'Xem trước',
+	'templatesandbox-preview' => 'Xem trước $2',
+	'templatesandbox-previewnote' => "'''Đây chỉ mới là bản xem trước [[:$1]].'''
 Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-invalid-title' => 'Tên trang chỉ định không hợp lệ.',
 	'templatesandbox-title-not-exists' => 'Tên trang chỉ định không tồn tại.',
@@ -1547,9 +1565,9 @@ Các thay đổi của bạn vẫn chưa được lưu!",
 	'templatesandbox-invalid-prefix' => 'Tiền tố chỗ thử chỉ định không hợp lệ.',
 	'templatesandbox-prefix-not-local' => 'Tiền tố chỗ thử chỉ định không có trực thuộc wiki này.',
 	'templatesandbox-page-or-revid' => 'Bạn cần chỉ định tên trang hoặc số phiên bản.',
-	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem thử trang khác dùng bản mẫu này.',
-	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem thử không hợp lệ.',
-	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem thử không tồn tại.',
+	'templatesandbox-editform-need-title' => 'Cần chỉ định một tên trang để xem trước trang khác dùng bản mẫu này.',
+	'templatesandbox-editform-invalid-title' => 'Tên trang được chỉ định để xem trước không hợp lệ.',
+	'templatesandbox-editform-title-not-exists' => 'Tên trang được chỉ định để xem trước không tồn tại.',
 );
 
 /** Yiddish (ייִדיש)
