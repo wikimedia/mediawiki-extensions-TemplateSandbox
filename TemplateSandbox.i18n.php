@@ -273,6 +273,15 @@ Els vostres canvis encara no han estat desats!",
 	'templatesandbox-editform-title-not-exists' => 'El títol que heu especificat per a la previsualització no existeix.',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'templatesandbox-submit' => 'Хьажа',
+	'templatesandbox-editform-legend' => 'Кеп лелош йолучу агӀоне хьалха муха ю хьажар',
+	'templatesandbox-preview' => 'Хьалха муха ю хьажар $2',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
