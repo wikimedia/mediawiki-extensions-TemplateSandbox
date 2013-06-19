@@ -279,7 +279,10 @@ Els vostres canvis encara no han estat desats!",
 $messages['ce'] = array(
 	'templatesandbox-submit' => 'Хьажа',
 	'templatesandbox-editform-legend' => 'Кеп лелош йолучу агӀоне хьалха муха ю хьажар',
+	'templatesandbox-editform-page-label' => 'АгӀона цӀе:',
+	'templatesandbox-editform-view-label' => 'Хьалха муха ю хьажар',
 	'templatesandbox-preview' => 'Хьалха муха ю хьажар $2',
+	'templatesandbox-previewnote' => "'''Хlара хьалх хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀийнца дӀаязбина бац!",
 );
 
 /** Sorani Kurdish (کوردی)

@@ -33,6 +33,11 @@ $specialPageAliases['eo'] = array(
 	'TemplateSandbox' => array( 'Provejo_por_ŝablonoj' ),
 );
 
+/** Estonian (eesti) */
+$specialPageAliases['et'] = array(
+	'TemplateSandbox' => array( 'Mallide_liivakast' ),
+);
+
 /** Finnish (suomi) */
 $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
