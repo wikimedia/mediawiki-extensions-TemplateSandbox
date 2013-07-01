@@ -25,7 +25,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'TemplateSandbox' => array( 'GavlanêŞablon' ),
+	'TemplateSandbox' => array( 'GavlanéŞablon' ),
 );
 
 /** Esperanto (Esperanto) */
