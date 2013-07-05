@@ -1376,10 +1376,12 @@ Modificările dumneavoastră nu au fost încă salvate!",
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'templatesandbox' => "Template d'a sandbox",
 	'templatesandbox-suffix' => 'buatte de rene',
 	'templatesandbox-legend' => "Template d'a buatte de rene",
 	'templatesandbox-prefix-label' => "Preffise d'a buatte de rene:",
 	'templatesandbox-submit' => "'Ndruche",
+	'templatesandbox-title-output' => "Template d'a sandbox: $1",
 	'templatesandbox-editform-page-label' => "Titole d'a pàgene:",
 	'templatesandbox-editform-view-label' => "Vide l'andeprime",
 	'templatesandbox-preview' => 'Andeprime de $2',
