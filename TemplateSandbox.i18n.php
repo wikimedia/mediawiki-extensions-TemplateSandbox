@@ -1126,6 +1126,15 @@ Endringene er ikke lagret ennå!",
 	'templatesandbox-editform-title-not-exists' => 'Tittelen du har angitt for forhåndsvisning finnes ikke.',
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'templatesandbox' => 'Malzaandkule',
+	'templatesandbox-suffix' => 'zaandkule',
+	'templatesandbox-legend' => 'Malzaandkule',
+);
+
 /** Dutch (Nederlands)
  * @author Romaine
  * @author Siebrand
