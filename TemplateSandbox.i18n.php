@@ -1569,7 +1569,7 @@ $messages['vi'] = array(
 	'templatesandbox-suffix' => 'chỗ thử',
 	'templatesandbox-legend' => 'Chỗ thử bản mẫu',
 	'templatesandbox-text' => 'Bạn có thể chọn một loạt bản mẫu được lưu trong không gian thử nghiệm của bạn theo tiền tố.
-Thí dụ để xem thử một phiên bản {{ns:Template}}:Thử được lưu tại “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}/{{ns:Template}}:Thử”, hãy sử dụng tiền tố “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}”.',
+Thí dụ để xem trước một phiên bản {{ns:Template}}:Thử được lưu tại “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}/{{ns:Template}}:Thử”, hãy sử dụng tiền tố “{{ns:User}}:Ví dụ/{{int:templatesandbox-suffix}}”.',
 	'templatesandbox-prefix-label' => 'Tiền tố chỗ thử:',
 	'templatesandbox-page-label' => 'Kết xuất trang:',
 	'templatesandbox-revid-label' => 'Kết xuất phiên bản:',
