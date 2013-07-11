@@ -1553,6 +1553,15 @@ $messages['uk'] = array(
 	'templatesandbox-editform-title-not-exists' => 'Вказаний заголовок для попереднього перегляду не існує.',
 );
 
+/** Uzbek (oʻzbekcha)
+ * @author Sociologist
+ */
+$messages['uz'] = array(
+	'templatesandbox-editform-legend' => 'Ushbu andoza qoʻllanilgan sahifani koʻrib chiqish',
+	'templatesandbox-previewnote' => "'''Diqqat! Bu shunchaki [[:$1]] sahifasini koʻrib chiqish.''' Andozaga kiritgan oʻzgartirishlaringiz hali saqlangani yoʻq!",
+	'templatesandbox-editform-need-title' => 'Ushbu andoza qoʻllanilgan sahifani koʻrib chiqish uchun oʻsha sahifa nomi koʻrsatilishi lozim.',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
