@@ -18,6 +18,11 @@ $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'TemplateSandbox' => array( 'Кепаш_кхуллу_меттиг' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'TemplateSandbox' => array( 'Vorlagenspielwiese' ),
