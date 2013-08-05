@@ -1059,6 +1059,19 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'templatesandbox' => 'ഫലക പരീക്ഷണോപാധി',
+	'templatesandbox-suffix' => 'എഴുത്തുകളരി',
+	'templatesandbox-legend' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി',
+	'templatesandbox-submit' => 'കാണുക',
+	'templatesandbox-title-output' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി: $1',
+	'templatesandbox-editform-legend' => 'ഈ ഫലകം ഉപയോഗിച്ച് താൾ എങ്ങനെയുണ്ടെന്ന് കാണുക',
+	'templatesandbox-editform-page-label' => 'താളിന്റെ തലക്കെട്ട്:',
+	'templatesandbox-editform-view-label' => 'എങ്ങനെയുണ്ടെന്ന് കാണിക്കുക',
+	'templatesandbox-preview' => '$2 എങ്ങനെയുണ്ടെന്ന് കാണുക',
+	'templatesandbox-previewnote' => "'''ഇത് [[:$1]] എന്നതിന്റെ പ്രിവ്യൂ മാത്രമാണെന്ന് ഓർക്കുക.'''
+താങ്കൾ വരുത്തിയ മാറ്റങ്ങൾ ഇതുവരെ സേവ് ചെയ്തിട്ടില്ല!",
+	'templatesandbox-invalid-title' => 'താങ്കൾ നൽകിയ തലക്കെട്ട് അസാധുവാണ്.',
+	'templatesandbox-title-not-exists' => 'താങ്കൾ നൽകിയ തലക്കെട്ട് നിലവിലില്ല.',
+	'templatesandbox-revision-not-exists' => 'താങ്കൾ വ്യക്തമാക്കിയ നാൾപ്പതിപ്പ് നിലവിലില്ല.',
 );
 
 /** Malay (Bahasa Melayu)
