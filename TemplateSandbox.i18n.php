@@ -1059,8 +1059,15 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'templatesandbox' => 'ഫലക പരീക്ഷണോപാധി',
+	'templatesandbox-desc' => 'എഴുത്തുകളരിയിലുള്ള ഫലകങ്ങൾ ഉൾപ്പെടെ [[Special:TemplateSandbox|താൾ സൃഷ്ടിച്ചു പ്രദർശിപ്പിക്കുന്നു]]',
 	'templatesandbox-suffix' => 'എഴുത്തുകളരി',
 	'templatesandbox-legend' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി',
+	'templatesandbox-text' => "എഴുത്തുകളരിയ്ക്ക് അനുയോജ്യമായ പൂർവ്വപദമുപയോഗിച്ച് താങ്കൾക്ക് എഴുത്തുകളരി ഇടയിൽ സേവ് ചെയ്യാവുന്ന ഫലകങ്ങളുടെ ഗണം തിരഞ്ഞെടുക്കാവുന്നതാണ്.
+ഉദാഹരണത്തിന്, താങ്കൾക്ക് {{ns:Template}}:പരീക്ഷണം എന്നതാളിന്റെ ഒരു പതിപ്പ് എങ്ങനെയുണ്ടെന്ന് കാണണമെങ്കിൽ അത് \"{{ns:User}}:കുട്ടൂസൻ/{{int:templatesandbox-suffix}}/{{ns:Template}}:പരീക്ഷണം\" എന്ന മട്ടിൽ സേവ് ചെയ്യുക, പൂർവ്വപദമായി ''{{ns:User}}:കുട്ടൂസൻ/{{int:templatesandbox-suffix}}'' എന്നുപയോഗിക്കുക.",
+	'templatesandbox-prefix-label' => 'എഴുത്തുകളരിയുടെ പൂർവ്വപദം:',
+	'templatesandbox-page-label' => 'പ്രദർശിപ്പിക്കേണ്ട താൾ:',
+	'templatesandbox-revid-label' => 'പ്രദർശിപ്പിക്കേണ്ട പതിപ്പ്:',
+	'templatesandbox-text-label' => 'പ്രദർശിപ്പിക്കേണ്ട വിക്കി എഴുത്ത്:',
 	'templatesandbox-submit' => 'കാണുക',
 	'templatesandbox-title-output' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി: $1',
 	'templatesandbox-editform-legend' => 'ഈ ഫലകം ഉപയോഗിച്ച് താൾ എങ്ങനെയുണ്ടെന്ന് കാണുക',
@@ -1072,6 +1079,12 @@ $messages['ml'] = array(
 	'templatesandbox-invalid-title' => 'താങ്കൾ നൽകിയ തലക്കെട്ട് അസാധുവാണ്.',
 	'templatesandbox-title-not-exists' => 'താങ്കൾ നൽകിയ തലക്കെട്ട് നിലവിലില്ല.',
 	'templatesandbox-revision-not-exists' => 'താങ്കൾ വ്യക്തമാക്കിയ നാൾപ്പതിപ്പ് നിലവിലില്ല.',
+	'templatesandbox-invalid-prefix' => 'താങ്കൾ എഴുത്തുകളരിക്ക് നൽകിയ പൂർവ്വപദം അസാധുവാണ്.',
+	'templatesandbox-prefix-not-local' => 'എഴുത്തുകളരിക്ക് താങ്കൾ നൽകിയ പൂർവ്വപദം പ്രാദേശികമല്ല.',
+	'templatesandbox-page-or-revid' => 'താങ്കൾ ഒരു താളിന്റെ തലക്കെട്ടോ താൾപ്പതിപ്പ് തിരിച്ചറിയൽ സംഖ്യയോ നൽകേണ്ടതാണ്.',
+	'templatesandbox-editform-need-title' => 'മറ്റൊരു താൾ ഈ ഫലകം ഉൾപ്പെടുത്തി എങ്ങനെയുണ്ടെന്ന് കാണാൻ, താളിന്റെ തലക്കെട്ട് നൽകിയിരിക്കണം.',
+	'templatesandbox-editform-invalid-title' => 'എങ്ങനെയുണ്ടെന്ന് കാണാൻ താങ്കൾ നൽകിയ തലക്കെട്ട് അസാധുവാണ്.',
+	'templatesandbox-editform-title-not-exists' => 'എങ്ങനെയുണ്ടെന്ന് കാണാൻ താങ്കൾ നൽകിയ തലക്കെട്ട് നിലവിലില്ല.',
 );
 
 /** Malay (Bahasa Melayu)
