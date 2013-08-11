@@ -18,6 +18,11 @@ $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'TemplateSandbox' => array( '模板沙箱' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'TemplateSandbox' => array( 'Кепаш_кхуллу_меттиг' ),
