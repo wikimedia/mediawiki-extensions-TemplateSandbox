@@ -55,7 +55,8 @@ $messages['qqq'] = array(
 	'templatesandbox' => '{{doc-special|TemplateSandbox}}
 The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
 	'templatesandbox-desc' => '{{desc|name=Template Sandbox|url=http://www.mediawiki.org/wiki/Extension:TemplateSandbox}}',
-	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.",
+	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.
+{{Identical|Sandbox}}",
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
 	'templatesandbox-text' => 'Used as header message of the form.
 
