@@ -1548,6 +1548,7 @@ $messages['ug-arab'] = array(
 
 /** Ukrainian (українська)
  * @author Ahonc
+ * @author Andriykopanytsia
  * @author Base
  * @author DixonD
  * @author Wizardist
@@ -1558,6 +1559,8 @@ $messages['uk'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з пісочниці',
 	'templatesandbox-suffix' => 'пісочниця',
 	'templatesandbox-legend' => 'Пісочниця шаблона',
+	'templatesandbox-text' => 'Ви можете вибрати набір шаблонів, збережених у вашому просторі пісочниць, використовуючи префікс відповідної пісочниці.
+Наприклад, якщо ви хочете переглянути версію {{ns:Template}}:Тест, який ви зберегли в якості „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тест“, використовуйте „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}“ в якості префікса.',
 	'templatesandbox-prefix-label' => 'Префікс пісочниці:',
 	'templatesandbox-page-label' => 'Відобразити сторінку:',
 	'templatesandbox-revid-label' => 'Відобразити версію:',
