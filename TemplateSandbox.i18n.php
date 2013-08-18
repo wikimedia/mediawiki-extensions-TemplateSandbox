@@ -894,7 +894,7 @@ $messages['ka'] = array(
  */
 $messages['ko'] = array(
 	'templatesandbox' => '틀연습장',
-	'templatesandbox-desc' => '연습장에 틀을 포함하는 [[Special:TemplateSandbox|문서 렌더]]',
+	'templatesandbox-desc' => '연습장에서 틀을 포함하여 [[Special:TemplateSandbox|문서를 렌더합니다]]',
 	'templatesandbox-suffix' => '연습장',
 	'templatesandbox-legend' => '틀 연습장',
 	'templatesandbox-text' => '적절한 연습장 접두어를 사용해 내 연습장 공간에 저장한 틀의 집합을 설정할 수 있습니다.
