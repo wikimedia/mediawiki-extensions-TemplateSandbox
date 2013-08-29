@@ -1230,6 +1230,23 @@ Endringane dine er ikkje lagra enno!",
 	'templatesandbox-editform-title-not-exists' => 'Tittelen du oppgav for førehandsvising finst ikkje.',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'templatesandbox' => 'Nauc de sabla de modèl',
+	'templatesandbox-suffix' => 'Nauc de sabla',
+	'templatesandbox-legend' => 'Nauc de sabla de modèl',
+	'templatesandbox-prefix-label' => 'Prefix de nauc de sabla :',
+	'templatesandbox-page-label' => 'Rendut de la pagina :',
+	'templatesandbox-revid-label' => 'Rendut de la revision :',
+	'templatesandbox-text-label' => 'Rendut del wikitèxte :',
+	'templatesandbox-submit' => 'Afichar',
+	'templatesandbox-editform-page-label' => 'Títol de la pagina :',
+	'templatesandbox-editform-view-label' => "Afichar l'apercebut",
+	'templatesandbox-preview' => 'Apercebut de $2',
+);
+
 /** Polish (polski)
  * @author Matma Rex
  * @author Odie2
