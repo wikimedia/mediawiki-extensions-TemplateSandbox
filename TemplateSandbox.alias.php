@@ -38,6 +38,11 @@ $specialPageAliases['diq'] = array(
 	'TemplateSandbox' => array( 'GavlanéŞablon' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'TemplateSandbox' => array( 'ΑμμοδοχείοΠροτύπου' ),
+);
+
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
 	'TemplateSandbox' => array( 'Provejo_por_ŝablonoj' ),

@@ -890,6 +890,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author 관인생략
  * @author 아라
  */
 $messages['ko'] = array(
@@ -905,7 +906,7 @@ $messages['ko'] = array(
 	'templatesandbox-text-label' => '위키텍스트 렌더:',
 	'templatesandbox-submit' => '보기',
 	'templatesandbox-title-output' => '틀연습장: $1',
-	'templatesandbox-editform-legend' => '이 틀로 문서 미리 보기',
+	'templatesandbox-editform-legend' => '이 틀과 함께 문서 미리 보기',
 	'templatesandbox-editform-page-label' => '문서 제목:',
 	'templatesandbox-editform-view-label' => '미리 보기',
 	'templatesandbox-preview' => '$2의 미리 보기',
