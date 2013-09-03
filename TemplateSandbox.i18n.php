@@ -75,10 +75,11 @@ The form has fieldset label {{msg-mw|Templatesandbox-legend}}.',
 	'templatesandbox-editform-view-label' => 'Label for the submit button on the editpage form.
 {{Identical|Show preview}}',
 	'templatesandbox-editform-helptext' => 'Text displayed after the submit button on the editpage form.',
-	'templatesandbox-preview' => 'Title of preview section when previwing another page using this template. Parameters:
-* $1 - the page being previewed
+	'templatesandbox-preview' => 'Title of preview section when previewing another page using this template. Parameters:
+* $1 - (Unused) the page being previewed
 * $2 - the title set by the DISPLAYTITLE magic word',
-	'templatesandbox-previewnote' => 'Message displayed when previwing another page using this template. $1 is the page being previewed.',
+	'templatesandbox-previewnote' => 'Message displayed when previewing another page using this template. Parameters:
+* $1 - the page being previewed',
 	'templatesandbox-invalid-title' => 'Error message displayed when the title specified in the special page is invalid.',
 	'templatesandbox-title-not-exists' => 'Error message displayed when the title specified in the special page does not exist.',
 	'templatesandbox-revision-not-exists' => 'Error message displayed when the rev_id specified in the special page does not exist.',
