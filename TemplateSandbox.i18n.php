@@ -56,11 +56,16 @@ $messages['qqq'] = array(
 The name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].',
 	'templatesandbox-desc' => '{{desc|name=Template Sandbox|url=http://www.mediawiki.org/wiki/Extension:TemplateSandbox}}',
 	'templatesandbox-suffix' => "Suffix added to the current user's userpage for the default sandbox prefix.
+
+Used in:
+* {{msg-mw|Templatesandbox-text}}.
 {{Identical|Sandbox}}",
 	'templatesandbox-legend' => 'Legend displayed on the input form.',
 	'templatesandbox-text' => 'Used as header message of the form.
 
-The form has fieldset label {{msg-mw|Templatesandbox-legend}}.',
+The form has fieldset label {{msg-mw|Templatesandbox-legend}}.
+
+Refers to {{msg-mw|Templatesandbox-suffix}}.',
 	'templatesandbox-prefix-label' => 'Label for the "prefix" input field.',
 	'templatesandbox-page-label' => 'Label for the "page" input field on the special page.',
 	'templatesandbox-revid-label' => 'Label for the "revid" input field on the special page.',
