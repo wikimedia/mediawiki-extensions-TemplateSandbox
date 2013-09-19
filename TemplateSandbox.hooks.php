@@ -24,10 +24,12 @@ class TemplateSandboxHooks {
 	 * @return bool
 	 */
 	public static function importFormData( $editpage, $request ) {
-		$editpage->templatesandbox_page = '';
+		$editpage->templatesandbox_template = $request->getText(
+			'wpTemplateSandboxTemplate', $editpage->getTitle()->getFullText()
+		);
+		$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
 		if ( $request->wasPosted() ) {
-			$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
 			if ( $request->getCheck( 'wpTemplateSandboxPreview' ) ) {
 				$editpage->templatesandbox_preview = true;
@@ -70,8 +72,20 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
+		if ( $editpage->templatesandbox_template === '' || $editpage->templatesandbox_template === null ) {
+			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-template' );
+			wfProfileOut( __METHOD__ );
+			return false;
+		}
 		if ( $editpage->templatesandbox_page === '' || $editpage->templatesandbox_page === null ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-title' );
+			wfProfileOut( __METHOD__ );
+			return false;
+		}
+
+		$templatetitle = Title::newFromText( $editpage->templatesandbox_template );
+		if ( !$templatetitle instanceof Title ) {
+			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-invalid-template' );
 			wfProfileOut( __METHOD__ );
 			return false;
 		}
@@ -93,7 +107,7 @@ class TemplateSandboxHooks {
 		$parserOutput = null;
 
 		try {
-			TemplateSandboxHooks::$template = $editpage->getTitle()->getFullText();
+			TemplateSandboxHooks::$template = $templatetitle->getFullText();
 			if ( $editpage->sectiontitle !== '' ) {
 				$sectionTitle = $editpage->sectiontitle;
 			} else {
@@ -230,6 +244,10 @@ class TemplateSandboxHooks {
 			);
 			$html .= Xml::tags( 'div', $textAttrs, $text->parse() ) . "\n";
 		}
+
+		$html .= Html::input( 'wpTemplateSandboxTemplate',
+			$editpage->templatesandbox_template, 'hidden', array( 'id' => 'wpTemplateSandboxTemplate' )
+		);
 
 		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
 		if ( !$labelText->isDisabled() ) {
