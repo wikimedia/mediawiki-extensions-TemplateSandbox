@@ -93,8 +93,14 @@ Refers to {{msg-mw|Templatesandbox-suffix}}.',
 	'templatesandbox-invalid-prefix' => 'Error message displayed when the sandbox prefix specified in the special page is invalid.',
 	'templatesandbox-prefix-not-local' => 'Error message displayed when the sandbox prefix specified in the special page is not local.',
 	'templatesandbox-page-or-revid' => 'Error message displayed when neither a page title nor rev_id is given in the special page.',
-	'templatesandbox-editform-need-template' => 'Error message displayed when no template name is given for the editpage form.',
-	'templatesandbox-editform-need-title' => 'Error message displayed when no page title is given for the editpage form.',
+	'templatesandbox-editform-need-template' => 'Error message displayed when no template name is given for the editpage form.
+
+See also:
+* {{msg-mw|Templatesandbox-editform-need-title}}',
+	'templatesandbox-editform-need-title' => 'Error message displayed when no page title is given for the editpage form.
+
+See also:
+* {{msg-mw|Templatesandbox-editform-need-template}}',
 	'templatesandbox-editform-invalid-template' => 'Error message displayed when the template name specified for the editpage form is invalid.',
 	'templatesandbox-editform-invalid-title' => 'Error message displayed when the title specified for the editpage form is invalid.',
 	'templatesandbox-editform-title-not-exists' => 'Error message displayed when the title specified for the editpage form does not exist.',
@@ -694,7 +700,9 @@ Aínda non gardou os seus cambios!",
 	'templatesandbox-invalid-prefix' => 'O prefixo da zona de probas que especificou non é válido.',
 	'templatesandbox-prefix-not-local' => 'O prefixo da zona de probas que especificou non é local.',
 	'templatesandbox-page-or-revid' => 'Cómpre indicar un título de páxina ou ben un número de identificación de revisión.',
+	'templatesandbox-editform-need-template' => 'Para ollar a vista previa doutra páxina con este modelo, cómpre especificar o nome dun modelo.',
 	'templatesandbox-editform-need-title' => 'Para ollar a vista previa doutra páxina con este modelo, cómpre especificar un título de páxina.',
+	'templatesandbox-editform-invalid-template' => 'O nome de modelo especificado non é válido.',
 	'templatesandbox-editform-invalid-title' => 'O título que especificou para a vista previa non é válido.',
 	'templatesandbox-editform-title-not-exists' => 'O título que especificou para a vista previa non existe.',
 );
@@ -887,7 +895,9 @@ $messages['ja'] = array(
 	'templatesandbox-invalid-prefix' => '指定したサンドボックス接頭辞は無効です。',
 	'templatesandbox-prefix-not-local' => '指定したサンドボックス接頭辞はローカルではありません。',
 	'templatesandbox-page-or-revid' => 'ページ名または版 ID を入力してください。',
-	'templatesandbox-editform-need-title' => 'このテンプレートで別のページのプレビューを表示するには、そのページ名を指定してください。',
+	'templatesandbox-editform-need-template' => 'このテンプレートを使用して別のページのプレビューを表示するには、テンプレート名を指定してください。',
+	'templatesandbox-editform-need-title' => 'このテンプレートで別のページのプレビューを表示するには、ページ名を指定してください。',
+	'templatesandbox-editform-invalid-template' => '指定したテンプレート名は無効です。',
 	'templatesandbox-editform-invalid-title' => 'プレビューに指定したページ名は無効です。',
 	'templatesandbox-editform-title-not-exists' => 'プレビューに指定したページは存在しません。',
 );
@@ -997,6 +1007,7 @@ $messages['lb'] = array(
 	'templatesandbox-invalid-title' => 'Den Titel deen Dir uginn hutt ass net valabel.',
 	'templatesandbox-title-not-exists' => 'Den Titel deen Dir uginn hutt gëtt et net.',
 	'templatesandbox-revision-not-exists' => "D'Versioun déi Dir uginn hutt gëtt et net.",
+	'templatesandbox-editform-need-template' => 'Fir eng aner Säit mat dëser Schabloun ze kucken (ouni ze späicheren), musst Dir den Numm vun enger Schabloun uginn.',
 	'templatesandbox-editform-need-title' => 'Fir eng aner Säit mat dëser Schabloun ze kucken (ouni ze späicheren), musst Dir den Titel vun enger Säit uginn,',
 	'templatesandbox-editform-invalid-template' => 'Den Numm vun der Schabloun deen dir uginn hutt ass net valabel.',
 	'templatesandbox-editform-invalid-title' => 'Den Titel deen Dir uginn hutt fir ze kucken ass net valabel.',
