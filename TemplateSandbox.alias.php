@@ -13,6 +13,11 @@ $specialPageAliases['en'] = array(
 	'TemplateSandbox' => array( 'TemplateSandbox' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'TemplateSandbox' => array( 'ملعب_قالب' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),

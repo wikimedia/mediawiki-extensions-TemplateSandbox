@@ -498,6 +498,7 @@ Viaj ŝanĝoj ne ankoraŭ estas konservitaj!",
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Ovruni
  * @author Vivaelcelta
  */
 $messages['es'] = array(
@@ -526,6 +527,7 @@ Por ejemplo, si quieres ver una vista previa de una versión de "{{ns:Template}}
 	'templatesandbox-prefix-not-local' => 'El prefijo de zona de pruebas que has especificado no es local.',
 	'templatesandbox-page-or-revid' => 'Debe indicar el título de la página o el número identificador de revisión.',
 	'templatesandbox-editform-need-title' => 'Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.',
+	'templatesandbox-editform-invalid-template' => 'El nombre de la plantilla que ha especificado no es válido.',
 	'templatesandbox-editform-invalid-title' => 'El título especificado para la vista previa no es válido.',
 	'templatesandbox-editform-title-not-exists' => 'El título especificado para la vista previa no existe.',
 );
@@ -1200,6 +1202,7 @@ $messages['nds-nl'] = array(
 /** Dutch (Nederlands)
  * @author Romaine
  * @author Siebrand
+ * @author Southparkfan
  */
 $messages['nl'] = array(
 	'templatesandbox' => 'Sjabloonzandbak',
@@ -1227,6 +1230,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
 	'templatesandbox-page-or-revid' => 'U moet een paginanaam of versienummer opgeven.',
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
+	'templatesandbox-editform-invalid-template' => 'De naam van het sjabloon die u hebt opgegeven is ongeldig.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
 );
