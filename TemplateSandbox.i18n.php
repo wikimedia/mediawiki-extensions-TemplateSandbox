@@ -1544,6 +1544,14 @@ $messages['si'] = array(
 	'templatesandbox-editform-title-not-exists' => 'පෙරදසුන්ගත කිරීම සඳහා ඔබ විශේෂණය කෙරූ ශීර්ෂය නොපවතී.',
 );
 
+/** Slovenian (slovenščina)
+ * @author Eleassar
+ */
+$messages['sl'] = array(
+	'templatesandbox-editform-need-template' => 'Za predogled še ene strani s to predlogo morate določiti ime predloge.',
+	'templatesandbox-editform-invalid-template' => 'Ime predloge, ki ste jo določili, ni veljavno.',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
