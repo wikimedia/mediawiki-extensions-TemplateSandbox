@@ -1099,7 +1099,7 @@ $messages['mk'] = array(
  * @author Praveenp
  */
 $messages['ml'] = array(
-	'templatesandbox' => 'ഫലക പരീക്ഷണോപാധി',
+	'templatesandbox' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി',
 	'templatesandbox-desc' => 'എഴുത്തുകളരിയിലുള്ള ഫലകങ്ങൾ ഉൾപ്പെടെ [[Special:TemplateSandbox|താൾ സൃഷ്ടിച്ചു പ്രദർശിപ്പിക്കുന്നു]]',
 	'templatesandbox-suffix' => 'എഴുത്തുകളരി',
 	'templatesandbox-legend' => 'ഫലകങ്ങളുടെ എഴുത്തുകളരി',
@@ -1234,7 +1234,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
 	'templatesandbox-page-or-revid' => 'U moet een paginanaam of versienummer opgeven.',
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
-	'templatesandbox-editform-invalid-template' => 'De naam van het sjabloon die u hebt opgegeven is ongeldig.',
+	'templatesandbox-editform-invalid-template' => 'De naam van de sjabloon die u hebt opgegeven is ongeldig.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
 );
