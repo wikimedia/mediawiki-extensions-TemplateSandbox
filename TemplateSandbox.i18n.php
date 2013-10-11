@@ -1379,10 +1379,10 @@ $messages['pt'] = array(
 	'templatesandbox-text-label' => 'Renderizar o código wiki:',
 	'templatesandbox-submit' => 'Ver',
 	'templatesandbox-title-output' => 'Página para testar predefinições: $1',
-	'templatesandbox-editform-legend' => 'Pré-visualizar a página com esta predefinição',
+	'templatesandbox-editform-legend' => 'Antevisão da página com esta predefinição',
 	'templatesandbox-editform-page-label' => 'Título da página:',
 	'templatesandbox-editform-view-label' => 'Mostrar antevisão',
-	'templatesandbox-preview' => 'Pré-visualização de $2',
+	'templatesandbox-preview' => 'Antevisão de $2',
 	'templatesandbox-previewnote' => "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''
 As modificações ainda não foram gravadas!",
 	'templatesandbox-invalid-title' => 'O título especificado é inválido.',
