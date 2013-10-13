@@ -1489,11 +1489,12 @@ $messages['roa-tara'] = array(
  * @author Eleferen
  * @author Ignatus
  * @author NBS
+ * @author Okras
  * @author Ole Yves
  * @author Olli
  */
 $messages['ru'] = array(
-	'templatesandbox' => 'TemplateSandbox',
+	'templatesandbox' => 'Песочница для шаблонов',
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Выполняет визуализацию страницы]], включая шаблоны из песочницы',
 	'templatesandbox-suffix' => 'песочница',
 	'templatesandbox-legend' => 'Песочница для шаблонов',
@@ -1516,7 +1517,9 @@ $messages['ru'] = array(
 	'templatesandbox-invalid-prefix' => 'Указан недействительный префикс песочницы.',
 	'templatesandbox-prefix-not-local' => 'Префикс песочницы, указанный вами, не является локальным.',
 	'templatesandbox-page-or-revid' => 'Вы должны ввести либо название страницы, либо номер версии.',
+	'templatesandbox-editform-need-template' => 'Чтобы просмотреть другую страницу с использованием этого шаблона, должно быть указано название шаблона.',
 	'templatesandbox-editform-need-title' => 'Чтобы просмотреть другую страницу с использованием этого шаблона, название страницы должно быть указано.',
+	'templatesandbox-editform-invalid-template' => 'Имя шаблона, которое вы указали, недопустимо.',
 	'templatesandbox-editform-invalid-title' => 'Заголовок, указанный вами для предварительного просмотра, недействителен.',
 	'templatesandbox-editform-title-not-exists' => 'Заголовок, указанный вами для предварительного просмотра, не существует.',
 );
