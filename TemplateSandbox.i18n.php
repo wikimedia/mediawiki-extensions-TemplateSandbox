@@ -354,7 +354,7 @@ Změny zatím nebyly uloženy!",
  */
 $messages['da'] = array(
 	'templatesandbox' => 'Skabelon-sandkasse',
-	'templatesandbox-desc' => '[[Special:TemplateSandbox|Viser en side]] med brug af skabeloner fra en sandkase',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Viser en side]] med brug af skabeloner fra en sandkasse',
 	'templatesandbox-suffix' => 'sandkasse',
 	'templatesandbox-legend' => 'Skabelon-sandkasse',
 	'templatesandbox-text' => 'Du kan vælge et sæt skabeloner gemt i dit sandkasse-område ved hjælp af et passende sandkasse-præfiks.
@@ -377,7 +377,9 @@ Dine ændringer er ikke blevet gemt endnu!",
 	'templatesandbox-invalid-prefix' => 'Sandkasse-præfikset du angav, er ugyldigt.',
 	'templatesandbox-prefix-not-local' => 'Sandkasse-præfikset du angav, er ikke lokalt.',
 	'templatesandbox-page-or-revid' => 'Du skal angive enten en sidetitel eller et versions-id-nummer.',
+	'templatesandbox-editform-need-template' => 'For at forhåndsvise en anden side med denne skabelon, skal du angive en titel for skabelonen.',
 	'templatesandbox-editform-need-title' => 'For at forhåndsvise en anden side med denne skabelon, skal du angive en sidetitel.',
+	'templatesandbox-editform-invalid-template' => 'Det navn du har angivet for skabelonen, er ugyldigt.',
 	'templatesandbox-editform-invalid-title' => 'Titlen du angav for forhåndsvisning er ugyldig.',
 	'templatesandbox-editform-title-not-exists' => 'Titlen du angav for forhåndsvisning findes ikke.',
 );
