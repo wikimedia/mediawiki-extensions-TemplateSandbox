@@ -297,7 +297,10 @@ Els vostres canvis encara no han estat desats!",
  * @author Умар
  */
 $messages['ce'] = array(
+	'templatesandbox' => 'Кепаш кечъян Ӏамо меттиг',
+	'templatesandbox-legend' => 'Кепаш кечъян Ӏамо меттиг',
 	'templatesandbox-submit' => 'Хьажа',
+	'templatesandbox-title-output' => 'Кепаш кечъян Ӏамо меттиг: $1',
 	'templatesandbox-editform-legend' => 'Кеп лелош йолучу агӀоне хьалха муха ю хьажар',
 	'templatesandbox-editform-page-label' => 'АгӀона цӀе:',
 	'templatesandbox-editform-view-label' => 'Хьалха муха ю хьажар',
