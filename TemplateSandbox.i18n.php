@@ -746,6 +746,7 @@ $messages['he'] = array(
 	'templatesandbox-invalid-prefix' => 'תחילית ארגז החול שציינת אינה קיימת.',
 	'templatesandbox-prefix-not-local' => 'תחילית ארגז החול שציינת אינה מקומית.',
 	'templatesandbox-page-or-revid' => 'יש לציין כותרת דף או מספר מזהה של גרסה.',
+	'templatesandbox-editform-need-template' => 'כדי לצפות בתצוגה מקדימה של דף עם התבנית הזאת, יש לספק שם תבנית.',
 	'templatesandbox-editform-need-title' => 'כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.',
 	'templatesandbox-editform-invalid-template' => 'השם של התבנית שציינת אינו חוקי.',
 	'templatesandbox-editform-invalid-title' => 'הכותרת שציינת לתצוגה מקדימה אינה תקינה.',
@@ -1243,6 +1244,8 @@ $messages['nds-nl'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author JurgenNL
+ * @author Multichill
  * @author Romaine
  * @author Siebrand
  * @author Southparkfan
@@ -1260,7 +1263,7 @@ Als u bijvoorbeeld een voorvertoning wilt zien van {{ns:Template}}:Test dat u he
 	'templatesandbox-text-label' => 'Te renderen wikitekst:',
 	'templatesandbox-submit' => 'Bekijken',
 	'templatesandbox-title-output' => 'Sjabloonzandbak: $1',
-	'templatesandbox-editform-legend' => 'Voorvertoning weergeven met deze sjabloon',
+	'templatesandbox-editform-legend' => 'Voorvertoning weergeven met dit sjabloon',
 	'templatesandbox-editform-page-label' => 'Paginanaam:',
 	'templatesandbox-editform-view-label' => 'Voorvertoning weergeven',
 	'templatesandbox-preview' => 'Voorvertoning van $2',
@@ -1272,7 +1275,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-invalid-prefix' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.',
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
 	'templatesandbox-page-or-revid' => 'U moet een paginanaam of versienummer opgeven.',
-	'templatesandbox-editform-need-title' => 'Om een andere pagina met deze sjabloon te bekijken, moet een paginanaam opgegeven worden.',
+	'templatesandbox-editform-need-title' => 'Om een andere pagina met dit sjabloon te bekijken, moet een paginanaam opgegeven worden.',
 	'templatesandbox-editform-invalid-template' => 'De naam van de sjabloon die u hebt opgegeven is ongeldig.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
 	'templatesandbox-editform-title-not-exists' => 'De opgegeven pagina voor de voorvertoning bestaat niet.',
