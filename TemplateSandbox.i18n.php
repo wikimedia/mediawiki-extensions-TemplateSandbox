@@ -299,6 +299,12 @@ Els vostres canvis encara no han estat desats!",
 $messages['ce'] = array(
 	'templatesandbox' => 'Кепаш кечъян Ӏамо меттиг',
 	'templatesandbox-legend' => 'Кепаш кечъян Ӏамо меттиг',
+	'templatesandbox-text' => 'Хьан йиш ю хьайн цӀерийн меттигехь Ӏалаш бина болу кепийн гулам харжа.
+Масала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалаш йина йолу «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг/{{ns:Template}}:Зеран», лела йе «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг» префиксан метта.',
+	'templatesandbox-prefix-label' => 'АгӀона цӀе:',
+	'templatesandbox-page-label' => 'Гайта агӀо:',
+	'templatesandbox-revid-label' => 'Гойту верси:',
+	'templatesandbox-text-label' => 'Гойту вики-йоза:',
 	'templatesandbox-submit' => 'Хьажа',
 	'templatesandbox-title-output' => 'Кепаш кечъян Ӏамо меттиг: $1',
 	'templatesandbox-editform-legend' => 'Кеп лелош йолучу агӀоне хьалха муха ю хьажар',
@@ -306,6 +312,7 @@ $messages['ce'] = array(
 	'templatesandbox-editform-view-label' => 'Хьалха муха ю хьажар',
 	'templatesandbox-preview' => 'Хьалха муха ю хьажар $2',
 	'templatesandbox-previewnote' => "'''Хlара хьалх хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀийнца дӀаязбина бац!",
+	'templatesandbox-page-or-revid' => 'Ахьа язъян еза агӀона цӀе я номер.',
 );
 
 /** Sorani Kurdish (کوردی)

@@ -31,7 +31,7 @@ $specialPageAliases['cdo'] = array(
 
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
-	'TemplateSandbox' => array( 'Кепаш_кхуллу_меттиг' ),
+	'TemplateSandbox' => array( 'Кепаш_кечъян_Ӏамо_меттиг' ),
 );
 
 /** German (Deutsch) */
