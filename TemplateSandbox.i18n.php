@@ -1610,10 +1610,12 @@ $messages['sl'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'templatesandbox' => 'Mallsandlåda',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visar en sida]] som infogar mallar från en sandlåda',
 	'templatesandbox-suffix' => 'sandlåda',
 	'templatesandbox-legend' => 'Mallsandlåda',
 	'templatesandbox-submit' => 'Visa',
