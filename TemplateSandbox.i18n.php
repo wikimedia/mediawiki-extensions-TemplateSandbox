@@ -1611,6 +1611,7 @@ $messages['sl'] = array(
 
 /** Swedish (svenska)
  * @author Jopparn
+ * @author Skalman
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -1618,6 +1619,12 @@ $messages['sv'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Visar en sida]] som infogar mallar från en sandlåda',
 	'templatesandbox-suffix' => 'sandlåda',
 	'templatesandbox-legend' => 'Mallsandlåda',
+	'templatesandbox-text' => 'Du kan välja en uppsättning mallar som har sparats i din sandlåderymd med hjälp av ett lämpligt sandlådeprefix.
+Om du till exempel vill förhandsgranska en version av {{ns:Template}}:Test som du har sparat som "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test", så använder du "{{ns:User}}:Foo/{{int:templatesandbox-suffix}}" som prefix.',
+	'templatesandbox-prefix-label' => 'Sandlådeprefix:',
+	'templatesandbox-page-label' => 'Rendera sida:',
+	'templatesandbox-revid-label' => 'Rendera sidversion:',
+	'templatesandbox-text-label' => 'Rendera wikitext:',
 	'templatesandbox-submit' => 'Visa',
 	'templatesandbox-title-output' => 'Mallsandlåda: $1',
 	'templatesandbox-editform-legend' => 'Förhandsgranska sida med denna mall',
@@ -1631,6 +1638,12 @@ Dina ändringar har ännu inte sparats!",
 	'templatesandbox-revision-not-exists' => 'Versionen du angav finns inte.',
 	'templatesandbox-invalid-prefix' => 'Sandlådeprefixet du angav finns inte.',
 	'templatesandbox-prefix-not-local' => 'Sandlådeprefixet du angav är inte lokal.',
+	'templatesandbox-page-or-revid' => 'Du måste ange antingen ett sidnamn eller ett versions-ID-nummer.',
+	'templatesandbox-editform-need-template' => 'För att förhandsgranska en annan sida med den här mallen så måste ett mallnamn anges.',
+	'templatesandbox-editform-need-title' => 'För att förhandsgranska en annan sida med den här mallen så måste ett sidnamn anges.',
+	'templatesandbox-editform-invalid-template' => 'Mallnamnet som du angav är ogiltigt.',
+	'templatesandbox-editform-invalid-title' => 'Sidnamnet du angav för förhandsgranskning är ogiltigt.',
+	'templatesandbox-editform-title-not-exists' => 'Sidan du angav för att förhandsgranska finns inte.',
 );
 
 /** Tamil (தமிழ்)
