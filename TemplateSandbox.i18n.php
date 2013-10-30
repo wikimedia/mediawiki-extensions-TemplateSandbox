@@ -297,16 +297,16 @@ Els vostres canvis encara no han estat desats!",
  * @author Умар
  */
 $messages['ce'] = array(
-	'templatesandbox' => 'Кепаш кечъян Ӏамо меттиг',
-	'templatesandbox-legend' => 'Кепаш кечъян Ӏамо меттиг',
+	'templatesandbox' => 'Кепийн ловзаран майда',
+	'templatesandbox-legend' => 'Кепийн ловзаран майда',
 	'templatesandbox-text' => 'Хьан йиш ю хьайн цӀерийн меттигехь Ӏалаш бина болу кепийн гулам харжа.
-Масала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалаш йина йолу «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг/{{ns:Template}}:Зеран», лела йе «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг» префиксан метта.',
+Масала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалаш йина йолу «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг/{{ns:Template}}:Зеран», лела йе «{{ns:User}}:Вася Пупкин/Ловзаран майда» префиксан метта.',
 	'templatesandbox-prefix-label' => 'АгӀона цӀе:',
 	'templatesandbox-page-label' => 'Гайта агӀо:',
 	'templatesandbox-revid-label' => 'Гойту верси:',
 	'templatesandbox-text-label' => 'Гойту вики-йоза:',
 	'templatesandbox-submit' => 'Хьажа',
-	'templatesandbox-title-output' => 'Кепаш кечъян Ӏамо меттиг: $1',
+	'templatesandbox-title-output' => 'Кепийн ловзаран майда: $1',
 	'templatesandbox-editform-legend' => 'Кеп лелош йолучу агӀоне хьалха муха ю хьажар',
 	'templatesandbox-editform-page-label' => 'АгӀона цӀе:',
 	'templatesandbox-editform-view-label' => 'Хьалха муха ю хьажар',
