@@ -358,6 +358,20 @@ Změny zatím nebyly uloženy!",
 	'templatesandbox-editform-title-not-exists' => 'Zadaný název stránky pro náhled neexistuje.',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'templatesandbox' => 'Pwll tywod y nodiadau',
+	'templatesandbox-suffix' => 'pwll tywod',
+	'templatesandbox-legend' => 'Pwll tywod y nodiadau',
+	'templatesandbox-submit' => 'Gweler',
+	'templatesandbox-title-output' => 'Pwll tywod y nodyn $1',
+	'templatesandbox-editform-page-label' => 'Teitl y dudalen:',
+	'templatesandbox-editform-view-label' => 'Dangos rhagolwg',
+	'templatesandbox-preview' => 'Rhagolwg $2',
+);
+
 /** Danish (dansk)
  * @author Byrial
  * @author Christian List
