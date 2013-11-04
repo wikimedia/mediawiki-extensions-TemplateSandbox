@@ -605,7 +605,8 @@ $messages['fa'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|پردازش یک صفحه]] تراگنجایش الگوها از یک صفحهٔ تمرین',
 	'templatesandbox-suffix' => 'صفحهٔ تمرین',
 	'templatesandbox-legend' => 'الگو صفحهٔ تمرین',
-	'templatesandbox-text' => 'شما می‌توانید مجموعه‌ای از الگوهایی که در فضای تمرین شما ذخیره‌شده‌اند را با استفاده از پیشوندی مناسب انتخاب کنید. برای مثال اگر شما می‌خواهید پیش‌نمایشی از یک نسخهٔ {{ns:Template}}:آزمایشی که شما به‌عنوان «{{ns:User}}:فلان/صفحه تمرین/{{ns:Template}}:آزمایشی» داشته باشید، «{{ns:User}}:فلانی/صفحه تمرین» را به‌عنوان پیشوندی استفاده کنید.', # Fuzzy
+	'templatesandbox-text' => 'شما می‌توانید مجموعه‌ای از الگوهایی که در فضای تمرین شما ذخیره‌شده‌اند را با استفاده از پیشوندی مناسب انتخاب کنید.
+برای مثال اگر شما می‌خواهید پیش‌نمایشی از یک نسخهٔ {{ns:Template}}:آزمایشی که شما به‌عنوان «{{ns:User}}:فلان/{{int:templatesandbox-suffix}}/{{ns:Template}}:آزمایشی» داشته باشید، «{{ns:User}}:فلانی/{{int:templatesandbox-suffix}}» را به‌عنوان پیشوندی استفاده کنید.',
 	'templatesandbox-prefix-label' => 'پیشوند صفحهٔ تمرین:',
 	'templatesandbox-page-label' => 'پردازش صفحه:',
 	'templatesandbox-revid-label' => 'پردازش نسخه:',
