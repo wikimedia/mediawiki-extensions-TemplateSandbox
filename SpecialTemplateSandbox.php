@@ -91,7 +91,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			}
 
 			if ( is_callable( 'EditPage::getPreviewLimitReport' ) ) {
-				$out .= $output->addHTML( Html::rawElement( 'div', array( 'class' => 'limitreport' ),
+				$output->addHTML( Html::rawElement( 'div', array( 'class' => 'limitreport' ),
 					EditPage::getPreviewLimitReport( $this->output ) ) );
 				$output->addModules( 'mediawiki.collapseFooterLists' );
 			}
