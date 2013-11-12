@@ -703,6 +703,14 @@ Vos modifications n’ont pas encore été enregistrées!",
 	'templatesandbox-editform-title-not-exists' => 'Le titre que vous avez spécifié pour l’aperçu n’existe pas.',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'templatesandbox' => 'Föörlaagen-spelplaats',
+	'templatesandbox-suffix' => 'Spelplaats',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
