@@ -1469,10 +1469,12 @@ As modificações ainda não foram gravadas!",
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Luckas
  * @author Opraco
  */
 $messages['pt-br'] = array(
+	'templatesandbox-editform-legend' => 'Mostrar previsão da página com esta predefinição',
 	'templatesandbox-editform-page-label' => 'Título da página:',
 	'templatesandbox-editform-view-label' => 'Prever',
 );
