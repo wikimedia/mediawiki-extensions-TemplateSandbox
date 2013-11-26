@@ -225,9 +225,27 @@ class TemplateSandboxHooks {
 		global $wgTemplateSandboxEditNamespaces;
 
 		if ( !in_array( $editpage->getTitle()->getNamespace(), $wgTemplateSandboxEditNamespaces ) ) {
+			// output the values in hidden fields so that a user
+			// using a gadget doesn't have to re-enter them every time
+
+			$html = Xml::openElement( 'span', array( 'id' => 'templatesandbox-editform' ) );
+
+			$html .= Html::input( 'wpTemplateSandboxTemplate',
+				$editpage->templatesandbox_template, 'hidden', array( 'id' => 'wpTemplateSandboxTemplate' )
+			);
+
+			$html .= Html::input( 'wpTemplateSandboxPage',
+				$editpage->templatesandbox_page, 'hidden', array( 'id' => 'wpTemplateSandboxPage' )
+			);
+
+			$html .= Xml::closeElement( 'span' );
+
+			$output->addHtml( $html . "\n" );
+
 			return true;
 		}
 
+		// output the full form
 		$html = '';
 
 		$inputAttrs = array(
