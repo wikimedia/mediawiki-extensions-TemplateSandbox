@@ -180,6 +180,11 @@ class TemplateSandboxHooks {
 	 * @return array|mixed
 	 */
 	static function templateCallback( $title, $parser = false ) {
+		global $wgUser;
+
+		// Note that Parser::statelessFetchTemplate currently only handles one
+		// level of redirection, regardless of $wgMaxRedirects. We reproduce
+		// this behavior here.
 		$match = ( $title->getFullText() == TemplateSandboxHooks::$template );
 		$rtitle = null;
 		if ( !$match && $title->isRedirect() ) {
@@ -192,20 +197,37 @@ class TemplateSandboxHooks {
 				'page_id' => $title->getArticleID(),
 				'rev_id' => 0,
 			);
+			$finalTitle = $title;
 			if ( $rtitle ) {
 				$deps[] = array(
 					'title' => $rtitle,
 					'page_id' => $rtitle->getArticleID(),
 					'rev_id' => 0,
 				);
+				$finalTitle = $rtitle;
 			}
-			$text = TemplateSandboxHooks::$content->getWikitextForTransclusion();
+
+			$content = TemplateSandboxHooks::$content;
+			if ( !$rtitle && $content->isRedirect() ) {
+				$newTitle = $content->getRedirectTarget();
+				$rev = Revision::newFromTitle( $newTitle );
+				if ( $rev ) {
+					$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
+					$finalTitle = $newTitle;
+				}
+				$deps[] = array(
+					'title' => $newTitle,
+					'page_id' => $newTitle->getArticleID(),
+					'rev_id' => 0,
+				);
+			}
+			$text = $content->getWikitextForTransclusion();
 			if ( $text === null ) {
 				$text = false;
 			}
 			return array(
 				'text' => $text,
-				'finalTitle' => $rtitle ? $rtitle : $title,
+				'finalTitle' => $finalTitle,
 				'deps' => $deps,
 			);
 		}
