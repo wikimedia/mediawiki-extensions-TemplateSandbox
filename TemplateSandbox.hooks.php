@@ -252,12 +252,12 @@ class TemplateSandboxHooks {
 
 			$html = Xml::openElement( 'span', array( 'id' => 'templatesandbox-editform' ) );
 
-			$html .= Html::input( 'wpTemplateSandboxTemplate',
-				$editpage->templatesandbox_template, 'hidden', array( 'id' => 'wpTemplateSandboxTemplate' )
+			$html .= Html::hidden( 'wpTemplateSandboxTemplate',
+				$editpage->templatesandbox_template, array( 'id' => 'wpTemplateSandboxTemplate' )
 			);
 
-			$html .= Html::input( 'wpTemplateSandboxPage',
-				$editpage->templatesandbox_page, 'hidden', array( 'id' => 'wpTemplateSandboxPage' )
+			$html .= Html::hidden( 'wpTemplateSandboxPage',
+				$editpage->templatesandbox_page, array( 'id' => 'wpTemplateSandboxPage' )
 			);
 
 			$html .= Xml::closeElement( 'span' );
@@ -285,8 +285,8 @@ class TemplateSandboxHooks {
 			$html .= Xml::tags( 'div', $textAttrs, $text->parse() ) . "\n";
 		}
 
-		$html .= Html::input( 'wpTemplateSandboxTemplate',
-			$editpage->templatesandbox_template, 'hidden', array( 'id' => 'wpTemplateSandboxTemplate' )
+		$html .= Html::hidden( 'wpTemplateSandboxTemplate',
+			$editpage->templatesandbox_template, array( 'id' => 'wpTemplateSandboxTemplate' )
 		);
 
 		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
