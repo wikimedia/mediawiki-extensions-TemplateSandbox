@@ -327,7 +327,7 @@ $messages['ckb'] = array(
 	'templatesandbox-editform-title-not-exists' => 'ئەو سەردێڕەی بۆ پێشبینین دیاریت کردووە بوونی نییە.',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -1311,6 +1311,7 @@ Uw wijzigingen zijn nog niet opgeslagen!",
 	'templatesandbox-invalid-prefix' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.',
 	'templatesandbox-prefix-not-local' => 'Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.',
 	'templatesandbox-page-or-revid' => 'U moet een paginanaam of versienummer opgeven.',
+	'templatesandbox-editform-need-template' => 'Geef een sjabloonnaam op om een voorvertoning van deze sjabloon met een andere pagina te bekijken.',
 	'templatesandbox-editform-need-title' => 'Om een andere pagina met dit sjabloon te bekijken, moet een paginanaam opgegeven worden.',
 	'templatesandbox-editform-invalid-template' => 'De naam van de sjabloon die u hebt opgegeven is ongeldig.',
 	'templatesandbox-editform-invalid-title' => 'De opgegeven pagina voor de voorvertoning is ongeldig.',
