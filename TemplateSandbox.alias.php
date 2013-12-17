@@ -64,6 +64,11 @@ $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'TemplateSandbox' => array( 'ארגז_חול_לתבניות', 'ארגז_חול_של_תבניות' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'TemplateSandbox' => array( 'テンプレートサンドボックス' ),
