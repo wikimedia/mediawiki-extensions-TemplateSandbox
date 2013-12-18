@@ -311,7 +311,7 @@ $messages['ce'] = array(
 	'templatesandbox-editform-page-label' => 'АгӀона цӀе:',
 	'templatesandbox-editform-view-label' => 'Хьалха муха ю хьажар',
 	'templatesandbox-preview' => 'Хьалха муха ю хьажар $2',
-	'templatesandbox-previewnote' => "'''Хlара хьалх хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀийнца дӀаязбина бац!",
+	'templatesandbox-previewnote' => "'''ХӀара хьлха хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀинца дӀаязбина бац!",
 	'templatesandbox-page-or-revid' => 'Ахьа язъян еза агӀона цӀе я номер.',
 );
 
