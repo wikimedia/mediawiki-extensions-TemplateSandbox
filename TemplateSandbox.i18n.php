@@ -335,6 +335,8 @@ $messages['cs'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Vykreslování stránek]], které aplikuje šablony z pískoviště',
 	'templatesandbox-suffix' => 'pískoviště',
 	'templatesandbox-legend' => 'Šablonové pískoviště',
+	'templatesandbox-text' => 'Můžete si vybrat sadu šablon uložených ve vašem pískovišti, když použijete vhodný prefix pískoviště.
+Pokud například chcete zobrazit náhled verze {{ns:Template}}:Test, kterou jste si {{GENDER:|uložil|uložila|uložili}} jako „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“, použijte jako prefix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.',
 	'templatesandbox-prefix-label' => 'Prefix pískoviště:',
 	'templatesandbox-page-label' => 'Vykreslit stránku:',
 	'templatesandbox-revid-label' => 'Vykreslit revizi:',
@@ -353,7 +355,9 @@ Změny zatím nebyly uloženy!",
 	'templatesandbox-invalid-prefix' => 'Zadaný prefix pískoviště je neplatný.',
 	'templatesandbox-prefix-not-local' => 'Zadaný prefix pískoviště není místní.',
 	'templatesandbox-page-or-revid' => 'Musíte zadat název stránky nebo číslo revize.',
+	'templatesandbox-editform-need-template' => 'Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název šablony.',
 	'templatesandbox-editform-need-title' => 'Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název stránky.',
+	'templatesandbox-editform-invalid-template' => 'Zadaný název šablony je neplatný.',
 	'templatesandbox-editform-invalid-title' => 'Zadaný název stránky pro náhled je neplatný.',
 	'templatesandbox-editform-title-not-exists' => 'Zadaný název stránky pro náhled neexistuje.',
 );
@@ -1639,6 +1643,15 @@ $messages['si'] = array(
 $messages['sl'] = array(
 	'templatesandbox-editform-need-template' => 'Za predogled še ene strani s to predlogo morate določiti ime predloge.',
 	'templatesandbox-editform-invalid-template' => 'Ime predloge, ki ste jo določili, ni veljavno.',
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
+ */
+$messages['sr-ec'] = array(
+	'templatesandbox-editform-legend' => 'Види страницу са овим шаблоном',
+	'templatesandbox-editform-page-label' => 'Име странице:',
+	'templatesandbox-editform-view-label' => 'Претпреглед',
 );
 
 /** Swedish (svenska)
