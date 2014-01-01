@@ -1878,7 +1878,9 @@ $messages['zh-hans'] = array(
 	'templatesandbox-invalid-prefix' => '你指定的沙盒前缀无效。',
 	'templatesandbox-prefix-not-local' => '您指定的沙盒前缀不在本地。',
 	'templatesandbox-page-or-revid' => '您必须输入一个页面标题或修订版本ID。',
-	'templatesandbox-editform-need-title' => '要预览使用本模板的其他页面，必须指定一个页面标题，',
+	'templatesandbox-editform-need-template' => '要预览另一个使用此模板的页面，您必须指定一个模板名。',
+	'templatesandbox-editform-need-title' => '要预览另一个使用此模板的页面，您必须指定一个页面标题。',
+	'templatesandbox-editform-invalid-template' => '您指定的模板名无效。',
 	'templatesandbox-editform-invalid-title' => '您为预览指定的标题无效。',
 	'templatesandbox-editform-title-not-exists' => '您为预览指定的标题不存在。',
 );
