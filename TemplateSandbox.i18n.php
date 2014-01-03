@@ -298,6 +298,7 @@ Els vostres canvis encara no han estat desats!",
  */
 $messages['ce'] = array(
 	'templatesandbox' => 'Кепийн ловзаран майда',
+	'templatesandbox-desc' => '[[Special:TemplateSandbox|АгӀо визуальни йо]], кепаш а ловзаран майда а цхьан',
 	'templatesandbox-legend' => 'Кепийн ловзаран майда',
 	'templatesandbox-text' => 'Хьан йиш ю хьайн цӀерийн меттигехь Ӏалаш бина болу кепийн гулам харжа.
 Масала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалаш йина йолу «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг/{{ns:Template}}:Зеран», лела йе «{{ns:User}}:Вася Пупкин/Ловзаран майда» префиксан метта.',
