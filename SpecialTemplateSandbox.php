@@ -13,11 +13,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 */
 	private $output = null;
 
-	/**
-	 * @var null|array
-	 */
-	private $redirectChain = null;
-
 	function __construct() {
 		parent::__construct( 'TemplateSandbox' );
 	}
@@ -81,14 +76,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 		if ( $this->output !== null ) {
 			$output = $this->getOutput();
-
-			if ( $this->redirectChain ) {
-				$article = Article::newFromTitle( $this->title, $this->getContext() );
-				$output->addHTML( $article->viewRedirect( $this->redirectChain ) );
-				$output->addParserOutputNoText( $this->output );
-			} else {
-				$output->addParserOutput( $this->output );
-			}
+			$output->addParserOutput( $this->output );
 
 			if ( is_callable( 'EditPage::getPreviewLimitReport' ) ) {
 				$output->addHTML( Html::rawElement( 'div', array( 'class' => 'limitreport' ),
@@ -192,7 +180,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$this->oldTemplateCallback = $popts->setTemplateCallback( array( $this, 'templateCallback' ) );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
-		$this->redirectChain = $content->getRedirectChain();
 
 		wfProfileOut( __METHOD__ );
 

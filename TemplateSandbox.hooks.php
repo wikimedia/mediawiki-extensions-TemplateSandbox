@@ -139,13 +139,7 @@ class TemplateSandboxHooks {
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
-
-			$rt = $content->getRedirectChain();
-			if ( $rt ) {
-				$out = $editpage->getArticle()->viewRedirect( $rt );
-			} else {
-				$out = $parserOutput->getText();
-			}
+			$out = $parserOutput->getText();
 
 			if ( count( $parserOutput->getWarnings() ) ) {
 				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
