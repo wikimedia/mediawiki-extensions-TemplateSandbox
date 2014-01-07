@@ -1655,6 +1655,15 @@ $messages['sr-ec'] = array(
 	'templatesandbox-editform-view-label' => 'Претпреглед',
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎)
+ * @author Milicevic01
+ */
+$messages['sr-el'] = array(
+	'templatesandbox-editform-legend' => 'Vidi stranicu sa ovim šablonom',
+	'templatesandbox-editform-page-label' => 'Ime stranice:',
+	'templatesandbox-editform-view-label' => 'Pretpregled',
+);
+
 /** Swedish (svenska)
  * @author Jopparn
  * @author Skalman
