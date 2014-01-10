@@ -1376,12 +1376,15 @@ $messages['oc'] = array(
 /** Polish (polski)
  * @author Matma Rex
  * @author Odie2
+ * @author Peter Bowman
  * @author WTM
  */
 $messages['pl'] = array(
 	'templatesandbox' => 'Szablonowy brudnopis',
 	'templatesandbox-suffix' => 'brudnopis',
 	'templatesandbox-legend' => 'Szablonowy brudnopis',
+	'templatesandbox-text' => 'Możesz wybrać zestaw szablonów zapisanych w Twoim brudnopisie, korzystając z odpowiedniego prefiksu.
+Dla przykładu, jezeli chcesz zobaczyć podgląd wersji strony „{{ns:Template}}:Test”, którą {{GENDER:|zapisałeś|zapisałaś}} jako „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test”, użyj prefiksu „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}”.',
 	'templatesandbox-prefix-label' => 'Prefiks do brudnopisu:',
 	'templatesandbox-page-label' => 'Przetestuj stronę:',
 	'templatesandbox-revid-label' => 'Przetestuj wersję:',
