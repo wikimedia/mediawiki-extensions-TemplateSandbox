@@ -1006,6 +1006,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Priviet
  * @author 관인생략
  * @author 아라
  */
@@ -1034,7 +1035,9 @@ $messages['ko'] = array(
 	'templatesandbox-invalid-prefix' => '지정한 연습장 접두어가 잘못되었습니다.',
 	'templatesandbox-prefix-not-local' => '지정한 연습장 접두어가 로컬이 아닙니다.',
 	'templatesandbox-page-or-revid' => '문서 제목이나 판 ID 번호 중 하나를 입력해야 합니다.',
+	'templatesandbox-editform-need-template' => '이 틀로 다른 문서를 미리 보려면 틀 이름을 지정해야 합니다.',
 	'templatesandbox-editform-need-title' => '이 틀로 다른 문서를 미리 보려면 문서 제목을 지정해야 합니다.',
+	'templatesandbox-editform-invalid-template' => '지정한 틀 이름이 유효하지 않습니다.',
 	'templatesandbox-editform-invalid-title' => '미리 보기 위해 지정한 제목이 잘못되었습니다.',
 	'templatesandbox-editform-title-not-exists' => '미리 보기 위해 지정한 제목이 존재하지 않습니다.',
 );
