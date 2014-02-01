@@ -607,6 +607,7 @@ Sinu muudatusi pole veel salvestatud!",
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Ebraminio
  * @author Mjbmr
  * @author ZxxZxxZ
@@ -637,6 +638,7 @@ $messages['fa'] = array(
 	'templatesandbox-prefix-not-local' => 'پشوند صفحهٔ تمرین مشخص‌شده توسط شما محلی نیست.',
 	'templatesandbox-page-or-revid' => 'شما می‌بایست یک عنوان صفحه یا یک شمارهٔ شناسایی نسخه را وارد کنید.',
 	'templatesandbox-editform-need-title' => 'برای پیش‌نمایش صفحه با این الگو، می‌بایست یک عنوان صفحه مشخص شده باشد.',
+	'templatesandbox-editform-invalid-template' => 'نام الگویی که شما تعیین کرده‌اید نامعتبر است.',
 	'templatesandbox-editform-invalid-title' => 'عنوان مشخص‌شده توسط شما برای پیش‌نمایش نادرست است.',
 	'templatesandbox-editform-title-not-exists' => 'عنوان مشخص‌شده توسط شما برای پیش‌نمایش ناموجود است.',
 );
@@ -1207,7 +1209,9 @@ $messages['ml'] = array(
 	'templatesandbox-invalid-prefix' => 'താങ്കൾ എഴുത്തുകളരിക്ക് നൽകിയ പൂർവ്വപദം അസാധുവാണ്.',
 	'templatesandbox-prefix-not-local' => 'എഴുത്തുകളരിക്ക് താങ്കൾ നൽകിയ പൂർവ്വപദം പ്രാദേശികമല്ല.',
 	'templatesandbox-page-or-revid' => 'താങ്കൾ ഒരു താളിന്റെ തലക്കെട്ടോ താൾപ്പതിപ്പ് തിരിച്ചറിയൽ സംഖ്യയോ നൽകേണ്ടതാണ്.',
+	'templatesandbox-editform-need-template' => 'മറ്റൊരു താൾ ഈ ഫലകം ഉൾപ്പെടുത്തി എങ്ങനെയുണ്ടെന്ന് കാണാൻ, ഫലകത്തിന്റെ തലക്കെട്ട് നൽകിയിരിക്കണം.',
 	'templatesandbox-editform-need-title' => 'മറ്റൊരു താൾ ഈ ഫലകം ഉൾപ്പെടുത്തി എങ്ങനെയുണ്ടെന്ന് കാണാൻ, താളിന്റെ തലക്കെട്ട് നൽകിയിരിക്കണം.',
+	'templatesandbox-editform-invalid-template' => 'താങ്കൾ നൽകിയ ഫലകത്തിന്റെ നാമം അസാധുവാണ്.',
 	'templatesandbox-editform-invalid-title' => 'എങ്ങനെയുണ്ടെന്ന് കാണാൻ താങ്കൾ നൽകിയ തലക്കെട്ട് അസാധുവാണ്.',
 	'templatesandbox-editform-title-not-exists' => 'എങ്ങനെയുണ്ടെന്ന് കാണാൻ താങ്കൾ നൽകിയ തലക്കെട്ട് നിലവിലില്ല.',
 );
