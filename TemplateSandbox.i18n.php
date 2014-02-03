@@ -1790,9 +1790,12 @@ $messages['uk'] = array(
  * @author Sociologist
  */
 $messages['uz'] = array(
+	'templatesandbox-submit' => 'Koʻrish',
 	'templatesandbox-editform-legend' => 'Ushbu andoza qoʻllanilgan sahifani koʻrib chiqish',
 	'templatesandbox-previewnote' => "'''Diqqat! Bu shunchaki [[:$1]] sahifasini koʻrib chiqish.''' Andozaga kiritgan oʻzgartirishlaringiz hali saqlangani yoʻq!",
+	'templatesandbox-editform-need-template' => 'Ushbu andoza qoʻllanilgan sahifani koʻrib chiqish uchun andoza nomi koʻrsatilishi lozim.',
 	'templatesandbox-editform-need-title' => 'Ushbu andoza qoʻllanilgan sahifani koʻrib chiqish uchun oʻsha sahifa nomi koʻrsatilishi lozim.',
+	'templatesandbox-editform-invalid-template' => 'Koʻrsatilgan andoza nomi notoʻgʻri.',
 );
 
 /** vèneto (vèneto)
