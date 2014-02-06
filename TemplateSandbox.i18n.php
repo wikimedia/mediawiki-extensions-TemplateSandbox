@@ -647,6 +647,7 @@ $messages['fa'] = array(
  * @author Nedergard
  * @author Nike
  * @author Olli
+ * @author Pxos
  * @author Stryn
  */
 $messages['fi'] = array(
@@ -660,8 +661,8 @@ $messages['fi'] = array(
 	'templatesandbox-text-label' => 'Renderöi wikiteksti:',
 	'templatesandbox-submit' => 'Näytä',
 	'templatesandbox-title-output' => 'Mallinehiekkalaatikko: $1',
-	'templatesandbox-editform-legend' => 'Esikatsele sivua tätä mallinetta käyttäen',
-	'templatesandbox-editform-page-label' => 'Sivun nimi',
+	'templatesandbox-editform-legend' => 'Esikatsele sivua tämän mallineen kanssa',
+	'templatesandbox-editform-page-label' => 'Sivun nimi:',
 	'templatesandbox-editform-view-label' => 'Näytä esikatselu',
 	'templatesandbox-preview' => 'Sivun $2 esikatselu',
 	'templatesandbox-previewnote' => "'''Muista, että tämä on sivun [[:$1]] esikatselu.'''
