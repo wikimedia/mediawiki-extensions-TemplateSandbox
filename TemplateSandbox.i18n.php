@@ -184,6 +184,7 @@ Por exemplu, si quier ver la vista previa d\'una versión de "{{ns:Template}}:Pr
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Red Winged Duck
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -191,7 +192,7 @@ $messages['be-tarask'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Адлюстроўвае старонку]], уключыўшы на яе шаблён зь пясочніцы',
 	'templatesandbox-suffix' => 'пясочніца',
 	'templatesandbox-legend' => 'Пясочніца для шаблёнаў',
-	'templatesandbox-text' => 'Вы можаце выбраць набор шаблёнаў, захаваных у вашай пясочніцы, скарыстаўшыя адпаведным прэфіксам. Напрыклад, калі вы хочаце праглядзець выгляд {{ns:Template}}:Тэст, які вы захавалі як «{{ns:User}}:Карыстач/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тэст», скарыстайцеся прэфіксам «{{ns:User}}:Карыстач/{{int:templatesandbox-suffix}}».',
+	'templatesandbox-text' => 'Вы можаце выбраць набор шаблёнаў, захаваных у вашай пясочніцы, з дапамогай адпаведнага прэфіксу. Напрыклад, калі вы хочаце ўбачыць, як выглядае {{ns:Template}}:Тэст, які вы захавалі як «{{ns:User}}:Імя_ўдзельніка/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тэст», скарыстайцеся прэфіксам «{{ns:User}}:Імя_ўдзельніка/{{int:templatesandbox-suffix}}».',
 	'templatesandbox-prefix-label' => 'Прэфікс пясочніцы:',
 	'templatesandbox-page-label' => 'Паказаць на старонцы:',
 	'templatesandbox-revid-label' => 'Вэрсія для адлюстраваньня:',
