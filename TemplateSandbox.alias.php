@@ -119,6 +119,11 @@ $specialPageAliases['ru'] = array(
 	'TemplateSandbox' => array( 'Песочница_для_шаблонов' ),
 );
 
+/** Swedish (svenska) */
+$specialPageAliases['sv'] = array(
+	'TemplateSandbox' => array( 'Mallsandlåda' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'TemplateSandbox' => array( 'Пісочниця_шаблону' ),
