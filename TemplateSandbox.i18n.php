@@ -638,6 +638,7 @@ $messages['fa'] = array(
 	'templatesandbox-invalid-prefix' => 'پیشوند صفحهٔ تمرین که شما مشخص کرده‌اید نامعتبر است.',
 	'templatesandbox-prefix-not-local' => 'پشوند صفحهٔ تمرین مشخص‌شده توسط شما محلی نیست.',
 	'templatesandbox-page-or-revid' => 'شما می‌بایست یک عنوان صفحه یا یک شمارهٔ شناسایی نسخه را وارد کنید.',
+	'templatesandbox-editform-need-template' => 'برای پیش‌نمایش صفحه دیگری با این الگو، نام الگو باید مشخص شده باشد.',
 	'templatesandbox-editform-need-title' => 'برای پیش‌نمایش صفحه با این الگو، می‌بایست یک عنوان صفحه مشخص شده باشد.',
 	'templatesandbox-editform-invalid-template' => 'نام الگویی که شما تعیین کرده‌اید نامعتبر است.',
 	'templatesandbox-editform-invalid-title' => 'عنوان مشخص‌شده توسط شما برای پیش‌نمایش نادرست است.',
