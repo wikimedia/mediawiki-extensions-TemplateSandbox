@@ -455,6 +455,14 @@ Deine Änderungen wurden noch nicht gespeichert!",
 	'templatesandbox-editform-title-not-exists' => 'Der angegebene Titel zur Vorschau ist nicht vorhanden.',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Filzstift
+ */
+$messages['de-ch'] = array(
+	'templatesandbox-text' => 'Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest.
+Wenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test» gespeichert hast, benutze als Präfix «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}».',
+);
+
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
  */
@@ -1381,6 +1389,7 @@ $messages['oc'] = array(
 	'templatesandbox-editform-page-label' => 'Títol de la pagina :',
 	'templatesandbox-editform-view-label' => "Afichar l'apercebut",
 	'templatesandbox-preview' => 'Apercebut de $2',
+	'templatesandbox-editform-need-template' => 'Per aver un apercebut d’una autra pagina amb aqueste modèl, un nom de modèl deu èsser especificat.',
 );
 
 /** Polish (polski)
