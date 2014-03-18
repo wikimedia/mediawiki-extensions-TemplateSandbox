@@ -1949,6 +1949,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Justincheng12345
+ * @author Liuxinyu970226
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -1956,6 +1957,8 @@ $messages['zh-hant'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|在頁面]]套用沙盒的模版',
 	'templatesandbox-suffix' => '沙盒',
 	'templatesandbox-legend' => '模版沙盒',
+	'templatesandbox-text' => '您可通過適當沙盒前綴選擇模板設定並保存至您的沙盒空間。
+例如，如果您希望預覽作為「{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test」之{{ns:Template}}:Test版本，通過「{{ns:User}}:Foo/{{int:templatesandbox-suffix}}」作為前綴。',
 	'templatesandbox-prefix-label' => '沙盒前綴：',
 	'templatesandbox-page-label' => '呈現頁面：',
 	'templatesandbox-revid-label' => '呈現修訂：',
