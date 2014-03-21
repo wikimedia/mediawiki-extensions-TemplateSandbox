@@ -1018,6 +1018,28 @@ $messages['ka'] = array(
 	'templatesandbox-preview' => '$2-ის წინასწარი გადახედვა',
 );
 
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
+ */
+$messages['kk-cyrl'] = array(
+	'templatesandbox' => 'Үлгі зертханасы',
+	'templatesandbox-suffix' => 'зертхана',
+	'templatesandbox-legend' => 'Үлгі зертханасы',
+	'templatesandbox-submit' => 'Қарау',
+	'templatesandbox-title-output' => 'Үлгі зертханасы: $1',
+	'templatesandbox-editform-legend' => 'Бұл үлгімен бетті қарап шығу',
+	'templatesandbox-editform-page-label' => 'Бет тақырып аты',
+	'templatesandbox-editform-view-label' => 'Алдын ала қарау',
+	'templatesandbox-preview' => '$2 бетінде алдын-ала қарау',
+	'templatesandbox-previewnote' => "'''Бұл тек [[:$1]] бетінде алдын-ала қарап шығу екенін ұмытпаңыз.'''
+Өзгерістеріңіз сақталған жоқ!",
+	'templatesandbox-invalid-title' => 'Cіз көрсеткен атау жарамды емес',
+	'templatesandbox-title-not-exists' => 'Cіз көрсеткен атау жоқ.',
+	'templatesandbox-revision-not-exists' => 'Cіз көрсеткен нұсқа жоқ.',
+	'templatesandbox-invalid-prefix' => 'Cіз көрсеткен префикс жарамды емес',
+	'templatesandbox-prefix-not-local' => 'Cіз көрсеткен үлгі префиксі жергілікті емес',
+);
+
 /** Korean (한국어)
  * @author Priviet
  * @author 관인생략
