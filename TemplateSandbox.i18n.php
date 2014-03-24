@@ -1879,7 +1879,7 @@ Thí dụ để xem trước một phiên bản {{ns:Template}}:Thử được l
 	'templatesandbox-prefix-label' => 'Tiền tố chỗ thử:',
 	'templatesandbox-page-label' => 'Kết xuất trang:',
 	'templatesandbox-revid-label' => 'Kết xuất phiên bản:',
-	'templatesandbox-text-label' => 'Kết xuất văn bản wiki:',
+	'templatesandbox-text-label' => 'Kết xuất mã wiki:',
 	'templatesandbox-submit' => 'Xem',
 	'templatesandbox-title-output' => 'Chỗ thử bản mẫu: $1',
 	'templatesandbox-editform-legend' => 'Xem trước trang dùng bản mẫu này',
