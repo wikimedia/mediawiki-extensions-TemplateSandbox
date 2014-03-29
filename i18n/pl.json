@@ -4,13 +4,14 @@
             "Matma Rex",
             "Odie2",
             "Peter Bowman",
-            "WTM"
+            "WTM",
+            "Chrumps"
         ]
     },
     "templatesandbox": "Szablonowy brudnopis",
     "templatesandbox-suffix": "brudnopis",
     "templatesandbox-legend": "Szablonowy brudnopis",
-    "templatesandbox-text": "Możesz wybrać zestaw szablonów zapisanych w Twoim brudnopisie, korzystając z odpowiedniego prefiksu.\nDla przykładu, jezeli chcesz zobaczyć podgląd wersji strony „{{ns:Template}}:Test”, którą {{GENDER:|zapisałeś|zapisałaś}} jako „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test”, użyj prefiksu „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}”.",
+    "templatesandbox-text": "Możesz wybrać zestaw szablonów zapisanych w Twoim brudnopisie, korzystając z odpowiedniego prefiksu.\nNa przykład, jeżeli chcesz zobaczyć podgląd wersji strony „{{ns:Template}}:Test”, którą {{GENDER:|zapisałeś|zapisałaś}} jako „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test”, użyj prefiksu „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}”.",
     "templatesandbox-prefix-label": "Prefiks do brudnopisu:",
     "templatesandbox-page-label": "Przetestuj stronę:",
     "templatesandbox-revid-label": "Przetestuj wersję:",
