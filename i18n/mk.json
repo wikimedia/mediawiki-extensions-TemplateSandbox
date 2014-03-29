@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bjankuloski06"
+        ]
+    },
+    "templatesandbox": "ШаблонскиПесочник",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|Испишува страница]] превметнувајќи шаблони од песочник",
+    "templatesandbox-suffix": "песочник",
+    "templatesandbox-legend": "Шаблонски песочник",
+    "templatesandbox-text": "Можете да изберете збир шаблони зачувани во вашиот песочник, користејќи се со соодветен префикс за песочник. На пример, ако сакате да пергледате верзија на {{ns:Template}}:Test што сте ја зачувале како „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“, користете „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“  како префикс.",
+    "templatesandbox-prefix-label": "Префикс на песочникот:",
+    "templatesandbox-page-label": "Страница за испис:",
+    "templatesandbox-revid-label": "Ревизија на исписот:",
+    "templatesandbox-text-label": "Викитекст на исписот:",
+    "templatesandbox-submit": "Преглед",
+    "templatesandbox-title-output": "ШаблонскиПесочник: $1",
+    "templatesandbox-editform-legend": "Преглед на страница со шаблонов",
+    "templatesandbox-editform-page-label": "Наслов на страницата:",
+    "templatesandbox-editform-view-label": "Прик. преглед",
+    "templatesandbox-preview": "Преглед на $2",
+    "templatesandbox-previewnote": "'''Имајте предвид дека ова е само преглед на [[:$1]].'''\nПромените сè уште не се зачувани!",
+    "templatesandbox-invalid-title": "Наведениот наслов е неважечки.",
+    "templatesandbox-title-not-exists": "Наведениот наслов не постои.",
+    "templatesandbox-revision-not-exists": "Наведената ревизија не постои.",
+    "templatesandbox-invalid-prefix": "Наведениот префикс за песочник не постои.",
+    "templatesandbox-prefix-not-local": "Наведениот префикс за песочник не е локален.",
+    "templatesandbox-page-or-revid": "Мора да внесете наслов на страницата или број (назнака) на ревизијата.",
+    "templatesandbox-editform-need-template": "За да прегледате друга страница со шаблонов, мора да наведете име на шаблонот.",
+    "templatesandbox-editform-need-title": "За да прегледате друга страница со шаблонов, мора да наведете наслов.",
+    "templatesandbox-editform-invalid-template": "Укажаното име на шаблонот е неважечко.",
+    "templatesandbox-editform-invalid-title": "Наведениот наслов за преглед е неважечки.",
+    "templatesandbox-editform-title-not-exists": "Наведениот наслов за преглед не постои."
+}

@@ -49,11 +49,12 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Brad Jorsch',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:TemplateSandbox',
 	'descriptionmsg' => 'templatesandbox-desc',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 );
 
 $wgAutoloadClasses['TemplateSandboxHooks'] = __DIR__ . '/TemplateSandbox.hooks.php';
 $wgAutoloadClasses['SpecialTemplateSandbox'] = __DIR__ . '/SpecialTemplateSandbox.php';
+$wgMessagesDirs['TemplateSandbox'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TemplateSandbox'] = __DIR__ . '/TemplateSandbox.i18n.php';
 $wgExtensionMessagesFiles['TemplateSandboxAlias'] = __DIR__ . '/TemplateSandbox.alias.php';
 $wgSpecialPages['TemplateSandbox'] = 'SpecialTemplateSandbox';

@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "Justincheng12345",
+            "Liuxinyu970226",
+            "Simon Shek"
+        ]
+    },
+    "templatesandbox": "模版沙盒",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|在頁面]]套用沙盒的模版",
+    "templatesandbox-suffix": "沙盒",
+    "templatesandbox-legend": "模版沙盒",
+    "templatesandbox-text": "您可通過適當沙盒前綴選擇模板設定並保存至您的沙盒空間。\n例如，如果您希望預覽作為「{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test」之{{ns:Template}}:Test版本，通過「{{ns:User}}:Foo/{{int:templatesandbox-suffix}}」作為前綴。",
+    "templatesandbox-prefix-label": "沙盒前綴：",
+    "templatesandbox-page-label": "呈現頁面：",
+    "templatesandbox-revid-label": "呈現修訂：",
+    "templatesandbox-text-label": "呈現wiki代碼：",
+    "templatesandbox-submit": "檢視",
+    "templatesandbox-title-output": "模版沙盒：$1",
+    "templatesandbox-editform-legend": "在頁面預覽此模版",
+    "templatesandbox-editform-page-label": "頁面標題：",
+    "templatesandbox-editform-view-label": "顯示預覽",
+    "templatesandbox-preview": "$2的預覽",
+    "templatesandbox-previewnote": "'''請記住這只是[[:$1]]的預覽。'''\n您的更改尚未儲存！",
+    "templatesandbox-invalid-title": "所指定標題無效。",
+    "templatesandbox-title-not-exists": "所指定的標題不存在。",
+    "templatesandbox-revision-not-exists": "所指定的修訂不存在。",
+    "templatesandbox-invalid-prefix": "所指定的沙盒前綴無效。",
+    "templatesandbox-prefix-not-local": "所指定的沙盒前綴並非本地。",
+    "templatesandbox-page-or-revid": "您必需輸入一個頁面標題或版本ID號碼。",
+    "templatesandbox-editform-need-title": "在另一頁面上預覽此模版，請指定該頁面標題。",
+    "templatesandbox-editform-invalid-title": "所指定的預覽標題無效。",
+    "templatesandbox-editform-title-not-exists": "所指定的預覽標題不存在。"
+}

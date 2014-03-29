@@ -1,0 +1,39 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ahonc",
+            "Andriykopanytsia",
+            "Base",
+            "DixonD",
+            "Wizardist",
+            "Ата"
+        ]
+    },
+    "templatesandbox": "Пісочниця шаблону",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з пісочниці",
+    "templatesandbox-suffix": "пісочниця",
+    "templatesandbox-legend": "Пісочниця шаблона",
+    "templatesandbox-text": "Ви можете вибрати набір шаблонів, збережених у вашому просторі пісочниць, використовуючи префікс відповідної пісочниці.\nНаприклад, якщо ви хочете переглянути версію {{ns:Template}}:Тест, який ви зберегли в якості „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тест“, використовуйте „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}“ в якості префікса.",
+    "templatesandbox-prefix-label": "Префікс пісочниці:",
+    "templatesandbox-page-label": "Відобразити сторінку:",
+    "templatesandbox-revid-label": "Відобразити версію:",
+    "templatesandbox-text-label": "Відобразити вікітекст:",
+    "templatesandbox-submit": "Перегляд",
+    "templatesandbox-title-output": "Пісочниця шаблона: $1",
+    "templatesandbox-editform-legend": "Попередній перегляд сторінки з цим шаблоном",
+    "templatesandbox-editform-page-label": "Заголовок сторінки:",
+    "templatesandbox-editform-view-label": "Попередній перегляд",
+    "templatesandbox-preview": "Попередній перегляд $2",
+    "templatesandbox-previewnote": "'''Це лише попередній перегляд [[:$1]].'''\nВаші зміни ще не збережено!",
+    "templatesandbox-invalid-title": "Вказана назва неприпустима.",
+    "templatesandbox-title-not-exists": "Вказана назва не існує.",
+    "templatesandbox-revision-not-exists": "Вказаної версії не існує.",
+    "templatesandbox-invalid-prefix": "Вказаний префікс пісочниці некоректний.",
+    "templatesandbox-prefix-not-local": "Вказаний префікс пісочниці не є локальним.",
+    "templatesandbox-page-or-revid": "Ви повинні ввести назву сторінки або ID-номер версії.",
+    "templatesandbox-editform-need-template": "Щоб переглянути іншу сторінку з цього шаблону, необхідно вказати ім'я шаблону.",
+    "templatesandbox-editform-need-title": "Потрібно вказати заголовок сторінки для перегляду іншої сторінки з цим шаблоном.",
+    "templatesandbox-editform-invalid-template": "Неприпустиме ім'я шаблону, яке ви вказали.",
+    "templatesandbox-editform-invalid-title": "Вказаний заголовок для попереднього перегляду некоректний.",
+    "templatesandbox-editform-title-not-exists": "Вказаний заголовок для попереднього перегляду не існує."
+}

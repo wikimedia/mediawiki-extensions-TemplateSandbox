@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "Metalhead64"
+        ]
+    },
+    "templatesandbox": "Vorlagenspielwiese",
+    "templatesandbox-desc": "Ergänzt eine Spielwiese zum [[Special:TemplateSandbox|Rendern von Seiten]], die Vorlagen enthalten",
+    "templatesandbox-suffix": "Spielwiese",
+    "templatesandbox-legend": "Vorlagenspielwiese",
+    "templatesandbox-text": "Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest.\nWenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“ gespeichert hast, benutze als Präfix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.",
+    "templatesandbox-prefix-label": "Spielwiesenpräfix:",
+    "templatesandbox-page-label": "Seite rendern:",
+    "templatesandbox-revid-label": "Version rendern:",
+    "templatesandbox-text-label": "Wikitext rendern:",
+    "templatesandbox-submit": "Ansicht",
+    "templatesandbox-title-output": "Vorlagenspielwiese: $1",
+    "templatesandbox-editform-legend": "Vorschau der Seite mit dieser Vorlage anzeigen",
+    "templatesandbox-editform-page-label": "Seitentitel:",
+    "templatesandbox-editform-view-label": "Vorschau zeigen",
+    "templatesandbox-preview": "Vorschau von $2",
+    "templatesandbox-previewnote": "'''Dies ist nur eine Vorschau von [[:$1]].'''\nDeine Änderungen wurden noch nicht gespeichert!",
+    "templatesandbox-invalid-title": "Der angegebene Titel ist ungültig.",
+    "templatesandbox-title-not-exists": "Der angegebene Titel ist nicht vorhanden.",
+    "templatesandbox-revision-not-exists": "Die angegebene Version ist nicht vorhanden.",
+    "templatesandbox-invalid-prefix": "Das angegebene Spielwiesenpräfix ist ungültig.",
+    "templatesandbox-prefix-not-local": "Das angegebene Spielwiesenpräfix ist nicht lokal.",
+    "templatesandbox-page-or-revid": "Du musst entweder einen Seitentitel oder eine Versionskennung angeben.",
+    "templatesandbox-editform-need-template": "Um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen, muss ein Vorlagenname angegeben werden.",
+    "templatesandbox-editform-need-title": "Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.",
+    "templatesandbox-editform-invalid-template": "Der angegebene Vorlagenname ist ungültig.",
+    "templatesandbox-editform-invalid-title": "Der angegebene Titel zur Vorschau ist ungültig.",
+    "templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden."
+}

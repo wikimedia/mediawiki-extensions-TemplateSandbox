@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mormegil"
+        ]
+    },
+    "templatesandbox": "Šablonové pískoviště",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|Vykreslování stránek]], které aplikuje šablony z pískoviště",
+    "templatesandbox-suffix": "pískoviště",
+    "templatesandbox-legend": "Šablonové pískoviště",
+    "templatesandbox-text": "Můžete si vybrat sadu šablon uložených ve vašem pískovišti, když použijete vhodný prefix pískoviště.\nPokud například chcete zobrazit náhled verze {{ns:Template}}:Test, kterou jste si {{GENDER:|uložil|uložila|uložili}} jako „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“, použijte jako prefix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.",
+    "templatesandbox-prefix-label": "Prefix pískoviště:",
+    "templatesandbox-page-label": "Vykreslit stránku:",
+    "templatesandbox-revid-label": "Vykreslit revizi:",
+    "templatesandbox-text-label": "Vykreslit wikitext:",
+    "templatesandbox-submit": "Zobrazit",
+    "templatesandbox-title-output": "Šablonové pískoviště: $1",
+    "templatesandbox-editform-legend": "Náhled stránky s touto šablonou",
+    "templatesandbox-editform-page-label": "Název stránky:",
+    "templatesandbox-editform-view-label": "Ukázat náhled",
+    "templatesandbox-preview": "Náhled stránky $2",
+    "templatesandbox-previewnote": "'''Pamatujte, že toto je pouze náhled stránky [[:$1]].'''\nZměny zatím nebyly uloženy!",
+    "templatesandbox-invalid-title": "Zadaný název je neplatný.",
+    "templatesandbox-title-not-exists": "Zadaný název neexistuje.",
+    "templatesandbox-revision-not-exists": "Zadaná revize neexistuje.",
+    "templatesandbox-invalid-prefix": "Zadaný prefix pískoviště je neplatný.",
+    "templatesandbox-prefix-not-local": "Zadaný prefix pískoviště není místní.",
+    "templatesandbox-page-or-revid": "Musíte zadat název stránky nebo číslo revize.",
+    "templatesandbox-editform-need-template": "Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název šablony.",
+    "templatesandbox-editform-need-title": "Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název stránky.",
+    "templatesandbox-editform-invalid-template": "Zadaný název šablony je neplatný.",
+    "templatesandbox-editform-invalid-title": "Zadaný název stránky pro náhled je neplatný.",
+    "templatesandbox-editform-title-not-exists": "Zadaný název stránky pro náhled neexistuje."
+}

@@ -1,0 +1,35 @@
+{
+    "@metadata": {
+        "authors": [
+            "Armando-Martin",
+            "Ovruni",
+            "Vivaelcelta"
+        ]
+    },
+    "templatesandbox": "Zona de pruebas para las plantillas",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|Renderiza una página]] con la transclusión de las plantillas de una zona de pruebas",
+    "templatesandbox-suffix": "zona de pruebas",
+    "templatesandbox-legend": "Zona de pruebas para las plantillas",
+    "templatesandbox-text": "Puedes eligir un conjunto de plantillas guardadas en tu zona de pruebas utilizando el prefijo apropiado.\nPor ejemplo, si quieres ver una vista previa de una versión de \"{{ns:Template}}:Prueba\" que has guardado como \"{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Prueba\", utiliza \"{{ns:User}}:Ejemplo/{{int:templatesandbox-suffix}}\" como prefijo.",
+    "templatesandbox-prefix-label": "Prefijo de la zona de pruebas",
+    "templatesandbox-page-label": "Renderizar la página:",
+    "templatesandbox-revid-label": "Renderizar la revisión:",
+    "templatesandbox-text-label": "Renderizar el wikitexto:",
+    "templatesandbox-submit": "Ver",
+    "templatesandbox-title-output": "Zona de pruebas para las plantillas: $1",
+    "templatesandbox-editform-legend": "Vista previa de la página con esta plantilla",
+    "templatesandbox-editform-page-label": "Título de la página:",
+    "templatesandbox-editform-view-label": "Mostrar vista previa",
+    "templatesandbox-preview": "Vista previa de $2",
+    "templatesandbox-previewnote": "'''Recuerda que esto es solo una previsualización de [[:$1]].'''\n¡Tus cambios aún no se han guardado!",
+    "templatesandbox-invalid-title": "El título que has especificado no es válido.",
+    "templatesandbox-title-not-exists": "El título especificado no existe.",
+    "templatesandbox-revision-not-exists": "La revisión especificada no existe.",
+    "templatesandbox-invalid-prefix": "El prefijo de zona de pruebas que has especificado no es válido.",
+    "templatesandbox-prefix-not-local": "El prefijo de zona de pruebas que has especificado no es local.",
+    "templatesandbox-page-or-revid": "Debe indicar el título de la página o el número identificador de revisión.",
+    "templatesandbox-editform-need-title": "Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.",
+    "templatesandbox-editform-invalid-template": "El nombre de la plantilla que ha especificado no es válido.",
+    "templatesandbox-editform-invalid-title": "El título especificado para la vista previa no es válido.",
+    "templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe."
+}

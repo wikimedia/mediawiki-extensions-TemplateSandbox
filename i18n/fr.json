@@ -1,0 +1,38 @@
+{
+    "@metadata": {
+        "authors": [
+            "Arkanosis",
+            "Crochet.david",
+            "Gomoko",
+            "Npettiaux",
+            "Seb35"
+        ]
+    },
+    "templatesandbox": "Bac à sable de modèle",
+    "templatesandbox-desc": "[[Special:TemplateSandbox|Afficher le rendu d’une page]] en utilisant les modèles présents dans un bac à sable",
+    "templatesandbox-suffix": "bac à sable",
+    "templatesandbox-legend": "Bac à sable de modèle",
+    "templatesandbox-text": "Vous pouvez choisir un ensemble de modèles enregistrés dans votre espace de bac à sable à l'aide d'un préfixe de bac à sable approprié.\nPar exemple, si vous souhaitez afficher un aperçu d'une version de {{ns:Template}}:Test que vous avez enregistrée sous \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", utilisez \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" comme préfixe.",
+    "templatesandbox-prefix-label": "Préfixe de bac à sable :",
+    "templatesandbox-page-label": "Rendu de la page :",
+    "templatesandbox-revid-label": "Rendu de la révision :",
+    "templatesandbox-text-label": "Rendu du wikitexte :",
+    "templatesandbox-submit": "Afficher",
+    "templatesandbox-title-output": "TemplateSandbox: $1",
+    "templatesandbox-editform-legend": "Aperçu de la page avec ce modèle",
+    "templatesandbox-editform-page-label": "Titre de la page :",
+    "templatesandbox-editform-view-label": "Afficher l’aperçu",
+    "templatesandbox-preview": "Aperçu de $2",
+    "templatesandbox-previewnote": "'''Souvenez-vous que ce n’est qu’un aperçu de [[:$1]].'''\nVos modifications n’ont pas encore été enregistrées!",
+    "templatesandbox-invalid-title": "Le titre que vous avez spécifié n’est pas valide.",
+    "templatesandbox-title-not-exists": "Le titre que vous avez spécifié n’existe pas.",
+    "templatesandbox-revision-not-exists": "La révision que vous avez spécifiée n’existe pas.",
+    "templatesandbox-invalid-prefix": "Le préfixe de bac à sable que vous avez spécifié n’est pas valide.",
+    "templatesandbox-prefix-not-local": "Le préfixe de bac à sable que vous avez spécifié n’est pas local.",
+    "templatesandbox-page-or-revid": "Vous devez saisir soit un titre de page, soit un numéro d'identifiant de révision.",
+    "templatesandbox-editform-need-template": "Pour avoir un aperçu d’une autre page avec ce modèle, un nom de modèle doit être spécifié.",
+    "templatesandbox-editform-need-title": "Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.",
+    "templatesandbox-editform-invalid-template": "Le nom du modèle que vous avez indiqué n’est pas valide.",
+    "templatesandbox-editform-invalid-title": "Le titre que vous avez spécifié pour l’aperçu n’est pas valide.",
+    "templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas."
+}

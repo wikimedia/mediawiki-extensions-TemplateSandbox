@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Erdemaslancan"
+        ]
+    },
+    "templatesandbox": "QumdorŞablon",
+    "templatesandbox-suffix": "qumdor",
+    "templatesandbox-legend": "Qumdorê Şabloni",
+    "templatesandbox-prefix-label": "Veroley qumdor:",
+    "templatesandbox-submit": "Bıvin",
+    "templatesandbox-title-output": "QumdorŞablon:$1",
+    "templatesandbox-editform-legend": "Verasayışê pele da ena şablon",
+    "templatesandbox-editform-page-label": "Sernamey pela:",
+    "templatesandbox-editform-view-label": "Verasayışi bıvin",
+    "templatesandbox-preview": "Verasayışê $2"
+}
