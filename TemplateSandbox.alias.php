@@ -74,6 +74,11 @@ $specialPageAliases['he'] = array(
 	'TemplateSandbox' => array( 'ארגז_חול_לתבניות', 'ארגז_חול_של_תבניות' ),
 );
 
+/** Italian (italiano) */
+$specialPageAliases['it'] = array(
+	'TemplateSandbox' => array( 'SandboxTemplate' ),
+);
+
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'TemplateSandbox' => array( 'テンプレートサンドボックス' ),
