@@ -1,32 +1,32 @@
 {
-    "@metadata": {
-        "authors": [
-            "Jeblad"
-        ]
-    },
-    "templatesandbox": "Mal-sandkasse",
-    "templatesandbox-desc": "[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse",
-    "templatesandbox-suffix": "sandkasse",
-    "templatesandbox-legend": "Alternativ for mal-sandkasse",
-    "templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/sandbox\" som prefiks.",
-    "templatesandbox-prefix-label": "Prefiks for sandkasse:",
-    "templatesandbox-page-label": "Tegn ut siden:",
-    "templatesandbox-revid-label": "Tegn ut revisjonen:",
-    "templatesandbox-text-label": "Tegn ut wikitekst:",
-    "templatesandbox-submit": "Vis",
-    "templatesandbox-title-output": "Mal-sandkasse: $1",
-    "templatesandbox-editform-legend": "Forhåndsvis siden med denne malen",
-    "templatesandbox-editform-page-label": "Sidetittel:",
-    "templatesandbox-editform-view-label": "Forhåndsvisning",
-    "templatesandbox-preview": "Forhåndsvisning av $2",
-    "templatesandbox-previewnote": "'''Husk at dette er bare en forhåndsvisning av [[:$1]].'''\nEndringene er ikke lagret ennå!",
-    "templatesandbox-invalid-title": "Tittelen du oppga er ugyldig.",
-    "templatesandbox-title-not-exists": "Tittelen du oppga eksisterer ikke.",
-    "templatesandbox-revision-not-exists": "Versjonen du oppga eksisterer ikke.",
-    "templatesandbox-invalid-prefix": "Sandkasse-prefikset du oppga er ugyldig.",
-    "templatesandbox-prefix-not-local": "Sandboks-prefikset du oppga er ikke lokalt.",
-    "templatesandbox-page-or-revid": "Du må angi enten en sidetittel eller et revisjonsnummer.",
-    "templatesandbox-editform-need-title": "For å forhåndsvise en annen side med denne malen, må du angi en sidetittel.",
-    "templatesandbox-editform-invalid-title": "Tittelen du har angitt for forhåndsvisning er ugyldig.",
-    "templatesandbox-editform-title-not-exists": "Tittelen du har angitt for forhåndsvisning finnes ikke."
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"templatesandbox": "Mal-sandkasse",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse",
+	"templatesandbox-suffix": "sandkasse",
+	"templatesandbox-legend": "Alternativ for mal-sandkasse",
+	"templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/sandbox\" som prefiks.",
+	"templatesandbox-prefix-label": "Prefiks for sandkasse:",
+	"templatesandbox-page-label": "Tegn ut siden:",
+	"templatesandbox-revid-label": "Tegn ut revisjonen:",
+	"templatesandbox-text-label": "Tegn ut wikitekst:",
+	"templatesandbox-submit": "Vis",
+	"templatesandbox-title-output": "Mal-sandkasse: $1",
+	"templatesandbox-editform-legend": "Forhåndsvis siden med denne malen",
+	"templatesandbox-editform-page-label": "Sidetittel:",
+	"templatesandbox-editform-view-label": "Forhåndsvisning",
+	"templatesandbox-preview": "Forhåndsvisning av $2",
+	"templatesandbox-previewnote": "'''Husk at dette er bare en forhåndsvisning av [[:$1]].'''\nEndringene er ikke lagret ennå!",
+	"templatesandbox-invalid-title": "Tittelen du oppga er ugyldig.",
+	"templatesandbox-title-not-exists": "Tittelen du oppga eksisterer ikke.",
+	"templatesandbox-revision-not-exists": "Versjonen du oppga eksisterer ikke.",
+	"templatesandbox-invalid-prefix": "Sandkasse-prefikset du oppga er ugyldig.",
+	"templatesandbox-prefix-not-local": "Sandboks-prefikset du oppga er ikke lokalt.",
+	"templatesandbox-page-or-revid": "Du må angi enten en sidetittel eller et revisjonsnummer.",
+	"templatesandbox-editform-need-title": "For å forhåndsvise en annen side med denne malen, må du angi en sidetittel.",
+	"templatesandbox-editform-invalid-title": "Tittelen du har angitt for forhåndsvisning er ugyldig.",
+	"templatesandbox-editform-title-not-exists": "Tittelen du har angitt for forhåndsvisning finnes ikke."
 }

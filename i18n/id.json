@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Iwan Novirion"
-        ]
-    },
-    "templatesandbox-editform-legend": "Pratayang halaman dengan templat ini",
-    "templatesandbox-editform-page-label": "Judul halaman:",
-    "templatesandbox-editform-view-label": "Lihat pratayang",
-    "templatesandbox-preview": "Pratayang dari halaman $2",
-    "templatesandbox-previewnote": "'''Ingat ini hanyalah pratayang dari halaman [[:$1]].'''\nPerubahan yang Anda buat belum disimpan!",
-    "templatesandbox-invalid-title": "Judul yang Anda masukkan tidak valid.",
-    "templatesandbox-title-not-exists": "Judul yang Anda minta tidak ada.",
-    "templatesandbox-editform-need-title": "Untuk melihat pratayang halaman yang menggunakan template ini, judul halamannya harus ada.",
-    "templatesandbox-editform-title-not-exists": "Judul Anda yang anda masukkan untuk melihat pratayang tidak ada."
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion"
+		]
+	},
+	"templatesandbox-editform-legend": "Pratayang halaman dengan templat ini",
+	"templatesandbox-editform-page-label": "Judul halaman:",
+	"templatesandbox-editform-view-label": "Lihat pratayang",
+	"templatesandbox-preview": "Pratayang dari halaman $2",
+	"templatesandbox-previewnote": "'''Ingat ini hanyalah pratayang dari halaman [[:$1]].'''\nPerubahan yang Anda buat belum disimpan!",
+	"templatesandbox-invalid-title": "Judul yang Anda masukkan tidak valid.",
+	"templatesandbox-title-not-exists": "Judul yang Anda minta tidak ada.",
+	"templatesandbox-editform-need-title": "Untuk melihat pratayang halaman yang menggunakan template ini, judul halamannya harus ada.",
+	"templatesandbox-editform-title-not-exists": "Judul Anda yang anda masukkan untuk melihat pratayang tidak ada."
 }

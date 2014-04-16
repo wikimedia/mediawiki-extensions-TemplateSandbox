@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cainamarques",
-            "Luckas",
-            "Opraco"
-        ]
-    },
-    "templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
-    "templatesandbox-editform-page-label": "Título da página:",
-    "templatesandbox-editform-view-label": "Prever"
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Luckas",
+			"Opraco"
+		]
+	},
+	"templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
+	"templatesandbox-editform-page-label": "Título da página:",
+	"templatesandbox-editform-view-label": "Prever"
 }

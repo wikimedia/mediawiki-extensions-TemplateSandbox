@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Veeven"
-        ]
-    },
-    "templatesandbox-editform-page-label": "పేజీ శీర్షిక:",
-    "templatesandbox-editform-view-label": "మునుజూపును చూపించు",
-    "templatesandbox-preview": "$2 యొక్క మునుజూపు"
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"templatesandbox-editform-page-label": "పేజీ శీర్షిక:",
+	"templatesandbox-editform-view-label": "మునుజూపును చూపించు",
+	"templatesandbox-preview": "$2 యొక్క మునుజూపు"
 }

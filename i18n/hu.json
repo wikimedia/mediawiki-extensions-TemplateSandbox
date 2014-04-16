@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Tgr"
-        ]
-    },
-    "templatesandbox": "SablonHomokozó",
-    "templatesandbox-suffix": "homokozó"
+	"@metadata": {
+		"authors": [
+			"Tgr"
+		]
+	},
+	"templatesandbox": "SablonHomokozó",
+	"templatesandbox-suffix": "homokozó"
 }
