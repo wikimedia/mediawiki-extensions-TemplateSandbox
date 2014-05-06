@@ -28,7 +28,9 @@
 	"templatesandbox-invalid-prefix": "所指定的沙盒前綴無效。",
 	"templatesandbox-prefix-not-local": "所指定的沙盒前綴並非本地。",
 	"templatesandbox-page-or-revid": "您必需輸入一個頁面標題或版本ID號碼。",
+	"templatesandbox-editform-need-template": "要預覽帶此模板之其他頁面，必須指定模板名。",
 	"templatesandbox-editform-need-title": "在另一頁面上預覽此模版，請指定該頁面標題。",
+	"templatesandbox-editform-invalid-template": "指定模板名無效。",
 	"templatesandbox-editform-invalid-title": "所指定的預覽標題無效。",
 	"templatesandbox-editform-title-not-exists": "所指定的預覽標題不存在。"
 }
