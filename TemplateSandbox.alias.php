@@ -139,6 +139,11 @@ $specialPageAliases['vi'] = array(
 	'TemplateSandbox' => array( 'Chỗ_thử_bản_mẫu' ),
 );
 
+/** Yiddish (ייִדיש) */
+$specialPageAliases['yi'] = array(
+	'TemplateSandbox' => array( 'מוסטער־זאמדקאסטן' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'TemplateSandbox' => array( '模板沙盒' ),
