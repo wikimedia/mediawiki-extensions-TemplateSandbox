@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Codicorumus"
+			"Codicorumus",
+			"Nemo bis"
 		]
 	},
 	"templatesandbox": "Pagina di prova Template",
@@ -23,7 +24,7 @@
 	"templatesandbox-previewnote": "'''Ricorda che questa è solo un'anteprima di [[:$1]].'''\nLe tue modifiche NON sono ancora state salvate!",
 	"templatesandbox-invalid-title": "Il titolo che hai specificato non è valido.",
 	"templatesandbox-title-not-exists": "Il titolo che hai specificato non esiste.",
-	"templatesandbox-revision-not-exists": "La revisione che hai specificato non esiste.",
+	"templatesandbox-revision-not-exists": "La versione che hai specificato non esiste.",
 	"templatesandbox-invalid-prefix": "Il prefisso di sandbox che hai indicato non è valido.",
 	"templatesandbox-prefix-not-local": "Il prefisso di sandbox che hai indicato non è locale.",
 	"templatesandbox-page-or-revid": "Devi inserire il titolo di una pagina oppure un numero di versione.",
