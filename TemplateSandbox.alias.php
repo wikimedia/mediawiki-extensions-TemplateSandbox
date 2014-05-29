@@ -64,6 +64,11 @@ $specialPageAliases['et'] = array(
 	'TemplateSandbox' => array( 'Mallide_liivakast' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'TemplateSandbox' => array( 'صفحهٔ_تمرین_الگو' ),
+);
+
 /** Finnish (suomi) */
 $specialPageAliases['fi'] = array(
 	'TemplateSandbox' => array( 'Malline:Hiekkalaatikko' ),
