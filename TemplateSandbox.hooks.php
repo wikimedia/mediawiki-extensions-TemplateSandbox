@@ -125,6 +125,17 @@ class TemplateSandboxHooks {
 				TemplateSandboxHooks::$content = $content;
 			}
 
+			// Apply PST to the to-be-saved text
+			$popts = $editpage->getArticle()->makeParserOptions(
+				$editpage->getArticle()->getContext()
+			);
+			$popts->setEditSection( false );
+			$popts->setIsPreview( true );
+			$popts->setIsSectionPreview( false );
+			TemplateSandboxHooks::$content = TemplateSandboxHooks::$content->preSaveTransform(
+				$templatetitle, $wgUser, $popts
+			);
+
 			$note = wfMessage( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
 				' [[#' . EditPage::EDITFORM_ID . '|' . $wgLang->getArrow() . ' ' .
 				wfMessage( 'continue-editing' )->text() . ']]';
@@ -141,7 +152,6 @@ class TemplateSandboxHooks {
 
 			$rev = Revision::newFromTitle( $title );
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
-			$content = $content->preSaveTransform( $editpage->mTitle, $wgUser, $popts );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
 			$wgOut->addParserOutputNoText( $parserOutput );
 
