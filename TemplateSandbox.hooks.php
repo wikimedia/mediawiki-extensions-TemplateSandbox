@@ -113,9 +113,17 @@ class TemplateSandboxHooks {
 			} else {
 				$sectionTitle = $editpage->summary;
 			}
-			TemplateSandboxHooks::$content = $editpage->getArticle()->replaceSectionContent(
-				$editpage->section, $content, $sectionTitle, $editpage->edittime
-			);
+
+			if ( $editpage->getArticle()->exists() ) {
+				TemplateSandboxHooks::$content = $editpage->getArticle()->replaceSectionContent(
+					$editpage->section, $content, $sectionTitle, $editpage->edittime
+				);
+			} else {
+				if ( $editpage->section === 'new' ) {
+					$content = $content->addSectionHeader( $sectionTitle );
+				}
+				TemplateSandboxHooks::$content = $content;
+			}
 
 			$note = wfMessage( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
 				' [[#' . EditPage::EDITFORM_ID . '|' . $wgLang->getArrow() . ' ' .
