@@ -75,6 +75,12 @@ class SpecialTemplateSandbox extends SpecialPage {
 		}
 
 		if ( $this->output !== null ) {
+			// Wrap output in a div for proper language markup.
+			$pageLang = $this->title->getPageLanguage();
+			$attribs = array( 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
+				'class' => 'mw-content-' . $pageLang->getDir() );
+			$this->output->setText( Html::rawElement( 'div', $attribs, $this->output->getText() ) );
+
 			$output = $this->getOutput();
 			$output->addParserOutput( $this->output );
 
