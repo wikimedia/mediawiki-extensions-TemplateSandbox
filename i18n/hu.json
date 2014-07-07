@@ -1,9 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tgr"
+			"Tgr",
+			"Tacsipacsi"
 		]
 	},
-	"templatesandbox": "SablonHomokozó",
-	"templatesandbox-suffix": "homokozó"
+	"templatesandbox": "Sablonhomokozó",
+	"templatesandbox-suffix": "homokozó",
+	"templatesandbox-legend": "Sablonhomokozó",
+	"templatesandbox-editform-legend": "Lap előnézetének megtekinése ezzel a sablonnal",
+	"templatesandbox-editform-page-label": "Lap címe:",
+	"templatesandbox-editform-view-label": "Előnézet megtekintése",
+	"templatesandbox-preview": "$2 előnézete",
+	"templatesandbox-previewnote": "'''Ne feledd, hogy ez csak [[:$1]] előnézete.''' A változtatásaid még nincsenek elmentve!",
+	"templatesandbox-invalid-title": "Az általad megadott cím érvénytelen.",
+	"templatesandbox-title-not-exists": "Az általad megadott lap nem létezik.",
+	"templatesandbox-revision-not-exists": "Az általad megadott változat nem létezik."
 }
