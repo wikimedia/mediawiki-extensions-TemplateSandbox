@@ -124,6 +124,11 @@ $specialPageAliases['pa'] = array(
 	'TemplateSandbox' => array( 'ਫਰਮਾ_ਕੱਚਾ-ਖ਼ਾਕਾ' ),
 );
 
+/** Portuguese (português) */
+$specialPageAliases['pt'] = array(
+	'TemplateSandbox' => array( 'Testar_predefinições' ),
+);
+
 /** Russian (русский) */
 $specialPageAliases['ru'] = array(
 	'TemplateSandbox' => array( 'Песочница_для_шаблонов' ),
