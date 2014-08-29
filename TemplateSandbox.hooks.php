@@ -153,7 +153,13 @@ class TemplateSandboxHooks {
 			$rev = Revision::newFromTitle( $title );
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
-			$wgOut->addParserOutputNoText( $parserOutput );
+
+			// addParserOutputMetadata was introduced in 1.24 when addParserOutputNoText was deprecated
+			if( method_exists( $wgOut, 'addParserOutputMetadata' ) ){
+				$wgOut->addParserOutputMetadata( $parserOutput );
+			} else {
+				$wgOut->addParserOutputNoText( $parserOutput );
+			}
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
