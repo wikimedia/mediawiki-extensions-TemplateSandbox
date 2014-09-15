@@ -53,6 +53,26 @@ class TemplateSandboxHooks {
 	}
 
 	/**
+	 * @param Title $templatetitle
+	 * @return ScopedCallback to clean up
+	 */
+	private static function fakePageExists( $templatetitle ) {
+		global $wgHooks;
+		$wgHooks['TitleExists']['TemplateSandbox'] =
+			function( $title, &$exists ) use( $templatetitle ) {
+				if ( $templatetitle->equals( $title ) ) {
+					$exists = true;
+				}
+			};
+		LinkCache::singleton()->clearBadLink( $templatetitle->getPrefixedDBkey() );
+		return new ScopedCallback( function() use( $templatetitle ) {
+			global $wgHooks;
+			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
+			LinkCache::singleton()->clearLink( $templatetitle );
+		} );
+	}
+
+	/**
 	 * Hook for AlternateEditPreview to output an entirely different preview
 	 * when our button was clicked.
 	 *
@@ -148,6 +168,7 @@ class TemplateSandboxHooks {
 			TemplateSandboxHooks::$oldTemplateCallback = $popts->setTemplateCallback(
 				'TemplateSandboxHooks::templateCallback'
 			);
+			$fakePageExistsScopedCallback = self::fakePageExists( $templatetitle );
 			$popts->enableLimitReport();
 
 			$rev = Revision::newFromTitle( $title );

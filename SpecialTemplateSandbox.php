@@ -17,6 +17,37 @@ class SpecialTemplateSandbox extends SpecialPage {
 		parent::__construct( 'TemplateSandbox' );
 	}
 
+	/**
+	 * @return ScopedCallback to clean up
+	 */
+	private function fakePageExists() {
+		global $wgHooks;
+		$prefixes = $this->prefixes;
+		$inHook = false;
+		$wgHooks['TitleExists']['TemplateSandbox'] =
+			function( $title, &$exists ) use( $prefixes, &$inHook ) {
+				if ( $exists || $inHook ) {
+					return;
+				}
+				$inHook = true;
+				foreach ( $prefixes as $prefix ) {
+					$newtitle = Title::newFromText(
+						$prefix . '/' . $title->getFullText() );
+					if ( $newtitle instanceof Title && $newtitle->exists() ) {
+						$exists = true;
+						break;
+					}
+				}
+				$inHook = false;
+			};
+		LinkCache::singleton()->clear();
+		return new ScopedCallback( function() {
+			global $wgHooks;
+			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
+			LinkCache::singleton()->clear();
+		} );
+	}
+
 	function execute( $par ) {
 		$this->setHeaders();
 		$this->checkPermissions();
@@ -183,6 +214,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts = $page->makeParserOptions( $this->getContext() );
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
+		$fakePageExistsScopedCallback = $this->fakePageExists();
 		$this->oldTemplateCallback = $popts->setTemplateCallback( array( $this, 'templateCallback' ) );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
