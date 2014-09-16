@@ -10,7 +10,7 @@ class TemplateSandboxHooks {
 	/**
 	 * @var callback
 	 */
-	private static $oldTemplateCallback = null;
+	private static $oldCurrentRevisionCallback = null;
 
 	/**
 	 * Hook for EditPage::importFormData to parse our new form fields, and if
@@ -116,7 +116,11 @@ class TemplateSandboxHooks {
 			wfProfileOut( __METHOD__ );
 			return false;
 		}
-		if ( !$title->exists() ) {
+
+		// If we're previewing the same page we're editing, we don't need to check whether
+		// we exist, since we fake that we exist later. This is useful to, for example,
+		// preview a page move.
+		if ( !$title->equals( $templatetitle ) && !$title->exists() ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-title-not-exists' );
 			wfProfileOut( __METHOD__ );
 			return false;
@@ -165,13 +169,13 @@ class TemplateSandboxHooks {
 			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			TemplateSandboxHooks::$oldTemplateCallback = $popts->setTemplateCallback(
-				'TemplateSandboxHooks::templateCallback'
+			TemplateSandboxHooks::$oldCurrentRevisionCallback = $popts->setCurrentRevisionCallback(
+				'TemplateSandboxHooks::currentRevisionCallback'
 			);
 			$fakePageExistsScopedCallback = self::fakePageExists( $templatetitle );
 			$popts->enableLimitReport();
 
-			$rev = Revision::newFromTitle( $title );
+			$rev = TemplateSandboxHooks::currentRevisionCallback( $title );
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
 
@@ -214,63 +218,28 @@ class TemplateSandboxHooks {
 	}
 
 	/**
-	 * @param $title Title
-	 * @param $parser Parser|bool
-	 * @return array|mixed
+	 * @param Title $title
+	 * @param Parser|bool $parser
+	 * @return Revision
 	 */
-	static function templateCallback( $title, $parser = false ) {
-		global $wgUser;
-
-		// Note that Parser::statelessFetchTemplate currently only handles one
-		// level of redirection, regardless of $wgMaxRedirects. We reproduce
-		// this behavior here.
-		$match = ( $title->getFullText() == TemplateSandboxHooks::$template );
-		$rtitle = null;
-		if ( !$match && $title->isRedirect() ) {
-			$rtitle = WikiPage::factory( $title )->getRedirectTarget();
-			$match = ( $rtitle->getFullText() == TemplateSandboxHooks::$template );
-		}
-		if ( $match ) {
-			$deps[] = array(
+	static function currentRevisionCallback( $title, $parser = false ) {
+		if ( $title->getFullText() == TemplateSandboxHooks::$template ) {
+			global $wgUser;
+			return new Revision( array(
+				'page' => $title->getArticleID(),
+				'user_text' => $wgUser->getName(),
+				'user' => $wgUser->getId(),
+				'parent_id' => $title->getLatestRevId(),
 				'title' => $title,
-				'page_id' => $title->getArticleID(),
-				'rev_id' => 0,
-			);
-			$finalTitle = $title;
-			if ( $rtitle ) {
-				$deps[] = array(
-					'title' => $rtitle,
-					'page_id' => $rtitle->getArticleID(),
-					'rev_id' => 0,
-				);
-				$finalTitle = $rtitle;
-			}
-
-			$content = TemplateSandboxHooks::$content;
-			if ( !$rtitle && $content->isRedirect() ) {
-				$newTitle = $content->getRedirectTarget();
-				$rev = Revision::newFromTitle( $newTitle );
-				if ( $rev ) {
-					$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
-					$finalTitle = $newTitle;
-				}
-				$deps[] = array(
-					'title' => $newTitle,
-					'page_id' => $newTitle->getArticleID(),
-					'rev_id' => 0,
-				);
-			}
-			$text = $content->getWikitextForTransclusion();
-			if ( $text === null ) {
-				$text = false;
-			}
-			return array(
-				'text' => $text,
-				'finalTitle' => $finalTitle,
-				'deps' => $deps,
+				'content' => TemplateSandboxHooks::$content
+			) );
+		} else {
+			return call_user_func(
+				TemplateSandboxHooks::$oldCurrentRevisionCallback,
+				$title,
+				$parser
 			);
 		}
-		return call_user_func( TemplateSandboxHooks::$oldTemplateCallback, $title, $parser );
 	}
 
 	/**

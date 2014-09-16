@@ -1,7 +1,7 @@
 <?php
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = array();
-	private $oldTemplateCallback = null;
+	private $oldCurrentRevisionCallback = null;
 
 	/**
 	 * @var null|Title
@@ -215,7 +215,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
 		$fakePageExistsScopedCallback = $this->fakePageExists();
-		$this->oldTemplateCallback = $popts->setTemplateCallback( array( $this, 'templateCallback' ) );
+		$this->oldCurrentRevisionCallback = $popts->setCurrentRevisionCallback(
+			array( $this, 'currentRevisionCallback' ) );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
 
@@ -225,30 +226,19 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	/**
-	 * @param $title Title
-	 * @param $parser Parser|bool
-	 * @return mixed
+	 * @param Title $title
+	 * @param Parser|bool $parser
+	 * @return Revision
 	 */
-	function templateCallback( $title, $parser = false ) {
+	function currentRevisionCallback( $title, $parser = false ) {
 		$found = false;
 		foreach ( $this->prefixes as $prefix ) {
 			$newtitle = Title::newFromText( $prefix . '/' . $title->getFullText() );
 			if ( $newtitle instanceof Title && $newtitle->exists() ) {
-				$found = true;
 				$title = $newtitle;
 				break;
 			}
 		}
-		if ( !$found && $title->isRedirect() ) {
-			$rtitle = WikiPage::factory( $title )->getRedirectTarget();
-			foreach ( $this->prefixes as $prefix ) {
-				$newtitle = Title::newFromText( $prefix . '/' . $rtitle->getFullText() );
-				if ( $newtitle instanceof Title && $newtitle->exists() ) {
-					$title = $newtitle;
-					break;
-				}
-			}
-		}
-		return call_user_func( $this->oldTemplateCallback, $title, $parser );
+		return call_user_func( $this->oldCurrentRevisionCallback, $title, $parser );
 	}
 }
