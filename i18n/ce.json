@@ -14,10 +14,10 @@
 	"templatesandbox-text-label": "Гойту вики-йоза:",
 	"templatesandbox-submit": "Хьажа",
 	"templatesandbox-title-output": "Кепийн ловзаран майда: $1",
-	"templatesandbox-editform-legend": "Кеп лелош йолучу агӀоне хьалха муха ю хьажар",
+	"templatesandbox-editform-legend": "Кеп лелош йолучу агӀоне хьалха хьажар",
 	"templatesandbox-editform-page-label": "АгӀона цӀе:",
-	"templatesandbox-editform-view-label": "Хьалха муха ю хьажар",
-	"templatesandbox-preview": "Хьалха муха ю хьажар $2",
+	"templatesandbox-editform-view-label": "Хьалха хьажар",
+	"templatesandbox-preview": "Хьалха хьажар $2",
 	"templatesandbox-previewnote": "'''ХӀара хьлха хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀинца дӀаязбина бац!",
 	"templatesandbox-page-or-revid": "Ахьа язъян еза агӀона цӀе я номер."
 }
