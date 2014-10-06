@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Calak"
+			"Calak",
+			"زكريا"
 		]
 	},
-	"templatesandbox-suffix": "ملعب"
+	"templatesandbox-suffix": "ملعب",
+	"templatesandbox-editform-need-title": "يجب تعيين عنوان الصفحة المراد معاينتها مع هذا القالب."
 }
