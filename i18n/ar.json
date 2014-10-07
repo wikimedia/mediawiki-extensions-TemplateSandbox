@@ -6,5 +6,6 @@
 		]
 	},
 	"templatesandbox-suffix": "ملعب",
-	"templatesandbox-editform-need-title": "يجب تعيين عنوان الصفحة المراد معاينتها مع هذا القالب."
+	"templatesandbox-editform-need-template": "يجب تعيين اسم القالب المراد معاينته مع هذا القالب.",
+	"templatesandbox-editform-need-title": "يجب تعيين اسم الصفحة المراد معاينتها مع هذا القالب."
 }
