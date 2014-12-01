@@ -28,6 +28,8 @@
     "templatesandbox-invalid-prefix": "The sandbox prefix you specified is invalid.",
     "templatesandbox-prefix-not-local": "The sandbox prefix you specified is not local.",
     "templatesandbox-page-or-revid": "You must enter either a page title or a revision ID number.",
+    "templatesandbox-fail-post": "<em>Because {{SITENAME}} has raw HTML enabled and there was a loss of session data, the preview is hidden as a precaution against JavaScript attacks.</em>\n\n<strong>If this is a legitimate preview attempt, please try again.</strong>\nIf it still does not work, try [[Special:UserLogout|logging out]] and logging back in.",
+    "templatesandbox-fail-post-anon": "<em>Because {{SITENAME}} has raw HTML enabled and you are not logged in, the preview is hidden as a precaution against JavaScript attacks.</em>\n\n<strong>If this is a legitimate preview attempt, please [[Special:UserLogin|log in]] and try again.</strong>",
     "templatesandbox-editform-need-template": "To preview another page with this template, a template name must be specified.",
     "templatesandbox-editform-need-title": "To preview another page with this template, a page title must be specified.",
     "templatesandbox-editform-invalid-template": "The name of the template you specified is invalid.",

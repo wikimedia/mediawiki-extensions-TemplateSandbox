@@ -18,10 +18,12 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	function execute( $par ) {
+		global $wgRawHtml;
 		$this->setHeaders();
 		$this->checkPermissions();
 
 		$request = $this->getRequest();
+		$requirePost = $wgRawHtml;
 
 		if ( $par !== null && !$request->getCheck( 'page' ) ) {
 			$request->setVal( 'page', $par );
@@ -61,7 +63,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 				'rows' => 5,
 			),
 		), $this->getContext() );
-		$form->setMethod( 'get' );
+		$form->setMethod( $requirePost ? 'post' : 'get' );
 		$form->setSubmitCallback( array( $this, 'onSubmit' ) );
 		$form->setWrapperLegend( $this->msg( 'templatesandbox-legend' ) );
 		$form->addHeaderText( $this->msg( 'templatesandbox-text' )->parseAsBlock() );
@@ -69,12 +71,23 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 		$form->prepareForm();
 		if ( $request->getCheck( 'page' ) || $request->getCheck( 'revid' ) ) {
-			$form->displayForm( $form->trySubmit() );
+			$form->displayForm( $form->tryAuthorizedSubmit() );
 		} else {
 			$form->displayForm( false );
 		}
 
-		if ( $this->output !== null ) {
+		$error = false;
+		if ( $requirePost && $this->getRequest()->wasPosted() ) {
+			$user = $this->getUser();
+			if ( $user->isAnon() && !$user->isAllowed( 'edit' ) ) {
+				$error = 'templatesandbox-fail-post-anon';
+			} elseif ( !$user->matchEditToken( $request->getVal( 'wpEditToken' ), '', $request ) ) {
+				$error = 'templatesandbox-fail-post';
+			}
+		}
+		if ( $error !== false ) {
+			$this->getOutput()->wrapWikiMsg( "<div class='previewnote'>\n$1\n</div>", $error );
+		} elseif ( $this->output !== null ) {
 			$output = $this->getOutput();
 			$output->addParserOutput( $this->output );
 
@@ -152,7 +165,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/**
 	 * @param $data array
 	 * @param $form
-	 * @return bool|String
+	 * @return Status
 	 */
 	public function onSubmit( $data, $form ) {
 		if ( $data['revid'] !== '' && $data['revid'] !== null ) {
@@ -162,7 +175,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$title = Title::newFromText( $data['page'] );
 			$rev = Revision::newFromTitle( $title );
 		} else {
-			return $this->msg( 'templatesandbox-page-or-revid' )->parseAsBlock();
+			return Status::newFatal( 'templatesandbox-page-or-revid' );
 		}
 
 		wfProfileIn( __METHOD__ );
@@ -183,7 +196,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 		wfProfileOut( __METHOD__ );
 
-		return false;
+		return Status::newGood();
 	}
 
 	/**
