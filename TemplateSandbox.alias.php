@@ -161,5 +161,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'TemplateSandbox' => array( '樣板沙盒' ),
+	'TemplateSandbox' => array( '模板沙盒' ),
 );
