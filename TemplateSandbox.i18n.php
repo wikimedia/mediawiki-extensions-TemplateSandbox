@@ -40,6 +40,8 @@ Your changes have not yet been saved!",
 	'templatesandbox-invalid-prefix' => 'The sandbox prefix you specified is invalid.',
 	'templatesandbox-prefix-not-local' => 'The sandbox prefix you specified is not local.',
 	'templatesandbox-page-or-revid' => 'You must enter either a page title or a revision ID number.',
+    'templatesandbox-fail-post' => '<em>Because {{SITENAME}} has raw HTML enabled and there was a loss of session data, the preview is hidden as a precaution against JavaScript attacks.</em>\n\n<strong>If this is a legitimate preview attempt, please try again.</strong>\nIf it still does not work, try [[Special:UserLogout|logging out]] and logging back in.',
+    'templatesandbox-fail-post-anon' => '<em>Because {{SITENAME}} has raw HTML enabled and you are not logged in, the preview is hidden as a precaution against JavaScript attacks.</em>\n\n<strong>If this is a legitimate preview attempt, please [[Special:UserLogin|log in]] and try again.</strong>',
 
 	'templatesandbox-editform-need-template' => 'To preview another page with this template, a template name must be specified.',
 	'templatesandbox-editform-need-title' => 'To preview another page with this template, a page title must be specified.',
@@ -93,6 +95,8 @@ Refers to {{msg-mw|Templatesandbox-suffix}}.',
 	'templatesandbox-invalid-prefix' => 'Error message displayed when the sandbox prefix specified in the special page is invalid.',
 	'templatesandbox-prefix-not-local' => 'Error message displayed when the sandbox prefix specified in the special page is not local.',
 	'templatesandbox-page-or-revid' => 'Error message displayed when neither a page title nor rev_id is given in the special page.',
+	'templatesandbox-fail-post' => 'Error message displayed when attempting to use Special:TemplateSandbox with an invalid edit token on a wiki with $wgRawHtml true.\n\nSee also:\n* {{msg-mw|expand_templates_preview_fail_html}}',
+	'templatesandbox-fail-post-anon' => 'Error message displayed when attempting to use Special:TemplateSandbox as an anon on a wiki with $wgRawHtml true and anon editing disabled.\n\nSee also:\n* {{msg-mw|expand_templates_preview_fail_html_anon}}',
 	'templatesandbox-editform-need-template' => 'Error message displayed when no template name is given for the editpage form.
 
 See also:
@@ -114,7 +118,7 @@ $messages['af'] = array(
 	'templatesandbox-desc' => "[[Special:TemplateSandbox|Vertoon 'n bladsy]] met sjablone vanaf 'n sandput af",
 	'templatesandbox-suffix' => 'sandput',
 	'templatesandbox-legend' => 'Sjabloonsandput',
-	'templatesandbox-text' => 'U kan \'n versameling sjablone wat in u sandput gestoor is kies deur van \'n voorvoegsel gebruik te maak. 
+	'templatesandbox-text' => 'U kan \'n versameling sjablone wat in u sandput gestoor is kies deur van \'n voorvoegsel gebruik te maak.
 As u byvoorbeeld \'n voorskou wil sien van {{ns:Template}}:Toets wat u gestoor het as "{{ns:User}}:Gebruikersnaam/sandput/{{ns:Template}}:Toets", gebruik dan "{{ns:User}}:Gebruikersnaam/sandput" as die voorvoegsel.',
 	'templatesandbox-prefix-label' => 'Voorvoegsel vir sandput:',
 	'templatesandbox-page-label' => 'Vertoon bladsy:',
@@ -268,7 +272,7 @@ $messages['ca'] = array(
 	'templatesandbox-desc' => '[[Special:TemplateSandbox|Mostra una pàgina]] utilitzant plantilles de proves',
 	'templatesandbox-suffix' => 'proves',
 	'templatesandbox-legend' => 'Proves de plantilles',
-	'templatesandbox-text' => "Podeu triar un conjunt de plantilles desades en el vostre espai de proves mitjançant l'ús d'un prefix de proves apropiat. 
+	'templatesandbox-text' => "Podeu triar un conjunt de plantilles desades en el vostre espai de proves mitjançant l'ús d'un prefix de proves apropiat.
 Per exemple, si voleu previsualitzar una versió de {{ns:Template}}:Test que heu desat a «{{ns:User}}:Exemple/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test», utilitzeu «{{ns:User}}:Exemple/{{int:templatesandbox-suffix}}» com a prefix.",
 	'templatesandbox-prefix-label' => 'Prefix de proves:',
 	'templatesandbox-page-label' => 'Pàgina a generar:',
@@ -497,7 +501,7 @@ $messages['eo'] = array(
 	'templatesandbox-editform-page-label' => 'Titolo de la paĝo:',
 	'templatesandbox-editform-view-label' => 'Montri antaŭrigardon',
 	'templatesandbox-preview' => 'Antaŭvido de $2',
-	'templatesandbox-previewnote' => "'''Memoru, ke ĉi tio estas nur antaŭrigardo de [[:$1]].''' 
+	'templatesandbox-previewnote' => "'''Memoru, ke ĉi tio estas nur antaŭrigardo de [[:$1]].'''
 Viaj ŝanĝoj ne ankoraŭ estas konservitaj!",
 	'templatesandbox-invalid-title' => 'La titolo kiun vi enmetis estas malvalida.',
 	'templatesandbox-title-not-exists' => 'La titolo kiun vi menciis ne ekzistas.',
