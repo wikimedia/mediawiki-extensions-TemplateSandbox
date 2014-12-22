@@ -29,6 +29,8 @@
 	"templatesandbox-invalid-prefix": "תחילית ארגז החול שציינת אינה קיימת.",
 	"templatesandbox-prefix-not-local": "תחילית ארגז החול שציינת אינה מקומית.",
 	"templatesandbox-page-or-revid": "יש לציין כותרת דף או מספר מזהה של גרסה.",
+	"templatesandbox-fail-post": "<em>מכיוון שב{{GRAMMAR:תחילית|{{SITENAME}}}} מופעלת תמיכה ב־HTML גולמי ואירע אבדן נתוני שיחה, התצוגה המקדימה מוסתרת בתור אמצעי זהירות מפני התקפות JavaScript.</em>\n\n<strong>אם זה ניסיון תצוגה מקדימה לגיטימי, נא לנסות שוב.</strong>\nאם זה עדיין לא עובד, נא לנסות [[Special:UserLogout|לצאת מהחשבון]] והיכנס חזרה.",
+	"templatesandbox-fail-post-anon": "<em>מכיוון שב{{GRAMMAR:תחילית|{{SITENAME}}}} מופעלת תמיכה ב־HTML גולמי וולא נכנסת לחשבון, התצוגה המקדימה מוסתרת בתור אמצעי זהירות מפני התקפות JavaScript.</em>\n\n<strong>אם זה ניסיון תקין להציג תצוגה מקדימה, יש [[Special:UserLogin|להיכנס לחשבון]] ולנסות שוב.</strong>",
 	"templatesandbox-editform-need-template": "כדי לצפות בתצוגה מקדימה של דף עם התבנית הזאת, יש לספק שם תבנית.",
 	"templatesandbox-editform-need-title": "כדי להראות תצוגה מקדימה בעמצות התבנית הזאת, יש לציין כותרת של דף.",
 	"templatesandbox-editform-invalid-template": "השם של התבנית שציינת אינו חוקי.",
