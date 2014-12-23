@@ -26,6 +26,8 @@
 	"templatesandbox-invalid-prefix": "Tiền tố chỗ thử chỉ định không hợp lệ.",
 	"templatesandbox-prefix-not-local": "Tiền tố chỗ thử chỉ định không có trực thuộc wiki này.",
 	"templatesandbox-page-or-revid": "Bạn cần chỉ định tên trang hoặc số phiên bản.",
+	"templatesandbox-fail-post": "<em>{{SITENAME}} cho phép mã nguồn HTML thô và dữ liệu phiên bị mất, nên bản xem trước bị ẩn để tránh tấn công JavaScript.</em>\n\n<strong>Nếu bạn thực sự muốn xem trước mã nguồn này, xin hãy thử lại nữa.</strong>\nNếu vẫn không được, hãy thử [[Special:UserLogout|đăng xuất]] rồi đăng nhập lại.",
+	"templatesandbox-fail-post-anon": "<em>{{SITENAME}} cho phép mã nguồn HTML thô và dữ liệu phiên bị mất, nên bản xem trước bị ẩn để tránh tấn công JavaScript.</em>\n\n<strong>Nếu bạn thực sự muốn xem trước mã nguồn này, xin hãy thử lại nữa.</strong>\nNếu vẫn không được, hãy [[Special:UserLogin|đăng nhập]] và thử lại lần nữa.",
 	"templatesandbox-editform-need-template": "Cần chỉ định một tên bản mẫu để xem trước trang khác dùng bản mẫu này.",
 	"templatesandbox-editform-need-title": "Cần chỉ định một tên trang để xem trước trang khác dùng bản mẫu này.",
 	"templatesandbox-editform-invalid-template": "Bạn đã chỉ định một tên bản mẫu không hợp lệ.",
