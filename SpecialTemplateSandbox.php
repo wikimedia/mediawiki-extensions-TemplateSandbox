@@ -25,7 +25,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$prefixes = $this->prefixes;
 		$inHook = false;
 		$wgHooks['TitleExists']['TemplateSandbox'] =
-			function( $title, &$exists ) use( $prefixes, &$inHook ) {
+			function ( $title, &$exists ) use ( $prefixes, &$inHook ) {
 				if ( $exists || $inHook ) {
 					return;
 				}
@@ -41,7 +41,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 				$inHook = false;
 			};
 		LinkCache::singleton()->clear();
-		return new ScopedCallback( function() {
+		return new ScopedCallback( function () {
 			global $wgHooks;
 			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
 			LinkCache::singleton()->clear();
