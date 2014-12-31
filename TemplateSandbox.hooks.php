@@ -59,13 +59,13 @@ class TemplateSandboxHooks {
 	private static function fakePageExists( $templatetitle ) {
 		global $wgHooks;
 		$wgHooks['TitleExists']['TemplateSandbox'] =
-			function( $title, &$exists ) use( $templatetitle ) {
+			function ( $title, &$exists ) use ( $templatetitle ) {
 				if ( $templatetitle->equals( $title ) ) {
 					$exists = true;
 				}
 			};
 		LinkCache::singleton()->clearBadLink( $templatetitle->getPrefixedDBkey() );
-		return new ScopedCallback( function() use( $templatetitle ) {
+		return new ScopedCallback( function () use ( $templatetitle ) {
 			global $wgHooks;
 			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
 			LinkCache::singleton()->clearLink( $templatetitle );
@@ -131,7 +131,7 @@ class TemplateSandboxHooks {
 		$parserOutput = null;
 
 		try {
-			TemplateSandboxHooks::$template = $templatetitle->getFullText();
+			TemplateSandboxHooks::$template = $templatetitle;
 			if ( $editpage->sectiontitle !== '' ) {
 				$sectionTitle = $editpage->sectiontitle;
 			} else {
@@ -223,7 +223,7 @@ class TemplateSandboxHooks {
 	 * @return Revision
 	 */
 	static function currentRevisionCallback( $title, $parser = false ) {
-		if ( $title->getFullText() == TemplateSandboxHooks::$template ) {
+		if ( $title->equals( TemplateSandboxHooks::$template ) ) {
 			global $wgUser;
 			return new Revision( array(
 				'page' => $title->getArticleID(),
