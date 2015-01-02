@@ -24,7 +24,7 @@
 	"templatesandbox-title-not-exists": "Наведениот наслов не постои.",
 	"templatesandbox-revision-not-exists": "Наведената преработка не постои.",
 	"templatesandbox-invalid-prefix": "Укажаната претставка за песочник не е важечка.",
-	"templatesandbox-prefix-not-local": "Укажаната претставка за песочник не е локална.",
+	"templatesandbox-prefix-not-local": "Укажаната претставка за песочник не е месна.",
 	"templatesandbox-page-or-revid": "Мора да внесете наслов на страницата или број (назнака) на преработката.",
 	"templatesandbox-fail-post": "<em>Бидејќи {{SITENAME}} има овозможено сиров HTML и се јави губиток на седнички податоци, прегледот е скриен како мерка на претпазливост против напади со JavaScript.</em>\n\n<strong>Ако ова е е легитимен обид за преглед, тогаш обидете се повторно.</strong>\nАко не работи и тогаш, [[Special:UserLogout|одјавете се]] и повторно најавете се.",
 	"templatesandbox-fail-post-anon": "<em>Бидејќи {{SITENAME}} има овозможено сиров HTML, а вие не сте најавени, прегледот е скриен како мерка на претпазливост против напади со JavaScript.</em>\n\n<strong>Ако ова е е легитимен обид за преглед, тогаш обидете се повторно.</strong>\nАко не работи и тогаш, [[Special:UserLogin|најавете се]] и обидете се повторно.",
