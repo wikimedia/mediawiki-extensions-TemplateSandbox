@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Tgr",
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"Teemeah"
 		]
 	},
 	"templatesandbox": "Sablonhomokozó",
 	"templatesandbox-suffix": "homokozó",
 	"templatesandbox-legend": "Sablonhomokozó",
-	"templatesandbox-editform-legend": "Lap előnézetének megtekinése ezzel a sablonnal",
+	"templatesandbox-editform-legend": "Lap előnézetének megtekintése ezzel a sablonnal",
 	"templatesandbox-editform-page-label": "Lap címe:",
 	"templatesandbox-editform-view-label": "Előnézet megtekintése",
 	"templatesandbox-preview": "$2 előnézete",
