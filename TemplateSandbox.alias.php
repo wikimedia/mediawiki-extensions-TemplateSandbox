@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'TemplateSandbox' => array( 'سبوره_قالب' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'TemplateSandbox' => array( 'Песочница_для_шаблонов' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),
