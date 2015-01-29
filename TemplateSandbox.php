@@ -50,6 +50,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:TemplateSandbox',
 	'descriptionmsg' => 'templatesandbox-desc',
 	'version' => '1.1.0',
+	'license-name' => 'GPL-2.0+',
 );
 
 $wgAutoloadClasses['TemplateSandboxHooks'] = __DIR__ . '/TemplateSandbox.hooks.php';
