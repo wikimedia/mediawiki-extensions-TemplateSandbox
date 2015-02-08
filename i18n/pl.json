@@ -5,7 +5,8 @@
 			"Odie2",
 			"Peter Bowman",
 			"WTM",
-			"Chrumps"
+			"Chrumps",
+			"Tar Lócesilion"
 		]
 	},
 	"templatesandbox": "Szablonowy brudnopis",
@@ -28,5 +29,6 @@
 	"templatesandbox-revision-not-exists": "Wybrana wersja nie istnieje.",
 	"templatesandbox-invalid-prefix": "Podany prefiks do brudnopisu nie istnieje.",
 	"templatesandbox-prefix-not-local": "Podany prefiks do brudnopisu nie jest lokalny.",
-	"templatesandbox-page-or-revid": "Musisz wpisać nazwę strony albo numer ID wersji."
+	"templatesandbox-page-or-revid": "Musisz wpisać nazwę strony albo numer ID wersji.",
+	"templatesandbox-editform-title-not-exists": "Strona, którą chcesz podejrzeć, nie istnieje."
 }
