@@ -214,8 +214,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 			return Status::newFatal( 'templatesandbox-page-or-revid' );
 		}
 
-		wfProfileIn( __METHOD__ );
-
 		if ( $data['text'] !== '' && $data['text'] !== null ) {
 			$content = $rev->getContentHandler()->unserializeContent( $data['text'] );
 		} else {
@@ -231,8 +229,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 			array( $this, 'currentRevisionCallback' ) );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
-
-		wfProfileOut( __METHOD__ );
 
 		return Status::newGood();
 	}

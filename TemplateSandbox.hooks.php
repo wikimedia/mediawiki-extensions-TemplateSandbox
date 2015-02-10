@@ -85,35 +85,28 @@ class TemplateSandboxHooks {
 	public static function templateSandboxPreview( $editpage, &$content, &$out, &$parserOutput ) {
 		global $wgOut, $wgUser, $wgLang;
 
-		wfProfileIn( __METHOD__ );
-
 		if ( empty( $editpage->templatesandbox_preview ) ) {
-			wfProfileOut( __METHOD__ );
 			return true;
 		}
 
 		if ( $editpage->templatesandbox_template === '' || $editpage->templatesandbox_template === null ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-template' );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 		if ( $editpage->templatesandbox_page === '' || $editpage->templatesandbox_page === null ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-title' );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
 		$templatetitle = Title::newFromText( $editpage->templatesandbox_template );
 		if ( !$templatetitle instanceof Title ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-invalid-template' );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
 		$title = Title::newFromText( $editpage->templatesandbox_page );
 		if ( !$title instanceof Title ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-invalid-title' );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
@@ -122,7 +115,6 @@ class TemplateSandboxHooks {
 		// preview a page move.
 		if ( !$title->equals( $templatetitle ) && !$title->exists() ) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-title-not-exists' );
-			wfProfileOut( __METHOD__ );
 			return false;
 		}
 
@@ -213,7 +205,6 @@ class TemplateSandboxHooks {
 
 		$out = $previewhead . $out . $editpage->previewTextAfterContent;
 
-		wfProfileOut( __METHOD__ );
 		return false;
 	}
 
