@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftab1995"
+			"Aftab1995",
+			"Aftabuzzaman"
 		]
 	},
+	"templatesandbox": "টেমপ্লেট খেলাঘর",
 	"templatesandbox-suffix": "খেলাঘর",
 	"templatesandbox-legend": "টেমপ্লেট খেলাঘর",
 	"templatesandbox-submit": "দেখাও",
