@@ -29,6 +29,11 @@ $specialPageAliases['av'] = array(
 	'TemplateSandbox' => array( 'Песочница_для_шаблонов' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'TemplateSandbox' => array( 'تراشوانی_تمرینی_دیم' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),
