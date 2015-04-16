@@ -89,6 +89,11 @@ $specialPageAliases['he'] = array(
 	'TemplateSandbox' => array( 'ארגז_חול_לתבניות', 'ארגז_חול_של_תבניות' ),
 );
 
+/** Hindi (हिन्दी) */
+$specialPageAliases['hi'] = array(
+	'TemplateSandbox' => array( 'साँचा_प्रयोगस्थल' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'TemplateSandbox' => array( 'SandboxTemplate' ),
