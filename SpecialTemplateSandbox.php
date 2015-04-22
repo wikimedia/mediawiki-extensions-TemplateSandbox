@@ -17,6 +17,10 @@ class SpecialTemplateSandbox extends SpecialPage {
 		parent::__construct( 'TemplateSandbox' );
 	}
 
+	protected function getGroupName() {
+		return 'wiki';
+	}
+
 	/**
 	 * @return ScopedCallback to clean up
 	 */

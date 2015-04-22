@@ -59,7 +59,6 @@ $wgMessagesDirs['TemplateSandbox'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TemplateSandbox'] = __DIR__ . '/TemplateSandbox.i18n.php';
 $wgExtensionMessagesFiles['TemplateSandboxAlias'] = __DIR__ . '/TemplateSandbox.alias.php';
 $wgSpecialPages['TemplateSandbox'] = 'SpecialTemplateSandbox';
-$wgSpecialPageGroups['TemplateSandbox'] = 'wiki';
 $wgHooks['EditPage::importFormData'][] = 'TemplateSandboxHooks::importFormData';
 $wgHooks['EditPage::showStandardInputs:options'][] = 'TemplateSandboxHooks::injectOptions';
 $wgHooks['AlternateEditPreview'][] = 'TemplateSandboxHooks::templateSandboxPreview';

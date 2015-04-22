@@ -9,9 +9,6 @@
 	"SpecialPages": {
 		"TemplateSandbox": "SpecialTemplateSandbox"
 	},
-	"SpecialPageGroups": {
-		"TemplateSandbox": "wiki"
-	},
 	"MessagesDirs": {
 		"TemplateSandbox": [
 			"i18n"
