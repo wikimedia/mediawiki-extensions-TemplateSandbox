@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'TemplateSandbox' => array( 'ملعب_قالب' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'TemplateSandbox' => array( 'سبوره_قالب' ),
 );
