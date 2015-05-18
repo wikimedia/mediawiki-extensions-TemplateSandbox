@@ -194,7 +194,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			if ( !$title instanceof Title || $title->getFragment() !== '' ) {
 				return $this->msg( 'templatesandbox-invalid-prefix' )->parseAsBlock();
 			}
-			if ( !$title->isLocal() ) {
+			if ( $title->isExternal() ) {
 				return $this->msg( 'templatesandbox-prefix-not-local' )->parseAsBlock();
 			}
 			$this->prefixes[] = $title->getFullText();
