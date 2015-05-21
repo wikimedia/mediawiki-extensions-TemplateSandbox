@@ -3,9 +3,11 @@
 		"authors": [
 			"Cainamarques",
 			"Luckas",
-			"Opraco"
+			"Opraco",
+			"Araceletorres"
 		]
 	},
+	"templatesandbox-submit": "Ver",
 	"templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
 	"templatesandbox-editform-page-label": "Título da página:",
 	"templatesandbox-editform-view-label": "Prever"
