@@ -20,51 +20,16 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-# Alert the user that this is not a valid entry point to MediaWiki if they try
-# to access the special pages file directly.
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo <<<EOT
-<p>This is the TemplateSandbox extension. To enable it, put the following line
-in LocalSettings.php:</p>
-<pre>require_once( "\$IP/extensions/TemplateSandbox/TemplateSandbox.php" );</pre>
-EOT;
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'TemplateSandbox' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['TemplateSandbox'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['TemplateSandboxAlias'] = __DIR__ . '/TemplateSandbox.alias.php';
+	/* wfWarn(
+		'Deprecated PHP entry point used for TemplateSandbox extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return;
+} else {
+	die( 'This version of the TemplateSandbox extension requires MediaWiki 1.25+' );
 }
-
-/**
- * Options:
- *
- * $wgTemplateSandboxEditNamespaces
- *       - Namespaces for which to add a "Preview page with this template" box
- *         to the edit form.
- */
-
-$wgTemplateSandboxEditNamespaces = array(
-	NS_TEMPLATE
-);
-
-$wgExtensionCredits['specialpage'][] = array(
-	'path' => __FILE__,
-	'name' => 'TemplateSandbox',
-	'author' => 'Brad Jorsch',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:TemplateSandbox',
-	'descriptionmsg' => 'templatesandbox-desc',
-	'version' => '1.1.0',
-	'license-name' => 'GPL-2.0+',
-);
-
-$wgAutoloadClasses['TemplateSandboxHooks'] = __DIR__ . '/TemplateSandbox.hooks.php';
-$wgAutoloadClasses['SpecialTemplateSandbox'] = __DIR__ . '/SpecialTemplateSandbox.php';
-$wgMessagesDirs['TemplateSandbox'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TemplateSandboxAlias'] = __DIR__ . '/TemplateSandbox.alias.php';
-$wgSpecialPages['TemplateSandbox'] = 'SpecialTemplateSandbox';
-$wgHooks['EditPage::importFormData'][] = 'TemplateSandboxHooks::importFormData';
-$wgHooks['EditPage::showStandardInputs:options'][] = 'TemplateSandboxHooks::injectOptions';
-$wgHooks['AlternateEditPreview'][] = 'TemplateSandboxHooks::templateSandboxPreview';
-
-$wgResourceModules['ext.TemplateSandbox'] = array(
-	'scripts' => 'ext.TemplateSandbox.js',
-	'position' => 'bottom',
-	'localBasePath' => __DIR__ . '/modules',
-	'remoteExtPath' => 'TemplateSandbox/modules'
-);
