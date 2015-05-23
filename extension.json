@@ -18,7 +18,6 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"TemplateSandbox": "TemplateSandbox.i18n.php",
 		"TemplateSandboxAlias": "TemplateSandbox.alias.php"
 	},
 	"AutoloadClasses": {

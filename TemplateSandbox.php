@@ -56,7 +56,6 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgAutoloadClasses['TemplateSandboxHooks'] = __DIR__ . '/TemplateSandbox.hooks.php';
 $wgAutoloadClasses['SpecialTemplateSandbox'] = __DIR__ . '/SpecialTemplateSandbox.php';
 $wgMessagesDirs['TemplateSandbox'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TemplateSandbox'] = __DIR__ . '/TemplateSandbox.i18n.php';
 $wgExtensionMessagesFiles['TemplateSandboxAlias'] = __DIR__ . '/TemplateSandbox.alias.php';
 $wgSpecialPages['TemplateSandbox'] = 'SpecialTemplateSandbox';
 $wgSpecialPageGroups['TemplateSandbox'] = 'wiki';
