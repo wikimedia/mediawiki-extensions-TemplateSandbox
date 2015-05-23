@@ -10,5 +10,8 @@
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
 	"templatesandbox-editform-page-label": "Título da página:",
-	"templatesandbox-editform-view-label": "Prever"
+	"templatesandbox-editform-view-label": "Prever",
+	"templatesandbox-editform-invalid-template": "O nome do modelo que você especificou é inválido.",
+	"templatesandbox-editform-invalid-title": "O título que você especificou para a pré-visualização é inválido.",
+	"templatesandbox-editform-title-not-exists": "O título que você especificou para a pré-visualização não existe."
 }
