@@ -44,5 +44,6 @@
 		"TemplateSandboxEditNamespaces": [
 			10
 		]
-	}
+	},
+	"manifest_version": 1
 }
