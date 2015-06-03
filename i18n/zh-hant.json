@@ -5,11 +5,12 @@
 			"Liuxinyu970226",
 			"Simon Shek",
 			"Cwlin0416",
-			"LNDDYL"
+			"LNDDYL",
+			"Zhxy 519"
 		]
 	},
 	"templatesandbox": "模板沙盒",
-	"templatesandbox-desc": "使用沙盒中的樣板[[Special:TemplateSandbox|產生頁面]]",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|在頁面]]套用沙盒的模版",
 	"templatesandbox-suffix": "沙盒",
 	"templatesandbox-legend": "模板沙盒",
 	"templatesandbox-text": "您可以使用適當的沙盒字首來選擇已儲存在您沙盒中的一系列模板。\n舉例而言，若您想要預覽已儲存在 \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\" 的模板 {{ns:Template}}:Test ，您可以使用 \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" 做為字首。",
@@ -19,7 +20,7 @@
 	"templatesandbox-text-label": "顯示 Wikitext：",
 	"templatesandbox-submit": "檢視",
 	"templatesandbox-title-output": "模板沙盒：$1",
-	"templatesandbox-editform-legend": "使用此樣板預覽頁面",
+	"templatesandbox-editform-legend": "使用此模板預覽頁面",
 	"templatesandbox-editform-page-label": "頁面標題：",
 	"templatesandbox-editform-view-label": "顯示預覽",
 	"templatesandbox-preview": "預覽 $2",
