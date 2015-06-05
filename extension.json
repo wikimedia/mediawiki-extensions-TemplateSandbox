@@ -23,11 +23,13 @@
 	},
 	"ResourceModules": {
 		"ext.TemplateSandbox": {
-			"scripts": "ext.TemplateSandbox.js",
 			"position": "bottom",
-			"localBasePath": "modules",
-			"remoteExtPath": "TemplateSandbox/modules"
+			"scripts": "ext.TemplateSandbox.js"
 		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "TemplateSandbox/modules"
 	},
 	"Hooks": {
 		"EditPage::importFormData": [
