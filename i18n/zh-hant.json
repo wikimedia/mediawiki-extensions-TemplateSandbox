@@ -32,8 +32,8 @@
 	"templatesandbox-prefix-not-local": "指定的沙盒字首不在本地。",
 	"templatesandbox-page-or-revid": "您必需輸入一個頁面標題或修訂 ID 編號。",
 	"templatesandbox-editform-need-template": "要使用此模板預覽其他頁面，必須指定模板名稱。",
-	"templatesandbox-editform-need-title": "要使用此樣板預覽其他頁面，必須指定頁面標題。",
-	"templatesandbox-editform-invalid-template": "指定的樣板名稱無效。",
+	"templatesandbox-editform-need-title": "要使用此模板預覽其他頁面，必須指定頁面標題。",
+	"templatesandbox-editform-invalid-template": "指定的模板名稱無效。",
 	"templatesandbox-editform-invalid-title": "指定用來預覽的標題無效。",
 	"templatesandbox-editform-title-not-exists": "指定用來預覽的標題不存在。"
 }
