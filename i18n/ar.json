@@ -2,10 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"زكريا"
+			"زكريا",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"templatesandbox": "ملعب القوالب",
 	"templatesandbox-suffix": "ملعب",
+	"templatesandbox-legend": "ملعب القوالب",
+	"templatesandbox-prefix-label": "بادئة الملعب:",
+	"templatesandbox-page-label": "تصيير الصفحة:",
+	"templatesandbox-revid-label": "تصيير المراجعة:",
+	"templatesandbox-text-label": "تصيير نص الويكي:",
+	"templatesandbox-submit": "اعرض",
+	"templatesandbox-title-output": "ملعب القوالب: $1",
+	"templatesandbox-editform-legend": "معاينة الصفحة مع هذا القالب",
+	"templatesandbox-editform-page-label": "عنوان الصفحة:",
+	"templatesandbox-editform-view-label": "أظهر المعاينة",
+	"templatesandbox-preview": "معاينة $2",
 	"templatesandbox-editform-need-template": "يجب تعيين اسم القالب المراد معاينته مع هذا القالب.",
 	"templatesandbox-editform-need-title": "يجب تعيين اسم الصفحة المراد معاينتها مع هذا القالب."
 }
