@@ -31,7 +31,7 @@
 	"templatesandbox-page-or-revid": "Debe indicar el título de la página o el número identificador de revisión.",
 	"templatesandbox-editform-need-template": "Para previsualizar otra página con esta plantilla, se debe especificar un nombre de plantilla.",
 	"templatesandbox-editform-need-title": "Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.",
-	"templatesandbox-editform-invalid-template": "El nombre de la plantilla que ha especificado no es válido.",
+	"templatesandbox-editform-invalid-template": "El nombre de la plantilla que has especificado no es válido.",
 	"templatesandbox-editform-invalid-title": "El título especificado para la vista previa no es válido.",
 	"templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe."
 }
