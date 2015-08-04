@@ -32,6 +32,7 @@
 	"templatesandbox-prefix-not-local": "Le préfixe de bac à sable que vous avez spécifié n’est pas local.",
 	"templatesandbox-page-or-revid": "Vous devez saisir soit un titre de page, soit un numéro d'identifiant de révision.",
 	"templatesandbox-fail-post": "<em>Comme {{SITENAME}} a le HTML brut activé et qu’il y a eu une perte de session de données, l’aperçu est masqué par précaution contre les attaques JavaScript.</em>\n\n<strong>Si c’est une demande d’aperçu légitime, veuillez réessayer.</strong>\nSi cela ne fonctionne toujours pas, essayez de [[Special:UserLogout|vous déconnecter]] et vous reconnecter de nouveau.",
+	"templatesandbox-fail-post-anon": "<em>Comme {{SITENAME}} a le HTML brut activé et que vous n’êtes pas connecté, l’aperçu est masqué par précaution contre les attaques JavaScript.</em>\n\n<strong>S’il s’agit d’une tentative légitime d’aperçu, veuillez [[Special:UserLogin|vous connecter]] et réessayer.</strong>",
 	"templatesandbox-editform-need-template": "Pour avoir un aperçu d’une autre page avec ce modèle, un nom de modèle doit être spécifié.",
 	"templatesandbox-editform-need-title": "Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.",
 	"templatesandbox-editform-invalid-template": "Le nom du modèle que vous avez indiqué n’est pas valide.",
