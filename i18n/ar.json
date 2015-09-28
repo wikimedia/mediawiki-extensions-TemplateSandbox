@@ -3,12 +3,14 @@
 		"authors": [
 			"Calak",
 			"زكريا",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
 	"templatesandbox": "ملعب القوالب",
 	"templatesandbox-suffix": "ملعب",
 	"templatesandbox-legend": "ملعب القوالب",
+	"templatesandbox-text": "أنت يمكنك اختيار مجموعة من القوالب المحفوظة في نطاق ملعبك بواسطة استخدام بادئة ملعب مناسبة.\nكمثال، لو أنك أردت معاينة نسخة من {{ns:Template}}:Test التي حفظتها ك \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", استخدم \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" كبادئة.",
 	"templatesandbox-prefix-label": "بادئة الملعب:",
 	"templatesandbox-page-label": "تصيير الصفحة:",
 	"templatesandbox-revid-label": "تصيير المراجعة:",
