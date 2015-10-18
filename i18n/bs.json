@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srdjan m"
+		]
+	},
+	"templatesandbox-editform-legend": "Vidi stranicu s ovim šablonom",
+	"templatesandbox-editform-page-label": "Naziv stranice:",
+	"templatesandbox-editform-view-label": "Prikaži izgled",
+	"templatesandbox-preview": "Pregled $2",
+	"templatesandbox-previewnote": "'''Ne zaboravite da je ovo samo pregled [[:$1]].'''\nVaše izmjene još nisu sačuvane!"
+}

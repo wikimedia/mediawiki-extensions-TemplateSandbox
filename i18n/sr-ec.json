@@ -6,5 +6,7 @@
 	},
 	"templatesandbox-editform-legend": "Види страницу са овим шаблоном",
 	"templatesandbox-editform-page-label": "Име странице:",
-	"templatesandbox-editform-view-label": "Претпреглед"
+	"templatesandbox-editform-view-label": "Претпреглед",
+	"templatesandbox-preview": "Преглед $2",
+	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!"
 }
