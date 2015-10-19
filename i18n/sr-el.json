@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Srdjan m"
 		]
 	},
+	"templatesandbox": "Peščanik šablona",
 	"templatesandbox-editform-legend": "Vidi stranicu sa ovim šablonom",
 	"templatesandbox-editform-page-label": "Ime stranice:",
 	"templatesandbox-editform-view-label": "Pretpregled"
