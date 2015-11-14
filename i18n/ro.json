@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minisarm"
+			"Minisarm",
+			"XXN"
 		]
 	},
-	"templatesandbox": "TemplateSandbox",
+	"templatesandbox": "Cutia cu nisip pentru formate",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Afișează o pagină randată]] folosind formatele prezente într-o cutie cu nisip",
 	"templatesandbox-suffix": "cutie cu nisip",
 	"templatesandbox-legend": "Cutie cu nisip pentru formate",
