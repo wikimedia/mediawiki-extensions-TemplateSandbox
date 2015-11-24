@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jeblad"
+			"Jeblad",
+			"Cocu"
 		]
 	},
 	"templatesandbox": "Mal-sandkasse",
@@ -10,7 +11,7 @@
 	"templatesandbox-legend": "Alternativ for mal-sandkasse",
 	"templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/sandbox\" som prefiks.",
 	"templatesandbox-prefix-label": "Prefiks for sandkasse:",
-	"templatesandbox-page-label": "Tegn ut siden:",
+	"templatesandbox-page-label": "Vis side:",
 	"templatesandbox-revid-label": "Tegn ut revisjonen:",
 	"templatesandbox-text-label": "Tegn ut wikitekst:",
 	"templatesandbox-submit": "Vis",
