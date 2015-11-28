@@ -26,7 +26,7 @@
 	"templatesandbox-revision-not-exists": "Η αναθεώρηση που καθορίσατε δεν υπάρχει.",
 	"templatesandbox-invalid-prefix": "Το πρόθεμα αμμοδοχείου  που καθορίσατε είναι άκυρο.",
 	"templatesandbox-prefix-not-local": "Το πρόθεμα αμμοδοχείου που καθορίσατε δεν είναι τοπικό.",
-	"templatesandbox-page-or-revid": "Θα πρέπει να εισάγετε είτε έναν τίτλος σελίδας είτε τον αναγνωριστικό αριθμό μιας έκδοσης",
+	"templatesandbox-page-or-revid": "Θα πρέπει να εισαγάγετε είτε τίτλο σελίδας είτε αναγνωριστικό αριθμό έκδοσης.",
 	"templatesandbox-editform-need-title": "Για να κάνετε προεπισκόπηση σε μια άλλη σελίδα με αυτό το πρότυπο, πρέπει να καθοριστεί ένας τίτλος σελίδας.",
 	"templatesandbox-editform-invalid-title": "Ο τίτλος που καθορίσατε για την προεπισκόπηση είναι άκυρος.",
 	"templatesandbox-editform-title-not-exists": "Ο τίτλος που καθορίσατε για προεπισκόπηση δεν υπάρχει."
