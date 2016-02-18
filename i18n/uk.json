@@ -6,14 +6,15 @@
 			"Base",
 			"DixonD",
 			"Wizardist",
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"templatesandbox": "Пісочниця шаблону",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Відображає сторінку]] із включеним шаблоном з пісочниці",
 	"templatesandbox-suffix": "пісочниця",
 	"templatesandbox-legend": "Пісочниця шаблона",
-	"templatesandbox-text": "Ви можете вибрати набір шаблонів, збережених у вашому просторі пісочниць, використовуючи префікс відповідної пісочниці.\nНаприклад, якщо ви хочете переглянути версію {{ns:Template}}:Тест, який ви зберегли в якості „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тест“, використовуйте „{{ns:User}}:Азірів/{{int:templatesandbox-suffix}}“ в якості префікса.",
+	"templatesandbox-text": "Ви можете вибрати набір шаблонів, збережених у Вашому просторі пісочниць, використовуючи префікс відповідної пісочниці.\nНаприклад, якщо Ви хочете переглянути версію {{ns:Template}}:Тест, який Ви зберегли як «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Тест», використовуйте «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}» як префікс.",
 	"templatesandbox-prefix-label": "Префікс пісочниці:",
 	"templatesandbox-page-label": "Відобразити сторінку:",
 	"templatesandbox-revid-label": "Відобразити версію:",
