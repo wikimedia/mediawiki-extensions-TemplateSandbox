@@ -6,7 +6,8 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"LNDDYL",
-			"Zhxy 519"
+			"Zhxy 519",
+			"飞舞回堂前"
 		]
 	},
 	"templatesandbox": "模板沙盒",
@@ -30,7 +31,7 @@
 	"templatesandbox-revision-not-exists": "指定的修訂不存在。",
 	"templatesandbox-invalid-prefix": "指定的沙盒字首無效。",
 	"templatesandbox-prefix-not-local": "指定的沙盒字首不在本地。",
-	"templatesandbox-page-or-revid": "您必需輸入一個頁面標題或修訂 ID 編號。",
+	"templatesandbox-page-or-revid": "您必須輸入一個頁面標題或修訂 ID 編號。",
 	"templatesandbox-editform-need-template": "要使用此模板預覽其他頁面，必須指定模板名稱。",
 	"templatesandbox-editform-need-title": "要使用此模板預覽其他頁面，必須指定頁面標題。",
 	"templatesandbox-editform-invalid-template": "指定的模板名稱無效。",
