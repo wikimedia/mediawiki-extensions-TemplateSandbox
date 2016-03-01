@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Умар"
+			"Умар",
+			"Исмаил Садуев"
 		]
 	},
 	"templatesandbox": "Кепийн ловзаран майда",
@@ -17,7 +18,7 @@
 	"templatesandbox-title-output": "Кепийн ловзаран майда: $1",
 	"templatesandbox-editform-legend": "Кеп лелош йолучу агӀоне хьалха хьажар",
 	"templatesandbox-editform-page-label": "АгӀона цӀе:",
-	"templatesandbox-editform-view-label": "Хьалха хьажар",
+	"templatesandbox-editform-view-label": "Хьалххе хьажар",
 	"templatesandbox-preview": "Хьалха хьажар $2",
 	"templatesandbox-previewnote": "'''ХӀара хьлха хьажар ду [[:$1]].''' Ахьа кепан бина хийцамаш хӀинца дӀаязбина бац!",
 	"templatesandbox-invalid-title": "Ахьа язйина йолу цӀе ца магайо.",
