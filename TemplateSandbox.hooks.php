@@ -78,7 +78,7 @@ class TemplateSandboxHooks {
 	 *
 	 * @param $editpage EditPage
 	 * @param $content Content
-	 * @param $out OutputPage
+	 * @param $out string
 	 * @param $parserOutput ParserOutput
 	 * @return bool
 	 */
