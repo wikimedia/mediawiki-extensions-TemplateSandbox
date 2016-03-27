@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Byrial",
-			"Christian List"
+			"Christian List",
+			"Peter Alberti"
 		]
 	},
 	"templatesandbox": "Skabelon-sandkasse",
@@ -16,7 +17,7 @@
 	"templatesandbox-text-label": "Vis wikitekst:",
 	"templatesandbox-submit": "Vis",
 	"templatesandbox-title-output": "Skabelon-sandkasse: $1",
-	"templatesandbox-editform-legend": "Forhåndvis en side med denne skabelon",
+	"templatesandbox-editform-legend": "Forhåndsvis en side med denne skabelon",
 	"templatesandbox-editform-page-label": "Sidetitel:",
 	"templatesandbox-editform-view-label": "Forhåndsvisning",
 	"templatesandbox-preview": "Forhåndsvisning af $2",

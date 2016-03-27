@@ -4,7 +4,8 @@
 			"Brad Jorsch",
 			"Raymond",
 			"Shirayuki",
-			"Umherirrender"
+			"Umherirrender",
+			"Liuxinyu970226"
 		]
 	},
 	"templatesandbox": "{{doc-special|TemplateSandbox}}\nThe name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].",
@@ -31,7 +32,7 @@
 	"templatesandbox-invalid-prefix": "Error message displayed when the sandbox prefix specified in the special page is invalid.",
 	"templatesandbox-prefix-not-local": "Error message displayed when the sandbox prefix specified in the special page is not local.",
 	"templatesandbox-page-or-revid": "Error message displayed when neither a page title nor rev_id is given in the special page.",
-	"templatesandbox-fail-post": "Error message displayed when attempting to use Special:TemplateSandbox with an invalid edit token on a wiki with $wgRawHtml true.\n\nSee also:\n* {{msg-mw|expand_templates_preview_fail_html}}",
+	"templatesandbox-fail-post": "Error message displayed when attempting to use Special:TemplateSandbox with an invalid edit token on a wiki with $wgRawHtml true.\n\nSee also:\n* {{msg-mw|expand_templates_preview_fail_html}}\n{{Identical|Loss of session data}}",
 	"templatesandbox-fail-post-anon": "Error message displayed when attempting to use Special:TemplateSandbox as an anon on a wiki with $wgRawHtml true and anon editing disabled.\n\nSee also:\n* {{msg-mw|expand_templates_preview_fail_html_anon}}",
 	"templatesandbox-editform-need-template": "Error message displayed when no template name is given for the editpage form.\n\nSee also:\n* {{msg-mw|Templatesandbox-editform-need-title}}",
 	"templatesandbox-editform-need-title": "Error message displayed when no page title is given for the editpage form.\n\nSee also:\n* {{msg-mw|Templatesandbox-editform-need-template}}",
