@@ -6,7 +6,8 @@
 			"Peter Bowman",
 			"WTM",
 			"Chrumps",
-			"Tar Lócesilion"
+			"Tar Lócesilion",
+			"Woytecr"
 		]
 	},
 	"templatesandbox": "Brudnopis do szablonów",
@@ -30,5 +31,9 @@
 	"templatesandbox-invalid-prefix": "Podany prefiks do brudnopisu nie istnieje.",
 	"templatesandbox-prefix-not-local": "Podany prefiks do brudnopisu nie jest lokalny.",
 	"templatesandbox-page-or-revid": "Musisz wpisać nazwę strony albo numer ID wersji.",
+	"templatesandbox-editform-need-template": "Aby obejrzeć podgląd innej strony z tym szablonem, musi zostać określona nazwa szablonu.",
+	"templatesandbox-editform-need-title": "Aby obejrzeć podgląd innej strony z tym szablonem, musi zostać określony tytuł strony.",
+	"templatesandbox-editform-invalid-template": "Nazwa podanego szablonu jest nieprawidłowa.",
+	"templatesandbox-editform-invalid-title": "Tytuł strony określony do podglądu jest nieprawidłowy.",
 	"templatesandbox-editform-title-not-exists": "Strona, którą chcesz podejrzeć, nie istnieje."
 }
