@@ -1,17 +1,5 @@
 <?php
 class TemplateSandboxHooks {
-	private static $template = null;
-
-	/**
-	 * @var Content
-	 */
-	private static $content = null;
-
-	/**
-	 * @var callback
-	 */
-	private static $oldCurrentRevisionCallback = null;
-
 	/**
 	 * Hook for EditPage::importFormData to parse our new form fields, and if
 	 * necessary put $editpage into "preview" mode.
@@ -50,26 +38,6 @@ class TemplateSandboxHooks {
 		return "<div id='mw-$msg'>\n"
 			. wfMessage( $msg )->parseAsBlock()
 			. "\n</div>";
-	}
-
-	/**
-	 * @param Title $templatetitle
-	 * @return ScopedCallback to clean up
-	 */
-	private static function fakePageExists( $templatetitle ) {
-		global $wgHooks;
-		$wgHooks['TitleExists']['TemplateSandbox'] =
-			function ( $title, &$exists ) use ( $templatetitle ) {
-				if ( $templatetitle->equals( $title ) ) {
-					$exists = true;
-				}
-			};
-		LinkCache::singleton()->clearBadLink( $templatetitle->getPrefixedDBkey() );
-		return new ScopedCallback( function () use ( $templatetitle ) {
-			global $wgHooks;
-			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
-			LinkCache::singleton()->clearLink( $templatetitle );
-		} );
 	}
 
 	/**
@@ -123,7 +91,6 @@ class TemplateSandboxHooks {
 		$parserOutput = null;
 
 		try {
-			TemplateSandboxHooks::$template = $templatetitle;
 			if ( $editpage->sectiontitle !== '' ) {
 				$sectionTitle = $editpage->sectiontitle;
 			} else {
@@ -131,14 +98,13 @@ class TemplateSandboxHooks {
 			}
 
 			if ( $editpage->getArticle()->exists() ) {
-				TemplateSandboxHooks::$content = $editpage->getArticle()->replaceSectionContent(
+				$content = $editpage->getArticle()->replaceSectionContent(
 					$editpage->section, $content, $sectionTitle, $editpage->edittime
 				);
 			} else {
 				if ( $editpage->section === 'new' ) {
 					$content = $content->addSectionHeader( $sectionTitle );
 				}
-				TemplateSandboxHooks::$content = $content;
 			}
 
 			// Apply PST to the to-be-saved text
@@ -148,7 +114,7 @@ class TemplateSandboxHooks {
 			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			TemplateSandboxHooks::$content = TemplateSandboxHooks::$content->preSaveTransform(
+			$content = $content->preSaveTransform(
 				$templatetitle, $wgUser, $popts
 			);
 
@@ -161,13 +127,11 @@ class TemplateSandboxHooks {
 			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			TemplateSandboxHooks::$oldCurrentRevisionCallback = $popts->setCurrentRevisionCallback(
-				'TemplateSandboxHooks::currentRevisionCallback'
-			);
-			$fakePageExistsScopedCallback = self::fakePageExists( $templatetitle );
+			$logic = new TemplateSandboxLogic( [], $templatetitle, $content );
+			$reset = $logic->setupForParse( $popts );
 			$popts->enableLimitReport();
 
-			$rev = TemplateSandboxHooks::currentRevisionCallback( $title );
+			$rev = call_user_func_array( $popts->getCurrentRevisionCallback(), [ $title ] );
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
 
@@ -206,31 +170,6 @@ class TemplateSandboxHooks {
 		$out = $previewhead . $out . $editpage->previewTextAfterContent;
 
 		return false;
-	}
-
-	/**
-	 * @param Title $title
-	 * @param Parser|bool $parser
-	 * @return Revision
-	 */
-	static function currentRevisionCallback( $title, $parser = false ) {
-		if ( $title->equals( TemplateSandboxHooks::$template ) ) {
-			global $wgUser;
-			return new Revision( array(
-				'page' => $title->getArticleID(),
-				'user_text' => $wgUser->getName(),
-				'user' => $wgUser->getId(),
-				'parent_id' => $title->getLatestRevId(),
-				'title' => $title,
-				'content' => TemplateSandboxHooks::$content
-			) );
-		} else {
-			return call_user_func(
-				TemplateSandboxHooks::$oldCurrentRevisionCallback,
-				$title,
-				$parser
-			);
-		}
 	}
 
 	/**
@@ -331,4 +270,160 @@ class TemplateSandboxHooks {
 
 		return true;
 	}
+
+	/**
+	 * Determine if this API module is appropriate for us to mess with.
+	 * @param ApiBase $module
+	 * @return bool
+	 */
+	private static function isUsableApiModule( $module ) {
+		return $module instanceof ApiParse || $module instanceof ApiExpandTemplates;
+	}
+
+	/**
+	 * Hook for APIGetAllowedParams to add our API parameters to the relevant
+	 * modules.
+	 *
+	 * @param ApiBase $module
+	 * @param array $params
+	 * @param int $flags
+	 * @return bool
+	 */
+	public static function onAPIGetAllowedParams( $module, &$params, $flags ) {
+		if ( !self::isUsableApiModule( $module ) ) {
+			return true;
+		}
+
+		$params += array(
+			'templatesandboxprefix' => array(
+				ApiBase::PARAM_TYPE => 'string',
+				ApiBase::PARAM_ISMULTI => true,
+				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-prefix',
+			),
+			'templatesandboxtitle' => array(
+				ApiBase::PARAM_TYPE => 'string',
+				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-title',
+			),
+			'templatesandboxtext' => array(
+				ApiBase::PARAM_TYPE => 'text',
+				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-text',
+			),
+			'templatesandboxcontentmodel' => array(
+				ApiBase::PARAM_TYPE => ContentHandler::getContentModels(),
+				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentmodel',
+			),
+			'templatesandboxcontentformat' => array(
+				ApiBase::PARAM_TYPE => ContentHandler::getAllContentFormats(),
+				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
+			),
+		);
+		return true;
+	}
+
+	/**
+	 * Hook for ApiMakeParserOptions to set things up for TemplateSandbox
+	 * parsing when necessary.
+	 *
+	 * @param ParserOptions $options
+	 * @param Title $title
+	 * @param array $params
+	 * @param ApiBase $module
+	 * @param null &$reset Set to a ScopedCallback used to reset any hooks set.
+	 * @param bool &$suppressCache
+	 * @return bool
+	 */
+	public static function onApiMakeParserOptions(
+		$options, $title, $params, $module, &$reset, &$suppressCache
+	) {
+		// Shouldn't happen, but...
+		if ( !self::isUsableApiModule( $module ) ) {
+			return true;
+		}
+
+		$params += [
+			'templatesandboxprefix' => [],
+			'templatesandboxtitle' => null,
+			'templatesandboxtext' => null,
+			'templatesandboxcontentmodel' => null,
+			'templatesandboxcontentformat' => null,
+		];
+		$params = [
+			'prefix' => $params['templatesandboxprefix'],
+			'title' => $params['templatesandboxtitle'],
+			'text' => $params['templatesandboxtext'],
+			'contentmodel' => $params['templatesandboxcontentmodel'],
+			'contentformat' => $params['templatesandboxcontentformat'],
+		];
+
+		if ( ( $params['title'] === null ) !== ( $params['text'] === null ) ) {
+			$p = $module->getModulePrefix();
+			$module->dieUsage(
+				"The parameters {$p}templatesandboxtitle and {$p}templatesandboxtext must " .
+					'both be specified or both be omitted',
+				'invalidparammix'
+			);
+		}
+
+		$prefixes = [];
+		foreach ( $params['prefix'] as $prefix ) {
+			$prefixTitle = Title::newFromText( rtrim( $prefix, '/' ) );
+			if ( !$prefixTitle instanceof Title || $prefixTitle->getFragment() !== '' ||
+				$prefixTitle->isExternal()
+			) {
+				$p = $module->getModulePrefix();
+				$this->dieUsage(
+					"Invalid {$p}templatesandboxprefix: $prefix", "bad_{$p}templatesandboxprefix"
+				);
+			}
+			$prefixes[] = $prefixTitle->getFullText();
+		}
+
+		if ( $params['title'] !== null ) {
+			$page = $module->getTitleOrPageId( $params );
+			if ( $params['contentmodel'] == '' ) {
+				$contentHandler = $page->getContentHandler();
+			} else {
+				$contentHandler = ContentHandler::getForModelID( $params['contentmodel'] );
+			}
+
+			$name = $page->getTitle()->getPrefixedDBkey();
+			$model = $contentHandler->getModelID();
+
+			if ( $contentHandler->supportsDirectApiEditing() === false ) {
+				$this->dieUsage(
+					"Direct editing via API is not supported for content model $model used by $name",
+					'no-direct-editing'
+				);
+			}
+
+			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat() ;
+			if ( !$contentHandler->isSupportedFormat( $format ) ) {
+				$this->dieUsage( "The requested format $format is not supported for content model " .
+					" $model used by $name", 'badformat' );
+			}
+
+			$templatetitle = $page->getTitle();
+			$content = $contentHandler->makeContent( $params['text'], $page->getTitle(), $model, $format );
+
+			// Apply PST to templatesandboxtext
+			$popts = $page->makeParserOptions( $module );
+			$popts->setEditSection( false );
+			$popts->setIsPreview( true );
+			$popts->setIsSectionPreview( false );
+			$user = RequestContext::getMain()->getUser();
+			$content = $content->preSaveTransform( $templatetitle, $user, $popts );
+		} else {
+			$templatetitle = null;
+			$content = null;
+		}
+
+		if ( $prefixes || $templatetitle ) {
+			$logic = new TemplateSandboxLogic( $prefixes, $templatetitle, $content );
+			$reset = $logic->setupForParse( $options );
+			$suppressCache = true;
+		}
+
+		return true;
+	}
+
 }

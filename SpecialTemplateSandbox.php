@@ -1,7 +1,6 @@
 <?php
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = array();
-	private $oldCurrentRevisionCallback = null;
 
 	/**
 	 * @var null|Title
@@ -19,37 +18,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 	protected function getGroupName() {
 		return 'wiki';
-	}
-
-	/**
-	 * @return ScopedCallback to clean up
-	 */
-	private function fakePageExists() {
-		global $wgHooks;
-		$prefixes = $this->prefixes;
-		$inHook = false;
-		$wgHooks['TitleExists']['TemplateSandbox'] =
-			function ( $title, &$exists ) use ( $prefixes, &$inHook ) {
-				if ( $exists || $inHook ) {
-					return;
-				}
-				$inHook = true;
-				foreach ( $prefixes as $prefix ) {
-					$newtitle = Title::newFromText(
-						$prefix . '/' . $title->getFullText() );
-					if ( $newtitle instanceof Title && $newtitle->exists() ) {
-						$exists = true;
-						break;
-					}
-				}
-				$inHook = false;
-			};
-		LinkCache::singleton()->clear();
-		return new ScopedCallback( function () {
-			global $wgHooks;
-			unset( $wgHooks['TitleExists']['TemplateSandbox'] );
-			LinkCache::singleton()->clear();
-		} );
 	}
 
 	function execute( $par ) {
@@ -232,29 +200,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts = $page->makeParserOptions( $this->getContext() );
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
-		$fakePageExistsScopedCallback = $this->fakePageExists();
-		$this->oldCurrentRevisionCallback = $popts->setCurrentRevisionCallback(
-			array( $this, 'currentRevisionCallback' ) );
+		$logic = new TemplateSandboxLogic( $this->prefixes, null, null );
+		$reset = $logic->setupForParse( $popts );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );
 
 		return Status::newGood();
-	}
-
-	/**
-	 * @param Title $title
-	 * @param Parser|bool $parser
-	 * @return Revision
-	 */
-	function currentRevisionCallback( $title, $parser = false ) {
-		$found = false;
-		foreach ( $this->prefixes as $prefix ) {
-			$newtitle = Title::newFromText( $prefix . '/' . $title->getFullText() );
-			if ( $newtitle instanceof Title && $newtitle->exists() ) {
-				$title = $newtitle;
-				break;
-			}
-		}
-		return call_user_func( $this->oldCurrentRevisionCallback, $title, $parser );
 	}
 }

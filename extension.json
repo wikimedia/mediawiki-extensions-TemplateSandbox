@@ -19,7 +19,8 @@
 	},
 	"AutoloadClasses": {
 		"TemplateSandboxHooks": "TemplateSandbox.hooks.php",
-		"SpecialTemplateSandbox": "SpecialTemplateSandbox.php"
+		"SpecialTemplateSandbox": "SpecialTemplateSandbox.php",
+		"TemplateSandboxLogic": "TemplateSandboxLogic.php"
 	},
 	"ResourceModules": {
 		"ext.TemplateSandbox": {
@@ -40,6 +41,12 @@
 		],
 		"AlternateEditPreview": [
 			"TemplateSandboxHooks::templateSandboxPreview"
+		],
+		"APIGetAllowedParams": [
+			"TemplateSandboxHooks::onAPIGetAllowedParams"
+		],
+		"ApiMakeParserOptions": [
+			"TemplateSandboxHooks::onApiMakeParserOptions"
 		]
 	},
 	"config": {

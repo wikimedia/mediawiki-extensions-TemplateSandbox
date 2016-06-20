@@ -34,5 +34,10 @@
 	"templatesandbox-editform-need-title": "To preview another page with this template, a page title must be specified.",
 	"templatesandbox-editform-invalid-template": "The name of the template you specified is invalid.",
 	"templatesandbox-editform-invalid-title": "The title you specified for previewing is invalid.",
-	"templatesandbox-editform-title-not-exists": "The title you specified for previewing does not exist."
+	"templatesandbox-editform-title-not-exists": "The title you specified for previewing does not exist.",
+	"templatesandbox-apihelp-prefix": "Template sandbox prefix, as with [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-title": "Parse the page using <var>$1templatesandboxtext</var> in place of the contents of the page named here.",
+	"templatesandbox-apihelp-text": "Parse the page using this page content in place of the page named by <var>$1templatesandboxtitle</var>.",
+	"templatesandbox-apihelp-contentmodel": "Content model of <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Content format of <var>$1templatesandboxtext</var>."
 }
