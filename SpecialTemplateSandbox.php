@@ -149,8 +149,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	/**
-	 * @param $value string|null
-	 * @param $allData
+	 * @param string|null $value
+	 * @param array $allData
 	 * @return bool|String
 	 */
 	function validatePageParam( $value, $allData ) {
@@ -168,8 +168,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	/**
-	 * @param $value string|null
-	 * @param $allData
+	 * @param string|null $value
+	 * @param array $allData
 	 * @return bool|String
 	 */
 	function validateRevidParam( $value, $allData ) {
@@ -184,8 +184,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	/**
-	 * @param $value
-	 * @param $allData
+	 * @param string|null $value
+	 * @param array $allData
 	 * @return bool|String
 	 */
 	function validatePrefixParam( $value, $allData ) {
@@ -207,8 +207,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 	}
 
 	/**
-	 * @param $data array
-	 * @param $form
+	 * @param array $data
+	 * @param HTMLForm $form
 	 * @return Status
 	 */
 	public function onSubmit( $data, $form ) {

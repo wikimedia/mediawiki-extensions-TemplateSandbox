@@ -19,8 +19,8 @@ class TemplateSandboxHooks {
 	 * Note we specifically do not check $wgTemplateSandboxEditNamespaces here,
 	 * to allow users to create gadgets to enable this for other namespaces.
 	 *
-	 * @param $editpage EditPage
-	 * @param $request WebRequest
+	 * @param EditPage $editpage
+	 * @param WebRequest $request
 	 * @return bool
 	 */
 	public static function importFormData( $editpage, $request ) {
@@ -43,7 +43,7 @@ class TemplateSandboxHooks {
 	}
 
 	/**
-	 * @param $msg string
+	 * @param string $msg
 	 * @return string
 	 */
 	private static function wrapErrorMsg( $msg ) {
@@ -76,10 +76,10 @@ class TemplateSandboxHooks {
 	 * Hook for AlternateEditPreview to output an entirely different preview
 	 * when our button was clicked.
 	 *
-	 * @param $editpage EditPage
-	 * @param $content Content
-	 * @param $out string
-	 * @param $parserOutput ParserOutput
+	 * @param EditPage $editpage
+	 * @param Content $content
+	 * @param string $out
+	 * @param ParserOutput $parserOutput
 	 * @return bool
 	 */
 	public static function templateSandboxPreview( $editpage, &$content, &$out, &$parserOutput ) {
@@ -237,9 +237,9 @@ class TemplateSandboxHooks {
 	 * Hook for EditPage::showStandardInputs:options to add our form fields to
 	 * the "editOptions" area of the page.
 	 *
-	 * @param $editpage EditPage
-	 * @param $output OutputPage
-	 * @param $tabindex
+	 * @param EditPage $editpage
+	 * @param OutputPage $output
+	 * @param int $tabindex
 	 * @return bool
 	 */
 	public static function injectOptions( $editpage, $output, &$tabindex ) {
