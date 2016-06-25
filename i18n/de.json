@@ -32,5 +32,10 @@
 	"templatesandbox-editform-need-title": "Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.",
 	"templatesandbox-editform-invalid-template": "Der angegebene Vorlagenname ist ungültig.",
 	"templatesandbox-editform-invalid-title": "Der angegebene Titel zur Vorschau ist ungültig.",
-	"templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden."
+	"templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden.",
+	"templatesandbox-apihelp-prefix": "Vorlagenspielwiesenpräfix, so wie bei [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-title": "Parst die Seite mithilfe <var>$1templatesandboxtext</var> an Stelle der Inhalte der hier benannten Seite.",
+	"templatesandbox-apihelp-text": "Parst die Seite mithilfe dieses Seiteninhalts an Stelle der durch <var>$1templatesandboxtitle</var> benannten Seite.",
+	"templatesandbox-apihelp-contentmodel": "Inhaltsmodell von <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Inhaltsmodell von <var>$1templatesandboxtext</var>."
 }

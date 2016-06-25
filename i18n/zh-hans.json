@@ -36,5 +36,10 @@
 	"templatesandbox-editform-need-title": "要预览另一个使用此模板的页面，您必须指定一个页面标题。",
 	"templatesandbox-editform-invalid-template": "您指定的模板名无效。",
 	"templatesandbox-editform-invalid-title": "您为预览指定的标题无效。",
-	"templatesandbox-editform-title-not-exists": "您为预览指定的标题不存在。"
+	"templatesandbox-editform-title-not-exists": "您为预览指定的标题不存在。",
+	"templatesandbox-apihelp-prefix": "模板沙盒前缀，与[[Special:TemplateSandbox]]一样。",
+	"templatesandbox-apihelp-title": "解析使用<var>$1templatesandboxtext</var>代替此处命名的页面内容的页面。",
+	"templatesandbox-apihelp-text": "解析使用此页面内容代替由<var>$1templatesandboxtitle</var>命名页面的页面。",
+	"templatesandbox-apihelp-contentmodel": "<var>$1templatesandboxtext</var>的内容模型。",
+	"templatesandbox-apihelp-contentformat": "<var>$1templatesandboxtext</var>的内容格式。"
 }
