@@ -38,5 +38,8 @@
 	"templatesandbox-editform-need-title": "Потрібно вказати заголовок сторінки для перегляду іншої сторінки з цим шаблоном.",
 	"templatesandbox-editform-invalid-template": "Неприпустиме ім'я шаблону, яке ви вказали.",
 	"templatesandbox-editform-invalid-title": "Вказаний заголовок для попереднього перегляду некоректний.",
-	"templatesandbox-editform-title-not-exists": "Вказаний заголовок для попереднього перегляду не існує."
+	"templatesandbox-editform-title-not-exists": "Вказаний заголовок для попереднього перегляду не існує.",
+	"templatesandbox-apihelp-prefix": "Префікс пісочниці шаблонів, як з [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-contentmodel": "Модель вмісту <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Формат вмісту <var>$1templatesandboxtext</var>."
 }
