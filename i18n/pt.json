@@ -35,5 +35,7 @@
 	"templatesandbox-editform-need-title": "Para antever outra página com esta predefinição, é preciso especificar um título.",
 	"templatesandbox-editform-invalid-template": "O nome da predefinição que especificou é inválido.",
 	"templatesandbox-editform-invalid-title": "O título que especificou para antever é inválido.",
-	"templatesandbox-editform-title-not-exists": "O título que especificou para antever não existe."
+	"templatesandbox-editform-title-not-exists": "O título que especificou para antever não existe.",
+	"templatesandbox-apihelp-contentmodel": "Modelo de conteúdo de <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Formato de conteúdo de <var>$1templatesandboxtext</var>."
 }

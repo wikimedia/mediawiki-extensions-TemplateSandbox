@@ -37,5 +37,10 @@
 	"templatesandbox-editform-need-title": "Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.",
 	"templatesandbox-editform-invalid-template": "Le nom du modèle que vous avez indiqué n’est pas valide.",
 	"templatesandbox-editform-invalid-title": "Le titre que vous avez spécifié pour l’aperçu n’est pas valide.",
-	"templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas."
+	"templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas.",
+	"templatesandbox-apihelp-prefix": "Préfixe du bac à sable des modèles, comme avec [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-title": "Analyser la page en utilisant <var>$1templatesandboxtext</var> au lieu du contenu de la page nommée ici.",
+	"templatesandbox-apihelp-text": "Analyser la page en utilisant le contenu de cette page au lieu de celle désignée par <var>$1templatesandboxtitle</var>.",
+	"templatesandbox-apihelp-contentmodel": "Modèle de contenu de  <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Format du contenu de <var>$1templatesandboxtext</var>."
 }
