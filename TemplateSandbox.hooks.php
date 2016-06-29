@@ -348,7 +348,7 @@ class TemplateSandboxHooks {
 			'templatesandboxcontentformat' => null,
 		];
 		$params = [
-			'prefix' => $params['templatesandboxprefix'],
+			'prefix' => $params['templatesandboxprefix'] ?: [],
 			'title' => $params['templatesandboxtitle'],
 			'text' => $params['templatesandboxtext'],
 			'contentmodel' => $params['templatesandboxcontentmodel'],
