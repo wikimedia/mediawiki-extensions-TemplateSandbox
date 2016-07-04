@@ -34,6 +34,7 @@
 	"templatesandbox-editform-invalid-template": "O nome de modelo especificado non é válido.",
 	"templatesandbox-editform-invalid-title": "O título que especificou para a vista previa non é válido.",
 	"templatesandbox-editform-title-not-exists": "O título que especificou para a vista previa non existe.",
+	"templatesandbox-apihelp-prefix": "Prefixo da zona de probas dos módulos, como con [[Special:TemplateSandbox]].",
 	"templatesandbox-apihelp-contentmodel": "Modelo de contido de <var>$1templatesandboxtext</var>.",
 	"templatesandbox-apihelp-contentformat": "Formato de contido de <var>$1templatesandboxtext</var>."
 }
