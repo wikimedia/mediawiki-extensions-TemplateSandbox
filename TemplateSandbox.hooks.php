@@ -5,7 +5,7 @@ class TemplateSandboxHooks {
 	 * necessary put $editpage into "preview" mode.
 	 *
 	 * Note we specifically do not check $wgTemplateSandboxEditNamespaces here,
-	 * to allow users to create gadgets to enable this for other namespaces.
+	 * since users can manually enable this for other namespaces.
 	 *
 	 * @param EditPage $editpage
 	 * @param WebRequest $request
@@ -184,7 +184,12 @@ class TemplateSandboxHooks {
 	public static function injectOptions( $editpage, $output, &$tabindex ) {
 		global $wgTemplateSandboxEditNamespaces;
 
-		if ( !in_array( $editpage->getTitle()->getNamespace(), $wgTemplateSandboxEditNamespaces ) ) {
+		// Show the form if the title is in a whitelisted namespace, or if the
+		// user requested it with &wpTemplateSandboxShow
+		$showForm = $editpage->getTitle()->inNamespaces( $wgTemplateSandboxEditNamespaces )
+			|| $output->getRequest()->getCheck( 'wpTemplateSandboxShow' );
+
+		if ( !$showForm ) {
 			// output the values in hidden fields so that a user
 			// using a gadget doesn't have to re-enter them every time
 
@@ -226,6 +231,9 @@ class TemplateSandboxHooks {
 		$html .= Html::hidden( 'wpTemplateSandboxTemplate',
 			$editpage->templatesandbox_template, array( 'id' => 'wpTemplateSandboxTemplate' )
 		);
+
+		// If they submit our form, pass the parameter along for non-whitelisted namespaces
+		$html .= Html::hidden( 'wpTemplateSandboxShow', '' );
 
 		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
 		if ( !$labelText->isDisabled() ) {
