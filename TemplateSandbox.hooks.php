@@ -371,7 +371,7 @@ class TemplateSandboxHooks {
 				$prefixTitle->isExternal()
 			) {
 				$p = $module->getModulePrefix();
-				$this->dieUsage(
+				$module->dieUsage(
 					"Invalid {$p}templatesandboxprefix: $prefix", "bad_{$p}templatesandboxprefix"
 				);
 			}
@@ -390,7 +390,7 @@ class TemplateSandboxHooks {
 			$model = $contentHandler->getModelID();
 
 			if ( $contentHandler->supportsDirectApiEditing() === false ) {
-				$this->dieUsage(
+				$module->dieUsage(
 					"Direct editing via API is not supported for content model $model used by $name",
 					'no-direct-editing'
 				);
@@ -398,7 +398,7 @@ class TemplateSandboxHooks {
 
 			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat() ;
 			if ( !$contentHandler->isSupportedFormat( $format ) ) {
-				$this->dieUsage( "The requested format $format is not supported for content model " .
+				$module->dieUsage( "The requested format $format is not supported for content model " .
 					" $model used by $name", 'badformat' );
 			}
 
