@@ -1,6 +1,6 @@
 <?php
 class SpecialTemplateSandbox extends SpecialPage {
-	private $prefixes = array();
+	private $prefixes = [];
 
 	/**
 	 * @var null|Title
@@ -35,38 +35,38 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$this->getUser()->getName() . '/' . $this->msg( 'templatesandbox-suffix' )->plain()
 		)->getPrefixedText();
 
-		$form = new HTMLForm( array(
-			'prefix' => array(
+		$form = new HTMLForm( [
+			'prefix' => [
 				'type' => 'text',
 				'name' => 'prefix',
 				'default' => $default_prefix,
 				'label-message' => 'templatesandbox-prefix-label',
-				'validation-callback' => array( $this, 'validatePrefixParam' ),
-			),
+				'validation-callback' => [ $this, 'validatePrefixParam' ],
+			],
 
-			'page' => array(
+			'page' => [
 				'type' => 'text',
 				'name' => 'page',
 				'label-message' => 'templatesandbox-page-label',
-				'validation-callback' => array( $this, 'validatePageParam' ),
-			),
+				'validation-callback' => [ $this, 'validatePageParam' ],
+			],
 
-			'revid' => array(
+			'revid' => [
 				'type' => 'int',
 				'name' => 'revid',
 				'label-message' => 'templatesandbox-revid-label',
-				'validation-callback' => array( $this, 'validateRevidParam' ),
-			),
+				'validation-callback' => [ $this, 'validateRevidParam' ],
+			],
 
-			'text' => array(
+			'text' => [
 				'type' => 'textarea',
 				'name' => 'text',
 				'label-message' => 'templatesandbox-text-label',
 				'rows' => 5,
-			),
-		), $this->getContext() );
+			],
+		], $this->getContext() );
 		$form->setMethod( $requirePost ? 'post' : 'get' );
-		$form->setSubmitCallback( array( $this, 'onSubmit' ) );
+		$form->setSubmitCallback( [ $this, 'onSubmit' ] );
 		$form->setWrapperLegend( $this->msg( 'templatesandbox-legend' ) );
 		$form->addHeaderText( $this->msg( 'templatesandbox-text' )->parseAsBlock() );
 		$form->setSubmitTextMsg( 'templatesandbox-submit' );
@@ -92,10 +92,10 @@ class SpecialTemplateSandbox extends SpecialPage {
 		} elseif ( $this->output !== null ) {
 			// Wrap output in a div for proper language markup.
 			$pageLang = $this->title->getPageLanguage();
-			$attribs = array( 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
-				'class' => 'mw-content-' . $pageLang->getDir() );
+			$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
+				'class' => 'mw-content-' . $pageLang->getDir() ];
 			$this->output->setText( Html::rawElement( 'div', $attribs,
-				is_callable( array( $this->output, 'getRawText' ) )
+				is_callable( [ $this->output, 'getRawText' ] )
 					? $this->output->getRawText()
 					: $this->output->getText()
 			) );
@@ -104,7 +104,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$output->addParserOutput( $this->output );
 
 			if ( is_callable( 'EditPage::getPreviewLimitReport' ) ) {
-				$output->addHTML( Html::rawElement( 'div', array( 'class' => 'limitreport' ),
+				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'limitreport' ],
 					EditPage::getPreviewLimitReport( $this->output ) ) );
 				$output->addModules( 'mediawiki.collapseFooterLists' );
 			}

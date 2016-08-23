@@ -57,7 +57,9 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
-		if ( $editpage->templatesandbox_template === '' || $editpage->templatesandbox_template === null ) {
+		if ( $editpage->templatesandbox_template === '' ||
+			$editpage->templatesandbox_template === null
+		) {
 			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-template' );
 			return false;
 		}
@@ -136,7 +138,7 @@ class TemplateSandboxHooks {
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
 
 			// addParserOutputMetadata was introduced in 1.24 when addParserOutputNoText was deprecated
-			if( method_exists( $wgOut, 'addParserOutputMetadata' ) ){
+			if ( method_exists( $wgOut, 'addParserOutputMetadata' ) ) {
 				$wgOut->addParserOutputMetadata( $parserOutput );
 			} else {
 				$wgOut->addParserOutputNoText( $parserOutput );
@@ -163,8 +165,8 @@ class TemplateSandboxHooks {
 			$wgOut->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
 
 		$pageLang = $title->getPageLanguage();
-		$attribs = array( 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
-			'class' => 'mw-content-' . $pageLang->getDir() );
+		$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
+			'class' => 'mw-content-' . $pageLang->getDir() ];
 		$out = Html::rawElement( 'div', $attribs, $out );
 
 		$out = $previewhead . $out . $editpage->previewTextAfterContent;
@@ -188,14 +190,14 @@ class TemplateSandboxHooks {
 			// output the values in hidden fields so that a user
 			// using a gadget doesn't have to re-enter them every time
 
-			$html = Xml::openElement( 'span', array( 'id' => 'templatesandbox-editform' ) );
+			$html = Xml::openElement( 'span', [ 'id' => 'templatesandbox-editform' ] );
 
 			$html .= Html::hidden( 'wpTemplateSandboxTemplate',
-				$editpage->templatesandbox_template, array( 'id' => 'wpTemplateSandboxTemplate' )
+				$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
 			);
 
 			$html .= Html::hidden( 'wpTemplateSandboxPage',
-				$editpage->templatesandbox_page, array( 'id' => 'wpTemplateSandboxPage' )
+				$editpage->templatesandbox_page, [ 'id' => 'wpTemplateSandboxPage' ]
 			);
 
 			$html .= Xml::closeElement( 'span' );
@@ -208,32 +210,32 @@ class TemplateSandboxHooks {
 		// output the full form
 		$html = '';
 
-		$inputAttrs = array(
+		$inputAttrs = [
 			'id' => 'wpTemplateSandboxPage',
 			'tabindex' => ++$tabindex,
 			'size' => 60,
 			'spellcheck' => 'true',
-		);
+		];
 
 		$text = wfMessage( 'templatesandbox-editform-text' );
 		if ( !$text->isDisabled() ) {
-			$textAttrs = array(
+			$textAttrs = [
 				'class' => 'mw-templatesandbox-editform-text',
-			);
+			];
 			$html .= Xml::tags( 'div', $textAttrs, $text->parse() ) . "\n";
 		}
 
 		$html .= Html::hidden( 'wpTemplateSandboxTemplate',
-			$editpage->templatesandbox_template, array( 'id' => 'wpTemplateSandboxTemplate' )
+			$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
 		);
 
 		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
 		if ( !$labelText->isDisabled() ) {
-			$spanLabelAttrs = array(
+			$spanLabelAttrs = [
 				'class' => 'mw-templatesandbox-page',
 				'id' => "wpTemplateSandboxPageLabel"
-			);
-			$label = Xml::tags( 'label', array( 'for' => $inputAttrs['id'] ), $labelText->parse() );
+			];
+			$label = Xml::tags( 'label', [ 'for' => $inputAttrs['id'] ], $labelText->parse() );
 			$label = Xml::tags( 'span', $spanLabelAttrs, $label );
 			$html .= $label . " ";
 		}
@@ -242,25 +244,25 @@ class TemplateSandboxHooks {
 			$editpage->templatesandbox_page, 'text', $inputAttrs
 		);
 
-		$attrs = array(
+		$attrs = [
 			'id' => 'wpTemplateSandboxPreview',
 			'name' => 'wpTemplateSandboxPreview',
 			'type' => 'submit',
 			'tabindex' => ++$tabindex,
 			'value' => wfMessage( 'templatesandbox-editform-view-label' )->text(),
-		);
+		];
 		$html .= Xml::element( 'input', $attrs, '' );
 
 		$helptext = wfMessage( 'templatesandbox-editform-helptext' );
 		if ( !$helptext->isDisabled() ) {
-			$helptextAttrs = array(
+			$helptextAttrs = [
 				'class' => 'mw-templatesandbox-editform-helptext',
-			);
+			];
 			$html .= ' ' . Xml::tags( 'span', $helptextAttrs, $helptext->parse() );
 		}
 
 		// Make fieldset
-		$fieldSet = Xml::openElement( 'fieldset', array( 'id' => 'templatesandbox-editform' ) );
+		$fieldSet = Xml::openElement( 'fieldset', [ 'id' => 'templatesandbox-editform' ] );
 		$fieldSet .= Html::rawElement( 'legend', null,
 			wfMessage( 'templatesandbox-editform-legend' )->parse() );
 		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
@@ -294,29 +296,29 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
-		$params += array(
-			'templatesandboxprefix' => array(
+		$params += [
+			'templatesandboxprefix' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_ISMULTI => true,
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-prefix',
-			),
-			'templatesandboxtitle' => array(
+			],
+			'templatesandboxtitle' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-title',
-			),
-			'templatesandboxtext' => array(
+			],
+			'templatesandboxtext' => [
 				ApiBase::PARAM_TYPE => 'text',
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-text',
-			),
-			'templatesandboxcontentmodel' => array(
+			],
+			'templatesandboxcontentmodel' => [
 				ApiBase::PARAM_TYPE => ContentHandler::getContentModels(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentmodel',
-			),
-			'templatesandboxcontentformat' => array(
+			],
+			'templatesandboxcontentformat' => [
 				ApiBase::PARAM_TYPE => ContentHandler::getAllContentFormats(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
-			),
-		);
+			],
+		];
 		return true;
 	}
 
@@ -396,7 +398,7 @@ class TemplateSandboxHooks {
 				);
 			}
 
-			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat() ;
+			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat();
 			if ( !$contentHandler->isSupportedFormat( $format ) ) {
 				$module->dieUsage( "The requested format $format is not supported for content model " .
 					" $model used by $name", 'badformat' );
