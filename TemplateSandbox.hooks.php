@@ -50,9 +50,9 @@ class TemplateSandboxHooks {
 	 * @param ParserOutput $parserOutput
 	 * @return bool
 	 */
-	public static function templateSandboxPreview( $editpage, &$content, &$out, &$parserOutput ) {
-		global $wgOut, $wgUser, $wgLang;
-
+	public static function templateSandboxPreview( EditPage $editpage, &$content, &$out,
+		&$parserOutput
+	) {
 		if ( empty( $editpage->templatesandbox_preview ) ) {
 			return true;
 		}
@@ -91,6 +91,16 @@ class TemplateSandboxHooks {
 		$note = '';
 		$dtitle = false;
 		$parserOutput = null;
+		// EditPage::getContext() is available since 1.28+
+		if ( method_exists( $editpage, 'getContext' ) ) {
+			$context = $editpage->getContext();
+		} else {
+			$context = $editpage->getArticle()->getContext();
+		}
+
+		$user = $context->getUser();
+		$output = $context->getOutput();
+		$lang = $context->getLanguage();
 
 		try {
 			if ( $editpage->sectiontitle !== '' ) {
@@ -111,21 +121,21 @@ class TemplateSandboxHooks {
 
 			// Apply PST to the to-be-saved text
 			$popts = $editpage->getArticle()->makeParserOptions(
-				$editpage->getArticle()->getContext()
+				$context
 			);
 			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$content = $content->preSaveTransform(
-				$templatetitle, $wgUser, $popts
+				$templatetitle, $user, $popts
 			);
 
 			$note = wfMessage( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
-				' [[#' . EditPage::EDITFORM_ID . '|' . $wgLang->getArrow() . ' ' .
+				' [[#' . EditPage::EDITFORM_ID . '|' . $lang->getArrow() . ' ' .
 				wfMessage( 'continue-editing' )->text() . ']]';
 
 			$page = WikiPage::factory( $title );
-			$popts = $page->makeParserOptions( $editpage->getArticle()->getContext() );
+			$popts = $page->makeParserOptions( $context );
 			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
@@ -134,15 +144,10 @@ class TemplateSandboxHooks {
 			$popts->enableLimitReport();
 
 			$rev = call_user_func_array( $popts->getCurrentRevisionCallback(), [ $title ] );
-			$content = $rev->getContent( Revision::FOR_THIS_USER, $wgUser );
+			$content = $rev->getContent( Revision::FOR_THIS_USER, $user );
 			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
 
-			// addParserOutputMetadata was introduced in 1.24 when addParserOutputNoText was deprecated
-			if ( method_exists( $wgOut, 'addParserOutputMetadata' ) ) {
-				$wgOut->addParserOutputMetadata( $parserOutput );
-			} else {
-				$wgOut->addParserOutputNoText( $parserOutput );
-			}
+			$output->addParserOutputMetadata( $parserOutput );
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
@@ -162,7 +167,7 @@ class TemplateSandboxHooks {
 		$dtitle = $dtitle === false ? $title->getFullText() : $dtitle;
 		$previewhead = "<div class='previewnote'>\n" . '<h2 id="mw-previewheader">' .
 			wfMessage( 'templatesandbox-preview', $title->getFullText(), $dtitle )->parse() . "</h2>" .
-			$wgOut->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
+			$output->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
 
 		$pageLang = $title->getPageLanguage();
 		$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
