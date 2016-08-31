@@ -212,7 +212,7 @@ class TemplateSandboxHooks {
 
 			$html .= Xml::closeElement( 'span' );
 
-			$output->addHtml( $html . "\n" );
+			$output->addHTML( $html . "\n" );
 
 			return true;
 		}
@@ -280,7 +280,7 @@ class TemplateSandboxHooks {
 			wfMessage( 'templatesandbox-editform-legend' )->parse() );
 		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
 
-		$output->addHtml( $fieldSet . "\n" );
+		$output->addHTML( $fieldSet . "\n" );
 		$output->addModules( 'ext.TemplateSandbox' );
 
 		return true;
