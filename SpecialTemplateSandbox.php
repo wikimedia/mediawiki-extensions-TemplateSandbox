@@ -91,8 +91,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$this->getOutput()->wrapWikiMsg( "<div class='previewnote'>\n$1\n</div>", $error );
 		} elseif ( $this->output !== null ) {
 			// Wrap output in a div for proper language markup.
-			$pageLang = $this->title->getPageLanguage();
-			$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
+			$pageLang = $this->title->getPageViewLanguage();
+			$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
 				'class' => 'mw-content-' . $pageLang->getDir() ];
 			$this->output->setText( Html::rawElement( 'div', $attribs,
 				is_callable( [ $this->output, 'getRawText' ] )

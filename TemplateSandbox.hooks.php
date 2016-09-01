@@ -164,8 +164,8 @@ class TemplateSandboxHooks {
 			wfMessage( 'templatesandbox-preview', $title->getFullText(), $dtitle )->parse() . "</h2>" .
 			$wgOut->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
 
-		$pageLang = $title->getPageLanguage();
-		$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
+		$pageLang = $title->getPageViewLanguage();
+		$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
 			'class' => 'mw-content-' . $pageLang->getDir() ];
 		$out = Html::rawElement( 'div', $attribs, $out );
 
