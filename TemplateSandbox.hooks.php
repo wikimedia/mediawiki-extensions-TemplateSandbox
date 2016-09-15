@@ -31,12 +31,13 @@ class TemplateSandboxHooks {
 	}
 
 	/**
+	 * @param IContextSource $context
 	 * @param string $msg
 	 * @return string
 	 */
-	private static function wrapErrorMsg( $msg ) {
+	private static function wrapErrorMsg( IContextSource $context, $msg ) {
 		return "<div id='mw-$msg'>\n"
-			. wfMessage( $msg )->parseAsBlock()
+			. $context->msg( $msg )->parseAsBlock()
 			. "\n</div>";
 	}
 
@@ -57,26 +58,33 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
+		// EditPage::getContext() is available since 1.28+
+		if ( method_exists( $editpage, 'getContext' ) ) {
+			$context = $editpage->getContext();
+		} else {
+			$context = $editpage->getArticle()->getContext();
+		}
+
 		if ( $editpage->templatesandbox_template === '' ||
 			$editpage->templatesandbox_template === null
 		) {
-			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-template' );
+			$out = self::wrapErrorMsg( $context, 'templatesandbox-editform-need-template' );
 			return false;
 		}
 		if ( $editpage->templatesandbox_page === '' || $editpage->templatesandbox_page === null ) {
-			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-need-title' );
+			$out = self::wrapErrorMsg( $context, 'templatesandbox-editform-need-title' );
 			return false;
 		}
 
 		$templatetitle = Title::newFromText( $editpage->templatesandbox_template );
 		if ( !$templatetitle instanceof Title ) {
-			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-invalid-template' );
+			$out = self::wrapErrorMsg( $context, 'templatesandbox-editform-invalid-template' );
 			return false;
 		}
 
 		$title = Title::newFromText( $editpage->templatesandbox_page );
 		if ( !$title instanceof Title ) {
-			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-invalid-title' );
+			$out = self::wrapErrorMsg( $context, 'templatesandbox-editform-invalid-title' );
 			return false;
 		}
 
@@ -84,19 +92,13 @@ class TemplateSandboxHooks {
 		// we exist, since we fake that we exist later. This is useful to, for example,
 		// preview a page move.
 		if ( !$title->equals( $templatetitle ) && !$title->exists() ) {
-			$out = TemplateSandboxHooks::wrapErrorMsg( 'templatesandbox-editform-title-not-exists' );
+			$out = self::wrapErrorMsg( $context, 'templatesandbox-editform-title-not-exists' );
 			return false;
 		}
 
 		$note = '';
 		$dtitle = false;
 		$parserOutput = null;
-		// EditPage::getContext() is available since 1.28+
-		if ( method_exists( $editpage, 'getContext' ) ) {
-			$context = $editpage->getContext();
-		} else {
-			$context = $editpage->getArticle()->getContext();
-		}
 
 		$user = $context->getUser();
 		$output = $context->getOutput();
@@ -130,9 +132,9 @@ class TemplateSandboxHooks {
 				$templatetitle, $user, $popts
 			);
 
-			$note = wfMessage( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
+			$note = $context->msg( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
 				' [[#' . EditPage::EDITFORM_ID . '|' . $lang->getArrow() . ' ' .
-				wfMessage( 'continue-editing' )->text() . ']]';
+				$context->msg( 'continue-editing' )->text() . ']]';
 
 			$page = WikiPage::factory( $title );
 			$popts = $page->makeParserOptions( $context );
@@ -157,7 +159,7 @@ class TemplateSandboxHooks {
 				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
 			}
 		} catch ( MWContentSerializationException $ex ) {
-			$m = wfMessage( 'content-failed-to-parse',
+			$m = $context->msg( 'content-failed-to-parse',
 				$editpage->contentModel, $editpage->contentFormat, $ex->getMessage()
 			);
 			$note .= "\n\n" . $m->parse();
@@ -166,7 +168,7 @@ class TemplateSandboxHooks {
 
 		$dtitle = $dtitle === false ? $title->getFullText() : $dtitle;
 		$previewhead = "<div class='previewnote'>\n" . '<h2 id="mw-previewheader">' .
-			wfMessage( 'templatesandbox-preview', $title->getFullText(), $dtitle )->parse() . "</h2>" .
+			$context->msg( 'templatesandbox-preview', $title->getFullText(), $dtitle )->parse() . "</h2>" .
 			$output->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
 
 		$pageLang = $title->getPageLanguage();
@@ -227,7 +229,14 @@ class TemplateSandboxHooks {
 			'spellcheck' => 'true',
 		];
 
-		$text = wfMessage( 'templatesandbox-editform-text' );
+		// EditPage::getContext() is available since 1.28+
+		if ( method_exists( $editpage, 'getContext' ) ) {
+			$context = $editpage->getContext();
+		} else {
+			$context = $editpage->getArticle()->getContext();
+		}
+
+		$text = $context->msg( 'templatesandbox-editform-text' );
 		if ( !$text->isDisabled() ) {
 			$textAttrs = [
 				'class' => 'mw-templatesandbox-editform-text',
@@ -242,7 +251,7 @@ class TemplateSandboxHooks {
 		// If they submit our form, pass the parameter along for non-whitelisted namespaces
 		$html .= Html::hidden( 'wpTemplateSandboxShow', '' );
 
-		$labelText = wfMessage( 'templatesandbox-editform-page-label' );
+		$labelText = $context->msg( 'templatesandbox-editform-page-label' );
 		if ( !$labelText->isDisabled() ) {
 			$spanLabelAttrs = [
 				'class' => 'mw-templatesandbox-page',
@@ -262,11 +271,11 @@ class TemplateSandboxHooks {
 			'name' => 'wpTemplateSandboxPreview',
 			'type' => 'submit',
 			'tabindex' => ++$tabindex,
-			'value' => wfMessage( 'templatesandbox-editform-view-label' )->text(),
+			'value' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
 		];
 		$html .= Xml::element( 'input', $attrs, '' );
 
-		$helptext = wfMessage( 'templatesandbox-editform-helptext' );
+		$helptext = $context->msg( 'templatesandbox-editform-helptext' );
 		if ( !$helptext->isDisabled() ) {
 			$helptextAttrs = [
 				'class' => 'mw-templatesandbox-editform-helptext',
@@ -277,7 +286,7 @@ class TemplateSandboxHooks {
 		// Make fieldset
 		$fieldSet = Xml::openElement( 'fieldset', [ 'id' => 'templatesandbox-editform' ] );
 		$fieldSet .= Html::rawElement( 'legend', null,
-			wfMessage( 'templatesandbox-editform-legend' )->parse() );
+			$context->msg( 'templatesandbox-editform-legend' )->parse() );
 		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
 
 		$output->addHTML( $fieldSet . "\n" );
