@@ -4,5 +4,14 @@
 			"Muhammad Shuaib"
 		]
 	},
-	"templatesandbox-editform-legend": "اس سانچہ کے ذریعہ صفحہ کی نمائش"
+	"templatesandbox": "سانچوں کا تختہ مشق",
+	"templatesandbox-suffix": "تختہ مشق",
+	"templatesandbox-legend": "سانچوں کا تختہ مشق",
+	"templatesandbox-prefix-label": "تختہ مشق کا سابقہ:",
+	"templatesandbox-submit": "دیکھیں",
+	"templatesandbox-title-output": "سانچوں کا تختہ مشق: $1",
+	"templatesandbox-editform-legend": "اس سانچہ کے ذریعہ صفحہ کی نمائش",
+	"templatesandbox-editform-page-label": "صفحہ کا عنوان:",
+	"templatesandbox-editform-view-label": "نمائش دکھاییں",
+	"templatesandbox-preview": "$2 کی نمائش"
 }
