@@ -227,6 +227,10 @@ class TemplateSandboxHooks {
 			'tabindex' => ++$tabindex,
 			'size' => 60,
 			'spellcheck' => 'true',
+			'class' => 'mw-searchInput',
+			'data-mw-searchsuggest' => FormatJson::encode( [
+				'wrapAsLink' => false,
+			] ),
 		];
 
 		// EditPage::getContext() is available since 1.28+
