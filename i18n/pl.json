@@ -35,5 +35,7 @@
 	"templatesandbox-editform-need-title": "Aby obejrzeć podgląd innej strony z tym szablonem, musi zostać określony tytuł strony.",
 	"templatesandbox-editform-invalid-template": "Nazwa podanego szablonu jest nieprawidłowa.",
 	"templatesandbox-editform-invalid-title": "Tytuł strony określony do podglądu jest nieprawidłowy.",
-	"templatesandbox-editform-title-not-exists": "Strona, którą chcesz podejrzeć, nie istnieje."
+	"templatesandbox-editform-title-not-exists": "Strona, którą chcesz podejrzeć, nie istnieje.",
+	"templatesandbox-apihelp-contentmodel": "Model zawartości <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Format zawartości <var>$1templatesandboxtext</var>."
 }
