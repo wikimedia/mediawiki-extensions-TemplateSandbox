@@ -58,12 +58,7 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
-		// EditPage::getContext() is available since 1.28+
-		if ( method_exists( $editpage, 'getContext' ) ) {
-			$context = $editpage->getContext();
-		} else {
-			$context = $editpage->getArticle()->getContext();
-		}
+		$context = $editpage->getContext();
 
 		if ( $editpage->templatesandbox_template === '' ||
 			$editpage->templatesandbox_template === null
@@ -233,12 +228,7 @@ class TemplateSandboxHooks {
 			] ),
 		];
 
-		// EditPage::getContext() is available since 1.28+
-		if ( method_exists( $editpage, 'getContext' ) ) {
-			$context = $editpage->getContext();
-		} else {
-			$context = $editpage->getArticle()->getContext();
-		}
+		$context = $editpage->getContext();
 
 		$text = $context->msg( 'templatesandbox-editform-text' );
 		if ( !$text->isDisabled() ) {
@@ -385,11 +375,7 @@ class TemplateSandboxHooks {
 
 		if ( ( $params['title'] === null ) !== ( $params['text'] === null ) ) {
 			$p = $module->getModulePrefix();
-			$module->dieUsage(
-				"The parameters {$p}templatesandboxtitle and {$p}templatesandboxtext must " .
-					'both be specified or both be omitted',
-				'invalidparammix'
-			);
+			$module->dieWithError( [ 'templatesandbox-apierror-titleandtext', $p ], 'invalidparammix' );
 		}
 
 		$prefixes = [];
@@ -399,8 +385,8 @@ class TemplateSandboxHooks {
 				$prefixTitle->isExternal()
 			) {
 				$p = $module->getModulePrefix();
-				$module->dieUsage(
-					"Invalid {$p}templatesandboxprefix: $prefix", "bad_{$p}templatesandboxprefix"
+				$module->dieWithError(
+					[ 'apierror-badparameter', "{$p}templatesandboxprefix" ], "bad_{$p}templatesandboxprefix"
 				);
 			}
 			$prefixes[] = $prefixTitle->getFullText();
@@ -414,20 +400,16 @@ class TemplateSandboxHooks {
 				$contentHandler = ContentHandler::getForModelID( $params['contentmodel'] );
 			}
 
-			$name = $page->getTitle()->getPrefixedDBkey();
+			$escName = wfEscapeWikiText( $page->getTitle()->getPrefixedDBkey() );
 			$model = $contentHandler->getModelID();
 
 			if ( $contentHandler->supportsDirectApiEditing() === false ) {
-				$module->dieUsage(
-					"Direct editing via API is not supported for content model $model used by $name",
-					'no-direct-editing'
-				);
+				$module->dieWithError( [ 'apierror-no-direct-editing', $model, $escName ] );
 			}
 
 			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat();
 			if ( !$contentHandler->isSupportedFormat( $format ) ) {
-				$module->dieUsage( "The requested format $format is not supported for content model " .
-					" $model used by $name", 'badformat' );
+				$module->dieWithError( [ 'apierror-badformat', $format, $model, $escName ] );
 			}
 
 			$templatetitle = $page->getTitle();
