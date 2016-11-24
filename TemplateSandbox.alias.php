@@ -156,7 +156,7 @@ $specialPageAliases['sv'] = array(
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
-	'TemplateSandbox' => array( 'Пісочниця_шаблону' ),
+	'TemplateSandbox' => array( 'Пісочниця_шаблону', 'Песочница_для_шаблонов' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
