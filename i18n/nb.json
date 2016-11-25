@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Jeblad",
-			"Cocu"
+			"Cocu",
+			"Jon Harald Søby"
 		]
 	},
 	"templatesandbox": "Mal-sandkasse",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse",
 	"templatesandbox-suffix": "sandkasse",
 	"templatesandbox-legend": "Alternativ for mal-sandkasse",
-	"templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/sandbox/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/sandbox\" som prefiks.",
+	"templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" som prefiks.",
 	"templatesandbox-prefix-label": "Prefiks for sandkasse:",
 	"templatesandbox-page-label": "Vis side:",
 	"templatesandbox-revid-label": "Tegn ut revisjonen:",
@@ -27,7 +28,14 @@
 	"templatesandbox-invalid-prefix": "Sandkasse-prefikset du oppga er ugyldig.",
 	"templatesandbox-prefix-not-local": "Sandboks-prefikset du oppga er ikke lokalt.",
 	"templatesandbox-page-or-revid": "Du må angi enten en sidetittel eller et revisjonsnummer.",
+	"templatesandbox-fail-post": "<em>Fordi {{SITENAME}} har rå HTML slått på og et tap av sesjonsdata forekom er forhåndsvisningen skjult for å forhindre JavaScript-angrep.</em>\n\n<strong>Om dette er et legitimt forsøk på å forhåndsvise, prøv igjen.</strong>\nOm det fortsatt ikke virker, prøv å [[Special:UserLogout|logge ut]] og logge inn igjen.",
+	"templatesandbox-fail-post-anon": "<em>Fordi {{SITENAME}} har rå HTML slått på og et tap av sesjonsdata forekom er forhåndsvisningen skjult for å forhindre JavaScript-angrep.</em>\n\n<strong>Om dette er et legitimt forsøk på å forhåndsvise, [[Special:UserLogin|logg inn]] og prøv igjen.</strong>",
+	"templatesandbox-editform-need-template": "For å forhåndsvise en annen side med denne malen må et malnavn oppgis.",
 	"templatesandbox-editform-need-title": "For å forhåndsvise en annen side med denne malen, må du angi en sidetittel.",
+	"templatesandbox-editform-invalid-template": "Navnet på malen da anga er ugyldig.",
 	"templatesandbox-editform-invalid-title": "Tittelen du har angitt for forhåndsvisning er ugyldig.",
-	"templatesandbox-editform-title-not-exists": "Tittelen du har angitt for forhåndsvisning finnes ikke."
+	"templatesandbox-editform-title-not-exists": "Tittelen du har angitt for forhåndsvisning finnes ikke.",
+	"templatesandbox-apihelp-prefix": "Malsandkasseprefiks, som på [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-contentmodel": "Innholdsmodell for <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Innholdsformat for <var>$1templatesandboxtext</var>."
 }
