@@ -34,6 +34,11 @@ $specialPageAliases['bgn'] = array(
 	'TemplateSandbox' => array( 'تراشوانی_تمرینی_دیم' ),
 );
 
+/** Bengali (বাংলা) */
+$specialPageAliases['bn'] = array(
+	'TemplateSandbox' => array( 'টেমপ্লেট_খেলাঘর' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'TemplateSandbox' => array( 'Загбарай_элһэн_хайрсаг' ),
