@@ -94,20 +94,14 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$pageLang = $this->title->getPageLanguage();
 			$attribs = [ 'lang' => $pageLang->getCode(), 'dir' => $pageLang->getDir(),
 				'class' => 'mw-content-' . $pageLang->getDir() ];
-			$this->output->setText( Html::rawElement( 'div', $attribs,
-				is_callable( [ $this->output, 'getRawText' ] )
-					? $this->output->getRawText()
-					: $this->output->getText()
-			) );
+			$this->output->setText( Html::rawElement( 'div', $attribs, $this->output->getRawText() ) );
 
 			$output = $this->getOutput();
 			$output->addParserOutput( $this->output );
 
-			if ( is_callable( 'EditPage::getPreviewLimitReport' ) ) {
-				$output->addHTML( Html::rawElement( 'div', [ 'class' => 'limitreport' ],
-					EditPage::getPreviewLimitReport( $this->output ) ) );
-				$output->addModules( 'mediawiki.collapseFooterLists' );
-			}
+			$output->addHTML( Html::rawElement( 'div', [ 'class' => 'limitreport' ],
+				EditPage::getPreviewLimitReport( $this->output ) ) );
+			$output->addModules( 'mediawiki.collapseFooterLists' );
 
 			$titleText = $this->output->getTitleText();
 			if ( strval( $titleText ) !== '' ) {
