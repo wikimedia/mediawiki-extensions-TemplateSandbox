@@ -4,7 +4,8 @@
 			"Armando-Martin",
 			"Ovruni",
 			"Vivaelcelta",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"templatesandbox": "Zona de pruebas para las plantillas",
@@ -33,5 +34,8 @@
 	"templatesandbox-editform-need-title": "Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.",
 	"templatesandbox-editform-invalid-template": "El nombre de la plantilla que has especificado no es válido.",
 	"templatesandbox-editform-invalid-title": "El título especificado para la vista previa no es válido.",
-	"templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe."
+	"templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe.",
+	"templatesandbox-apihelp-contentmodel": "Modelo de contenido de <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Formato de contenido de <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apierror-titleandtext": "Los parámetros <var>$1templatesandboxtitle</var> y <var>$1templatesandboxtext</var> deben especificarse ambos u omitirse ambos."
 }
