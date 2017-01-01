@@ -7,7 +7,7 @@
 	},
 	"templatesandbox": "Pískoviště šablon",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Vykreslování stránek]], které aplikuje šablony z pískoviště",
-	"templatesandbox-suffix": "pískoviště",
+	"templatesandbox-suffix": "Pískoviště",
 	"templatesandbox-legend": "Pískoviště šablon",
 	"templatesandbox-text": "Můžete si vybrat sadu šablon uložených ve vašem pískovišti, když použijete vhodný prefix pískoviště.\nPokud například chcete zobrazit náhled verze {{ns:Template}}:Test, kterou jste si {{GENDER:|uložil|uložila|uložili}} jako „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“, použijte jako prefix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.",
 	"templatesandbox-prefix-label": "Prefix pískoviště:",
