@@ -30,7 +30,7 @@
 	"templatesandbox-invalid-prefix": "您指定的沙盒前缀无效。",
 	"templatesandbox-prefix-not-local": "您指定的沙盒前缀不在本地。",
 	"templatesandbox-page-or-revid": "您必须输入一个页面标题或修订版本ID。",
-	"templatesandbox-fail-post": "<em>因为{{SITENAME}}启用了Raw HTML并且会话数据曾有丢失，预览被隐藏以防止JavaScript攻击。</em>\n\n<strong>如果这是合法的预览尝试，请再次重试。</strong>\n如果仍然不能工作，尝试[[Special:UserLogout|退出]]并重新登录。",
+	"templatesandbox-fail-post": "<em>因为{{SITENAME}}启用了Raw HTML并且会话数据曾有丢失，预览被隐藏以防止JavaScript攻击。</em>\n\n<strong>如果这是合法的预览尝试，请再次重试。</strong>如果仍然不能工作，尝试[[Special:UserLogout|退出]]并重新登录。",
 	"templatesandbox-fail-post-anon": "<em>因为{{SITENAME}}启用了Raw HTML并且您没有登录，预览被隐藏以防止JavaScript攻击。</em>\n\n<strong>如果这是合法的预览尝试，请尝试[[Special:UserLogin|登录]]并重试。</strong>",
 	"templatesandbox-editform-need-template": "要预览另一个使用此模板的页面，您必须指定一个模板名。",
 	"templatesandbox-editform-need-title": "要预览另一个使用此模板的页面，您必须指定一个页面标题。",
