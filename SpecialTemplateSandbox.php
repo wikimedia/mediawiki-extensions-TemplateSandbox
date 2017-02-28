@@ -25,7 +25,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$this->checkPermissions();
 
 		$request = $this->getRequest();
-		$requirePost = $this->getConfig()->get( 'RawHtml' );
 
 		if ( $par !== null && !$request->getCheck( 'page' ) ) {
 			$request->setVal( 'page', $par );
@@ -66,7 +65,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 				'rows' => 5,
 			],
 		], $this->getContext() );
-		$form->setMethod( $requirePost ? 'post' : 'get' );
+		$form->setMethod( 'post' );
 		$form->setSubmitCallback( [ $this, 'onSubmit' ] );
 		$form->setWrapperLegend( $this->msg( 'templatesandbox-legend' ) );
 		$form->addHeaderText( $this->msg( 'templatesandbox-text' )->parseAsBlock() );
@@ -80,7 +79,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		}
 
 		$error = false;
-		if ( $requirePost && $this->getRequest()->wasPosted() ) {
+		if ( $this->getRequest()->wasPosted() ) {
 			$user = $this->getUser();
 			if ( $user->isAnon() && !$user->isAllowed( 'edit' ) ) {
 				$error = 'templatesandbox-fail-post-anon';
@@ -98,6 +97,14 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$this->output->setText( Html::rawElement( 'div', $attribs, $this->output->getRawText() ) );
 
 			$output = $this->getOutput();
+			// Anons have predictable edit tokens, only do the JS/CSS preview for logged-in users.
+			if ( $user->isAnon() ) {
+				$this->getOutput()->wrapWikiMsg(
+					"<div class='previewnote'>\n$1\n</div>", 'templatesandbox-anon-limited-preview'
+				);
+			} else {
+				TemplateSandboxLogic::addSubpageHandlerToOutput( $this->prefixes, $output );
+			}
 			$output->addParserOutput( $this->output );
 
 			$output->addHTML( Html::rawElement( 'div', [ 'class' => 'limitreport' ],
@@ -164,7 +171,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			if ( $title->isExternal() ) {
 				return $this->msg( 'templatesandbox-prefix-not-local' )->parseAsBlock();
 			}
-			$this->prefixes[] = $title->getFullText();
+			$this->prefixes[] = $title->getPrefixedText();
 		}
 		return true;
 	}

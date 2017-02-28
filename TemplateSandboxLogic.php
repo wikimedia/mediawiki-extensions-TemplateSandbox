@@ -48,7 +48,7 @@ class TemplateSandboxLogic {
 				return;
 			}
 			$inHook = true;
-			$titleText = $title->getFullText();
+			$titleText = $title->getPrefixedText();
 			try {
 				if ( $this->title && $this->title->equals( $title ) ) {
 					$exists = true;
@@ -82,7 +82,7 @@ class TemplateSandboxLogic {
 				}
 
 				foreach ( $this->prefixes as $prefix ) {
-					$newtitle = Title::newFromText( $prefix . '/' . $title->getFullText() );
+					$newtitle = Title::newFromText( $prefix . '/' . $title->getPrefixedText() );
 					if ( $newtitle instanceof Title && $newtitle->exists() ) {
 						$title = $newtitle;
 						break;
@@ -100,4 +100,33 @@ class TemplateSandboxLogic {
 			LinkCache::singleton()->clear();
 		} );
 	}
+
+	/**
+	 * Add a handler for sandbox subpages to the OutputPage
+	 * @param array $prefixes
+	 * @param OutputPage $output
+	 */
+	public static function addSubpageHandlerToOutput( array $prefixes, OutputPage $output ) {
+		$cache = [];
+		$output->addContentOverrideCallback( function ( Title $title ) use ( $prefixes, &$cache ) {
+			$titleText = $title->getPrefixedText();
+			if ( array_key_exists( $titleText, $cache ) ) {
+				return $cache[$titleText];
+			}
+			foreach ( $prefixes as $prefix ) {
+				$newtitle = Title::newFromText( $prefix . '/' . $titleText );
+				if ( $newtitle instanceof Title && $newtitle->exists() ) {
+					$rev = Revision::newFromTitle( $newtitle );
+					$content = $rev ? $rev->getContent() : null;
+					if ( $content ) {
+						$cache[$titleText] = $content;
+						return $content;
+					}
+				}
+			}
+			$cache[$titleText] = null;
+			return null;
+		} );
+	}
+
 }

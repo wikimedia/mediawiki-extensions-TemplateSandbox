@@ -1,5 +1,7 @@
 <?php
 class TemplateSandboxHooks {
+	private static $counter = 0;
+
 	/**
 	 * Hook for EditPage::importFormData to parse our new form fields, and if
 	 * necessary put $editpage into "preview" mode.
@@ -13,7 +15,7 @@ class TemplateSandboxHooks {
 	 */
 	public static function importFormData( $editpage, $request ) {
 		$editpage->templatesandbox_template = $request->getText(
-			'wpTemplateSandboxTemplate', $editpage->getTitle()->getFullText()
+			'wpTemplateSandboxTemplate', $editpage->getTitle()->getPrefixedText()
 		);
 		$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
@@ -125,7 +127,7 @@ class TemplateSandboxHooks {
 				$templatetitle, $user, $popts
 			);
 
-			$note = $context->msg( 'templatesandbox-previewnote', $title->getFullText() )->plain() .
+			$note = $context->msg( 'templatesandbox-previewnote', $title->getPrefixedText() )->plain() .
 				' [[#' . EditPage::EDITFORM_ID . '|' . $lang->getArrow() . ' ' .
 				$context->msg( 'continue-editing' )->text() . ']]';
 
@@ -138,10 +140,13 @@ class TemplateSandboxHooks {
 			$popts->enableLimitReport();
 
 			$rev = call_user_func_array( $popts->getCurrentRevisionCallback(), [ $title ] );
-			$content = $rev->getContent( Revision::FOR_THIS_USER, $user );
-			$parserOutput = $content->getParserOutput( $title, $rev->getId(), $popts );
+			$pageContent = $rev->getContent( Revision::FOR_THIS_USER, $user );
+			$parserOutput = $pageContent->getParserOutput( $title, $rev->getId(), $popts );
 
 			$output->addParserOutputMetadata( $parserOutput );
+			if ( $output->userCanPreview() ) {
+				$output->addContentOverride( $templatetitle, $content );
+			}
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
@@ -160,10 +165,10 @@ class TemplateSandboxHooks {
 			$out = '';
 		}
 
-		$dtitle = $dtitle === false ? $title->getFullText() : $dtitle;
+		$dtitle = $dtitle === false ? $title->getPrefixedText() : $dtitle;
 		$previewhead = "<div class='previewnote'>\n" . '<h2 id="mw-previewheader">' .
-			$context->msg( 'templatesandbox-preview', $title->getFullText(), $dtitle )->parse() . "</h2>" .
-			$output->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
+			$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse() .
+			"</h2>" . $output->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
 
 		$pageLang = $title->getPageViewLanguage();
 		$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
@@ -363,6 +368,8 @@ class TemplateSandboxHooks {
 	public static function onApiMakeParserOptions(
 		$options, $title, $params, $module, &$reset, &$suppressCache
 	) {
+		global $wgHooks;
+
 		// Shouldn't happen, but...
 		if ( !self::isUsableApiModule( $module ) ) {
 			return true;
@@ -399,7 +406,7 @@ class TemplateSandboxHooks {
 					[ 'apierror-badparameter', "{$p}templatesandboxprefix" ], "bad_{$p}templatesandboxprefix"
 				);
 			}
-			$prefixes[] = $prefixTitle->getFullText();
+			$prefixes[] = $prefixTitle->getPrefixedText();
 		}
 
 		if ( $params['title'] !== null ) {
@@ -438,8 +445,26 @@ class TemplateSandboxHooks {
 
 		if ( $prefixes || $templatetitle ) {
 			$logic = new TemplateSandboxLogic( $prefixes, $templatetitle, $content );
-			$reset = $logic->setupForParse( $options );
+			$resetLogic = $logic->setupForParse( $options );
 			$suppressCache = true;
+
+			$id = 'TemplateSandboxHooks.' . ++self::$counter;
+			$wgHooks['ApiParseMakeOutputPage'][$id] = function ( $module, $output )
+				use ( $prefixes, $templatetitle, $content )
+			{
+				if ( $prefixes ) {
+					TemplateSandboxLogic::addSubpageHandlerToOutput( $prefixes, $output );
+				}
+				if ( $templatetitle ) {
+					$output->addContentOverride( $templatetitle, $content );
+				}
+			};
+
+			$reset = new ScopedCallback( function () use ( &$resetLogic, $id ) {
+				global $wgHooks;
+				unset( $wgHooks['ApiParseMakeOutputPage'][$id] );
+				ScopedCallback::consume( $resetLogic );
+			} );
 		}
 
 		return true;
