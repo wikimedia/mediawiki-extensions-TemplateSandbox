@@ -214,77 +214,138 @@ class TemplateSandboxHooks {
 			return true;
 		}
 
-		// output the full form
-		$html = '';
-
-		$inputAttrs = [
-			'id' => 'wpTemplateSandboxPage',
-			'tabindex' => ++$tabindex,
-			'size' => 60,
-			'spellcheck' => 'true',
-			'class' => 'mw-searchInput',
-			'data-mw-searchsuggest' => FormatJson::encode( [
-				'wrapAsLink' => false,
-			] ),
-		];
+		$output->addModuleStyles( 'ext.TemplateSandbox.top' );
+		$output->addModules( 'ext.TemplateSandbox' );
 
 		$context = $editpage->getContext();
 
+		$textHtml = '';
 		$text = $context->msg( 'templatesandbox-editform-text' );
 		if ( !$text->isDisabled() ) {
 			$textAttrs = [
 				'class' => 'mw-templatesandbox-editform-text',
 			];
-			$html .= Xml::tags( 'div', $textAttrs, $text->parse() ) . "\n";
+			$textHtml = Xml::tags( 'div', $textAttrs, $text->parse() );
 		}
 
-		$html .= Html::hidden( 'wpTemplateSandboxTemplate',
-			$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
-		);
-
-		// If they submit our form, pass the parameter along for non-whitelisted namespaces
-		$html .= Html::hidden( 'wpTemplateSandboxShow', '' );
-
-		$labelText = $context->msg( 'templatesandbox-editform-page-label' );
-		if ( !$labelText->isDisabled() ) {
-			$spanLabelAttrs = [
-				'class' => 'mw-templatesandbox-page',
-				'id' => "wpTemplateSandboxPageLabel"
-			];
-			$label = Xml::tags( 'label', [ 'for' => $inputAttrs['id'] ], $labelText->parse() );
-			$label = Xml::tags( 'span', $spanLabelAttrs, $label );
-			$html .= $label . " ";
-		}
-
-		$html .= Html::input( 'wpTemplateSandboxPage',
-			$editpage->templatesandbox_page, 'text', $inputAttrs
-		);
-
-		$attrs = [
-			'id' => 'wpTemplateSandboxPreview',
-			'name' => 'wpTemplateSandboxPreview',
-			'type' => 'submit',
-			'tabindex' => ++$tabindex,
-			'value' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
-		];
-		$html .= Xml::element( 'input', $attrs, '' );
-
+		$helptextHtml = '';
 		$helptext = $context->msg( 'templatesandbox-editform-helptext' );
 		if ( !$helptext->isDisabled() ) {
 			$helptextAttrs = [
 				'class' => 'mw-templatesandbox-editform-helptext',
 			];
-			$html .= ' ' . Xml::tags( 'span', $helptextAttrs, $helptext->parse() );
+			$helptextHtml = Xml::tags( 'span', $helptextAttrs, $helptext->parse() );
 		}
 
-		// Make fieldset
-		$fieldSet = Xml::openElement( 'fieldset', [ 'id' => 'templatesandbox-editform' ] );
-		$fieldSet .= Html::rawElement( 'legend', null,
-			$context->msg( 'templatesandbox-editform-legend' )->parse() );
-		$fieldSet .= $html . Xml::closeElement( 'fieldset' );
+		$hiddenInputsHtml =
+			Html::hidden( 'wpTemplateSandboxTemplate',
+				$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
+			) .
+			// If they submit our form, pass the parameter along for non-whitelisted namespaces
+			Html::hidden( 'wpTemplateSandboxShow', '' );
 
-		$output->addHTML( $fieldSet . "\n" );
-		$output->addModules( 'ext.TemplateSandbox' );
+		$oouiEnabled = method_exists( $editpage, 'isOouiEnabled' ) && $editpage->isOouiEnabled();
+
+		if ( $oouiEnabled ) {
+			$output->enableOOUI();
+			$output->addModules( 'mediawiki.widgets' );
+
+			$fieldsetLayout =
+				new OOUI\FieldsetLayout( [
+					'label' => new OOUI\HtmlSnippet( $context->msg( 'templatesandbox-editform-legend' )->parse() ),
+					'id' => 'templatesandbox-editform',
+					'classes' => [ 'mw-templatesandbox-fieldset' ],
+					'items' => [
+						// TODO: OOUI should provide a plain content layout, as this is
+						// technically an abstract class
+						new OOUI\Layout( [
+							'content' => new OOUI\HtmlSnippet( $textHtml . "\n" . $hiddenInputsHtml )
+						] ),
+						new OOUI\ActionFieldLayout(
+							new MediaWiki\Widget\TitleInputWidget( [
+								'id' => 'wpTemplateSandboxPage',
+								'name' => 'wpTemplateSandboxPage',
+								'value' => $editpage->templatesandbox_page,
+								'tabIndex' => ++$tabindex,
+								'placeholder' => $context->msg( 'templatesandbox-editform-page-label' )->text(),
+								'infusable' => true,
+							] ),
+							new OOUI\ButtonInputWidget( [
+								'id' => 'wpTemplateSandboxPreview',
+								'name' => 'wpTemplateSandboxPreview',
+								'label' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
+								'tabIndex' => ++$tabindex,
+								'type' => 'submit',
+							] ),
+							[ 'align' => 'top' ]
+						)
+					]
+				] );
+
+			if ( $helptextHtml ) {
+				$fieldsetLayout->addItems( [
+					// TODO: OOUI should provide a plain content layout, as this is
+					// technically an abstract class
+					new OOUI\Layout( [
+						'content' => new OOUI\HtmlSnippet( $helptextHtml )
+					] )
+				] );
+			}
+			$output->addHTML( $fieldsetLayout );
+
+		} else {
+			$inputHtml = '';
+
+			$inputAttrs = [
+				'id' => 'wpTemplateSandboxPage',
+				'tabindex' => ++$tabindex,
+				'size' => 60,
+				'spellcheck' => 'true',
+				'class' => 'mw-searchInput',
+				'data-mw-searchsuggest' => FormatJson::encode( [
+					'wrapAsLink' => false,
+				] ),
+			];
+
+			$labelText = $context->msg( 'templatesandbox-editform-page-label' );
+			if ( !$labelText->isDisabled() ) {
+				$spanLabelAttrs = [
+					'class' => 'mw-templatesandbox-page',
+					'id' => "wpTemplateSandboxPageLabel"
+				];
+				$label = Xml::tags( 'label', [ 'for' => $inputAttrs['id'] ], $labelText->parse() );
+				$label = Xml::tags( 'span', $spanLabelAttrs, $label );
+				$inputHtml .= $label . " ";
+			}
+
+			$inputHtml .= Html::input( 'wpTemplateSandboxPage',
+				$editpage->templatesandbox_page, 'text', $inputAttrs
+			);
+
+			$attrs = [
+				'id' => 'wpTemplateSandboxPreview',
+				'name' => 'wpTemplateSandboxPreview',
+				'type' => 'submit',
+				'tabindex' => ++$tabindex,
+				'value' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
+			];
+			$inputHtml .= Xml::element( 'input', $attrs, '' );
+
+			// Make fieldset
+			$fieldSet = Xml::openElement( 'fieldset', [ 'id' => 'templatesandbox-editform' ] );
+			$fieldSet .= Html::rawElement( 'legend', null,
+				$context->msg( 'templatesandbox-editform-legend' )->parse() );
+
+			$fieldSet .=
+				$textHtml . "\n" .
+				$hiddenInputsHtml . "\n" .
+				$inputHtml . "\n" .
+				$helptextHtml . "\n";
+
+			$fieldSet .= Xml::closeElement( 'fieldset' );
+
+			$output->addHTML( $fieldSet . "\n" );
+		}
 
 		return true;
 	}

@@ -3,5 +3,9 @@
 	"env": {
 		"browser": true,
 		"jquery": true
+	},
+	"globals": {
+		"mediaWiki": false,
+		"OO": false
 	}
 }
