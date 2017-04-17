@@ -4,15 +4,28 @@
 			"Cainamarques",
 			"Luckas",
 			"Opraco",
-			"Araceletorres"
+			"Araceletorres",
+			"Felipe L. Ewald"
 		]
 	},
+	"templatesandbox": "Predefinição sandbox",
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
 	"templatesandbox-editform-page-label": "Título da página:",
 	"templatesandbox-editform-view-label": "Prever",
 	"templatesandbox-preview": "Pré-visualização de $2",
+	"templatesandbox-invalid-title": "O título que você especificou é inválido.",
+	"templatesandbox-title-not-exists": "O título que você especificado não existe.",
+	"templatesandbox-revision-not-exists": "A revisão que você especificou não existe.",
+	"templatesandbox-invalid-prefix": "O prefixo da página de testes que você especificou é inválido.",
+	"templatesandbox-prefix-not-local": "O prefixo da página de testes que você especificou não é local.",
+	"templatesandbox-page-or-revid": "Você deve inserir um título de página ou um número de ID da revisão.",
+	"templatesandbox-fail-post": "<em>Como o {{SITENAME}} tem o HTML puro ativado e houve uma perda de dados da sessão, a pré-visualização está oculta como uma precaução contra ataques de JavaScript.</em>\n\n<strong>Se esta for uma tentativa de pré-visualização legítima, tente novamente.</strong>\nSe ainda não funcionar, tente [[Special:UserLogout|sair]] e volte a entrar.",
+	"templatesandbox-fail-post-anon": "<em>Como o {{SITENAME}} tem o HTML puro ativado e você não está logado, a pré-visualização está oculta como uma precaução contra ataques de JavaScript.</em>\n\n<strong>Se esta for uma tentativa de pré-visualização legítima, por favor, [[Special:UserLogin|entre]] e tente novamente.</strong>",
+	"templatesandbox-editform-need-template": "Para pré-visualizar outra página com esta predefinição, um nome de predefinição deve ser especificado.",
+	"templatesandbox-editform-need-title": "Para pré-visualizar outra página com esta predefinição, um título de página deve ser especificado.",
 	"templatesandbox-editform-invalid-template": "O nome do modelo que você especificou é inválido.",
 	"templatesandbox-editform-invalid-title": "O título que você especificou para a pré-visualização é inválido.",
-	"templatesandbox-editform-title-not-exists": "O título que você especificou para a pré-visualização não existe."
+	"templatesandbox-editform-title-not-exists": "O título que você especificou para a pré-visualização não existe.",
+	"templatesandbox-apihelp-prefix": "Prefixo da predefinição da página de testes, como em [[Special:TemplateSandbox]]."
 }
