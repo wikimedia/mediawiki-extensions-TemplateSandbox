@@ -17,7 +17,7 @@
 	"templatesandbox-title-output": "Template sandbox: $1",
 	"templatesandbox-editform-legend": "Preview page with this template",
 	"templatesandbox-editform-text": "",
-	"templatesandbox-editform-page-label": "Page title:",
+	"templatesandbox-editform-page-label": "Page title",
 	"templatesandbox-editform-view-label": "Show preview",
 	"templatesandbox-editform-helptext": "",
 	"templatesandbox-preview": "Preview of $2",

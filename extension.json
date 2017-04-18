@@ -23,9 +23,13 @@
 		"TemplateSandboxLogic": "TemplateSandboxLogic.php"
 	},
 	"ResourceModules": {
+		"ext.TemplateSandbox.top": {
+			"position": "top",
+			"styles": "ext.TemplateSandbox.less"
+		},
 		"ext.TemplateSandbox": {
-			"position": "bottom",
-			"scripts": "ext.TemplateSandbox.js"
+			"scripts": "ext.TemplateSandbox.js",
+			"dependencies": "ext.TemplateSandbox.top"
 		}
 	},
 	"ResourceFileModulePaths": {
