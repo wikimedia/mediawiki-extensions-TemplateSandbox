@@ -16,7 +16,7 @@
 	"templatesandbox-submit": "Ansicht",
 	"templatesandbox-title-output": "Vorlagenspielwiese: $1",
 	"templatesandbox-editform-legend": "Vorschau der Seite mit dieser Vorlage anzeigen",
-	"templatesandbox-editform-page-label": "Seitentitel:",
+	"templatesandbox-editform-page-label": "Seitentitel",
 	"templatesandbox-editform-view-label": "Vorschau zeigen",
 	"templatesandbox-preview": "Vorschau von $2",
 	"templatesandbox-previewnote": "'''Dies ist nur eine Vorschau von [[:$1]].'''\nDeine Änderungen wurden noch nicht gespeichert!",
