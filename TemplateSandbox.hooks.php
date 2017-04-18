@@ -248,6 +248,7 @@ class TemplateSandboxHooks {
 
 		if ( $oouiEnabled ) {
 			$output->enableOOUI();
+			$output->addModules( 'oojs-ui-core' );
 			$output->addModules( 'mediawiki.widgets' );
 
 			$fieldsetLayout =
@@ -276,6 +277,7 @@ class TemplateSandboxHooks {
 								'label' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
 								'tabIndex' => ++$tabindex,
 								'type' => 'submit',
+								'useInputTag' => true,
 							] ),
 							[ 'align' => 'top' ]
 						)
