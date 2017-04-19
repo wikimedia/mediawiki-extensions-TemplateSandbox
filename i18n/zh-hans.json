@@ -20,7 +20,7 @@
 	"templatesandbox-submit": "查看",
 	"templatesandbox-title-output": "模板沙盒：$1",
 	"templatesandbox-editform-legend": "预览使用本模板的页面",
-	"templatesandbox-editform-page-label": "页面标题：",
+	"templatesandbox-editform-page-label": "页面标题",
 	"templatesandbox-editform-view-label": "显示预览",
 	"templatesandbox-preview": "$2的预览",
 	"templatesandbox-previewnote": "'''请记住这仅为[[:$1]]的预览。'''\n您的更改还未保存！",

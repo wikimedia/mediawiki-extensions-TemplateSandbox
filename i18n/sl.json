@@ -17,7 +17,7 @@
 	"templatesandbox-submit": "Ogled",
 	"templatesandbox-title-output": "Peskovnik za predloge: $1",
 	"templatesandbox-editform-legend": "Predogled strani s to predlogo",
-	"templatesandbox-editform-page-label": "Naslov strani:",
+	"templatesandbox-editform-page-label": "Naslov strani",
 	"templatesandbox-editform-view-label": "Prikaži predogled",
 	"templatesandbox-preview": "Predogled strani $2",
 	"templatesandbox-previewnote": "'''To je samo predogled strani [[:$1]].'''\nVaše spremembe še niso shranjene!",

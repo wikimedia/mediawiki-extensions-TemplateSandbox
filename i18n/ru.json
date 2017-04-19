@@ -23,7 +23,7 @@
 	"templatesandbox-submit": "Просмотр",
 	"templatesandbox-title-output": "Песочница для шаблонов: $1",
 	"templatesandbox-editform-legend": "Предварительный просмотр страницы с использованием этого шаблона",
-	"templatesandbox-editform-page-label": "Название страницы:",
+	"templatesandbox-editform-page-label": "Название страницы",
 	"templatesandbox-editform-view-label": "Предварительный просмотр",
 	"templatesandbox-preview": "Предварительный просмотр $2",
 	"templatesandbox-previewnote": "'''Помните, что это только предварительный просмотр страницы [[:$1]].''' Ваши изменения в шаблоне ещё не были сохранены!",

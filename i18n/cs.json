@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mormegil",
-			"Dvorapa"
+			"Dvorapa",
+			"Matěj Suchánek"
 		]
 	},
 	"templatesandbox": "Pískoviště šablon",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Zobrazit",
 	"templatesandbox-title-output": "Pískoviště šablon: $1",
 	"templatesandbox-editform-legend": "Náhled stránky s touto šablonou",
-	"templatesandbox-editform-page-label": "Název stránky:",
+	"templatesandbox-editform-page-label": "Název stránky",
 	"templatesandbox-editform-view-label": "Ukázat náhled",
 	"templatesandbox-preview": "Náhled stránky $2",
 	"templatesandbox-previewnote": "'''Pamatujte, že toto je pouze náhled stránky [[:$1]].'''\nZměny zatím nebyly uloženy!",

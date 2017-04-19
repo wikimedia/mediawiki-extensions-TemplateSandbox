@@ -21,7 +21,7 @@
 	"templatesandbox-submit": "Afficher",
 	"templatesandbox-title-output": "TemplateSandbox: $1",
 	"templatesandbox-editform-legend": "Aperçu de la page avec ce modèle",
-	"templatesandbox-editform-page-label": "Titre de la page :",
+	"templatesandbox-editform-page-label": "Titre de la page",
 	"templatesandbox-editform-view-label": "Afficher l’aperçu",
 	"templatesandbox-preview": "Aperçu de $2",
 	"templatesandbox-previewnote": "'''Souvenez-vous que ce n’est qu’un aperçu de [[:$1]].'''\nVos modifications n’ont pas encore été enregistrées!",

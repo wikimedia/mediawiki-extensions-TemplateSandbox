@@ -21,7 +21,7 @@
 	"templatesandbox-submit": "Podgląd",
 	"templatesandbox-title-output": "Brudnopis do szablonów: $1",
 	"templatesandbox-editform-legend": "Podgląd strony z tym szablonem",
-	"templatesandbox-editform-page-label": "Tytuł strony:",
+	"templatesandbox-editform-page-label": "Tytuł strony",
 	"templatesandbox-editform-view-label": "Pokaż podgląd",
 	"templatesandbox-preview": "Podgląd strony $2",
 	"templatesandbox-previewnote": "'''To jest tylko podgląd strony [[:$1]].'''\nZmiany nie zostały jeszcze zapisane!",

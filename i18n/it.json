@@ -18,7 +18,7 @@
 	"templatesandbox-submit": "Visualizza",
 	"templatesandbox-title-output": "Prova template su: $1",
 	"templatesandbox-editform-legend": "Anteprima di una pagina con questo template",
-	"templatesandbox-editform-page-label": "Titolo della pagina:",
+	"templatesandbox-editform-page-label": "Titolo della pagina",
 	"templatesandbox-editform-view-label": "Visualizza anteprima",
 	"templatesandbox-preview": "Anteprima di $2",
 	"templatesandbox-previewnote": "'''Ricorda che questa è solo un'anteprima di [[:$1]].'''\nLe tue modifiche NON sono ancora state salvate!",
