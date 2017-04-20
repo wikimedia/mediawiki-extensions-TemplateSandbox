@@ -11,6 +11,7 @@
 		]
 	},
 	"templatesandbox": "Brudnopis do szablonów",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Renderuje stronę]] z wykorzystaniem szablonów z brudnopisu",
 	"templatesandbox-suffix": "brudnopis",
 	"templatesandbox-legend": "Brudnopis do szablonów",
 	"templatesandbox-text": "Możesz wybrać zestaw szablonów zapisanych w Twoim brudnopisie, korzystając z odpowiedniego prefiksu.\nNa przykład, jeżeli chcesz zobaczyć podgląd wersji strony „{{ns:Template}}:Test”, którą {{GENDER:|zapisałeś|zapisałaś}} jako „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test”, użyj prefiksu „{{ns:User}}:Przykład/{{int:templatesandbox-suffix}}”.",
@@ -36,6 +37,8 @@
 	"templatesandbox-editform-invalid-template": "Nazwa podanego szablonu jest nieprawidłowa.",
 	"templatesandbox-editform-invalid-title": "Tytuł strony określony do podglądu jest nieprawidłowy.",
 	"templatesandbox-editform-title-not-exists": "Strona, którą chcesz podejrzeć, nie istnieje.",
+	"templatesandbox-apihelp-prefix": "Prefiks brudnopisu z szablonami, tak jak w [[Special:TemplateSandbox]].",
 	"templatesandbox-apihelp-contentmodel": "Model zawartości <var>$1templatesandboxtext</var>.",
-	"templatesandbox-apihelp-contentformat": "Format zawartości <var>$1templatesandboxtext</var>."
+	"templatesandbox-apihelp-contentformat": "Format zawartości <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apierror-titleandtext": "Parametry <var>$1templatesandboxtitle</var> i <var>$1templatesandboxtext</var> muszą być albo oba podane albo żaden z nich."
 }

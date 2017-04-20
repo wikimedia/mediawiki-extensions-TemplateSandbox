@@ -5,7 +5,8 @@
 			"Multichill",
 			"Romaine",
 			"Siebrand",
-			"Southparkfan"
+			"Southparkfan",
+			"Sjoerddebruin"
 		]
 	},
 	"templatesandbox": "Sjabloonzandbak",
@@ -20,7 +21,7 @@
 	"templatesandbox-submit": "Bekijken",
 	"templatesandbox-title-output": "Sjabloonzandbak: $1",
 	"templatesandbox-editform-legend": "Voorvertoning weergeven met dit sjabloon",
-	"templatesandbox-editform-page-label": "Paginanaam:",
+	"templatesandbox-editform-page-label": "Paginanaam",
 	"templatesandbox-editform-view-label": "Voorvertoning weergeven",
 	"templatesandbox-preview": "Voorvertoning van $2",
 	"templatesandbox-previewnote": "'''Dit is een voorvertoning van [[:$1]].'''\nUw wijzigingen zijn nog niet opgeslagen!",
