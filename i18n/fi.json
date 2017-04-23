@@ -5,7 +5,8 @@
 			"Nike",
 			"Olli",
 			"Pxos",
-			"Stryn"
+			"Stryn",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Mallinehiekkalaatikko",
@@ -19,7 +20,7 @@
 	"templatesandbox-submit": "Näytä",
 	"templatesandbox-title-output": "Mallinehiekkalaatikko: $1",
 	"templatesandbox-editform-legend": "Esikatsele sivua tätä mallinetta käyttäen",
-	"templatesandbox-editform-page-label": "Sivun nimi:",
+	"templatesandbox-editform-page-label": "Sivun nimi",
 	"templatesandbox-editform-view-label": "Näytä esikatselu",
 	"templatesandbox-preview": "Sivun $2 esikatselu",
 	"templatesandbox-previewnote": "'''Muista, että tämä on sivun [[:$1]] esikatselu.'''\nMuutoksia ei ole tallennettu!",

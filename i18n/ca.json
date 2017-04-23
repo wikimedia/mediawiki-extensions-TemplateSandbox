@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vriullop"
+			"Vriullop",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Proves de plantilles",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Mostra",
 	"templatesandbox-title-output": "Proves de plantilles: $1",
 	"templatesandbox-editform-legend": "Previsualització d'una pàgina amb aquesta plantilla",
-	"templatesandbox-editform-page-label": "Títol de la pàgina:",
+	"templatesandbox-editform-page-label": "Títol de la pàgina",
 	"templatesandbox-editform-view-label": "Mostra previsualització",
 	"templatesandbox-preview": "Previsualització de $2",
 	"templatesandbox-previewnote": "'''Això només és una previsualització de la pàgina [[:$1]].'''\nEls vostres canvis encara no han estat desats!",

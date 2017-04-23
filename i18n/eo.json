@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ArnoLagrange"
+			"ArnoLagrange",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Ŝablona provejo",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Vidi",
 	"templatesandbox-title-output": "Ŝablona provejo: $1",
 	"templatesandbox-editform-legend": "Antaŭvido de la paĝo kun tiu ŝablono",
-	"templatesandbox-editform-page-label": "Titolo de la paĝo:",
+	"templatesandbox-editform-page-label": "Titolo de la paĝo",
 	"templatesandbox-editform-view-label": "Montri antaŭrigardon",
 	"templatesandbox-preview": "Antaŭvido de $2",
 	"templatesandbox-previewnote": "'''Memoru, ke ĉi tio estas nur antaŭrigardo de [[:$1]].''' \nViaj ŝanĝoj ne ankoraŭ estas konservitaj!",

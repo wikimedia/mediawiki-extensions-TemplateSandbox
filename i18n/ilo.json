@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lam-ang"
+			"Lam-ang",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Pagipadasan ti plantilia",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Kitaen",
 	"templatesandbox-title-output": "Pagipadasan ti plantilia: $1",
 	"templatesandbox-editform-legend": "Ipadas ti panid iti daytoy a plantilia",
-	"templatesandbox-editform-page-label": "Titulo ti panid:",
+	"templatesandbox-editform-page-label": "Titulo ti panid",
 	"templatesandbox-editform-view-label": "Ipakita ti ipadas",
 	"templatesandbox-preview": "Pannakaipadas ti $2",
 	"templatesandbox-previewnote": "'''Laglagipem a daytoy ket panagipadas laeng ti [[:$1]].'''\nDagiti binalbaliwam ket saan pay a naidulin!",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pikne"
+			"Pikne",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Mallide liivakast",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Vaata",
 	"templatesandbox-title-output": "Mallide liivakast: $1",
 	"templatesandbox-editform-legend": "Lehekülje eelvaatus selle malliga",
-	"templatesandbox-editform-page-label": "Lehekülje pealkiri:",
+	"templatesandbox-editform-page-label": "Lehekülje pealkiri",
 	"templatesandbox-editform-view-label": "Näita eelvaadet",
 	"templatesandbox-preview": "Lehekülje $2 eelvaade",
 	"templatesandbox-previewnote": "'''Pea meeles, et see on kõigest lehekülje [[:$1]] eelvaade.'''\nSinu muudatusi pole veel salvestatud!",

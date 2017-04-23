@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"SpeedyGonsales",
-			"Ivi104"
+			"Ivi104",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Testiranje predložaka",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Vidi",
 	"templatesandbox-title-output": "Stranica za testiranje predložaka: $1",
 	"templatesandbox-editform-legend": "Vidi stranicu s ovim predloškom",
-	"templatesandbox-editform-page-label": "Ime stranice:",
+	"templatesandbox-editform-page-label": "Ime stranice",
 	"templatesandbox-editform-view-label": "Prikaži kako će izgledati",
 	"templatesandbox-preview": "Pregled predloška $2",
 	"templatesandbox-previewnote": "'''Ne zaboravite da je ovo samo pregled predloška [[:$1]].'''\nVaše uređivanje još nije snimljeno!",

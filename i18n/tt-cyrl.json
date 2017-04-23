@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ильнар"
+			"Ильнар",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Калып өчен комлык",
@@ -13,7 +14,7 @@
 	"templatesandbox-text-label": "Викитекстны күрсәтү:",
 	"templatesandbox-submit": "Карау",
 	"templatesandbox-title-output": "Калып өчен комлык: $1",
-	"templatesandbox-editform-page-label": "Битнең исеме:",
+	"templatesandbox-editform-page-label": "Битнең исеме",
 	"templatesandbox-editform-view-label": "Алдан карау",
 	"templatesandbox-preview": "$2 өчен алдан карау"
 }

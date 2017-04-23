@@ -7,7 +7,8 @@
 			"DixonD",
 			"Wizardist",
 			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Пісочниця шаблону",
@@ -22,7 +23,7 @@
 	"templatesandbox-submit": "Перегляд",
 	"templatesandbox-title-output": "Пісочниця шаблону: $1",
 	"templatesandbox-editform-legend": "Попередній перегляд сторінки з цим шаблоном",
-	"templatesandbox-editform-page-label": "Заголовок сторінки:",
+	"templatesandbox-editform-page-label": "Заголовок сторінки",
 	"templatesandbox-editform-view-label": "Попередній перегляд",
 	"templatesandbox-preview": "Попередній перегляд $2",
 	"templatesandbox-previewnote": "'''Це лише попередній перегляд [[:$1]].'''\nВаші зміни ще не збережено!",

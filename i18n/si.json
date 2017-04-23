@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "සැකිලි වැලිපිල්ල",
@@ -14,7 +15,7 @@
 	"templatesandbox-submit": "දසුන",
 	"templatesandbox-title-output": "සැකිලි වැලිපිල්ල: $1",
 	"templatesandbox-editform-legend": "මෙම සැකිල්ල සමඟ පිටුව පෙරදසුන්ගත කරන්න",
-	"templatesandbox-editform-page-label": "පිටුවේ මාතෘකාව:",
+	"templatesandbox-editform-page-label": "පිටුවේ මාතෘකාව",
 	"templatesandbox-editform-view-label": "පෙරදසුන පෙන්වන්න",
 	"templatesandbox-preview": "$2 හී පෙරදසුන",
 	"templatesandbox-invalid-title": "ඔබ සඳහන් කළ මාතෘකාව වලංගු නොවේ.",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jeblad",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Malsandkasse",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Vis",
 	"templatesandbox-title-output": "Malsandkasse: $1",
 	"templatesandbox-editform-legend": "Førehandsvis ei side med denne malen",
-	"templatesandbox-editform-page-label": "Sidetittel:",
+	"templatesandbox-editform-page-label": "Sidetittel",
 	"templatesandbox-editform-view-label": "Førehandsvis",
 	"templatesandbox-preview": "Førehandsvising av $2",
 	"templatesandbox-previewnote": "'''Hugs at dette berre er ei førehandsvising av [[:$1]].'''\nEndringane dine er ikkje lagra enno!",

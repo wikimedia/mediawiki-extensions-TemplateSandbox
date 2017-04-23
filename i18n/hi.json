@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siddhartha Ghai"
+			"Siddhartha Ghai",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "साँचा प्रयोगस्थल",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "देखें",
 	"templatesandbox-title-output": "साँचा प्रयोगस्थल: $1",
 	"templatesandbox-editform-legend": "पृष्ठ की झलक इस साँचे के साथ देखें",
-	"templatesandbox-editform-page-label": "पृष्ठ शीर्षक:",
+	"templatesandbox-editform-page-label": "पृष्ठ शीर्षक",
 	"templatesandbox-editform-view-label": "झलक दिखाएँ",
 	"templatesandbox-preview": "$2 की झलक",
 	"templatesandbox-previewnote": "'''ध्यान रखें कि यह केवल [[:$1]] की एक झलक है।'''\nआपके बदलाव अभी सहेजे नहीं गए हैं!",

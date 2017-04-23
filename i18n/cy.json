@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Pwll tywod y nodiadau",
@@ -12,7 +13,7 @@
 	"templatesandbox-text-label": "Cynhyrchu'r cystrawen wici:",
 	"templatesandbox-submit": "Gweler",
 	"templatesandbox-title-output": "Pwll tywod y nodyn $1",
-	"templatesandbox-editform-page-label": "Teitl y dudalen:",
+	"templatesandbox-editform-page-label": "Teitl y dudalen",
 	"templatesandbox-editform-view-label": "Dangos rhagolwg",
 	"templatesandbox-preview": "Rhagolwg $2",
 	"templatesandbox-invalid-title": "Ysgrifennwyd teitl annilys.",

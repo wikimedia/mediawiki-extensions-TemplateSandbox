@@ -6,7 +6,8 @@
 			"Lijealso",
 			"Opraco",
 			"Vitorvicentevalente",
-			"He7d3r"
+			"He7d3r",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Testes de predefinições",
@@ -21,7 +22,7 @@
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-title-output": "Teste da predefinição: $1",
 	"templatesandbox-editform-legend": "Antevisão da página com esta predefinição",
-	"templatesandbox-editform-page-label": "Título da página:",
+	"templatesandbox-editform-page-label": "Título da página",
 	"templatesandbox-editform-view-label": "Mostrar antevisão",
 	"templatesandbox-preview": "Antevisão de $2",
 	"templatesandbox-previewnote": "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''\nAs modificações ainda não foram gravadas!",

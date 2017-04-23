@@ -3,7 +3,8 @@
 		"authors": [
 			"Borichèt",
 			"Dragonòt",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "TemplateSandbox",
@@ -18,7 +19,7 @@
 	"templatesandbox-submit": "Vardé",
 	"templatesandbox-title-output": "Template sandbox: $1",
 	"templatesandbox-editform-legend": "Preuva dla pàgina con cost ëstamp",
-	"templatesandbox-editform-page-label": "Tìtol ëd la pàgina:",
+	"templatesandbox-editform-page-label": "Tìtol ëd la pàgina",
 	"templatesandbox-editform-view-label": "Mostra na preuva",
 	"templatesandbox-preview": "Preuva ëd $2",
 	"templatesandbox-previewnote": "'''Che a ten-a da ment che costa-sì a l'é mach na preuva ëd [[:$1]].'''\nSoe modìfiche a son anco' pa stàite salvà!",

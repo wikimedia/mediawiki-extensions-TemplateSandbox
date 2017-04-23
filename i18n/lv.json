@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Papuass"
+			"Papuass",
+			"Macofe"
 		]
 	},
 	"templatesandbox-submit": "Apskatīt",
-	"templatesandbox-editform-page-label": "Lapas nosaukums:",
+	"templatesandbox-editform-page-label": "Lapas nosaukums",
 	"templatesandbox-editform-view-label": "Rādīt pirmskatu",
 	"templatesandbox-preview": "$2 pirmskats"
 }

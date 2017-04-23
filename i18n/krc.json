@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Iltever",
-			"Ernác"
+			"Ernác",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Шаблонла ючюн къум орун",
@@ -15,7 +16,7 @@
 	"templatesandbox-submit": "Къарау",
 	"templatesandbox-title-output": "Шаблонла ючюн къум орун: $1",
 	"templatesandbox-editform-legend": "Бу шаблон хайырланнган бетге ал къарау",
-	"templatesandbox-editform-page-label": "Бетни аты:",
+	"templatesandbox-editform-page-label": "Бетни аты",
 	"templatesandbox-editform-view-label": "Ал къарау",
 	"templatesandbox-preview": "$2 бетге ал къарау"
 }

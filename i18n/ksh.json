@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Schablohne ußprobehre",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Lohß jonn!",
 	"templatesandbox-title-output": "Schablohne ußprobehre för di Sigg: „$1“",
 	"templatesandbox-editform-legend": "En Sigg met dä {{ns:Template}} belohre",
-	"templatesandbox-editform-page-label": "Dä Sigg ier Övverschreff:",
+	"templatesandbox-editform-page-label": "Dä Sigg ier Övverschreff",
 	"templatesandbox-editform-view-label": "Lohß jonn!",
 	"templatesandbox-preview": "„$2“ vöraff belohre",
 	"templatesandbox-previewnote": "'''Heh kütt blohß en Aanseesch vöraff met dä Sigg „[[:$1]]“ — Ding Änderonge sin ävver noch nidd em Wikki faßjehallde!'''",

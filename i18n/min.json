@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Iwan Novirion"
+			"Iwan Novirion",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Bak kasiak templat",
@@ -15,7 +16,7 @@
 	"templatesandbox-submit": "Baco",
 	"templatesandbox-title-output": "Templat bak kasiak: $1",
 	"templatesandbox-editform-legend": "Pratonton laman jo templat ko",
-	"templatesandbox-editform-page-label": "Judul laman:",
+	"templatesandbox-editform-page-label": "Judul laman",
 	"templatesandbox-editform-view-label": "Pratonton",
 	"templatesandbox-preview": "Pratonton dari laman $2",
 	"templatesandbox-previewnote": "'''Ingek iko hanyolah pratonton dari laman [[:$1]].'''\nParubahan nan Sanak buek alun disimpan!",

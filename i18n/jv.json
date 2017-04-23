@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"NoiX180"
+			"NoiX180",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Bak wedhi cithakan",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Deleng",
 	"templatesandbox-title-output": "Bak wedhi cithakan: $1",
 	"templatesandbox-editform-legend": "Pratuduh kaca mawa cithakan iki",
-	"templatesandbox-editform-page-label": "Sesirah kaca:",
+	"templatesandbox-editform-page-label": "Sesirah kaca",
 	"templatesandbox-editform-view-label": "Deleng pratuduh",
 	"templatesandbox-preview": "Pratuduh $2",
 	"templatesandbox-previewnote": "'''Élinga yèn iki mung pratuduh [[:$1]].'''\nOwahanmu durung kasimpen!",

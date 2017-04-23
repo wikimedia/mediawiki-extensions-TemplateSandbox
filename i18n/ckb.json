@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"Asoxor"
+			"Asoxor",
+			"Macofe"
 		]
 	},
 	"templatesandbox-suffix": "پەڕەی ئەزموون",
 	"templatesandbox-editform-legend": "پێشبینینی پەڕە لەگەڵ ئەم داڕێژەیە",
-	"templatesandbox-editform-page-label": "سەرناوی پەڕە:",
+	"templatesandbox-editform-page-label": "سەرناوی پەڕە",
 	"templatesandbox-editform-view-label": "پێشبینین نیشان بدە",
 	"templatesandbox-editform-need-title": "بۆ نیشاندانی پێشبینینی پەڕەیەکی تر لەگەڵ ئەم داڕێژەیە، سەردێڕی پەڕەیەک دەبێ دیاری بکرێت.",
 	"templatesandbox-editform-invalid-title": "ئەو سەردێڕەی بۆ پێشبینین دیاریت کردووە نادروستە.",

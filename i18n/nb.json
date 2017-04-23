@@ -3,7 +3,8 @@
 		"authors": [
 			"Jeblad",
 			"Cocu",
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Mal-sandkasse",
@@ -18,7 +19,7 @@
 	"templatesandbox-submit": "Vis",
 	"templatesandbox-title-output": "Mal-sandkasse: $1",
 	"templatesandbox-editform-legend": "Forhåndsvis siden med denne malen",
-	"templatesandbox-editform-page-label": "Sidetittel:",
+	"templatesandbox-editform-page-label": "Sidetittel",
 	"templatesandbox-editform-view-label": "Forhåndsvisning",
 	"templatesandbox-preview": "Forhåndsvisning av $2",
 	"templatesandbox-previewnote": "'''Husk at dette er bare en forhåndsvisning av [[:$1]].'''\nEndringene er ikke lagret ennå!",

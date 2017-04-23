@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"Gomada"
+			"Gomada",
+			"Macofe"
 		]
 	},
 	"templatesandbox-editform-legend": "Pêşdîtina rûpelê bi vê şablonê",
-	"templatesandbox-editform-page-label": "Sernavê rûpelê:",
+	"templatesandbox-editform-page-label": "Sernavê rûpelê",
 	"templatesandbox-editform-view-label": "Pêşdîtinê nîşan bide",
 	"templatesandbox-preview": "Pêşdîtina $2",
 	"templatesandbox-previewnote": "'''Ji bîr neke ku ev tenê pêşdîtineke [[:$1]] (y)e.'''\nGuhertinên te hê nehatine tomarkirin!",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Iwan Novirion",
-			"William Surya Permana"
+			"William Surya Permana",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Bak pasir templat",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Lihat",
 	"templatesandbox-title-output": "Bak pasir templat: $1",
 	"templatesandbox-editform-legend": "Pratayang halaman dengan templat ini",
-	"templatesandbox-editform-page-label": "Judul halaman:",
+	"templatesandbox-editform-page-label": "Judul halaman",
 	"templatesandbox-editform-view-label": "Lihat pratayang",
 	"templatesandbox-preview": "Pratayang $2",
 	"templatesandbox-previewnote": "'''Harap diingat bahwa ini hanyalah pratayang [[:$1]].'''\nPerubahan yang Anda buat belum disimpan!",

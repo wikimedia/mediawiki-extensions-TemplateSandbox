@@ -3,7 +3,8 @@
 		"authors": [
 			"Tgr",
 			"Tacsipacsi",
-			"Teemeah"
+			"Teemeah",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Sablonhomokozó",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Megtekintés",
 	"templatesandbox-title-output": "Sablonhomokozó: $1",
 	"templatesandbox-editform-legend": "Lap előnézetének megtekintése ezzel a sablonnal",
-	"templatesandbox-editform-page-label": "Lap címe:",
+	"templatesandbox-editform-page-label": "Lap címe",
 	"templatesandbox-editform-view-label": "Előnézet megtekintése",
 	"templatesandbox-preview": "$2 előnézete",
 	"templatesandbox-previewnote": "'''Ne feledd, hogy ez csak [[:$1]] előnézete.''' A változtatásaid még nincsenek elmentve!",

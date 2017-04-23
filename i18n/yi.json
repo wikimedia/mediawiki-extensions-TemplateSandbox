@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "מוסטער זאמדקאסטן",
@@ -15,7 +16,7 @@
 	"templatesandbox-submit": "ווייזן",
 	"templatesandbox-title-output": "מוסטער זאמדקאסטן: $1",
 	"templatesandbox-editform-legend": "פארויסשטעלן בלאט מיט דעם מוסטער",
-	"templatesandbox-editform-page-label": "בלאט קעפל:",
+	"templatesandbox-editform-page-label": "בלאט קעפל",
 	"templatesandbox-editform-view-label": "ווייזן פארויסשטעלונג",
 	"templatesandbox-preview": "פארויסשטעלונג פון $2",
 	"templatesandbox-previewnote": "'''געדענקט אז דאס איז נאָר אין אַ פֿאָרויסשטעלונג פון [[:$1]].'''\nאייערע ענדערונגען זענען נאָך נישט געהיט!",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "کينډۍ تمرين مخ",
@@ -9,5 +10,5 @@
 	"templatesandbox-submit": "کتل",
 	"templatesandbox-title-output": "کينډۍ تمرين مخ: $1",
 	"templatesandbox-editform-legend": "په همدې کينډۍ سره د مخ مخليدنه",
-	"templatesandbox-editform-page-label": "مخ سرليک:"
+	"templatesandbox-editform-page-label": "مخ سرليک"
 }

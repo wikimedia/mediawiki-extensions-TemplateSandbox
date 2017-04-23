@@ -4,7 +4,8 @@
 			"Jopparn",
 			"Skalman",
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Mallsandlåda",
@@ -19,7 +20,7 @@
 	"templatesandbox-submit": "Visa",
 	"templatesandbox-title-output": "Mallsandlåda: $1",
 	"templatesandbox-editform-legend": "Förhandsgranska sida med denna mall",
-	"templatesandbox-editform-page-label": "Sidtitel:",
+	"templatesandbox-editform-page-label": "Sidtitel",
 	"templatesandbox-editform-view-label": "Visa förhandsgranskning",
 	"templatesandbox-preview": "Förhandsvisning av $2",
 	"templatesandbox-previewnote": "'''Kom ihåg att detta bara är en förhandsvisning av [[:$1]].'''\nDina ändringar har ännu inte sparats!",

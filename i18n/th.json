@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Horus"
+			"Horus",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "หน้าทดลองแม่แบบ",
@@ -15,7 +16,7 @@
 	"templatesandbox-submit": "ดู",
 	"templatesandbox-title-output": "หน้าทดลองแม่แบบ: $1",
 	"templatesandbox-editform-legend": "ดูตัวอย่างหน้าพร้อมแม่แบบนี้",
-	"templatesandbox-editform-page-label": "ชื่อเรื่องหน้า:",
+	"templatesandbox-editform-page-label": "ชื่อเรื่องหน้า",
 	"templatesandbox-editform-view-label": "แสดงตัวอย่าง",
 	"templatesandbox-preview": "ตัวอย่างของ $2",
 	"templatesandbox-previewnote": "'''ระลึกว่านี่เป็นเพียงตัวอย่างของ [[:$1]]'''\nยังไม่ได้บันทึกการเปลี่ยนแปลงของคุณ!",

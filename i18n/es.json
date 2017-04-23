@@ -20,7 +20,7 @@
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-title-output": "Zona de pruebas para las plantillas: $1",
 	"templatesandbox-editform-legend": "Vista previa de la página con esta plantilla",
-	"templatesandbox-editform-page-label": "Título de la página:",
+	"templatesandbox-editform-page-label": "Título de la página",
 	"templatesandbox-editform-view-label": "Mostrar vista previa",
 	"templatesandbox-preview": "Vista previa de $2",
 	"templatesandbox-previewnote": "'''Recuerda que esto es solo una previsualización de [[:$1]].'''\n¡Tus cambios aún no se han guardado!",

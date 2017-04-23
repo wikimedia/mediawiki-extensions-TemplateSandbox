@@ -5,13 +5,14 @@
 			"Luckas",
 			"Opraco",
 			"Araceletorres",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Predefinição sandbox",
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-editform-legend": "Mostrar previsão da página com esta predefinição",
-	"templatesandbox-editform-page-label": "Título da página:",
+	"templatesandbox-editform-page-label": "Título da página",
 	"templatesandbox-editform-view-label": "Prever",
 	"templatesandbox-preview": "Pré-visualização de $2",
 	"templatesandbox-invalid-title": "O título que você especificou é inválido.",

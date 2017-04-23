@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snævar"
+			"Snævar",
+			"Macofe"
 		]
 	},
 	"templatesandbox-editform-legend": "Forskoða síðu með þessu sniði",
-	"templatesandbox-editform-page-label": "Titill síðu:",
+	"templatesandbox-editform-page-label": "Titill síðu",
 	"templatesandbox-editform-view-label": "Sýna forskoðun",
 	"templatesandbox-preview": "Forskoðun á $2",
 	"templatesandbox-previewnote": "„Mundu að þetta er eingöngu forskoðun af [[:$1]].” Breytingarnar þínar hafa ekki verið vistaðar!",

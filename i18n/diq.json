@@ -3,7 +3,8 @@
 		"authors": [
 			"Erdemaslancan",
 			"Mirzali",
-			"Kumkumuk"
+			"Kumkumuk",
+			"Gırd"
 		]
 	},
 	"templatesandbox": "QumdorŞablon",
@@ -13,7 +14,7 @@
 	"templatesandbox-submit": "Bıvin",
 	"templatesandbox-title-output": "QumdorŞablon:$1",
 	"templatesandbox-editform-legend": "Verasayışê pele be nê şabloni ra",
-	"templatesandbox-editform-page-label": "Sernameyê pele:",
+	"templatesandbox-editform-page-label": "Sernamey pele",
 	"templatesandbox-editform-view-label": "Verasayışi bıvin",
 	"templatesandbox-preview": "Verasayışê $2"
 }

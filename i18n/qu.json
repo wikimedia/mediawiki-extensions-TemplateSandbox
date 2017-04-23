@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"AlimanRuna"
+			"AlimanRuna",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Pukllana plantilla",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Qhaway",
 	"templatesandbox-title-output": "Pukllana plantilla: $1",
 	"templatesandbox-editform-legend": "P'anqata ñawpaqta kay plantillawan qhaway",
-	"templatesandbox-editform-page-label": "P'anqap sutin:",
+	"templatesandbox-editform-page-label": "P'anqap sutin",
 	"templatesandbox-editform-view-label": "Ñawpaqta qhawallay",
 	"templatesandbox-preview": "$2-ta ñawpaqta qhawallay",
 	"templatesandbox-previewnote": "'''Yuyaykuy: Kayqa [[:$1]]-manta qhawariyllam.'''\nLlamk'apusqaykiqa manaraqmi waqaychasqachu!",

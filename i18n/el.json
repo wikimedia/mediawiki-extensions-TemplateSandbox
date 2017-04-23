@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Glavkos",
-			"Protnet"
+			"Protnet",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Αμμοδοχείο προτύπου",
@@ -17,7 +18,7 @@
 	"templatesandbox-submit": "Προβολή",
 	"templatesandbox-title-output": "Αμμοδοχείο προτύπου:$1",
 	"templatesandbox-editform-legend": "Προεπισκόπιση σελίδας με αυτό το πρότυπο",
-	"templatesandbox-editform-page-label": "Τίτλος σελίδας:",
+	"templatesandbox-editform-page-label": "Τίτλος σελίδας",
 	"templatesandbox-editform-view-label": "Εμφάνιση προεπισκόπησης",
 	"templatesandbox-preview": "Προεπισκόπηση της $2",
 	"templatesandbox-previewnote": "'''Να θυμάστε ότι αυτό είναι μόνο μια προεπισκόπηση του [[:$1]].'''\nΟι αλλαγές σας δεν έχουν ακόμα αποθηκευτεί!",

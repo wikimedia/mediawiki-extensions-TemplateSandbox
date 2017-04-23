@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Kotak pasir templat",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Paparkan",
 	"templatesandbox-title-output": "Kotak pasir templat: $1",
 	"templatesandbox-editform-legend": "Pralihatkan halaman ini dengan templat ini",
-	"templatesandbox-editform-page-label": "Tajuk halaman:",
+	"templatesandbox-editform-page-label": "Tajuk halaman",
 	"templatesandbox-editform-view-label": "Paparkan Pralihat",
 	"templatesandbox-preview": "Pralihat $2",
 	"templatesandbox-previewnote": "'''Ingat, ini hanya pralihat [[:$1]].'''\nSuntngan anda belum disimpan!",

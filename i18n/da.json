@@ -3,7 +3,8 @@
 		"authors": [
 			"Byrial",
 			"Christian List",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Skabelon-sandkasse",
@@ -18,7 +19,7 @@
 	"templatesandbox-submit": "Vis",
 	"templatesandbox-title-output": "Skabelon-sandkasse: $1",
 	"templatesandbox-editform-legend": "Forhåndsvis en side med denne skabelon",
-	"templatesandbox-editform-page-label": "Sidetitel:",
+	"templatesandbox-editform-page-label": "Sidetitel",
 	"templatesandbox-editform-view-label": "Forhåndsvisning",
 	"templatesandbox-preview": "Forhåndsvisning af $2",
 	"templatesandbox-previewnote": "'''Husk at dette kun er en forhåndsvisning af [[:$1]].'''\nDine ændringer er ikke blevet gemt endnu!",

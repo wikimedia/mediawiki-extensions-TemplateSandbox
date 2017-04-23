@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Teslaton"
+			"Teslaton",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Šablónové pieskovisko",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Zobraziť",
 	"templatesandbox-title-output": "Šablónové pieskovisko: $1",
 	"templatesandbox-editform-legend": "Náhľad stránky s touto šablónou",
-	"templatesandbox-editform-page-label": "Názov stránky:",
+	"templatesandbox-editform-page-label": "Názov stránky",
 	"templatesandbox-editform-view-label": "Zobraziť náhľad",
 	"templatesandbox-preview": "Náhľad stránky $2",
 	"templatesandbox-previewnote": "'''Nezabudnite, toto je iba náhľad stránky [[:$1]].'''\nZmeny zatiaľ nie sú uložené!",

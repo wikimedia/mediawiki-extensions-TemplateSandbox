@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Zona de prueba pa les plantíes",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Ver",
 	"templatesandbox-title-output": "Zona de prueba pa les plantíes: $1",
 	"templatesandbox-editform-legend": "Vista previa de páxina con esta plantía",
-	"templatesandbox-editform-page-label": "Títulu de la páxina:",
+	"templatesandbox-editform-page-label": "Títulu de la páxina",
 	"templatesandbox-editform-view-label": "Amosar vista previa",
 	"templatesandbox-preview": "Vista previa de $2",
 	"templatesandbox-previewnote": "'''Alcuerdate de qu'esto ye sólo una vista previa de [[:$1]].'''\n¡Los cambios entá nun se guardaron!",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aftab1995",
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "টেমপ্লেট খেলাঘর",
@@ -11,7 +12,7 @@
 	"templatesandbox-submit": "দেখাও",
 	"templatesandbox-title-output": "টেমপ্লেট খেলাঘর: $1",
 	"templatesandbox-editform-legend": "এই টেমপ্লেট দিয়ে পাতার প্রাকদর্শন",
-	"templatesandbox-editform-page-label": "পাতার শিরোনাম:",
+	"templatesandbox-editform-page-label": "পাতার শিরোনাম",
 	"templatesandbox-editform-view-label": "প্রাকদর্শন দেখাও",
 	"templatesandbox-preview": "$2 এর প্রাকদর্শন",
 	"templatesandbox-previewnote": "'''মনে রাখবেন যে এটি শুধুমাত্র [[:$1]] এর একটি প্রাকদর্শন।'''\nআপনার পরিবর্তনসমূহ এখনো সংরক্ষণ করা হয় নি!",

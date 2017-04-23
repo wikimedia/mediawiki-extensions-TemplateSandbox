@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Naudefj"
+			"Naudefj",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "Sjabloonsandput",
@@ -16,7 +17,7 @@
 	"templatesandbox-submit": "Wys",
 	"templatesandbox-title-output": "Sjabloonsandput: $1",
 	"templatesandbox-editform-legend": "Wys voorskou van hierdie sjabloon",
-	"templatesandbox-editform-page-label": "Bladsynaam:",
+	"templatesandbox-editform-page-label": "Bladsynaam",
 	"templatesandbox-editform-view-label": "Wys voorskou",
 	"templatesandbox-preview": "Voorskou van $2",
 	"templatesandbox-previewnote": "'''Onthou dat hierdie slegs 'n voorskou van [[:$1]] is.'''\nU wysigings is nog nie gestoor nie!",

@@ -4,7 +4,8 @@
 			"Calak",
 			"زكريا",
 			"محمد أحمد عبد الفتاح",
-			"Meno25"
+			"Meno25",
+			"Macofe"
 		]
 	},
 	"templatesandbox": "ملعب القوالب",
@@ -18,7 +19,7 @@
 	"templatesandbox-submit": "اعرض",
 	"templatesandbox-title-output": "ملعب القوالب: $1",
 	"templatesandbox-editform-legend": "معاينة الصفحة مع هذا القالب",
-	"templatesandbox-editform-page-label": "عنوان الصفحة:",
+	"templatesandbox-editform-page-label": "عنوان الصفحة",
 	"templatesandbox-editform-view-label": "أظهر المعاينة",
 	"templatesandbox-preview": "معاينة $2",
 	"templatesandbox-editform-need-template": "يجب تعيين اسم القالب المراد معاينته مع هذا القالب.",
