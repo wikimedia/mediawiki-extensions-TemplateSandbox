@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sator"
+			"Sator",
+			"Subi"
 		]
 	},
 	"templatesandbox": "Txantiloi proba orria",
 	"templatesandbox-suffix": "proba orria",
-	"templatesandbox-legend": "Txantiloi proba orria"
+	"templatesandbox-legend": "Txantiloi proba orria",
+	"templatesandbox-editform-page-label": "Orriaren izenburua"
 }
