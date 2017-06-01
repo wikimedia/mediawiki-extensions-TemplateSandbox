@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Papuass",
-			"Macofe"
+			"Macofe",
+			"Silraks"
 		]
 	},
+	"templatesandbox-legend": "Veidņu smilšu kaste",
 	"templatesandbox-submit": "Apskatīt",
 	"templatesandbox-editform-page-label": "Lapas nosaukums",
 	"templatesandbox-editform-view-label": "Rādīt pirmskatu",
