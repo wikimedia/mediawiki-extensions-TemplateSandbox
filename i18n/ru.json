@@ -8,11 +8,12 @@
 			"Okras",
 			"Ole Yves",
 			"Olli",
-			"Kaganer"
+			"Kaganer",
+			"Facenapalm"
 		]
 	},
 	"templatesandbox": "Песочница для шаблонов",
-	"templatesandbox-desc": "[[Special:TemplateSandbox|Выполняет визуализацию страницы]], включая шаблоны из песочницы",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Выполняет рендер страницы]], включающую шаблон из песочницы",
 	"templatesandbox-suffix": "песочница",
 	"templatesandbox-legend": "Песочница для шаблонов",
 	"templatesandbox-text": "Вы можете выбрать набор шаблонов, сохранённых в вашем пространстве песочниц, используя префикс соответствующей песочницы.\nНапример, если вы хотите просмотреть версию {{ns:Template}}:Тест, которую вы сохранили в качестве «{{ns:User}}:Вася Пупкин/Песочница/{{ns:Template}}:Тест», используйте «{{ns:User}}:Вася Пупкин/Песочница» в качестве префикса.",
@@ -35,9 +36,13 @@
 	"templatesandbox-page-or-revid": "Вы должны ввести либо название страницы, либо номер версии.",
 	"templatesandbox-fail-post": "<em>Поскольку на сайте {{SITENAME}} с включенным «сырым» HTML произошла потеря данных сессии, предварительный просмотр скрыт в качестве меры предосторожности против JavaScript-атак.</em>\n\n<strong>Если это была правомерная попытка предварительного просмотра, пожалуйста, попробуйте ещё раз.</strong>\nЕсли у вас по-прежнему не получается, попробуйте [[Special:UserLogout|завершить сеанс работы]] и авторизоваться ещё раз.",
 	"templatesandbox-fail-post-anon": "<em>Поскольку на сайте {{SITENAME}} включен «сырой» HTML, а вы не авторизовались, предварительный просмотр скрыт в качестве меры предосторожности против JavaScript-атак.</em>\n\n<strong>Если это правомерная попытка предварительного просмотра, пожалуйста, [[Special:UserLogin|войдите]] и попробуйте ещё раз.",
-	"templatesandbox-editform-need-template": "Чтобы просмотреть другую страницу с использованием этого шаблона, должно быть указано название шаблона.",
-	"templatesandbox-editform-need-title": "Чтобы просмотреть другую страницу с использованием этого шаблона, название страницы должно быть указано.",
+	"templatesandbox-editform-need-template": "Для просмотра другой страницы с использованием этого шаблона должно быть указано название шаблона.",
+	"templatesandbox-editform-need-title": "Для просмотра другой страницы с использованием этого шаблона должно быть указано название страницы.",
 	"templatesandbox-editform-invalid-template": "Имя шаблона, которое вы указали, недопустимо.",
 	"templatesandbox-editform-invalid-title": "Заголовок, указанный вами для предварительного просмотра, недействителен.",
-	"templatesandbox-editform-title-not-exists": "Заголовок, указанный вами для предварительного просмотра, не существует."
+	"templatesandbox-editform-title-not-exists": "Заголовок, указанный вами для предварительного просмотра, не существует.",
+	"templatesandbox-apihelp-prefix": "Префикс песочницы шаблонов, например,  [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-contentmodel": "Модель содержимого <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "Формат содержимого <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apierror-titleandtext": "Параметры <var>$1templatesandboxtitle</var> и <var>$1templatesandboxtext</var> должны быть либо одновременно заданы, либо одновременно опущены."
 }
