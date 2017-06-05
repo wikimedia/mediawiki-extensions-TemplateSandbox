@@ -3,14 +3,15 @@
 		"authors": [
 			"SpeedyGonsales",
 			"Ivi104",
-			"Macofe"
+			"Macofe",
+			"Bugoslav"
 		]
 	},
 	"templatesandbox": "Testiranje predložaka",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Prikazuje stranicu]] s testnim predloškom",
 	"templatesandbox-suffix": "stranica za testiranje",
 	"templatesandbox-legend": "Stranica za testiranje predložaka",
-	"templatesandbox-text": "Možete odabrati set predložaka u vašem osobnom imenskom prostoru koristeći prikladni prefiks.\nNa primjer, ako želite pregledati inačicu {{ns:Template}}:Test koju ste spremili kao \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", koristite \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" kao prefiks.",
+	"templatesandbox-text": "Možete odabrati skup predložaka spremljenih kao podstranice u vašem suradničkom imenskom prostoru koristeći prikladni prefiks.\nNa primjer, ako želite pregledati inačicu {{ns:Template}}:Pokus koji ste spremili kao \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Pokus\", koristite \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" kao prefiks.",
 	"templatesandbox-prefix-label": "Prefiks:",
 	"templatesandbox-page-label": "Testna stranica:",
 	"templatesandbox-revid-label": "Uređivanje:",
