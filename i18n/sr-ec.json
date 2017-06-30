@@ -3,10 +3,12 @@
 		"authors": [
 			"Milicevic01",
 			"Srdjan m",
-			"Macofe"
+			"Macofe",
+			"Сербијана"
 		]
 	},
 	"templatesandbox": "Песак за шаблоне",
+	"templatesandbox-suffix": "пијесак",
 	"templatesandbox-editform-legend": "Види страницу са овим шаблоном",
 	"templatesandbox-editform-page-label": "Име странице",
 	"templatesandbox-editform-view-label": "Претпреглед",
