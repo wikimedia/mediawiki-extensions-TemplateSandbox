@@ -18,7 +18,6 @@ class TemplateSandboxHooks {
 		$editpage->templatesandbox_page = $request->getText( 'wpTemplateSandboxPage' );
 
 		if ( $request->wasPosted() ) {
-
 			if ( $request->getCheck( 'wpTemplateSandboxPreview' ) ) {
 				$editpage->templatesandbox_preview = true;
 				$editpage->preview = true;
@@ -188,9 +187,14 @@ class TemplateSandboxHooks {
 	public static function injectOptions( $editpage, $output, &$tabindex ) {
 		global $wgTemplateSandboxEditNamespaces;
 
+		$namespaces = array_merge(
+			$wgTemplateSandboxEditNamespaces,
+			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
+		);
+
 		// Show the form if the title is in a whitelisted namespace, or if the
 		// user requested it with &wpTemplateSandboxShow
-		$showForm = $editpage->getTitle()->inNamespaces( $wgTemplateSandboxEditNamespaces )
+		$showForm = $editpage->getTitle()->inNamespaces( $namespaces )
 			|| $output->getRequest()->getCheck( 'wpTemplateSandboxShow' );
 
 		if ( !$showForm ) {
