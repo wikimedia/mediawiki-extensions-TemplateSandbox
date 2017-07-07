@@ -27,7 +27,6 @@ class TemplateSandboxLogic {
 		$this->prefixes = $prefixes;
 		$this->title = $title;
 		$this->content = $content;
-
 	}
 
 	/**
