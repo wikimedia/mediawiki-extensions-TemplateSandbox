@@ -13,6 +13,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Renderiza uma página]] transcluindo predefinições de uma página de testes",
 	"templatesandbox-suffix": "sandbox",
 	"templatesandbox-legend": "Predefinição sandbox",
+	"templatesandbox-text": "Você pode escolher um conjunto de predefinições salvas no seu espaço sandbox usando um prefixo de sandbox apropriado.\nPor exemplo, se você deseja visualizar uma versão de {{ns:Template}}:Teste que você salvou como \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", use \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" como o prefixo.",
 	"templatesandbox-prefix-label": "Prefixo da página de testes:",
 	"templatesandbox-page-label": "Página de renderização:",
 	"templatesandbox-revid-label": "Revisão de renderização:",
