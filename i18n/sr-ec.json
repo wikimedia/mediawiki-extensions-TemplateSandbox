@@ -4,7 +4,8 @@
 			"Milicevic01",
 			"Srdjan m",
 			"Macofe",
-			"Сербијана"
+			"Сербијана",
+			"Obsuser"
 		]
 	},
 	"templatesandbox": "Песак за шаблоне",
@@ -13,5 +14,6 @@
 	"templatesandbox-editform-page-label": "Име странице",
 	"templatesandbox-editform-view-label": "Претпреглед",
 	"templatesandbox-preview": "Преглед $2",
-	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!"
+	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!",
+	"templatesandbox-editform-need-title": "Да би се приказао претпреглед друге странице са овим шаблоном, наслов странице мора да буде одређен."
 }

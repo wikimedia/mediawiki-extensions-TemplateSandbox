@@ -4,7 +4,8 @@
 			"Milicevic01",
 			"Srdjan m",
 			"Macofe",
-			"Сербијана"
+			"Сербијана",
+			"Obsuser"
 		]
 	},
 	"templatesandbox": "Pesak za šablone",
@@ -13,5 +14,6 @@
 	"templatesandbox-editform-page-label": "Ime stranice",
 	"templatesandbox-editform-view-label": "Pretpregled",
 	"templatesandbox-preview": "Pregled $2",
-	"templatesandbox-previewnote": "'''Ovo je samo pregled [[:$1]].'''\nVaše izmene još nisu sačuvane!"
+	"templatesandbox-previewnote": "'''Ovo je samo pregled [[:$1]].'''\nVaše izmene još nisu sačuvane!",
+	"templatesandbox-editform-need-title": "Da bi se prikazao pretpregled druge stranice sa ovim šablonom, naslov stranice mora da bude određen."
 }
