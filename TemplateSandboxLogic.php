@@ -1,4 +1,7 @@
 <?php
+
+use Wikimedia\ScopedCallback;
+
 /**
  * Business logic class for TemplateSandbox
  */
