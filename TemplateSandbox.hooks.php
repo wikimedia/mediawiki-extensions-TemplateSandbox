@@ -45,9 +45,9 @@ class TemplateSandboxHooks {
 	 * when our button was clicked.
 	 *
 	 * @param EditPage $editpage
-	 * @param Content $content
-	 * @param string $out
-	 * @param ParserOutput $parserOutput
+	 * @param Content &$content
+	 * @param string &$out
+	 * @param ParserOutput &$parserOutput
 	 * @return bool
 	 */
 	public static function templateSandboxPreview( EditPage $editpage, &$content, &$out,
@@ -181,7 +181,7 @@ class TemplateSandboxHooks {
 	 *
 	 * @param EditPage $editpage
 	 * @param OutputPage $output
-	 * @param int $tabindex
+	 * @param int &$tabindex
 	 * @return bool
 	 */
 	public static function injectOptions( $editpage, $output, &$tabindex ) {
@@ -313,7 +313,7 @@ class TemplateSandboxHooks {
 	 * modules.
 	 *
 	 * @param ApiBase $module
-	 * @param array $params
+	 * @param array &$params
 	 * @param int $flags
 	 * @return bool
 	 */
