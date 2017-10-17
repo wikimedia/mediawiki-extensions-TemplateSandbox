@@ -163,6 +163,11 @@ $specialPageAliases['uk'] = [
 	'TemplateSandbox' => [ 'Пісочниця_шаблону', 'Песочница_для_шаблонов' ],
 ];
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = [
+	'TemplateSandbox' => [ 'سانچہ_کا_تختہ_مشق' ],
+];
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = [
 	'TemplateSandbox' => [ 'Chỗ_thử_bản_mẫu' ],
