@@ -7,7 +7,8 @@
 			"Opraco",
 			"Vitorvicentevalente",
 			"He7d3r",
-			"Macofe"
+			"Macofe",
+			"MokaAkashiyaPT"
 		]
 	},
 	"templatesandbox": "Testes de predefinições",
@@ -29,7 +30,7 @@
 	"templatesandbox-invalid-title": "O título especificado é inválido.",
 	"templatesandbox-title-not-exists": "O título que especificou não existe.",
 	"templatesandbox-revision-not-exists": "A revisão que especificou não existe.",
-	"templatesandbox-invalid-prefix": "O prefixo que especificou para a página de testes é inválido",
+	"templatesandbox-invalid-prefix": "O prefixo que especificou para a página de testes é inválido.",
 	"templatesandbox-prefix-not-local": "O prefixo que especificou para a página de testes não é local.",
 	"templatesandbox-page-or-revid": "Deve introduzir um título de página ou o número de uma revisão.",
 	"templatesandbox-fail-post": "<em>Porque a wiki {{SITENAME}} permite HTML puro e ocorreu uma perda dos dados da sessão, a antevisão foi ocultada como medida de precaução contra ataques de JavaScript.</em>\n\n<strong>Se esta tentativa de obter uma antevisão é legítima, tente novamente, por favor.</strong>\nSe continuar a não funcionar, tente [[Special:UserLogout|sair]] e voltar a entrar.",
