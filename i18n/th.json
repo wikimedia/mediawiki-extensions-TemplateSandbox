@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Horus",
-			"Macofe"
+			"Macofe",
+			"Ans"
 		]
 	},
 	"templatesandbox": "หน้าทดลองแม่แบบ",
@@ -10,9 +11,9 @@
 	"templatesandbox-suffix": "หน้าทดลอง",
 	"templatesandbox-legend": "หน้าทดลองแม่แบบ",
 	"templatesandbox-prefix-label": "คำนำหน้าหน้าทดลอง:",
-	"templatesandbox-page-label": "ให้หน้า:",
-	"templatesandbox-revid-label": "ให้รุ่น:",
-	"templatesandbox-text-label": "ให้ข้อความวิกิ:",
+	"templatesandbox-page-label": "แสดงผลสำหรับหน้า:",
+	"templatesandbox-revid-label": "แสดงผลสำหรับรุ่นปรับปรุง:",
+	"templatesandbox-text-label": "แสดงผลข้อความวิกิ:",
 	"templatesandbox-submit": "ดู",
 	"templatesandbox-title-output": "หน้าทดลองแม่แบบ: $1",
 	"templatesandbox-editform-legend": "ดูตัวอย่างหน้าพร้อมแม่แบบนี้",
