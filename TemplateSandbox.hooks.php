@@ -119,7 +119,6 @@ class TemplateSandboxHooks {
 			$popts = $editpage->getArticle()->makeParserOptions(
 				$context
 			);
-			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$content = $content->preSaveTransform(
@@ -132,7 +131,6 @@ class TemplateSandboxHooks {
 
 			$page = WikiPage::factory( $title );
 			$popts = $page->makeParserOptions( $context );
-			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$logic = new TemplateSandboxLogic( [], $templatetitle, $content );
@@ -147,7 +145,9 @@ class TemplateSandboxHooks {
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
-			$out = $parserOutput->getText();
+			$out = $parserOutput->getText( [
+				'enableSectionEditLinks' => false,
+			] );
 
 			if ( count( $parserOutput->getWarnings() ) ) {
 				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
@@ -427,7 +427,6 @@ class TemplateSandboxHooks {
 
 			// Apply PST to templatesandboxtext
 			$popts = $page->makeParserOptions( $module );
-			$popts->setEditSection( false );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$user = RequestContext::getMain()->getUser();
