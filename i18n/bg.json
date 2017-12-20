@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"StanProg"
 		]
 	},
-	"templatesandbox-submit": "Изглед"
+	"templatesandbox": "Пясъчник за шаблони",
+	"templatesandbox-legend": "Пясъчник за шаблони",
+	"templatesandbox-submit": "Изглед",
+	"templatesandbox-title-output": "Пясъчник за шаблони: $1"
 }
