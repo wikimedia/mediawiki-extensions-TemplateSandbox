@@ -12,7 +12,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 */
 	private $output = null;
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'TemplateSandbox' );
 	}
 
@@ -20,7 +20,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		return 'wiki';
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		$this->setHeaders();
 		$this->checkPermissions();
 
@@ -115,7 +115,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 * @param array $allData
 	 * @return bool|String
 	 */
-	function validatePageParam( $value, $allData ) {
+	public function validatePageParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
 		}
@@ -134,7 +134,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 * @param array $allData
 	 * @return bool|String
 	 */
-	function validateRevidParam( $value, $allData ) {
+	public function validateRevidParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
 		}
@@ -150,7 +150,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 * @param array $allData
 	 * @return bool|String
 	 */
-	function validatePrefixParam( $value, $allData ) {
+	public function validatePrefixParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
 			return true;
 		}
