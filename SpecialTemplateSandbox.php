@@ -62,6 +62,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 				'type' => 'textarea',
 				'name' => 'text',
 				'label-message' => 'templatesandbox-text-label',
+				'useeditfont' => true,
 				'rows' => 5,
 			],
 		], $this->getContext() );
