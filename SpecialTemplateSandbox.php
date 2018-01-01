@@ -35,7 +35,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$this->getUser()->getName() . '/' . $this->msg( 'templatesandbox-suffix' )->plain()
 		)->getPrefixedText();
 
-		$form = new HTMLForm( [
+		$form = HTMLForm::factory( 'ooui', [
 			'prefix' => [
 				'type' => 'text',
 				'name' => 'prefix',
