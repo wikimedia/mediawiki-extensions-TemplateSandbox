@@ -24,7 +24,6 @@
 	},
 	"ResourceModules": {
 		"ext.TemplateSandbox.top": {
-			"position": "top",
 			"styles": "ext.TemplateSandbox.less"
 		},
 		"ext.TemplateSandbox": {
