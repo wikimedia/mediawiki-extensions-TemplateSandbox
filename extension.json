@@ -4,7 +4,7 @@
 	"author": "Brad Jorsch",
 	"url": "https://www.mediawiki.org/wiki/Extension:TemplateSandbox",
 	"descriptionmsg": "templatesandbox-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"SpecialPages": {
 		"TemplateSandbox": "SpecialTemplateSandbox"
