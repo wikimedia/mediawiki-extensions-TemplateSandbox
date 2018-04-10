@@ -5,10 +5,12 @@
 			"زكريا",
 			"محمد أحمد عبد الفتاح",
 			"Meno25",
-			"Macofe"
+			"Macofe",
+			"ديفيد"
 		]
 	},
 	"templatesandbox": "ملعب القوالب",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|يعرض صفحة]] تضمن القوالب من ملعب",
 	"templatesandbox-suffix": "ملعب",
 	"templatesandbox-legend": "ملعب القوالب",
 	"templatesandbox-text": "أنت يمكنك اختيار مجموعة من القوالب المحفوظة في نطاق ملعبك بواسطة استخدام بادئة ملعب مناسبة.\nكمثال، لو أنك أردت معاينة نسخة من {{ns:Template}}:Test التي حفظتها ك \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", استخدم \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" كبادئة.",
@@ -22,6 +24,24 @@
 	"templatesandbox-editform-page-label": "عنوان الصفحة",
 	"templatesandbox-editform-view-label": "أظهر المعاينة",
 	"templatesandbox-preview": "معاينة $2",
+	"templatesandbox-previewnote": "'''تذكر أن هذه مجرد معاينة لـ[[:$1]]،'''\nلم يتم حفظ تغييراتك بعد!",
+	"templatesandbox-invalid-title": "العنوان الذي حددته غير صالح.",
+	"templatesandbox-title-not-exists": "العنوان الذي حددته غير موجود.",
+	"templatesandbox-revision-not-exists": "المراجعة التي حددتها غير موجودة.",
+	"templatesandbox-invalid-prefix": "بادئة الملعب التي حددتها غير صالحة.",
+	"templatesandbox-prefix-not-local": "بادئة الملعب التي حددتها ليست محلية.",
+	"templatesandbox-page-or-revid": "يجب عليك إدخال إما عنوان صفحة أو رقم معرف مراجعة.",
+	"templatesandbox-fail-post": "<em>نظرا لتمكين ميزة HTML {{SITENAME}} الأولية تم فقدان بيانات الجلسات، يتم إخفاء المعاينة كإجراء وقائي ضد هجمات جافا سكريبت.</em>\n\n<strong>إذا كانت هذه محاولة مشروعة للمعاينة، فتُرجَى المحاولة مرة أخرى.</strong>\nإذا كانت لا تزال لا تعمل، فحاول [[Special:UserLogout|تسجيل الخروج]] وتسجيل الدخول مرة أخرى.",
+	"templatesandbox-fail-post-anon": "<em>نظرا لتمكين ميزة HTML {{SITENAME}} الأولية تم فقدان بيانات الجلسات، يتم إخفاء المعاينة كإجراء وقائي ضد هجمات جافا سكريبت.</em>\n\n<strong>إذا كانت هذه محاولة مشروعة للمعاينة، فالرجاء [[Special:UserLogin|تسجيل الدخول]] والمحاولة مرة أخرى.</strong>",
 	"templatesandbox-editform-need-template": "يجب تعيين اسم القالب المراد معاينته مع هذا القالب.",
-	"templatesandbox-editform-need-title": "يجب تعيين اسم الصفحة المراد معاينتها مع هذا القالب."
+	"templatesandbox-editform-need-title": "يجب تعيين اسم الصفحة المراد معاينتها مع هذا القالب.",
+	"templatesandbox-editform-invalid-template": "اسم القالب الذي حددته غير صالح.",
+	"templatesandbox-editform-invalid-title": "العنوان الذي حددته للمعاينة غير صالح.",
+	"templatesandbox-editform-title-not-exists": "العنوان الذي حددته للمعاينة غير موجود.",
+	"templatesandbox-apihelp-prefix": "بادئة ملعب القالب، كما هو الحال مع [[Special:TemplateSandbox]].",
+	"templatesandbox-apihelp-title": "تحليل الصفحة باستخدام <var>$1templatesandboxtext</var> بدلا من محتويات الصفحة المحددة هنا.",
+	"templatesandbox-apihelp-text": "تحليل الصفحة باستخدام هنا بدلا من محتويات الصفحة المحددة <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentmodel": "نموذج محتوى <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apihelp-contentformat": "تنسيق محتوى <var>$1templatesandboxtext</var>.",
+	"templatesandbox-apierror-titleandtext": "يجب تحديد الوسيطين <var>$1templatesandboxtitle</var> و<var>$1templatesandboxtext</var> أو حذف كليهما."
 }
