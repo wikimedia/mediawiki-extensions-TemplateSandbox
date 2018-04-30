@@ -31,7 +31,7 @@
 	"templatesandbox-page-or-revid": "Devi inserire il titolo di una pagina oppure un numero di versione.",
 	"templatesandbox-fail-post": "<em>A causa della perdita dei dati della sessione, l'anteprima è nascosta come precauzione contro gli attacchi JavaScript.</em>\n\n<strong>Se si tratta di un normale tentativo d'anteprima, riprova.</strong> \nSe comunque non dovesse funzionare, prova ad [[Special:UserLogout|uscire]] ed a rientrare.",
 	"templatesandbox-fail-post-anon": "<em>Poiché non hai effettuato l'accesso, l'anteprima è nascosta come precauzione contro gli attacchi JavaScript.</em>\n\n<strong>Se si tratta di un normale tentativo d'anteprima, [[Special:UserLogin|entra]] e riprova.</strong>",
-	"templatesandbox-anon-limited-preview": "L'anteprima dei cambiamenti di JavaScript e CSS è disattivata quando non si è loggati. Se hai bisogno di vedere in anteprima questi cambiamenti,per favore [[Special:UserLogin|log in]] e riprova.",
+	"templatesandbox-anon-limited-preview": "L'anteprima delle modifiche a JavaScript e CSS è disattivata quando non si è eseguito l'accesso. Se hai bisogno di vedere l'anteprima di queste modifiche, per favore [[Special:UserLogin|accedi]] e riprova.",
 	"templatesandbox-editform-need-template": "Per visualizzare l'anteprima di un'altra pagina con questo template, devi specificare il nome di un template.",
 	"templatesandbox-editform-need-title": "Per visualizzare l'anteprima di un'altra pagina con questo template, devi specificare il titolo di una pagina.",
 	"templatesandbox-editform-invalid-template": "Il nome del template specificato non è valido.",

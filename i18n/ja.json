@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Macofe"
+			"Macofe",
+			"Yusuke1109"
 		]
 	},
 	"templatesandbox": "テンプレートのサンドボックス",
@@ -31,5 +32,6 @@
 	"templatesandbox-editform-need-title": "このテンプレートで別のページのプレビューを表示するには、ページ名を指定してください。",
 	"templatesandbox-editform-invalid-template": "指定したテンプレート名は無効です。",
 	"templatesandbox-editform-invalid-title": "プレビューに指定したページ名は無効です。",
-	"templatesandbox-editform-title-not-exists": "プレビューに指定したページは存在しません。"
+	"templatesandbox-editform-title-not-exists": "プレビューに指定したページは存在しません。",
+	"templatesandbox-apihelp-contentmodel": "$1templatesandboxtextのコンテンツ・モデル"
 }
