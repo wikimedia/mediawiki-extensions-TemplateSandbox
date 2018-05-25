@@ -1,4 +1,7 @@
 <?php
+
+use Wikimedia\ScopedCallback;
+
 class TemplateSandboxHooks {
 	private static $counter = 0;
 
