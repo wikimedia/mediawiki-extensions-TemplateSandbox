@@ -10,7 +10,8 @@
 			"Olli",
 			"Kaganer",
 			"Facenapalm",
-			"Stjn"
+			"Stjn",
+			"Wikisaurus"
 		]
 	},
 	"templatesandbox": "Песочница для шаблонов",
@@ -24,7 +25,7 @@
 	"templatesandbox-text-label": "Показ вики-текста:",
 	"templatesandbox-submit": "Просмотр",
 	"templatesandbox-title-output": "Песочница для шаблонов: $1",
-	"templatesandbox-editform-legend": "Предварительный просмотр страницы с использованием этого шаблона",
+	"templatesandbox-editform-legend": "Предварительный просмотр страницы с использованием этого шаблона или модуля",
 	"templatesandbox-editform-page-label": "Название страницы",
 	"templatesandbox-editform-view-label": "Предварительный просмотр",
 	"templatesandbox-preview": "Предварительный просмотр $2",
