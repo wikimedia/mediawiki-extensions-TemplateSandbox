@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sadrettin"
+			"Sadrettin",
+			"TmY e12"
 		]
 	},
+	"templatesandbox-editform-legend": "Bu şablonla önizleme sayfası",
 	"templatesandbox-previewnote": "'''Bunun yalnızca [[:$1]] sayfasının bir ön izlemesi olduğunu unutmayın.'''\nYaptığınız değişiklikler henüz kaydedilmedi!"
 }
