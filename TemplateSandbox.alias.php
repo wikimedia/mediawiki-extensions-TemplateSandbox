@@ -153,6 +153,16 @@ $specialPageAliases['ru'] = [
 	'TemplateSandbox' => [ 'Песочница_для_шаблонов' ],
 ];
 
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
+$specialPageAliases['sr-ec'] = [
+	'TemplateSandbox' => [ 'Песак_за_шаблоне' ],
+];
+
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$specialPageAliases['sr-el'] = [
+	'TemplateSandbox' => [ 'Pesak_za_šablone' ],
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'TemplateSandbox' => [ 'Mallsandlåda' ],
