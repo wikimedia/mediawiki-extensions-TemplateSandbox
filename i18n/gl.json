@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Navhy"
 		]
 	},
 	"templatesandbox": "Zona de probas para os modelos",
@@ -18,7 +19,7 @@
 	"templatesandbox-title-output": "Zona de probas para os modelos: $1",
 	"templatesandbox-editform-legend": "Vista previa da páxina con este modelo",
 	"templatesandbox-editform-page-label": "Título da páxina",
-	"templatesandbox-editform-view-label": "Mostrar a vista previa",
+	"templatesandbox-editform-view-label": "Amosar a vista previa",
 	"templatesandbox-preview": "Vista previa de \"$2\"",
 	"templatesandbox-previewnote": "'''Lembre que esta é só unha vista previa de \"[[:$1]]\".'''\nAínda non gardou os seus cambios!",
 	"templatesandbox-invalid-title": "O título que especificou non é válido.",
