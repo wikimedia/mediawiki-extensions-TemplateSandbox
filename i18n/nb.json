@@ -8,7 +8,7 @@
 		]
 	},
 	"templatesandbox": "Mal-sandkasse",
-	"templatesandbox-desc": "[[Special:TemplateSandbox|Tegn ut siden]] og transkluder maler fra en sandkasse",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Viser en side]] og transkluderer maler fra en sandkasse",
 	"templatesandbox-suffix": "sandkasse",
 	"templatesandbox-legend": "Alternativ for mal-sandkasse",
 	"templatesandbox-text": "Du kan velge et sett med maler som er lagret i din sandkasse ved hjelp av et passende sandbox-prefiks. For eksempel, hvis du vil forhåndsvise en versjon av {{ns:Template}}:Test som du har lagret som «{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test», så bruk \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" som prefiks.",
