@@ -9,7 +9,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Ngolah kaca]] sing transklusi cithakan saka bak wedhi",
 	"templatesandbox-suffix": "bak wedhi",
 	"templatesandbox-legend": "Bak wedhi cithakan",
-	"templatesandbox-text": "Sampéyan bisa milih saprangkat cithakan sing disimpen ing bak wedhimu kanthi sarana ater-ater bak wedhi sing pener.\nContoné, menawa sampéyan péngin mratuduh sawijining vèrsi {{ns:Template}}:Test sing koksimpen dadi \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", anggota ater-ater \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\".",
+	"templatesandbox-text": "Panjenengan bisa milih saprangkat cithakan sing disimpen ing bak wedhimu kanthi sarana ater-ater bak wedhi sing pener.\nContoné, menawa sampéyan péngin mratuduh sawijining vèrsi {{ns:Template}}:Test sing koksimpen dadi \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", anggota ater-ater \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\".",
 	"templatesandbox-prefix-label": "Ater-ater bak wedhi:",
 	"templatesandbox-page-label": "Kaca olahan:",
 	"templatesandbox-revid-label": "Olah révisi:",
