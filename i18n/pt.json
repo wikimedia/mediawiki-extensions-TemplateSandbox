@@ -13,7 +13,7 @@
 		]
 	},
 	"templatesandbox": "Testes de predefinições",
-	"templatesandbox-desc": "[[Special:TemplateSandbox|Processa uma página]] ao transcluir predefinições a partir de uma página de testes",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Compõe uma página]] transcluindo as predefinições a partir de uma área de testes",
 	"templatesandbox-suffix": "testes",
 	"templatesandbox-legend": "Testes de predefinições",
 	"templatesandbox-text": "Pode escolher um conjunto de predefinições gravadas na sua área de testes, fornecendo o prefixo da página de testes.\nPor exemplo, se deseja antever uma versão da predefinição {{ns:Template}}:Teste, que gravou com o título \"{{ns:User}}:Utilizador/{{int:templatesandbox-suffix}}/{{ns:Template}}:Teste\", utilize \"{{ns:User}}:Utilizador/{{int:templatesandbox-suffix}}\" como prefixo.",
