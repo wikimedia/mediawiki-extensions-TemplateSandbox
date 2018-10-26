@@ -6,6 +6,9 @@
 	"descriptionmsg": "templatesandbox-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.33.0"
+	},
 	"SpecialPages": {
 		"TemplateSandbox": "SpecialTemplateSandbox"
 	},

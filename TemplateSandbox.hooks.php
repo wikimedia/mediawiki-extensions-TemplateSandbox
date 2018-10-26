@@ -169,9 +169,13 @@ class TemplateSandboxHooks {
 		}
 
 		$dtitle = $dtitle === false ? $title->getPrefixedText() : $dtitle;
-		$previewhead = "<div class='previewnote'>\n" . '<h2 id="mw-previewheader">' .
-			$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse() .
-			"</h2>" . $output->parse( $note, true, /* interface */true ) . "<hr /></div>\n";
+		$previewhead = Html::rawElement(
+			'div', [ 'class' => 'previewnote' ],
+			Html::rawElement(
+				'h2', [ 'id' => 'mw-previewheader' ],
+				$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse()
+			) . $output->parseAsInterface( $note ) . '<hr />'
+		);
 
 		$pageLang = $title->getPageViewLanguage();
 		$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
