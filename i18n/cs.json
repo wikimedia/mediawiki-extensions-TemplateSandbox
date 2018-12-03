@@ -3,7 +3,8 @@
 		"authors": [
 			"Mormegil",
 			"Dvorapa",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Danny B."
 		]
 	},
 	"templatesandbox": "Pískoviště šablon",
@@ -28,7 +29,7 @@
 	"templatesandbox-invalid-prefix": "Zadaný prefix pískoviště je neplatný.",
 	"templatesandbox-prefix-not-local": "Zadaný prefix pískoviště není místní.",
 	"templatesandbox-page-or-revid": "Musíte zadat název stránky nebo číslo revize.",
-	"templatesandbox-fail-post": "<em>Protože došlo ke ztrátě dat sezení, je náhled skryt kvůli ochraně před JavaScriptovými útoky.</em>\n\n<strong>Pokud to byl legitimní pokus o náhled, zkuste to znovu.</strong>\nPokud to stále nebude fungovat, zkuste se [[Special:UserLogout|odhlásit]] a znovu přihlásit.",
+	"templatesandbox-fail-post": "<em>Protože došlo ke ztrátě dat relace, je náhled skryt kvůli ochraně před JavaScriptovými útoky.</em>\n\n<strong>Pokud to byl legitimní pokus o náhled, zkuste to znovu.</strong>\nPokud to stále nebude fungovat, zkuste se [[Special:UserLogout|odhlásit]] a znovu přihlásit.",
 	"templatesandbox-fail-post-anon": "<em>Protože nejste přihlášeni, je náhled skryt kvůli ochraně před JavaScriptovými útoky.</em>\n\n<strong>Pokud to byl legitimní pokus o náhled, [[Special:UserLogin|přihlaste se]] a zkuste to znovu.</strong>",
 	"templatesandbox-editform-need-template": "Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název šablony.",
 	"templatesandbox-editform-need-title": "Pokud chcete zobrazit náhled jiné stránky s využitím této šablony, musíte zadat název stránky.",
