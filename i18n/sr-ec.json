@@ -6,10 +6,12 @@
 			"Macofe",
 			"Сербијана",
 			"Obsuser",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
 	"templatesandbox": "Песак за шаблоне",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Рендерује страницу]] са шаблоном из песка",
 	"templatesandbox-suffix": "пијесак",
 	"templatesandbox-editform-legend": "Претпреглед странице са овим шаблоном",
 	"templatesandbox-editform-page-label": "Име странице",
