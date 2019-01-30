@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Bjankuloski06",
-			"Macofe"
+			"Macofe",
+			"Vlad5250"
 		]
 	},
-	"templatesandbox": "ШаблонскиПесочник",
+	"templatesandbox": "Шаблонски песочник",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Испишува страница]] превметнувајќи шаблони од песочник",
 	"templatesandbox-suffix": "песочник",
 	"templatesandbox-legend": "Шаблонски песочник",
