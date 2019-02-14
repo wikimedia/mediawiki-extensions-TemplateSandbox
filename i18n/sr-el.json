@@ -5,13 +5,14 @@
 			"Srdjan m",
 			"Macofe",
 			"Сербијана",
-			"Obsuser"
+			"Obsuser",
+			"Vlad5250"
 		]
 	},
 	"templatesandbox": "Pesak za šablone",
 	"templatesandbox-suffix": "pijesak",
 	"templatesandbox-editform-legend": "Vidi stranicu sa ovim šablonom",
-	"templatesandbox-editform-page-label": "Ime stranice",
+	"templatesandbox-editform-page-label": "Naslov stranice",
 	"templatesandbox-editform-view-label": "Pretpregled",
 	"templatesandbox-preview": "Pregled $2",
 	"templatesandbox-previewnote": "'''Ovo je samo pregled [[:$1]].'''\nVaše izmene još nisu sačuvane!",

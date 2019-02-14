@@ -7,14 +7,15 @@
 			"Сербијана",
 			"Obsuser",
 			"Acamicamacaraca",
-			"BadDog"
+			"BadDog",
+			"Vlad5250"
 		]
 	},
 	"templatesandbox": "Песак за шаблоне",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Рендерује страницу]] са шаблоном из песка",
 	"templatesandbox-suffix": "пијесак",
 	"templatesandbox-editform-legend": "Претпреглед странице са овим шаблоном",
-	"templatesandbox-editform-page-label": "Име странице",
+	"templatesandbox-editform-page-label": "Наслов странице",
 	"templatesandbox-editform-view-label": "Претпреглед",
 	"templatesandbox-preview": "Преглед $2",
 	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!",

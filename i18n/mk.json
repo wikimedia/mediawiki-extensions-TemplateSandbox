@@ -19,7 +19,7 @@
 	"templatesandbox-title-output": "ШаблонскиПесочник: $1",
 	"templatesandbox-editform-legend": "Преглед на страница со шаблонов",
 	"templatesandbox-editform-page-label": "Наслов на страницата",
-	"templatesandbox-editform-view-label": "Прик. преглед",
+	"templatesandbox-editform-view-label": "Прикажи преглед",
 	"templatesandbox-preview": "Преглед на $2",
 	"templatesandbox-previewnote": "'''Имајте предвид дека ова е само преглед на [[:$1]].'''\nПромените сè уште не се зачувани!",
 	"templatesandbox-invalid-title": "Наведениот наслов е неважечки.",
