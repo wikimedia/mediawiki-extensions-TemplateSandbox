@@ -21,9 +21,9 @@
 		"TemplateSandboxAlias": "TemplateSandbox.alias.php"
 	},
 	"AutoloadClasses": {
-		"TemplateSandboxHooks": "TemplateSandbox.hooks.php",
-		"SpecialTemplateSandbox": "SpecialTemplateSandbox.php",
-		"TemplateSandboxLogic": "TemplateSandboxLogic.php"
+		"TemplateSandboxHooks": "includes/TemplateSandboxHooks.php",
+		"SpecialTemplateSandbox": "includes/specials/SpecialTemplateSandbox.php",
+		"TemplateSandboxLogic": "includes/TemplateSandboxLogic.php"
 	},
 	"ResourceModules": {
 		"ext.TemplateSandbox.top": {
