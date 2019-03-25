@@ -22,7 +22,7 @@
 	},
 	"AutoloadClasses": {
 		"TemplateSandboxHooks": "includes/TemplateSandboxHooks.php",
-		"SpecialTemplateSandbox": "includes/specials/SpecialTemplateSandbox.php",
+		"SpecialTemplateSandbox": "includes/SpecialTemplateSandbox.php",
 		"TemplateSandboxLogic": "includes/TemplateSandboxLogic.php"
 	},
 	"ResourceModules": {
