@@ -6,8 +6,11 @@
 			"Sveinn í Felli"
 		]
 	},
+	"templatesandbox": "Sandkassi fyrir sniðmát",
 	"templatesandbox-suffix": "sandkassi",
+	"templatesandbox-legend": "Sandkassi fyrir sniðmát",
 	"templatesandbox-submit": "Skoða",
+	"templatesandbox-title-output": "Sandkassi fyrir sniðmát: $1",
 	"templatesandbox-editform-legend": "Forskoða síðu með þessu sniði",
 	"templatesandbox-editform-page-label": "Titill síðu",
 	"templatesandbox-editform-view-label": "Sýna forskoðun",
