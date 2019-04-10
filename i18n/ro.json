@@ -3,14 +3,15 @@
 		"authors": [
 			"Minisarm",
 			"XXN",
-			"Macofe"
+			"Macofe",
+			"Strainu"
 		]
 	},
-	"templatesandbox": "Cutia cu nisip pentru formate",
-	"templatesandbox-desc": "[[Special:TemplateSandbox|Afișează o pagină randată]] folosind formatele prezente într-o cutie cu nisip",
-	"templatesandbox-suffix": "cutie cu nisip",
-	"templatesandbox-legend": "Cutie cu nisip pentru formate",
-	"templatesandbox-prefix-label": "Prefixul cutiei cu nisip:",
+	"templatesandbox": "Pagina de teste pentru formate",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Afișează o pagină randată]] folosind formatele prezente într-o pagină de teste",
+	"templatesandbox-suffix": "teste",
+	"templatesandbox-legend": "Pagina de teste pentru formate",
+	"templatesandbox-prefix-label": "Prefixul paginii de teste:",
 	"templatesandbox-page-label": "Pagina de randat:",
 	"templatesandbox-revid-label": "Versiunea de randat:",
 	"templatesandbox-text-label": "Text wiki de randat:",
@@ -24,9 +25,9 @@
 	"templatesandbox-invalid-title": "Titlul specificat nu este corect.",
 	"templatesandbox-title-not-exists": "Titlul specificat nu există.",
 	"templatesandbox-revision-not-exists": "Versiunea specificată nu există.",
-	"templatesandbox-invalid-prefix": "Prefixul cutiei cu nisip specificat nu este corect.",
-	"templatesandbox-prefix-not-local": "Prefixul cutiei cu nisip specificat nu este local.",
-	"templatesandbox-page-or-revid": "Este obligatorie fie pagina, fie codul versiunii.",
+	"templatesandbox-invalid-prefix": "Prefixul specificat pentru pagina de test nu este corect.",
+	"templatesandbox-prefix-not-local": "Prefixul specificat pentru pagina de test nu este local.",
+	"templatesandbox-page-or-revid": "Trebuie să introduceți fie titlul unei paginii, fie codul unei versiuni.",
 	"templatesandbox-editform-need-title": "Pentru a previzualiza o altă pagină cu acest format, trebuie specificat un alt titlu de pagină.",
 	"templatesandbox-editform-invalid-title": "Titlul specificat pentru previzualizare nu este corect.",
 	"templatesandbox-editform-title-not-exists": "Titlul specificat pentru previzualizare nu există."
