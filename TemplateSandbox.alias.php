@@ -53,6 +53,11 @@ $specialPageAliases['ce'] = [
 	'TemplateSandbox' => [ 'Кепийн_ловзаран_майда' ],
 ];
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = [
+	'TemplateSandbox' => [ 'Pískoviště_šablon' ],
+];
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'TemplateSandbox' => [ 'Vorlagenspielwiese' ],
