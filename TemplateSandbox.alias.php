@@ -158,6 +158,11 @@ $specialPageAliases['ru'] = [
 	'TemplateSandbox' => [ 'Песочница_для_шаблонов' ],
 ];
 
+/** Slovak (slovenčina) */
+$specialPageAliases['sk'] = [
+	'TemplateSandbox' => [ 'ŠablónovéPieskovisko' ],
+];
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $specialPageAliases['sr-ec'] = [
 	'TemplateSandbox' => [ 'Песак_за_шаблоне' ],
