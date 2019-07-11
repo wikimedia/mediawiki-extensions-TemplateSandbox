@@ -22,6 +22,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 	public function execute( $par ) {
 		$this->setHeaders();
+		$this->addHelpLink( 'Help:Extension:TemplateSandbox' );
 		$this->checkPermissions();
 
 		$request = $this->getRequest();
