@@ -174,7 +174,10 @@ class TemplateSandboxHooks {
 			Html::rawElement(
 				'h2', [ 'id' => 'mw-previewheader' ],
 				$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse()
-			) . $output->parseAsInterface( $note ) . '<hr />'
+			) .
+			Html::rawElement( 'div', [ 'class' => 'warningbox' ],
+				$output->parseAsInterface( $note )
+			)
 		);
 
 		$pageLang = $title->getPageViewLanguage();
