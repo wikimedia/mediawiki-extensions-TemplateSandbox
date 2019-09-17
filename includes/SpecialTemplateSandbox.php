@@ -89,7 +89,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			}
 		}
 		if ( $error !== false ) {
-			$this->getOutput()->wrapWikiMsg( "<div class='previewnote'>\n$1\n</div>", $error );
+			$this->getOutput()->wrapWikiMsg( "<div class='previewnote errorbox'>\n$1\n</div>", $error );
 		} elseif ( $this->output !== null ) {
 			// Wrap output in a div for proper language markup.
 			$pageLang = $this->title->getPageViewLanguage();
@@ -101,7 +101,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			// Anons have predictable edit tokens, only do the JS/CSS preview for logged-in users.
 			if ( $user->isAnon() ) {
 				$this->getOutput()->wrapWikiMsg(
-					"<div class='previewnote'>\n$1\n</div>", 'templatesandbox-anon-limited-preview'
+					"<div class='previewnote warningbox'>\n$1\n</div>", 'templatesandbox-anon-limited-preview'
 				);
 			} else {
 				TemplateSandboxLogic::addSubpageHandlerToOutput( $this->prefixes, $output );
