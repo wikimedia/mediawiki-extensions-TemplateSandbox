@@ -23,7 +23,7 @@
 	"templatesandbox-editform-page-label": "Sidtitel",
 	"templatesandbox-editform-view-label": "Visa förhandsgranskning",
 	"templatesandbox-preview": "Förhandsvisning av $2",
-	"templatesandbox-previewnote": "'''Kom ihåg att detta bara är en förhandsvisning av [[:$1]].'''\nDina ändringar har ännu inte sparats!",
+	"templatesandbox-previewnote": "'''Kom ihåg att detta bara är en förhandsgranskning av [[:$1]].'''\nDina ändringar har ännu inte sparats!",
 	"templatesandbox-invalid-title": "Titeln du angav är ogiltig.",
 	"templatesandbox-title-not-exists": "Titeln du angav finns inte.",
 	"templatesandbox-revision-not-exists": "Versionen du angav finns inte.",
