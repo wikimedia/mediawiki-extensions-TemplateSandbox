@@ -204,6 +204,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 		}
 
 		// Title and Content are validated by validatePrefixParam and validatePageParam
+		'@phan-var Title $title';
+		'@phan-var Content $content';
 
 		$page = WikiPage::factory( $title );
 		$popts = $page->makeParserOptions( $this->getContext() );

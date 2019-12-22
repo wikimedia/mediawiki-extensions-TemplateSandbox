@@ -393,6 +393,7 @@ class TemplateSandboxHooks {
 			'templatesandboxcontentformat' => null,
 		];
 		$params = [
+			// @phan-suppress-next-line PhanImpossibleCondition
 			'prefix' => $params['templatesandboxprefix'] ?: [],
 			'title' => $params['templatesandboxtitle'],
 			'text' => $params['templatesandboxtext'],
@@ -434,6 +435,7 @@ class TemplateSandboxHooks {
 				$module->dieWithError( [ 'apierror-no-direct-editing', $model, $escName ] );
 			}
 
+			// @phan-suppress-next-line PhanImpossibleCondition
 			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat();
 			if ( !$contentHandler->isSupportedFormat( $format ) ) {
 				$module->dieWithError( [ 'apierror-badformat', $format, $model, $escName ] );
