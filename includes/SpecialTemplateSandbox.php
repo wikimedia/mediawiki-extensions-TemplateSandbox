@@ -108,8 +108,11 @@ class SpecialTemplateSandbox extends SpecialPage {
 			}
 			$output->addParserOutput( $this->output );
 
-			$output->addHTML( Html::rawElement( 'div', [ 'class' => 'limitreport' ],
-				EditPage::getPreviewLimitReport( $this->output ) ) );
+			$output->addHTML( Html::rawElement(
+				'div',
+				[ 'class' => 'limitreport', 'style' => 'clear:both' ],
+				EditPage::getPreviewLimitReport( $this->output )
+			) );
 			$output->addModules( 'mediawiki.collapseFooterLists' );
 
 			$titleText = $this->output->getTitleText();
