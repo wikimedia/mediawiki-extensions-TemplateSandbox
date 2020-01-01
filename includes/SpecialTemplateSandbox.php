@@ -66,7 +66,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 				'rows' => 5,
 			],
 		], $this->getContext() );
-		$form->setMethod( 'post' );
 		$form->setSubmitCallback( [ $this, 'onSubmit' ] );
 		$form->setWrapperLegend( $this->msg( 'templatesandbox-legend' ) );
 		$form->addHeaderText( $this->msg( 'templatesandbox-text' )->parseAsBlock() );
