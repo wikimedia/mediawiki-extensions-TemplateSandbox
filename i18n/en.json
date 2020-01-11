@@ -25,6 +25,7 @@
 	"templatesandbox-invalid-title": "The title you specified is invalid.",
 	"templatesandbox-title-not-exists": "The title you specified does not exist.",
 	"templatesandbox-revision-not-exists": "The revision you specified does not exist.",
+	"templatesandbox-revision-no-content": "The revision you specified has no content, or you do not have permission to view it.",
 	"templatesandbox-invalid-prefix": "The sandbox prefix you specified is invalid.",
 	"templatesandbox-prefix-not-local": "The sandbox prefix you specified is not local.",
 	"templatesandbox-page-or-revid": "You must enter either a page title or a revision ID number.",

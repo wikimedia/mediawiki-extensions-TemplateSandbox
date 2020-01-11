@@ -29,6 +29,7 @@
 	"templatesandbox-invalid-title": "Error message displayed when the title specified in the special page is invalid.",
 	"templatesandbox-title-not-exists": "Error message displayed when the title specified in the special page does not exist.",
 	"templatesandbox-revision-not-exists": "Error message displayed when the rev_id specified in the special page does not exist.",
+	"templatesandbox-revision-no-content": "Error message displayed when the rev_id specified in the special page does not have a valid content.",
 	"templatesandbox-invalid-prefix": "Error message displayed when the sandbox prefix specified in the special page is invalid.",
 	"templatesandbox-prefix-not-local": "Error message displayed when the sandbox prefix specified in the special page is not local.",
 	"templatesandbox-page-or-revid": "Error message displayed when neither a page title nor rev_id is given in the special page.",

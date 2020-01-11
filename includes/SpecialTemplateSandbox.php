@@ -151,6 +151,10 @@ class SpecialTemplateSandbox extends SpecialPage {
 		if ( $revision === null ) {
 			return $this->msg( 'templatesandbox-revision-not-exists' )->parseAsBlock();
 		}
+		$content = $revision->getContent( Revision::FOR_THIS_USER, $this->getUser() );
+		if ( $content === null ) {
+			return $this->msg( 'templatesandbox-revision-no-content' )->parseAsBlock();
+		}
 		return true;
 	}
 
@@ -198,6 +202,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 		} else {
 			$content = $rev->getContent( Revision::FOR_THIS_USER, $this->getUser() );
 		}
+
+		// Title and Content are validated by validatePrefixParam and validatePageParam
 
 		$page = WikiPage::factory( $title );
 		$popts = $page->makeParserOptions( $this->getContext() );
