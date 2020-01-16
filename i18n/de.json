@@ -23,6 +23,7 @@
 	"templatesandbox-invalid-title": "Der angegebene Titel ist ungültig.",
 	"templatesandbox-title-not-exists": "Der angegebene Titel ist nicht vorhanden.",
 	"templatesandbox-revision-not-exists": "Die angegebene Version ist nicht vorhanden.",
+	"templatesandbox-revision-no-content": "Die angegebene Version hat keinen Inhalt oder du hast keine Berechtigung, sie anzuzeigen.",
 	"templatesandbox-invalid-prefix": "Das angegebene Spielwiesenpräfix ist ungültig.",
 	"templatesandbox-prefix-not-local": "Das angegebene Spielwiesenpräfix ist nicht lokal.",
 	"templatesandbox-page-or-revid": "Du musst entweder einen Seitentitel oder eine Versionskennung angeben.",
