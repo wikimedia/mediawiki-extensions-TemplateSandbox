@@ -11,7 +11,7 @@ class TemplateSandboxLogic {
 	/** Prefixes to search for sandbox templates */
 	private $prefixes = [];
 
-	/** Title to replace with $content*/
+	/** Title to replace with $content */
 	private $title = null;
 
 	/** Content to replace $title */
