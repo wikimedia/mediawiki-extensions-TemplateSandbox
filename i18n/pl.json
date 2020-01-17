@@ -7,7 +7,8 @@
 			"WTM",
 			"Chrumps",
 			"Tar Lócesilion",
-			"Woytecr"
+			"Woytecr",
+			"Rail"
 		]
 	},
 	"templatesandbox": "Brudnopis do szablonów",
@@ -29,6 +30,7 @@
 	"templatesandbox-invalid-title": "Wprowadzony tytuł jest nieprawidłowy.",
 	"templatesandbox-title-not-exists": "Podany tytuł nie istnieje.",
 	"templatesandbox-revision-not-exists": "Wybrana wersja nie istnieje.",
+	"templatesandbox-revision-no-content": "Podana przez ciebie wersja nie zawiera żadnej treści, lub nie posiadasz uprawnień do jej przeglądania.",
 	"templatesandbox-invalid-prefix": "Podany prefiks do brudnopisu nie istnieje.",
 	"templatesandbox-prefix-not-local": "Podany prefiks do brudnopisu nie jest lokalny.",
 	"templatesandbox-page-or-revid": "Musisz wpisać nazwę strony albo numer ID wersji.",

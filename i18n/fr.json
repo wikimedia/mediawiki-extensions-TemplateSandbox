@@ -6,7 +6,8 @@
 			"Gomoko",
 			"Npettiaux",
 			"Seb35",
-			"Wladek92"
+			"Wladek92",
+			"Thibaut120094"
 		]
 	},
 	"templatesandbox": "Bac à sable de modèle",
@@ -28,7 +29,7 @@
 	"templatesandbox-invalid-title": "Le titre que vous avez spécifié n’est pas valide.",
 	"templatesandbox-title-not-exists": "Le titre que vous avez spécifié n’existe pas.",
 	"templatesandbox-revision-not-exists": "La révision que vous avez spécifiée n’existe pas.",
-	"templatesandbox-revision-no-content": "La révision que vous avez spécifié n’a pas de contenu, ou vous n’avez pas le droit de le voir.",
+	"templatesandbox-revision-no-content": "La révision que vous avez spécifiée n’a pas de contenu, ou vous n’avez pas le droit de le voir.",
 	"templatesandbox-invalid-prefix": "Le préfixe de bac à sable que vous avez spécifié n’est pas valide.",
 	"templatesandbox-prefix-not-local": "Le préfixe de bac à sable que vous avez spécifié n’est pas local.",
 	"templatesandbox-page-or-revid": "Vous devez saisir soit un titre de page, soit un numéro d'identifiant de révision.",

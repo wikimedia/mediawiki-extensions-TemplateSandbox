@@ -29,6 +29,7 @@
 	"templatesandbox-invalid-title": "O título que você especificou é inválido.",
 	"templatesandbox-title-not-exists": "O título que você especificado não existe.",
 	"templatesandbox-revision-not-exists": "A revisão que você especificou não existe.",
+	"templatesandbox-revision-no-content": "A revisão que você especificou não possui conteúdo ou você não tem permissão para visualizá-la.",
 	"templatesandbox-invalid-prefix": "O prefixo da página de testes que você especificou é inválido.",
 	"templatesandbox-prefix-not-local": "O prefixo da página de testes que você especificou não é local.",
 	"templatesandbox-page-or-revid": "Você deve inserir um título de página ou um número de ID da revisão.",

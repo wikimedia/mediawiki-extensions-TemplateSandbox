@@ -31,6 +31,7 @@
 	"templatesandbox-invalid-title": "指定標題無效。",
 	"templatesandbox-title-not-exists": "指定的標題不存在。",
 	"templatesandbox-revision-not-exists": "指定的修訂不存在。",
+	"templatesandbox-revision-no-content": "您指定的修訂沒有內容，或是您沒有權限來檢視它。",
 	"templatesandbox-invalid-prefix": "指定的沙盒字首無效。",
 	"templatesandbox-prefix-not-local": "指定的沙盒字首不在本地。",
 	"templatesandbox-page-or-revid": "您必須輸入一個頁面標題或修訂 ID 編號。",

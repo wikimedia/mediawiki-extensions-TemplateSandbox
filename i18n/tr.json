@@ -4,7 +4,8 @@
 			"Sadrettin",
 			"TmY e12",
 			"ToprakM",
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"SwornToTranslate29"
 		]
 	},
 	"templatesandbox": "Şablon sandbox",
@@ -26,6 +27,7 @@
 	"templatesandbox-invalid-title": "Belirttiğiniz başlık geçersiz.",
 	"templatesandbox-title-not-exists": "Belirttiğiniz başlık mevcut değil.",
 	"templatesandbox-revision-not-exists": "Belirttiğiniz sürüm mevcut değil.",
+	"templatesandbox-revision-no-content": "Belirttiğiniz düzenlemede içerik bulunmuyor ya da bunu görüntüleme izniniz yok.",
 	"templatesandbox-invalid-prefix": "Belirttiğiniz sandbox öneki geçersiz.",
 	"templatesandbox-prefix-not-local": "Belirttiğiniz sandbox öneki yerel değil.",
 	"templatesandbox-page-or-revid": "Bir sayfa başlığı veya düzeltme kimlik numarası girmelisiniz.",
