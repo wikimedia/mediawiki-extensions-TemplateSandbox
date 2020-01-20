@@ -25,6 +25,7 @@
 	"templatesandbox-invalid-title": "Наведениот наслов е неважечки.",
 	"templatesandbox-title-not-exists": "Наведениот наслов не постои.",
 	"templatesandbox-revision-not-exists": "Наведената преработка не постои.",
+	"templatesandbox-revision-no-content": "Укажаната преработка нема содржина или немате дозвола да ја гледате.",
 	"templatesandbox-invalid-prefix": "Укажаната претставка за песочник не е важечка.",
 	"templatesandbox-prefix-not-local": "Укажаната претставка за песочник не е месна.",
 	"templatesandbox-page-or-revid": "Мора да внесете наслов на страницата или број (назнака) на преработката.",

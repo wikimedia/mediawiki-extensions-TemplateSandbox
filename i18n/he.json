@@ -28,6 +28,7 @@
 	"templatesandbox-invalid-title": "הכותרת שציינת אינה תקינה.",
 	"templatesandbox-title-not-exists": "הכותרת שציינת אינה קיימת.",
 	"templatesandbox-revision-not-exists": "הגרסה שציינת אינה קיימת.",
+	"templatesandbox-revision-no-content": "בגרסה שציינת אין תוכן, או שאין לך הרשאה לצפות בו.",
 	"templatesandbox-invalid-prefix": "תחילית ארגז החול שציינת אינה קיימת.",
 	"templatesandbox-prefix-not-local": "תחילית ארגז החול שציינת אינה מקומית.",
 	"templatesandbox-page-or-revid": "יש לציין כותרת דף או מספר מזהה של גרסה.",
