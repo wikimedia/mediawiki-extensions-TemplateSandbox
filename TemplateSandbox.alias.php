@@ -125,7 +125,7 @@ $specialPageAliases['lb'] = [
 
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = [
-	'TemplateSandbox' => [ 'ШаблонскиПесочник' ],
+	'TemplateSandbox' => [ 'ПесочникНаПредлошка', 'ШаблонскиПесочник' ],
 ];
 
 /** Marathi (मराठी) */
