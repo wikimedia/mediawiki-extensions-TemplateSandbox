@@ -3,14 +3,15 @@
 		"authors": [
 			"ArnoLagrange",
 			"Macofe",
-			"Mirin"
+			"Mirin",
+			"Robin van der Vliet"
 		]
 	},
 	"templatesandbox": "Ŝablona provejo",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Montru paĝon]] uzante ŝablonojn el provejo",
 	"templatesandbox-suffix": "Provejo",
 	"templatesandbox-legend": "Ŝablona provejo",
-	"templatesandbox-text": "Vi povas elekti aron da ŝablonoj konservitaj en via proveja spaco uzante taŭgan provejan prefikson.\n\nEkzemple, se vi volas antaŭvidi version de {{ns:Template}}:provo kiun vi konservis kiel \"{{ns:User}}:uzantonomo/{{int:templatesandbox-suffix}}/{{ns:Template}}:provo\", uzu \"{{ns:User}}:uzantonomo/{{int:templatesandbox-suffix}}\" kiel prefikso.",
+	"templatesandbox-text": "Vi povas elekti aron da ŝablonoj konservitaj en via proveja spaco uzante taŭgan provejan prefikson.\n\nEkzemple, se vi volas antaŭvidi version de {{ns:Template}}:provo kiun vi konservis kiel \"{{ns:User}}:uzantnomo/{{int:templatesandbox-suffix}}/{{ns:Template}}:provo\", uzu \"{{ns:User}}:uzantnomo/{{int:templatesandbox-suffix}}\" kiel prefikso.",
 	"templatesandbox-prefix-label": "Proveja prefikso:",
 	"templatesandbox-page-label": "Paĝaspekto:",
 	"templatesandbox-revid-label": "Aspekto de la versio:",
