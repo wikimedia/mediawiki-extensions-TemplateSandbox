@@ -29,6 +29,7 @@
 	"templatesandbox-invalid-title": "De opgegeven pagina is ongeldig.",
 	"templatesandbox-title-not-exists": "De titel die u hebt opgegeven bestaat niet.",
 	"templatesandbox-revision-not-exists": "De versie die u hebt opgegeven bestaat niet.",
+	"templatesandbox-revision-no-content": "De opgegeven versie heeft geen inhoud, of u hebt geen toestemming om deze te bekijken.",
 	"templatesandbox-invalid-prefix": "Het zandbakvoorvoegsel dat u hebt opgegeven is ongeldig.",
 	"templatesandbox-prefix-not-local": "Het zandbakvoorvoegsel dat u hebt opgegeven is niet lokaal.",
 	"templatesandbox-page-or-revid": "U moet een paginanaam of versienummer opgeven.",
