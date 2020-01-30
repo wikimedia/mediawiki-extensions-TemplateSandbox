@@ -79,9 +79,9 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$form->displayForm( false );
 		}
 
+		$user = $this->getUser();
 		$error = false;
 		if ( $this->getRequest()->wasPosted() ) {
-			$user = $this->getUser();
 			if ( $user->isAnon() && !$user->isAllowed( 'edit' ) ) {
 				$error = 'templatesandbox-fail-post-anon';
 			} elseif ( !$user->matchEditToken( $request->getVal( 'wpEditToken' ), '', $request ) ) {
