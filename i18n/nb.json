@@ -26,6 +26,7 @@
 	"templatesandbox-invalid-title": "Tittelen du oppga er ugyldig.",
 	"templatesandbox-title-not-exists": "Tittelen du oppga eksisterer ikke.",
 	"templatesandbox-revision-not-exists": "Versjonen du oppga eksisterer ikke.",
+	"templatesandbox-revision-no-content": "Revisjonen du anga har ikke noe innhold, eller du har ikke tillatelse til å vise det.",
 	"templatesandbox-invalid-prefix": "Sandkasse-prefikset du oppga er ugyldig.",
 	"templatesandbox-prefix-not-local": "Sandboks-prefikset du oppga er ikke lokalt.",
 	"templatesandbox-page-or-revid": "Du må angi enten en sidetittel eller et revisjonsnummer.",
