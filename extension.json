@@ -30,6 +30,31 @@
 		"ext.TemplateSandbox": {
 			"scripts": "ext.TemplateSandbox.js",
 			"dependencies": "ext.TemplateSandbox.top"
+		},
+		"ext.TemplateSandbox.visualeditor": {
+			"messages": [
+				"templatesandbox-editform-view-label",
+				"templatesandbox-editform-page-label",
+				"templatesandbox-editform-legend",
+				"templatesandbox-editform-invalid-title",
+				"templatesandbox-editform-title-not-exists",
+				"templatesandbox-editform-view-label",
+				"templatesandbox-preview"
+			],
+			"targets": [
+				"desktop"
+			],
+			"packageFiles": [
+				"ext.TemplateSandbox.VisualEditor.js",
+				{
+					"name": "namespaces.json",
+					"callback": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::getResourceLoaderData"
+				}
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.widgets"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -42,6 +67,13 @@
 		"AlternateEditPreview": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::templateSandboxPreview",
 		"APIGetAllowedParams": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onAPIGetAllowedParams",
 		"ApiMakeParserOptions": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onApiMakeParserOptions"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.TemplateSandbox.visualeditor"
+			]
+		}
 	},
 	"config": {
 		"TemplateSandboxEditNamespaces": {
