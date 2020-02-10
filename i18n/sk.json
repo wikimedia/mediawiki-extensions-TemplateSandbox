@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Teslaton",
-			"Macofe"
+			"Macofe",
+			"TomášPolonec"
 		]
 	},
 	"templatesandbox": "Šablónové pieskovisko",
@@ -27,8 +28,8 @@
 	"templatesandbox-invalid-prefix": "Zadaný prefix pieskoviska je neplatný.",
 	"templatesandbox-prefix-not-local": "Zadaný prefix pieskoviska nie je lokálny.",
 	"templatesandbox-page-or-revid": "Musíte zadať názov stránky alebo číslo revízie.",
-	"templatesandbox-fail-post": "<em>Keďže {{SITENAME}} má povolené surové HTML a došlo k strate dát návštevy, je náhľad kvôli ochrane pred JavaScriptovými útokmi skrytý.</em>\n\n<strong>Pokiaľ šlo o legitímny pokus o náhľad, skúste to znova.</strong>\nAk sa náhľad ani potom nezobrazí, skúste sa [[Special:UserLogout|odhlásiť]] a znova prihlásiť.",
-	"templatesandbox-fail-post-anon": "<em>Keďže {{SITENAME}} má povolené surové HTML a vy nie ste prihlásení, je náhľad kvôli ochrane pred JavaScriptovými útokmi skrytý.</em>\n\n<strong>Pokiaľ šlo o legitímny pokus o náhľad, [[Special:UserLogin|prihláste sa]] a skúste to znova.</strong>",
+	"templatesandbox-fail-post": "<em>Keďže došlo k strate dát relácie, je náhľad kvôli ochrane pred JavaScriptovými útokmi skrytý.</em>\n\n<strong>Pokiaľ šlo o legitímny pokus o náhľad, skúste to znova.</strong>\nAk sa náhľad ani potom nezobrazí, skúste sa [[Special:UserLogout|odhlásiť]] a znova prihlásiť.",
+	"templatesandbox-fail-post-anon": "<em>Keďže nie ste prihlásení, je náhľad kvôli ochrane pred JavaScriptovými útokmi skrytý.</em>\n\n<strong>Pokiaľ šlo o legitímny pokus o náhľad, [[Special:UserLogin|prihláste sa]] a skúste to znova.</strong>",
 	"templatesandbox-editform-need-template": "Ak chcete zobraziť náhľad inej stránky s využitím tejto šablóny, musíte zadať názov šablóny.",
 	"templatesandbox-editform-need-title": "Ak chcete zobraziť náhľad inej stránky s využitím tejto šablóny, musíte zadať názov stránky.",
 	"templatesandbox-editform-invalid-template": "Zadaný názov šablóny je neplatný.",
