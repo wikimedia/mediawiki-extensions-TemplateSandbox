@@ -80,6 +80,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		}
 
 		$user = $this->getUser();
+		$output = $this->getOutput();
 		$error = false;
 		if ( $this->getRequest()->wasPosted() ) {
 			if ( $user->isAnon() && !$user->isAllowed( 'edit' ) ) {
@@ -89,7 +90,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			}
 		}
 		if ( $error !== false ) {
-			$this->getOutput()->wrapWikiMsg( "<div class='previewnote errorbox'>\n$1\n</div>", $error );
+			$output->wrapWikiMsg( "<div class='previewnote errorbox'>\n$1\n</div>", $error );
 		} elseif ( $this->output !== null ) {
 			// Wrap output in a div for proper language markup.
 			$pageLang = $this->title->getPageViewLanguage();
@@ -97,10 +98,9 @@ class SpecialTemplateSandbox extends SpecialPage {
 				'class' => 'mw-content-' . $pageLang->getDir() ];
 			$this->output->setText( Html::rawElement( 'div', $attribs, $this->output->getRawText() ) );
 
-			$output = $this->getOutput();
 			// Anons have predictable edit tokens, only do the JS/CSS preview for logged-in users.
 			if ( $user->isAnon() ) {
-				$this->getOutput()->wrapWikiMsg(
+				$output->wrapWikiMsg(
 					"<div class='previewnote warningbox'>\n$1\n</div>", 'templatesandbox-anon-limited-preview'
 				);
 			} else {
