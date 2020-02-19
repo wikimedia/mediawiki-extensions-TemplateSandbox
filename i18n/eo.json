@@ -23,13 +23,13 @@
 	"templatesandbox-editform-view-label": "Montri antaŭrigardon",
 	"templatesandbox-preview": "Antaŭvido de $2",
 	"templatesandbox-previewnote": "'''Memoru, ke ĉi tio estas nur antaŭrigardo de [[:$1]].''' \nViaj ŝanĝoj ne ankoraŭ estas konservitaj!",
-	"templatesandbox-invalid-title": "La titolo kiun vi enmetis estas malvalida.",
+	"templatesandbox-invalid-title": "La titolo kiun vi enmetis estas nevalida.",
 	"templatesandbox-title-not-exists": "La titolo kiun vi menciis ne ekzistas.",
 	"templatesandbox-revision-not-exists": "La versio kiun vi menciis ne ekzistas.",
-	"templatesandbox-invalid-prefix": "La proveja prefikso kiun vi menciis estas malvalida.",
+	"templatesandbox-invalid-prefix": "La proveja prefikso kiun vi menciis estas nevalida.",
 	"templatesandbox-prefix-not-local": "La proveja prefikso kiun vi menciis ne estas loka.",
 	"templatesandbox-page-or-revid": "Vi nepre enigu ĉu paĝtitolon, ĉu identigan numeron.",
 	"templatesandbox-editform-need-title": "Por antaŭvidi alian paĝon kun ĉi tiu ŝablono, paĝtitolo nepre estu precizigita.",
-	"templatesandbox-editform-invalid-title": "La titolo kiun vi menciis por antaŭrigardo estas malvalida.",
+	"templatesandbox-editform-invalid-title": "La titolo kiun vi menciis por antaŭrigardo estas nevalida.",
 	"templatesandbox-editform-title-not-exists": "La titolo kiun vi menciis por antaŭrigardo ne ekzistas."
 }
