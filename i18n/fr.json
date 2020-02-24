@@ -26,7 +26,7 @@
 	"templatesandbox-editform-page-label": "Titre de la page",
 	"templatesandbox-editform-view-label": "Afficher l’aperçu",
 	"templatesandbox-preview": "Aperçu de $2",
-	"templatesandbox-previewnote": "'''Souvenez-vous que ce n’est qu’une prévisualisation de [[:$1]].'''\nVos modifications n’ont pas encore été enregistrées !",
+	"templatesandbox-previewnote": "'''Rappelez-vous que ce n’est qu’une prévisualisation de [[:$1]].'''\nVos modifications n’ont pas encore été enregistrées !",
 	"templatesandbox-invalid-title": "Le titre que vous avez spécifié n’est pas valide.",
 	"templatesandbox-title-not-exists": "Le titre que vous avez spécifié n’existe pas.",
 	"templatesandbox-revision-not-exists": "La révision que vous avez spécifiée n’existe pas.",
