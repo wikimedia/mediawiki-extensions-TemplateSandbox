@@ -30,6 +30,7 @@
 	"templatesandbox-invalid-title": "Вказана назва неприпустима.",
 	"templatesandbox-title-not-exists": "Вказана назва не існує.",
 	"templatesandbox-revision-not-exists": "Вказаної версії не існує.",
+	"templatesandbox-revision-no-content": "Вказана вами версія або не має вмісту, або ви не маєте прав на її перегляд.",
 	"templatesandbox-invalid-prefix": "Вказаний префікс пісочниці некоректний.",
 	"templatesandbox-prefix-not-local": "Вказаний префікс пісочниці не є локальним.",
 	"templatesandbox-page-or-revid": "Ви повинні ввести назву сторінки або ID-номер версії.",
