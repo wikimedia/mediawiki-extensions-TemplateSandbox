@@ -3,7 +3,8 @@
 		"authors": [
 			"Shirayuki",
 			"Macofe",
-			"Yusuke1109"
+			"Yusuke1109",
+			"Kkairri"
 		]
 	},
 	"templatesandbox": "テンプレートのサンドボックス",
@@ -33,5 +34,5 @@
 	"templatesandbox-editform-invalid-template": "指定したテンプレート名は無効です。",
 	"templatesandbox-editform-invalid-title": "プレビューに指定したページ名は無効です。",
 	"templatesandbox-editform-title-not-exists": "プレビューに指定したページは存在しません。",
-	"templatesandbox-apihelp-contentmodel": "$1templatesandboxtextのコンテンツ・モデル"
+	"templatesandbox-apihelp-contentmodel": "$1templatesandboxtextのコンテンツモデル"
 }
