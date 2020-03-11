@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\SlotRecord;
 use Wikimedia\ScopedCallback;
 
 /**
@@ -116,8 +118,10 @@ class TemplateSandboxLogic {
 			foreach ( $prefixes as $prefix ) {
 				$newtitle = Title::newFromText( $prefix . '/' . $titleText );
 				if ( $newtitle instanceof Title && $newtitle->exists() ) {
-					$rev = Revision::newFromTitle( $newtitle );
-					$content = $rev ? $rev->getContent() : null;
+					$rev = MediaWikiServices::getInstance()
+						->getRevisionLookup()
+						->getRevisionByTitle( $newtitle );
+					$content = $rev ? $rev->getContent( SlotRecord::MAIN ) : null;
 					if ( $content ) {
 						$cache[$titleText] = $content;
 						return $content;

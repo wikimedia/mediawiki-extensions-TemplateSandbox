@@ -1,4 +1,9 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Revision\SlotRecord;
+
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
 
@@ -189,20 +194,28 @@ class SpecialTemplateSandbox extends SpecialPage {
 	 * @return Status
 	 */
 	public function onSubmit( $data, $form ) {
+		$services = MediaWikiServices::getInstance();
+		$revisionLookup = $services->getRevisionLookup();
 		if ( $data['revid'] !== '' && $data['revid'] !== null ) {
-			$rev = Revision::newFromId( $data['revid'] );
-			$title = $rev->getTitle();
+			$rev = $revisionLookup->getRevisionById( $data['revid'] );
+			$title = Title::newFromLinkTarget( $rev->getPageAsLinkTarget() );
 		} elseif ( $data['page'] !== '' && $data['page'] !== null ) {
 			$title = Title::newFromText( $data['page'] );
-			$rev = Revision::newFromTitle( $title );
+			$rev = $revisionLookup->getRevisionByTitle( $title );
 		} else {
 			return Status::newFatal( 'templatesandbox-page-or-revid' );
 		}
 
 		if ( $data['text'] !== '' && $data['text'] !== null ) {
-			$content = $rev->getContentHandler()->unserializeContent( $data['text'] );
+			$content = $services->getContentHandlerFactory()
+				->getContentHandler( $rev->getSlot( SlotRecord::MAIN )->getModel() )
+				->unserializeContent( $data['text'] );
 		} else {
-			$content = $rev->getContent( Revision::FOR_THIS_USER, $this->getUser() );
+			$content = $rev->getContent(
+				SlotRecord::MAIN,
+				RevisionRecord::FOR_THIS_USER,
+				$this->getUser()
+			);
 		}
 
 		// Title and Content are validated by validatePrefixParam and validatePageParam
