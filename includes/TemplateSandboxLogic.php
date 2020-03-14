@@ -94,12 +94,12 @@ class TemplateSandboxLogic {
 			}
 		);
 
-		LinkCache::singleton()->clear();
+		MediaWikiServices::getInstance()->getLinkCache()->clear();
 
 		return new ScopedCallback( function () use ( $id ) {
 			global $wgHooks;
 			unset( $wgHooks['TitleExists'][$id] );
-			LinkCache::singleton()->clear();
+			MediaWikiServices::getInstance()->getLinkCache()->clear();
 		} );
 	}
 
