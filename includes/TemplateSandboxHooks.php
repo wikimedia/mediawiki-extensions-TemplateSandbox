@@ -110,8 +110,8 @@ class TemplateSandboxHooks {
 				$sectionTitle = $editpage->summary;
 			}
 
-			if ( $editpage->getArticle()->exists() ) {
-				$content = $editpage->getArticle()->replaceSectionContent(
+			if ( $editpage->getArticle()->getPage()->exists() ) {
+				$content = $editpage->getArticle()->getPage()->replaceSectionContent(
 					$editpage->section, $content, $sectionTitle, $editpage->edittime
 				);
 			} else {
@@ -121,7 +121,7 @@ class TemplateSandboxHooks {
 			}
 
 			// Apply PST to the to-be-saved text
-			$popts = $editpage->getArticle()->makeParserOptions(
+			$popts = $editpage->getArticle()->getPage()->makeParserOptions(
 				$context
 			);
 			$popts->setIsPreview( true );
