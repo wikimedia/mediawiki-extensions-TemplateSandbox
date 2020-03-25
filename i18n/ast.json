@@ -24,6 +24,7 @@
 	"templatesandbox-invalid-title": "El títulu que conseñasti nun ye válidu.",
 	"templatesandbox-title-not-exists": "El títulu que conseñasti nun esiste.",
 	"templatesandbox-revision-not-exists": "La revisión que conseñasti nun esiste.",
+	"templatesandbox-revision-no-content": "La revisión qu'especificasti nun tien conteníu, o nun tienes permisu pa velu.",
 	"templatesandbox-invalid-prefix": "El prefixu de zona de pruebes que conseñasti ye inválidu.",
 	"templatesandbox-prefix-not-local": "El prefixu de zona de pruebes que conseñasti nun ye llocal.",
 	"templatesandbox-page-or-revid": "Tienes d'escribir o'l títulu d'una páxina o un númberu ID de revisión.",
