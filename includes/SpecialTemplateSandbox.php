@@ -154,11 +154,20 @@ class SpecialTemplateSandbox extends SpecialPage {
 		if ( $value === '' || $value === null ) {
 			return true;
 		}
-		$revision = Revision::newFromId( $value );
-		if ( $revision === null ) {
+
+		$revisionRecord = MediaWikiServices::getInstance()
+			->getRevisionLookup()
+			->getRevisionById( $value );
+		if ( $revisionRecord === null ) {
 			return $this->msg( 'templatesandbox-revision-not-exists' )->parseAsBlock();
 		}
-		$content = $revision->getContent( Revision::FOR_THIS_USER, $this->getUser() );
+
+		$content = $revisionRecord->getContent(
+			SlotRecord::MAIN,
+			RevisionRecord::FOR_THIS_USER,
+			$this->getUser()
+		);
+
 		if ( $content === null ) {
 			return $this->msg( 'templatesandbox-revision-no-content' )->parseAsBlock();
 		}
