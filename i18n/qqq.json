@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Brad Jorsch",
+			"Liuxinyu970226",
 			"Raymond",
 			"Shirayuki",
-			"Umherirrender",
-			"Liuxinyu970226"
+			"Umherirrender"
 		]
 	},
 	"templatesandbox": "{{doc-special|TemplateSandbox}}\nThe name of the [[mw:Extension:TemplateSandbox|TemplateSandbox extension]].",
