@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kghbln",
 			"Metalhead64"
 		]
 	},
 	"templatesandbox": "Vorlagenspielwiese",
-	"templatesandbox-desc": "Ergänzt eine Spielwiese zum [[Special:TemplateSandbox|Rendern von Seiten]], die Vorlagen enthalten",
+	"templatesandbox-desc": "Erweitert das Wiki um eine [[Special:TemplateSandbox|Spezialseite]] zum testweisen Darstellen von Vorlagen auf Seiten",
 	"templatesandbox-suffix": "Spielwiese",
 	"templatesandbox-legend": "Vorlagenspielwiese",
 	"templatesandbox-text": "Du kannst einen Satz an Vorlagen auswählen, die in deinem Spielwiesenbereich gespeichert sind, indem du ein geeignetes Spielwiesenpräfix verwendest.\nWenn du beispielsweise eine Version von {{ns:Template}}:Test vorschauen möchtest, die du als „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test“ gespeichert hast, benutze als Präfix „{{ns:User}}:Foo/{{int:templatesandbox-suffix}}“.",
