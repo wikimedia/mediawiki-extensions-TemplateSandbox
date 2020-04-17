@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use Wikimedia\ScopedCallback;
 
@@ -69,18 +70,18 @@ class TemplateSandboxLogic {
 			}
 		};
 
-		$oldCurrentRevisionCallback = $popt->setCurrentRevisionCallback(
-			function ( $title, $parser = false ) use ( &$oldCurrentRevisionCallback ) {
+		$oldCurrentRevisionRecordCallback = $popt->setCurrentRevisionRecordCallback(
+			function ( $title, $parser = false ) use ( &$oldCurrentRevisionRecordCallback ) {
 				if ( $this->title && $this->title->equals( $title ) ) {
 					$user = RequestContext::getMain()->getUser();
-					return new Revision( [
-						'page' => $title->getArticleID(),
-						'user_text' => $user->getName(),
-						'user' => $user->getId(),
-						'parent_id' => $title->getLatestRevId(),
-						'title' => $title,
-						'content' => $this->content
-					] );
+					$revRecord = new MutableRevisionRecord( $title );
+					$revRecord->setUser( $user );
+					$revRecord->setContent(
+						SlotRecord::MAIN,
+						$this->content
+					);
+					$revRecord->setParentId( $title->getLatestRevID() );
+					return $revRecord;
 				}
 
 				foreach ( $this->prefixes as $prefix ) {
@@ -90,7 +91,7 @@ class TemplateSandboxLogic {
 						break;
 					}
 				}
-				return call_user_func( $oldCurrentRevisionCallback, $title, $parser );
+				return call_user_func( $oldCurrentRevisionRecordCallback, $title, $parser );
 			}
 		);
 

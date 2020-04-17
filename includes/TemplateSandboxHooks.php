@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Revision\SlotRecord;
 use Wikimedia\ScopedCallback;
 
 class TemplateSandboxHooks {
@@ -142,9 +144,17 @@ class TemplateSandboxHooks {
 			$reset = $logic->setupForParse( $popts );
 			$popts->enableLimitReport();
 
-			$rev = call_user_func_array( $popts->getCurrentRevisionCallback(), [ $title ] );
-			$pageContent = $rev->getContent( Revision::FOR_THIS_USER, $user );
-			$parserOutput = $pageContent->getParserOutput( $title, $rev->getId(), $popts );
+			$revRecord = call_user_func_array(
+				$popts->getCurrentRevisionRecordCallback(),
+				[ $title ]
+			);
+
+			$pageContent = $revRecord->getContent(
+				SlotRecord::MAIN,
+				RevisionRecord::FOR_THIS_USER,
+				$user
+			);
+			$parserOutput = $pageContent->getParserOutput( $title, $revRecord->getId(), $popts );
 
 			$output->addParserOutputMetadata( $parserOutput );
 			if ( $output->userCanPreview() ) {
