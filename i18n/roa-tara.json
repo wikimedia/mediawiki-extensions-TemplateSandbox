@@ -23,6 +23,7 @@
 	"templatesandbox-invalid-title": "'U titole ca è specificate jè invalide.",
 	"templatesandbox-title-not-exists": "'U titole ca è specificate non g'esiste.",
 	"templatesandbox-revision-not-exists": "'A revisione ca è specificate non g'esiste.",
+	"templatesandbox-revision-no-content": "'A versione ca è specificate non ge tène condenute, o non ge tìne le permesse pe 'ndrucarle.",
 	"templatesandbox-invalid-prefix": "'U prefisse d'a sandbox ca è specificate non g'è valide.",
 	"templatesandbox-prefix-not-local": "'U prefisse d'a sandbox ca è specificate non g'è locale.",
 	"templatesandbox-page-or-revid": "A mettere 'u titole d'a pàgene o 'nu numere ID de versione.",
