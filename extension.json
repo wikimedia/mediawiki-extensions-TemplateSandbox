@@ -56,10 +56,11 @@
 		]
 	},
 	"config": {
-		"TemplateSandboxEditNamespaces": [
-			10
-		]
+		"TemplateSandboxEditNamespaces": {
+			"value": [
+				10
+			]
+		}
 	},
-	"TemplateSandboxEditNamespaces": [],
-	"manifest_version": 1
+	"manifest_version": 2
 }
