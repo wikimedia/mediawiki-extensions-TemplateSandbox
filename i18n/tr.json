@@ -12,7 +12,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Sandbox şablonlar]] içeren bir sayfa oluşturur",
 	"templatesandbox-suffix": "sandbox",
 	"templatesandbox-legend": "Şablon sandbox",
-	"templatesandbox-text": "Uygun bir korumalı alan önekini kullanarak korumalı alanınıza kaydedilmiş bir dizi şablon seçebilirsiniz.\nÖrneğin, {{ns:Template}}:Test sürümünün bir önizlemesini görüntülemek istiyorsanız: \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", Öneki \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}\" olarak kullanın.",
+	"templatesandbox-text": "Uygun bir korumalı alan önekini kullanarak sandbox'a kaydedilmiş bir dizi şablon seçebilirsiniz.\nÖrneğin, {{ns:Template}}:Test sürümünün bir önizlemesini görüntülemek istiyorsanız: \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", Öneki \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}\" olarak kullanın.",
 	"templatesandbox-prefix-label": "Sandbox öneki:",
 	"templatesandbox-page-label": "Sayfayı işle:",
 	"templatesandbox-revid-label": "Düzeltmeyi işle:",
