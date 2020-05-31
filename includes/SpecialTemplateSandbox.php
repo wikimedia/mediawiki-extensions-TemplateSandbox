@@ -112,6 +112,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			}
 			$output->addParserOutput( $this->output );
 
+			// @phan-suppress-next-line SecurityCheck-XSS
 			$output->addHTML( Html::rawElement(
 				'div',
 				[ 'class' => 'limitreport', 'style' => 'clear:both' ],
