@@ -72,7 +72,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			],
 		], $this->getContext() );
 		$form->setSubmitCallback( [ $this, 'onSubmit' ] );
-		$form->setWrapperLegend( $this->msg( 'templatesandbox-legend' ) );
+		$form->setWrapperLegendMsg( 'templatesandbox-legend' );
 		$form->addHeaderText( $this->msg( 'templatesandbox-text' )->parseAsBlock() );
 		$form->setSubmitTextMsg( 'templatesandbox-submit' );
 
