@@ -130,7 +130,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/**
 	 * @param string|null $value
 	 * @param array $allData
-	 * @return bool|String
+	 * @return bool|string
 	 */
 	public function validatePageParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
@@ -149,7 +149,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/**
 	 * @param string|null $value
 	 * @param array $allData
-	 * @return bool|String
+	 * @return bool|string
 	 */
 	public function validateRevidParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
@@ -178,7 +178,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/**
 	 * @param string|null $value
 	 * @param array $allData
-	 * @return bool|String
+	 * @return bool|string
 	 */
 	public function validatePrefixParam( $value, $allData ) {
 		if ( $value === '' || $value === null ) {
