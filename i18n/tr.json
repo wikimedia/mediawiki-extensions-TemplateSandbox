@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Sadrettin",
+			"SaldırganSincap",
 			"SwornToTranslate29",
 			"TmY e12",
 			"ToprakM"
@@ -12,7 +13,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Deneme tahtası şablonlar]] içeren bir sayfa oluşturur",
 	"templatesandbox-suffix": "deneme tahtası",
 	"templatesandbox-legend": "Şablon deneme tahtası",
-	"templatesandbox-text": "Uygun bir korumalı alan önekini kullanarak deneme tahtasına kaydedilmiş bir dizi şablon seçebilirsiniz.\nÖrneğin, {{ns:Template}}:Test sürümünün bir önizlemesini görüntülemek istiyorsanız: \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", öneki \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}\" olarak kullanın.",
+	"templatesandbox-text": "Uygun bir deneme tahtası önekini kullanarak deneme tahtasına kaydedilmiş bir dizi şablon seçebilirsiniz.\nÖrneğin, {{ns:Template}}:Test sürümünün bir önizlemesini görüntülemek istiyorsanız: \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\", öneki \"{{ns:User}}:Örnek/{{int:templatesandbox-suffix}}\" olarak kullanın.",
 	"templatesandbox-prefix-label": "Deneme tahtası öneki:",
 	"templatesandbox-page-label": "Sayfayı işle:",
 	"templatesandbox-revid-label": "Revizyonu işle:",
