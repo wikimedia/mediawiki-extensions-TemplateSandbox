@@ -7,10 +7,17 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.36.0"
 	},
 	"SpecialPages": {
-		"TemplateSandbox": "MediaWiki\\Extension\\TemplateSandbox\\SpecialTemplateSandbox"
+		"TemplateSandbox": {
+			"class": "MediaWiki\\Extension\\TemplateSandbox\\SpecialTemplateSandbox",
+			"services": [
+				"RevisionLookup",
+				"ContentHandlerFactory",
+				"WikiPageFactory"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"TemplateSandbox": [
