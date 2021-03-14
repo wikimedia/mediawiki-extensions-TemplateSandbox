@@ -1,14 +1,22 @@
 <?php
 
+namespace MediaWiki\Extension\TemplateSandbox;
+
+use Content;
+use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use OutputPage;
+use ParserOptions;
+use RequestContext;
+use Title;
 use Wikimedia\ScopedCallback;
 
 /**
  * Business logic class for TemplateSandbox
  */
-class TemplateSandboxLogic {
+class Logic {
 	private static $counter = 0;
 
 	/** Prefixes to search for sandbox templates */

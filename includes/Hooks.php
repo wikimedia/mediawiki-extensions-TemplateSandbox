@@ -1,10 +1,36 @@
 <?php
 
+namespace MediaWiki\Extension\TemplateSandbox;
+
+use ApiBase;
+use ApiExpandTemplates;
+use ApiParse;
+use Content;
+use ContentHandler;
+use EditPage;
+use ExtensionRegistry;
+use Html;
+use IContextSource;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Widget\TitleInputWidget;
+use MWContentSerializationException;
+use OOUI\ActionFieldLayout;
+use OOUI\ButtonInputWidget;
+use OOUI\FieldsetLayout;
+use OOUI\HtmlSnippet;
+use OOUI\Layout;
+use OutputPage;
+use ParserOptions;
+use ParserOutput;
+use RequestContext;
+use Title;
+use WebRequest;
 use Wikimedia\ScopedCallback;
+use WikiPage;
+use Xml;
 
-class TemplateSandboxHooks {
+class Hooks {
 	private static $counter = 0;
 
 	/**
@@ -140,7 +166,7 @@ class TemplateSandboxHooks {
 			$popts = $page->makeParserOptions( $context );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			$logic = new TemplateSandboxLogic( [], $templatetitle, $content );
+			$logic = new Logic( [], $templatetitle, $content );
 			$reset = $logic->setupForParse( $popts );
 			$popts->enableLimitReport();
 
@@ -278,18 +304,18 @@ class TemplateSandboxHooks {
 		$output->addModules( 'mediawiki.widgets' );
 
 		$fieldsetLayout =
-			new OOUI\FieldsetLayout( [
-				'label' => new OOUI\HtmlSnippet( $context->msg( 'templatesandbox-editform-legend' )->parse() ),
+			new FieldsetLayout( [
+				'label' => new HtmlSnippet( $context->msg( 'templatesandbox-editform-legend' )->parse() ),
 				'id' => 'templatesandbox-editform',
 				'classes' => [ 'mw-templatesandbox-fieldset' ],
 				'items' => [
 					// TODO: OOUI should provide a plain content layout, as this is
 					// technically an abstract class
-					new OOUI\Layout( [
-						'content' => new OOUI\HtmlSnippet( $textHtml . "\n" . $hiddenInputsHtml )
+					new Layout( [
+						'content' => new HtmlSnippet( $textHtml . "\n" . $hiddenInputsHtml )
 					] ),
-					new OOUI\ActionFieldLayout(
-						new MediaWiki\Widget\TitleInputWidget( [
+					new ActionFieldLayout(
+						new TitleInputWidget( [
 							'id' => 'wpTemplateSandboxPage',
 							'name' => 'wpTemplateSandboxPage',
 							'value' => $editpage->templatesandbox_page,
@@ -297,7 +323,7 @@ class TemplateSandboxHooks {
 							'placeholder' => $context->msg( 'templatesandbox-editform-page-label' )->text(),
 							'infusable' => true,
 						] ),
-						new OOUI\ButtonInputWidget( [
+						new ButtonInputWidget( [
 							'id' => 'wpTemplateSandboxPreview',
 							'name' => 'wpTemplateSandboxPreview',
 							'label' => $context->msg( 'templatesandbox-editform-view-label' )->text(),
@@ -314,8 +340,8 @@ class TemplateSandboxHooks {
 			$fieldsetLayout->addItems( [
 				// TODO: OOUI should provide a plain content layout, as this is
 				// technically an abstract class
-				new OOUI\Layout( [
-					'content' => new OOUI\HtmlSnippet( $helptextHtml )
+				new Layout( [
+					'content' => new HtmlSnippet( $helptextHtml )
 				] )
 			] );
 		}
@@ -466,7 +492,7 @@ class TemplateSandboxHooks {
 		}
 
 		if ( $prefixes || $templatetitle ) {
-			$logic = new TemplateSandboxLogic( $prefixes, $templatetitle, $content );
+			$logic = new Logic( $prefixes, $templatetitle, $content );
 			$resetLogic = $logic->setupForParse( $options );
 			$suppressCache = true;
 
@@ -475,7 +501,7 @@ class TemplateSandboxHooks {
 				use ( $prefixes, $templatetitle, $content )
 			{
 				if ( $prefixes ) {
-					TemplateSandboxLogic::addSubpageHandlerToOutput( $prefixes, $output );
+					Logic::addSubpageHandlerToOutput( $prefixes, $output );
 				}
 				if ( $templatetitle ) {
 					$output->addContentOverride( $templatetitle, $content );

@@ -1,8 +1,19 @@
 <?php
 
+namespace MediaWiki\Extension\TemplateSandbox;
+
+use Content;
+use EditPage;
+use Html;
+use HTMLForm;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use ParserOutput;
+use SpecialPage;
+use Status;
+use Title;
+use WikiPage;
 
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
@@ -108,7 +119,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 					"<div class='previewnote warningbox'>\n$1\n</div>", 'templatesandbox-anon-limited-preview'
 				);
 			} else {
-				TemplateSandboxLogic::addSubpageHandlerToOutput( $this->prefixes, $output );
+				Logic::addSubpageHandlerToOutput( $this->prefixes, $output );
 			}
 			$output->addParserOutput( $this->output );
 
@@ -235,7 +246,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts = $page->makeParserOptions( $this->getContext() );
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
-		$logic = new TemplateSandboxLogic( $this->prefixes, null, null );
+		$logic = new Logic( $this->prefixes, null, null );
 		$reset = $logic->setupForParse( $popts );
 		$this->title = $title;
 		$this->output = $content->getParserOutput( $title, $rev->getId(), $popts );

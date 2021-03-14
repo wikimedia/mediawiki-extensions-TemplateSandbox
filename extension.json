@@ -10,7 +10,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"SpecialPages": {
-		"TemplateSandbox": "SpecialTemplateSandbox"
+		"TemplateSandbox": "MediaWiki\\Extension\\TemplateSandbox\\SpecialTemplateSandbox"
 	},
 	"MessagesDirs": {
 		"TemplateSandbox": [
@@ -20,10 +20,8 @@
 	"ExtensionMessagesFiles": {
 		"TemplateSandboxAlias": "TemplateSandbox.alias.php"
 	},
-	"AutoloadClasses": {
-		"TemplateSandboxHooks": "includes/TemplateSandboxHooks.php",
-		"SpecialTemplateSandbox": "includes/SpecialTemplateSandbox.php",
-		"TemplateSandboxLogic": "includes/TemplateSandboxLogic.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TemplateSandbox\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.TemplateSandbox.top": {
@@ -39,21 +37,11 @@
 		"remoteExtPath": "TemplateSandbox/modules"
 	},
 	"Hooks": {
-		"EditPage::importFormData": [
-			"TemplateSandboxHooks::importFormData"
-		],
-		"EditPage::showStandardInputs:options": [
-			"TemplateSandboxHooks::injectOptions"
-		],
-		"AlternateEditPreview": [
-			"TemplateSandboxHooks::templateSandboxPreview"
-		],
-		"APIGetAllowedParams": [
-			"TemplateSandboxHooks::onAPIGetAllowedParams"
-		],
-		"ApiMakeParserOptions": [
-			"TemplateSandboxHooks::onApiMakeParserOptions"
-		]
+		"EditPage::importFormData": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::importFormData",
+		"EditPage::showStandardInputs:options": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::injectOptions",
+		"AlternateEditPreview": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::templateSandboxPreview",
+		"APIGetAllowedParams": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onAPIGetAllowedParams",
+		"ApiMakeParserOptions": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onApiMakeParserOptions"
 	},
 	"config": {
 		"TemplateSandboxEditNamespaces": {
