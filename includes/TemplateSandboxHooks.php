@@ -217,7 +217,7 @@ class TemplateSandboxHooks {
 			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
 		);
 
-		// Show the form if the title is in a whitelisted namespace, or if the
+		// Show the form if the title is in an allowed namespace, or if the
 		// user requested it with &wpTemplateSandboxShow
 		$showForm = $editpage->getTitle()->inNamespaces( $namespaces )
 			|| $output->getRequest()->getCheck( 'wpTemplateSandboxShow' );
@@ -270,7 +270,7 @@ class TemplateSandboxHooks {
 			Html::hidden( 'wpTemplateSandboxTemplate',
 				$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
 			) .
-			// If they submit our form, pass the parameter along for non-whitelisted namespaces
+			// If they submit our form, pass the parameter along for not allowed namespaces
 			Html::hidden( 'wpTemplateSandboxShow', '' );
 
 		$output->enableOOUI();
