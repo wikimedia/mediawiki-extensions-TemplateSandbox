@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\TemplateSandbox;
 use ApiBase;
 use ApiExpandTemplates;
 use ApiParse;
+use Config;
 use Content;
 use ContentHandler;
 use EditPage;
@@ -24,6 +25,7 @@ use OutputPage;
 use ParserOptions;
 use ParserOutput;
 use RequestContext;
+use ResourceLoaderContext;
 use Title;
 use WebRequest;
 use Wikimedia\ScopedCallback;
@@ -516,6 +518,21 @@ class Hooks {
 		}
 
 		return true;
+	}
+
+	/**
+	 * Function that returns an array of valid namespaces to show the page
+	 * preview form on for the ResourceLoader
+	 *
+	 * @param ResourceLoaderContext $context
+	 * @param Config $config
+	 * @return array
+	 */
+	public static function getResourceLoaderData( $context, $config ) {
+		return array_merge(
+			$config->get( 'TemplateSandboxEditNamespaces' ),
+			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
+		);
 	}
 
 }
