@@ -105,7 +105,7 @@ class Logic {
 
 		MediaWikiServices::getInstance()->getLinkCache()->clear();
 
-		return new ScopedCallback( function () use ( $id ) {
+		return new ScopedCallback( static function () use ( $id ) {
 			global $wgHooks;
 			unset( $wgHooks['TitleExists'][$id] );
 			MediaWikiServices::getInstance()->getLinkCache()->clear();
@@ -119,7 +119,7 @@ class Logic {
 	 */
 	public static function addSubpageHandlerToOutput( array $prefixes, OutputPage $output ) {
 		$cache = [];
-		$output->addContentOverrideCallback( function ( Title $title ) use ( $prefixes, &$cache ) {
+		$output->addContentOverrideCallback( static function ( Title $title ) use ( $prefixes, &$cache ) {
 			$titleText = $title->getPrefixedText();
 			if ( array_key_exists( $titleText, $cache ) ) {
 				return $cache[$titleText];

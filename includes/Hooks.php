@@ -499,7 +499,7 @@ class Hooks {
 			$suppressCache = true;
 
 			$id = 'TemplateSandboxHooks.' . ++self::$counter;
-			$wgHooks['ApiParseMakeOutputPage'][$id] = function ( $module, $output )
+			$wgHooks['ApiParseMakeOutputPage'][$id] = static function ( $module, $output )
 				use ( $prefixes, $templatetitle, $content )
 			{
 				if ( $prefixes ) {
@@ -510,7 +510,7 @@ class Hooks {
 				}
 			};
 
-			$reset = new ScopedCallback( function () use ( &$resetLogic, $id ) {
+			$reset = new ScopedCallback( static function () use ( &$resetLogic, $id ) {
 				global $wgHooks;
 				unset( $wgHooks['ApiParseMakeOutputPage'][$id] );
 				ScopedCallback::consume( $resetLogic );
