@@ -10,7 +10,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|АгӀо бӀаьран йо]], кепаш а ловзаран майда а цхьан",
 	"templatesandbox-suffix": "ловзаран майда",
 	"templatesandbox-legend": "Кепийн ловзаран майда",
-	"templatesandbox-text": "Хьан йиш ю хьайн цӀерийн меттигехь Ӏалаш бина болу кепийн гулам харжа.\nМасала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалаш йина йолу «{{ns:User}}:Вася Пупкин/Кечъян Ӏамо меттиг/{{ns:Template}}:Зеран», лелае «{{ns:User}}:Вася Пупкин/Ловзаран майда» префиксан метта.",
+	"templatesandbox-text": "Хьан йиш йу хьайн цӀерийн меттигехь Ӏалашбина болу кепийн гулам харжа.\nМасала, хьайна {{ns:Template}}:Зеран версега хьажа лууш делахь, Ӏалашйина йолу «{{ns:User}}:Вася Пупкин/Кечйан Ӏамо меттиг/{{ns:Template}}:Зеран», лелайе «{{ns:User}}:Вася Пупкин/Ловзаран майда» префиксан метта.",
 	"templatesandbox-prefix-label": "АгӀонан цӀе:",
 	"templatesandbox-page-label": "Гайта агӀо:",
 	"templatesandbox-revid-label": "Гойту верси:",
@@ -25,7 +25,7 @@
 	"templatesandbox-invalid-title": "Ахьа язйина йолу цӀе ца магайо.",
 	"templatesandbox-title-not-exists": "Ахьа йазйина коьрта цӀе, йан а йац.",
 	"templatesandbox-revision-not-exists": "Ахьа билгалйина верси йац.",
-	"templatesandbox-page-or-revid": "Ахьа йазйан еза агӀона цӀе йа версин лоьмар.",
-	"templatesandbox-editform-need-template": "ХӀара кеп лелош йолу кхечу агӀоне хьажа, агӀона цӀе язъян еза.",
-	"templatesandbox-editform-need-title": "ХӀара кеп лелош йолу кхечу агӀоне хьажа, агӀона цӀе язъян еза."
+	"templatesandbox-page-or-revid": "Ахьа йазйан йеза агӀонан цӀе йа версин лоьмар.",
+	"templatesandbox-editform-need-template": "ХӀара кеп лелош йолу кхечу агӀоне хьажа, агӀонан цӀе йазйан йеза.",
+	"templatesandbox-editform-need-title": "ХӀара кеп лелош йолу кхечу агӀоне хьажа, агӀонан цӀе йазйан йеза."
 }
