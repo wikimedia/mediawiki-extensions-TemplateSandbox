@@ -60,6 +60,7 @@
 			],
 			"dependencies": [
 				"oojs-ui",
+				"mediawiki.jqueryMsg",
 				"mediawiki.widgets"
 			]
 		}

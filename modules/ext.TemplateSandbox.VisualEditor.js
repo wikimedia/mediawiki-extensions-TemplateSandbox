@@ -66,7 +66,7 @@ if (
 			} );
 			actionField = new OO.ui.ActionFieldLayout( titleInput, submitButton, {
 				align: 'top',
-				label: OO.ui.msg( 'templatesandbox-editform-legend' )
+				label: mw.message( 'templatesandbox-editform-legend' ).parseDom()
 			} );
 			panelLayout = new OO.ui.PanelLayout( {
 				expanded: false,
