@@ -245,9 +245,13 @@ class Hooks {
 			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
 		);
 
-		// Show the form if the title is in an allowed namespace, or if the
-		// user requested it with &wpTemplateSandboxShow
+		$contentModels = ExtensionRegistry::getInstance()->getAttribute(
+			'TemplateSandboxEditContentModels' );
+
+		// Show the form if the title is in an allowed namespace, has an allowed content model
+		// or if the user requested it with &wpTemplateSandboxShow
 		$showForm = $editpage->getTitle()->inNamespaces( $namespaces )
+			|| in_array( $editpage->getTitle()->getContentModel(), $contentModels, true )
 			|| $output->getRequest()->getCheck( 'wpTemplateSandboxShow' );
 
 		if ( !$showForm ) {

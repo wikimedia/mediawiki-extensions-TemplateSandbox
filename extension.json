@@ -85,6 +85,7 @@
 	},
 	"config": {
 		"TemplateSandboxEditNamespaces": {
+			"description": "Namespaces to show a page preview box for in edit mode",
 			"value": [
 				10
 			]
