@@ -27,6 +27,7 @@
 	"templatesandbox-invalid-title": "您指定的标题无效。",
 	"templatesandbox-title-not-exists": "您指定的标题不存在。",
 	"templatesandbox-revision-not-exists": "您指定的修订版本不存在。",
+	"templatesandbox-revision-no-content": "您指定的修订版本没有内容，或者您没有查看它的权限。",
 	"templatesandbox-invalid-prefix": "您指定的沙盒前缀无效。",
 	"templatesandbox-prefix-not-local": "您指定的沙盒前缀不在本地。",
 	"templatesandbox-page-or-revid": "您必须输入一个页面标题或修订版本ID。",
