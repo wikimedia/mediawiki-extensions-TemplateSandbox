@@ -9,5 +9,5 @@
 	"templatesandbox-apihelp-text": "Analizar a páxina usando o contido desta páxina no canto da páxina nomeada por <var>$1templatesandboxtitle</var>.",
 	"templatesandbox-apihelp-contentmodel": "Modelo de contido de <var>$1templatesandboxtext</var>.",
 	"templatesandbox-apihelp-contentformat": "Formato de contido de <var>$1templatesandboxtext</var>.",
-	"templatesandbox-apierror-titleandtext": "Os parámetros <var>$1templatesandboxtitle</vaɾ> e <var>$1templatesandboxtext</var> deben especificarse ambos ou omitirse ambos."
+	"templatesandbox-apierror-titleandtext": "Os parámetros <var>$1templatesandboxtitle</var> e <var>$1templatesandboxtext</var> deben especificarse ambos ou omitirse ambos."
 }
