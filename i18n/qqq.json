@@ -40,5 +40,6 @@
 	"templatesandbox-editform-need-title": "Error message displayed when no page title is given for the editpage form.\n\nSee also:\n* {{msg-mw|Templatesandbox-editform-need-template}}",
 	"templatesandbox-editform-invalid-template": "Error message displayed when the template name specified for the editpage form is invalid.",
 	"templatesandbox-editform-invalid-title": "Error message displayed when the title specified for the editpage form is invalid.",
-	"templatesandbox-editform-title-not-exists": "Error message displayed when the title specified for the editpage form does not exist."
+	"templatesandbox-editform-title-not-exists": "Error message displayed when the title specified for the editpage form does not exist.",
+	"templatesandbox-failed-replace-section": "Error message displayed when replacing a section of existing page failed."
 }
