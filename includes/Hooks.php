@@ -191,7 +191,8 @@ class Hooks {
 				RevisionRecord::FOR_THIS_USER,
 				$user
 			);
-			$parserOutput = $pageContent->getParserOutput( $title, $revRecord->getId(), $popts );
+			$contentRenderer = MediaWikiServices::getInstance()->getContentRenderer();
+			$parserOutput = $contentRenderer->getParserOutput( $pageContent, $title, $revRecord->getId(), $popts );
 
 			$output->addParserOutputMetadata( $parserOutput );
 			if ( $output->userCanPreview() ) {
