@@ -12,6 +12,7 @@ use EditPage;
 use ExtensionRegistry;
 use Html;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Widget\TitleInputWidget;
@@ -144,6 +145,10 @@ class Hooks {
 				$content = $editpage->getArticle()->getPage()->replaceSectionContent(
 					$editpage->section, $content, $sectionTitle, $editpage->edittime
 				);
+				if ( $content === null ) {
+					$out = self::wrapErrorMsg( $context, 'templatesandbox-failed-replace-section' );
+					return false;
+				}
 			} else {
 				if ( $editpage->section === 'new' ) {
 					$content = $content->addSectionHeader( $sectionTitle );
@@ -156,8 +161,12 @@ class Hooks {
 			);
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			$content = $content->preSaveTransform(
-				$templatetitle, $user, $popts
+			$contentTransformer = MediaWikiServices::getInstance()->getContentTransformer();
+			$content = $contentTransformer->preSaveTransform(
+				$content,
+				$templatetitle,
+				$user,
+				$popts
 			);
 
 			$note = $context->msg( 'templatesandbox-previewnote', $title->getPrefixedText() )->plain() .
@@ -491,7 +500,13 @@ class Hooks {
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$user = RequestContext::getMain()->getUser();
-			$content = $content->preSaveTransform( $templatetitle, $user, $popts );
+			$contentTransformer = MediaWikiServices::getInstance()->getContentTransformer();
+			$content = $contentTransformer->preSaveTransform(
+				$content,
+				$templatetitle,
+				$user,
+				$popts
+			);
 		} else {
 			$templatetitle = null;
 			$content = null;
