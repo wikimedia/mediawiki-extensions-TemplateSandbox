@@ -35,5 +35,6 @@
 	"templatesandbox-editform-need-title": "Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.",
 	"templatesandbox-editform-invalid-template": "Der angegebene Vorlagenname ist ungültig.",
 	"templatesandbox-editform-invalid-title": "Der angegebene Titel zur Vorschau ist ungültig.",
-	"templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden."
+	"templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden.",
+	"templatesandbox-failed-replace-section": "Der Abschnitt der bestehenden Seite konnte nicht ersetzt werden."
 }
