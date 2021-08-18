@@ -41,5 +41,6 @@
 	"templatesandbox-editform-need-title": "Pour afficher l’aperçu d’une autre page avec ce modèle, un titre de page doit être fourni.",
 	"templatesandbox-editform-invalid-template": "Le nom du modèle que vous avez indiqué n’est pas valide.",
 	"templatesandbox-editform-invalid-title": "Le titre que vous avez spécifié pour l’aperçu n’est pas valide.",
-	"templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas."
+	"templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas.",
+	"templatesandbox-failed-replace-section": "Échec de remplacement de la section de la page existante."
 }

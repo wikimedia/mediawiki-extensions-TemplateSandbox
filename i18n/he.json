@@ -39,5 +39,6 @@
 	"templatesandbox-editform-need-title": "כדי לקבל תצוגה מקדימה של דף הכולל את התבנית, יש לציין את שם הדף.",
 	"templatesandbox-editform-invalid-template": "השם של התבנית שציינת אינו חוקי.",
 	"templatesandbox-editform-invalid-title": "הכותרת שציינת לתצוגה מקדימה אינה תקינה.",
-	"templatesandbox-editform-title-not-exists": "הכותרת שציינת לתצוגה מקדימה אינה קיימת."
+	"templatesandbox-editform-title-not-exists": "הכותרת שציינת לתצוגה מקדימה אינה קיימת.",
+	"templatesandbox-failed-replace-section": "נכשלה החלפה פרק בדף הקיים."
 }

@@ -41,5 +41,6 @@
 	"templatesandbox-editform-need-title": "Para pré-visualizar outra página com esta predefinição, um título de página deve ser especificado.",
 	"templatesandbox-editform-invalid-template": "O nome do modelo que você especificou é inválido.",
 	"templatesandbox-editform-invalid-title": "O título que você especificou para a pré-visualização é inválido.",
-	"templatesandbox-editform-title-not-exists": "O título que você especificou para a pré-visualização não existe."
+	"templatesandbox-editform-title-not-exists": "O título que você especificou para a pré-visualização não existe.",
+	"templatesandbox-failed-replace-section": "Falha ao substituir seção da página existente."
 }

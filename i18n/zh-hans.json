@@ -5,6 +5,7 @@
 			"Shizhao",
 			"Xiaomingyan",
 			"Yfdyh000",
+			"Zhang8569",
 			"乌拉跨氪"
 		]
 	},
@@ -38,5 +39,6 @@
 	"templatesandbox-editform-need-title": "要预览另一个使用此模板的页面，您必须指定一个页面标题。",
 	"templatesandbox-editform-invalid-template": "您指定的模板名无效。",
 	"templatesandbox-editform-invalid-title": "您为预览指定的标题无效。",
-	"templatesandbox-editform-title-not-exists": "您为预览指定的标题不存在。"
+	"templatesandbox-editform-title-not-exists": "您为预览指定的标题不存在。",
+	"templatesandbox-failed-replace-section": "替换现存页面的章节失败了。"
 }
