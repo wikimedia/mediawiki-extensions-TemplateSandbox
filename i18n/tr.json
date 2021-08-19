@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Hedda",
 			"Sadrettin",
 			"SaldırganSincap",
 			"SwornToTranslate29",
@@ -39,5 +40,6 @@
 	"templatesandbox-editform-need-title": "Bu şablonla başka bir sayfayı önizlemek için bir sayfa başlığı belirtilmelidir.",
 	"templatesandbox-editform-invalid-template": "Belirttiğiniz şablonun adı geçersiz.",
 	"templatesandbox-editform-invalid-title": "Önizleme için belirttiğiniz başlık geçersiz.",
-	"templatesandbox-editform-title-not-exists": "Önizleme için belirttiğiniz başlık mevcut değil."
+	"templatesandbox-editform-title-not-exists": "Önizleme için belirttiğiniz başlık mevcut değil.",
+	"templatesandbox-failed-replace-section": "Mevcut sayfanın bölümü değiştirilemedi."
 }
