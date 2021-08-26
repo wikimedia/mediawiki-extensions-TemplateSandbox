@@ -4,6 +4,7 @@
 			"Amire80",
 			"Guycn2",
 			"IKhitron",
+			"YaronSh",
 			"ערן",
 			"פוילישער",
 			"קיפודנחש"
@@ -40,5 +41,5 @@
 	"templatesandbox-editform-invalid-template": "השם של התבנית שציינת אינו חוקי.",
 	"templatesandbox-editform-invalid-title": "הכותרת שציינת לתצוגה מקדימה אינה תקינה.",
 	"templatesandbox-editform-title-not-exists": "הכותרת שציינת לתצוגה מקדימה אינה קיימת.",
-	"templatesandbox-failed-replace-section": "נכשלה החלפה פרק בדף הקיים."
+	"templatesandbox-failed-replace-section": "נכשלה החלפת פרק בדף הקיים."
 }
