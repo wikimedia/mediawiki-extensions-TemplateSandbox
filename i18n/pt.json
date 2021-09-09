@@ -42,5 +42,6 @@
 	"templatesandbox-editform-need-title": "Para antever outra página com esta predefinição, é preciso especificar um título.",
 	"templatesandbox-editform-invalid-template": "O nome da predefinição que especificou é inválido.",
 	"templatesandbox-editform-invalid-title": "O título que especificou para antever é inválido.",
-	"templatesandbox-editform-title-not-exists": "O título que especificou para antever não existe."
+	"templatesandbox-editform-title-not-exists": "O título que especificou para antever não existe.",
+	"templatesandbox-failed-replace-section": "Não foi possível substituir a secção da página existente."
 }
