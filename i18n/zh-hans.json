@@ -3,6 +3,7 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Shizhao",
+			"Tranve",
 			"Xiaomingyan",
 			"Yfdyh000",
 			"Zhang8569",
@@ -17,7 +18,7 @@
 	"templatesandbox-prefix-label": "沙盒前缀：",
 	"templatesandbox-page-label": "生成页面：",
 	"templatesandbox-revid-label": "生成版本：",
-	"templatesandbox-text-label": "生成wiki文本：",
+	"templatesandbox-text-label": "生成wikitext：",
 	"templatesandbox-submit": "查看",
 	"templatesandbox-title-output": "模板沙盒：$1",
 	"templatesandbox-editform-legend": "预览使用本模板的页面",
