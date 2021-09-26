@@ -195,7 +195,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			return true;
 		}
 
-		$revisionRecord = $this->revisionLookup->getRevisionById( $value );
+		$revisionRecord = $this->revisionLookup->getRevisionById( (int)$value );
 		if ( $revisionRecord === null ) {
 			return $this->msg( 'templatesandbox-revision-not-exists' )->parseAsBlock();
 		}
