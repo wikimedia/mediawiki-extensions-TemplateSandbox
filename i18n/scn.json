@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Sarvaturi"
 		]
 	},
 	"templatesandbox": "Pàggina di prova Template",
-	"templatesandbox-legend": "Pàggina di prova Template"
+	"templatesandbox-legend": "Pàggina di prova Template",
+	"templatesandbox-editform-page-label": "Tìtulu dâ pàggina"
 }
