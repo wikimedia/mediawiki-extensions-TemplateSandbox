@@ -223,7 +223,7 @@ class Hooks {
 				'h2', [ 'id' => 'mw-previewheader' ],
 				$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse()
 			) .
-			Html::rawElement( 'div', [ 'class' => 'warningbox' ],
+			Html::warningBox(
 				$output->parseAsInterface( $note )
 			)
 		);
