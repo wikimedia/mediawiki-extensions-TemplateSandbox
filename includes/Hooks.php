@@ -29,6 +29,7 @@ use RequestContext;
 use ResourceLoaderContext;
 use Title;
 use WebRequest;
+use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ScopedCallback;
 use Xml;
 
@@ -391,24 +392,24 @@ class Hooks {
 
 		$params += [
 			'templatesandboxprefix' => [
-				ApiBase::PARAM_TYPE => 'string',
-				ApiBase::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_ISMULTI => true,
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-prefix',
 			],
 			'templatesandboxtitle' => [
-				ApiBase::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_TYPE => 'string',
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-title',
 			],
 			'templatesandboxtext' => [
-				ApiBase::PARAM_TYPE => 'text',
+				ParamValidator::PARAM_TYPE => 'text',
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-text',
 			],
 			'templatesandboxcontentmodel' => [
-				ApiBase::PARAM_TYPE => ContentHandler::getContentModels(),
+				ParamValidator::PARAM_TYPE => ContentHandler::getContentModels(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentmodel',
 			],
 			'templatesandboxcontentformat' => [
-				ApiBase::PARAM_TYPE => ContentHandler::getAllContentFormats(),
+				ParamValidator::PARAM_TYPE => ContentHandler::getAllContentFormats(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
 			],
 		];
