@@ -1,4 +1,5 @@
 {
+	"name": "TemplateSandbox",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
