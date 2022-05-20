@@ -13,6 +13,7 @@ use ExtensionRegistry;
 use Html;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Widget\TitleInputWidget;
@@ -26,7 +27,6 @@ use OutputPage;
 use ParserOptions;
 use ParserOutput;
 use RequestContext;
-use ResourceLoaderContext;
 use Title;
 use WebRequest;
 use Wikimedia\ScopedCallback;
@@ -544,7 +544,7 @@ class Hooks {
 	 * Function that returns an array of valid namespaces to show the page
 	 * preview form on for the ResourceLoader
 	 *
-	 * @param ResourceLoaderContext $context
+	 * @param RL\Context $context
 	 * @param Config $config
 	 * @return array
 	 */
