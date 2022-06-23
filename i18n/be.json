@@ -4,7 +4,8 @@
 			"Artsiom91",
 			"Macofe",
 			"Mikalai Udodau",
-			"Chadyka"
+			"Chadyka",
+			"Tomato Cream"
 		]
 	},
 	"templatesandbox": "Пясочніца для шаблонаў",
@@ -26,10 +27,17 @@
 	"templatesandbox-invalid-title": "Пазначаная няслушная назва.",
 	"templatesandbox-title-not-exists": "Пазначаная назва не існуе.",
 	"templatesandbox-revision-not-exists": "Пазначаная версія не існуе.",
+	"templatesandbox-revision-no-content": "Версія, якую вы ўказалі, не мае зместу, або вы не маеце дазволу на яе прагляд.",
 	"templatesandbox-invalid-prefix": "Пазначаны вамі прэфікс пясочніцы няслушны.",
 	"templatesandbox-prefix-not-local": "Пазначаны вамі прэфікс пясочніцы не лакальны.",
 	"templatesandbox-page-or-revid": "Трэба пазначыць назву старонкі або ідэнтыфікатар версіі.",
+	"templatesandbox-fail-post": "<em>Праз страту даных сеансу папярэдні прагляд схаваны як засцярога ад нападаў з дапамогай JavaScript.</em>\n\n<strong>Калі гэта слушная спроба перадпрагляду, паспрабуйце зноў.</strong>\nКалі гэта ўсё яшчэ не працуе, паспрабуйце [[Special:UserLogout|выйсці з сістэмы]] і зноў увайсці.",
+	"templatesandbox-fail-post-anon": "<em>Праз тое што вы не ўвайшлі ў сістэму, перадпрагляд схаваны, як засцярога ад нападаў з дапамогай JavaScript.</em>\n\n<strong>Калі гэта слушная спроба перадпрагляду, калі ласка, [[Special:UserLogin|увайдзіце ў сістэму]] і паспрабуйце зноў.</strong>",
+	"templatesandbox-anon-limited-preview": "Перадпрагляд зменаў JavaScript і CSS адключаны, калі вы не ўвайшлі ў сістэму. Калі вам трэба праглядзець такія змены, калі ласка, [[Special:UserLogin|увайдзіце ў сістэму]] і паспрабуйце зноў.",
+	"templatesandbox-editform-need-template": "Каб пабачыць іншую старонку з гэтым шаблонам, трэба пазначыць назву шаблону.",
 	"templatesandbox-editform-need-title": "Каб пабачыць іншую старонку з гэтым шаблонам, трэба пазначыць назву старонкі.",
+	"templatesandbox-editform-invalid-template": "Назва шаблону, якую вы ўказалі, няслушная.",
 	"templatesandbox-editform-invalid-title": "Пазначаная для прагляду назва няслушная.",
-	"templatesandbox-editform-title-not-exists": "Пазначаная для прагляду назва не існуе."
+	"templatesandbox-editform-title-not-exists": "Пазначаная для прагляду назва не існуе.",
+	"templatesandbox-failed-replace-section": "Не атрымалася замяніць раздзел існуючай старонкі."
 }
