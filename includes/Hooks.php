@@ -136,7 +136,8 @@ class Hooks {
 
 		try {
 			if ( $editpage->sectiontitle !== '' ) {
-				$sectionTitle = $editpage->sectiontitle;
+				// TODO (T314475): If sectiontitle is null this uses '' rather than summary; is that wanted?
+				$sectionTitle = $editpage->sectiontitle ?? '';
 			} else {
 				$sectionTitle = $editpage->summary;
 			}
