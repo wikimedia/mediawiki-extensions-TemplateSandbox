@@ -19,9 +19,6 @@ module.exports = function ( grunt ) {
 			]
 		},
 		stylelint: {
-			options: {
-				syntax: 'less'
-			},
 			all: [
 				'**/*.less',
 				'!node_modules/**',
