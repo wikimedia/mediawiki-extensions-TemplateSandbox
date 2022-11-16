@@ -432,8 +432,6 @@ class Hooks {
 	public static function onApiMakeParserOptions(
 		$options, $title, $params, $module, &$reset, &$suppressCache
 	) {
-		global $wgHooks;
-
 		// Shouldn't happen, but...
 		if ( !self::isUsableApiModule( $module ) ) {
 			return true;
@@ -520,8 +518,8 @@ class Hooks {
 			$resetLogic = $logic->setupForParse( $options );
 			$suppressCache = true;
 
-			$id = 'TemplateSandboxHooks.' . ++self::$counter;
-			$wgHooks['ApiParseMakeOutputPage'][$id] = static function ( $module, $output )
+			$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+			$resetHook = $hookContainer->scopedRegister( 'ApiParseMakeOutputPage', static function ( $module, $output )
 				use ( $prefixes, $templatetitle, $content )
 			{
 				if ( $prefixes ) {
@@ -530,11 +528,10 @@ class Hooks {
 				if ( $templatetitle ) {
 					$output->addContentOverride( $templatetitle, $content );
 				}
-			};
+			} );
 
-			$reset = new ScopedCallback( static function () use ( &$resetLogic, $id ) {
-				global $wgHooks;
-				unset( $wgHooks['ApiParseMakeOutputPage'][$id] );
+			$reset = new ScopedCallback( static function () use ( &$resetLogic, &$resetHook ) {
+				ScopedCallback::consume( $resetHook );
 				ScopedCallback::consume( $resetLogic );
 			} );
 		}
