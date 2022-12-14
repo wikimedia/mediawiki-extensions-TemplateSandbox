@@ -50,9 +50,6 @@
 				"templatesandbox-editform-view-label",
 				"templatesandbox-preview"
 			],
-			"targets": [
-				"desktop"
-			],
 			"packageFiles": [
 				"ext.TemplateSandbox.VisualEditor.js",
 				{
