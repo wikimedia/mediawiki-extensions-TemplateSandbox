@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajiniyaz Nurniyazov",
 			"Arystanbek",
 			"СеніңШешең"
 		]
@@ -14,7 +15,7 @@
 	"templatesandbox-text-label": "Уикимәтінді көрсету:",
 	"templatesandbox-submit": "Көру",
 	"templatesandbox-title-output": "Үлгі зертханасы: $1",
-	"templatesandbox-editform-legend": "Бұл үлгімен бетті қарап шығу",
+	"templatesandbox-editform-legend": "Usı úlgini óz ishine alǵan betti aldın ala kóriw",
 	"templatesandbox-editform-page-label": "Бет тақырып аты",
 	"templatesandbox-editform-view-label": "Алдын ала қарау",
 	"templatesandbox-preview": "$2: алдын ала көру",
@@ -26,7 +27,7 @@
 	"templatesandbox-prefix-not-local": "Cіз көрсеткен үлгі префиксі жергілікті емес",
 	"templatesandbox-page-or-revid": "Сіз бет атауын немесе нұсқа ID нөмірі екеуінің бірін енгізуіңіз керек.",
 	"templatesandbox-editform-need-template": "Бұл үлгіні басқа беттен қарап шығу үшін үлгі атауын көрсету керек.",
-	"templatesandbox-editform-need-title": "Бұл үлгіні басқа беттен қарап шығу үшін бет атауын көрсету керек.",
+	"templatesandbox-editform-need-title": "Usı úlgini óz sihine alǵan basqa betti kóriw ushın bet ataması kórsetiliwi kerek.",
 	"templatesandbox-editform-invalid-template": "Сіз көрсеткен үлгі атауы жарамды емес.",
 	"templatesandbox-editform-invalid-title": "Қарап шығу үшін көрсеткен атауыңыз жарамды емес.",
 	"templatesandbox-editform-title-not-exists": "Қарап шығу үшін көрсеткен атауыңыз жоқ."
