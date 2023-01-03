@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Afalau",
 			"Lloffiwr",
 			"Macofe"
 		]
@@ -11,7 +12,7 @@
 	"templatesandbox-page-label": "Cynhyrchu'r dudalen:",
 	"templatesandbox-revid-label": "Cynhyrchu'r diwygiad:",
 	"templatesandbox-text-label": "Cynhyrchu'r cystrawen wici:",
-	"templatesandbox-submit": "Gweler",
+	"templatesandbox-submit": "Gweld",
 	"templatesandbox-title-output": "Pwll tywod y nodyn $1",
 	"templatesandbox-editform-page-label": "Teitl y dudalen",
 	"templatesandbox-editform-view-label": "Dangos rhagolwg",
