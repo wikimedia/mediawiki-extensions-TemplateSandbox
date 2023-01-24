@@ -181,7 +181,6 @@ class Hooks {
 			$popts->setIsSectionPreview( false );
 			$logic = new Logic( [], $templatetitle, $content );
 			$reset = $logic->setupForParse( $popts );
-			$popts->enableLimitReport();
 
 			$revRecord = call_user_func_array(
 				$popts->getCurrentRevisionRecordCallback(),
@@ -205,6 +204,7 @@ class Hooks {
 			$parserOutput->setTitleText( '' );
 			$out = $parserOutput->getText( [
 				'enableSectionEditLinks' => false,
+				'includeDebugInfo' => true,
 			] );
 
 			if ( count( $parserOutput->getWarnings() ) ) {
