@@ -7,7 +7,6 @@ use ApiExpandTemplates;
 use ApiParse;
 use Config;
 use Content;
-use ContentHandler;
 use EditPage;
 use ExtensionRegistry;
 use Html;
@@ -391,6 +390,7 @@ class Hooks {
 			return true;
 		}
 
+		$contentHandlerFactory = MediaWikiServices::getInstance()->getContentHandlerFactory();
 		$params += [
 			'templatesandboxprefix' => [
 				ParamValidator::PARAM_TYPE => 'string',
@@ -406,11 +406,11 @@ class Hooks {
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-text',
 			],
 			'templatesandboxcontentmodel' => [
-				ParamValidator::PARAM_TYPE => ContentHandler::getContentModels(),
+				ParamValidator::PARAM_TYPE => $contentHandlerFactory->getContentModels(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentmodel',
 			],
 			'templatesandboxcontentformat' => [
-				ParamValidator::PARAM_TYPE => ContentHandler::getAllContentFormats(),
+				ParamValidator::PARAM_TYPE => $contentHandlerFactory->getAllContentFormats(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
 			],
 		];
@@ -479,7 +479,9 @@ class Hooks {
 			if ( $params['contentmodel'] == '' ) {
 				$contentHandler = $page->getContentHandler();
 			} else {
-				$contentHandler = ContentHandler::getForModelID( $params['contentmodel'] );
+				$contentHandler = MediaWikiServices::getInstance()->getContentHandlerFactory()
+					// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
+					->getContentHandler( $params['contentmodel'] );
 			}
 
 			$escName = wfEscapeWikiText( $page->getTitle()->getPrefixedDBkey() );
