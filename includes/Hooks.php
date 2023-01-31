@@ -201,7 +201,9 @@ class Hooks {
 
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
+			$skinOptions = $output->getSkin()->getOptions();
 			$out = $parserOutput->getText( [
+				'injectTOC' => $skinOptions['toc'],
 				'enableSectionEditLinks' => false,
 				'includeDebugInfo' => true,
 			] );
