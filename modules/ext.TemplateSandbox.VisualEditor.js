@@ -19,6 +19,8 @@ function showPreview() {
 		templatesandboxtitle: mw.config.get( 'wgPageName' ),
 		templatesandboxtext: $( '#wpTextbox1' ).textSelection( 'getContents' ),
 		templatesandboxcontentmodel: mw.config.get( 'wgPageContentModel' ),
+		disableeditsection: true,
+		prop: [ 'text', 'categorieshtml', 'displaytitle' ],
 		errorformat: 'html',
 		errorlang: mw.config.get( 'wgUserLanguage' ),
 		errorsuselocal: true,
@@ -27,13 +29,45 @@ function showPreview() {
 		saveDialog.popPending();
 		submitButton.setDisabled( false );
 	} ).then( function ( res ) {
+		var veConfig = mw.config.get( 'wgVisualEditor' ),
+			$heading = $( '<h1>' )
+				.addClass( [ 'firstHeading', 'mw-first-heading' ] )
+				.html( res.parse.displaytitle ),
+			$text = $( '<div>' )
+				// The following classes are used here:
+				// * mw-content-ltr
+				// * mw-content-rtl
+				.addClass( [
+					'mw-body-content',
+					'mw-content-' + veConfig.pageLanguageDir,
+					// HACK: T287733
+					mw.config.get( 'skin' ) === 'vector' || mw.config.get( 'skin' ) === 'vector-2022' ? 'vector-body' : null
+				] )
+				.attr( {
+					lang: veConfig.pageLanguageCode,
+					dir: veConfig.pageLanguageDir
+				} )
+				.html( res.parse.text );
+
 		saveDialog.setSize( 'full' );
 		saveDialog.actions.setMode( 'preview' );
 		saveDialog.title.setLabel(
 			OO.ui.msg( 'templatesandbox-preview', '', titleInput.getValue() )
 		);
-		panelLayout.$element.html( res.parse.text );
+
+		panelLayout.$element.empty().append(
+			$( '<div>' ).addClass( 'mw-content-container' ).append(
+				$( '<div>' ).addClass( 'mw-body' ).append(
+					$heading,
+					$text,
+					res.parse.categorieshtml
+				)
+			)
+		);
 		saveDialog.panels.setItem( panelLayout );
+
+		// Fire hook to allow scripts to process the new content
+		mw.hook( 'wikipage.content' ).fire( panelLayout.$element );
 	}, function ( code, data ) {
 		var msg;
 		switch ( code ) {
