@@ -51,12 +51,10 @@ class Logic {
 	 * @return ScopedCallback to uninstall
 	 */
 	public function setupForParse( ParserOptions $popt ) {
-		global $wgHooks;
-
-		$id = 'TemplateSandbox.' . ++self::$counter;
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 
 		$inHook = false;
-		$wgHooks['TitleExists'][$id] = function ( $title, &$exists ) use ( &$inHook ) {
+		$hookReset = $hookContainer->scopedRegister( 'TitleExists', function ( $title, &$exists ) use ( &$inHook ) {
 			if ( $exists || $inHook ) {
 				return;
 			}
@@ -78,7 +76,7 @@ class Logic {
 			} finally {
 				$inHook = false;
 			}
-		};
+		} );
 
 		$oldCurrentRevisionRecordCallback = $popt->setCurrentRevisionRecordCallback(
 			function ( $title, $parser = false ) use ( &$oldCurrentRevisionRecordCallback ) {
@@ -107,9 +105,8 @@ class Logic {
 
 		MediaWikiServices::getInstance()->getLinkCache()->clear();
 
-		return new ScopedCallback( static function () use ( $id ) {
-			global $wgHooks;
-			unset( $wgHooks['TitleExists'][$id] );
+		return new ScopedCallback( static function () use ( $hookReset ) {
+			ScopedCallback::consume( $hookReset );
 			MediaWikiServices::getInstance()->getLinkCache()->clear();
 		} );
 	}
