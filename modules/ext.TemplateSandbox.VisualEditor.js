@@ -13,9 +13,11 @@ function showPreview() {
 		api = new mw.Api();
 	}
 
-	api.post( {
+	var apiParams = {
 		action: 'parse',
 		page: titleInput.getQueryValue(),
+		pst: true,
+		preview: true,
 		templatesandboxtitle: mw.config.get( 'wgPageName' ),
 		templatesandboxtext: $( '#wpTextbox1' ).textSelection( 'getContents' ),
 		templatesandboxcontentmodel: mw.config.get( 'wgPageContentModel' ),
@@ -24,8 +26,16 @@ function showPreview() {
 		errorformat: 'html',
 		errorlang: mw.config.get( 'wgUserLanguage' ),
 		errorsuselocal: true,
+		uselang: mw.config.get( 'wgUserLanguage' ),
+		useskin: mw.config.get( 'skin' ),
 		formatversion: 2
-	} ).always( function () {
+	};
+
+	if ( mw.config.get( 'wgUserVariant' ) ) {
+		apiParams.variant = mw.config.get( 'wgUserVariant' );
+	}
+
+	api.post( apiParams ).always( function () {
 		saveDialog.popPending();
 		submitButton.setDisabled( false );
 	} ).then( function ( res ) {
