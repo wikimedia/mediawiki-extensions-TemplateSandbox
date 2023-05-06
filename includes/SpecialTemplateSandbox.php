@@ -3,11 +3,11 @@
 namespace MediaWiki\Extension\TemplateSandbox;
 
 use Content;
-use EditPage;
 use Html;
 use HTMLForm;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
