@@ -9,10 +9,10 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\PageReference;
 use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 use OutputPage;
 use ParserOptions;
 use RequestContext;
-use Title;
 use Wikimedia\ScopedCallback;
 
 /**

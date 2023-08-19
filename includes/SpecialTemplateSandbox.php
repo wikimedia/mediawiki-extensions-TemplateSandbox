@@ -12,10 +12,10 @@ use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 use ParserOutput;
 use SpecialPage;
 use Status;
-use Title;
 
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
