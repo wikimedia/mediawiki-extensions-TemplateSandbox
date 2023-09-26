@@ -69,11 +69,16 @@
 		"remoteExtPath": "TemplateSandbox/modules"
 	},
 	"Hooks": {
-		"EditPage::importFormData": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::importFormData",
-		"EditPage::showStandardInputs:options": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::injectOptions",
-		"AlternateEditPreview": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::templateSandboxPreview",
-		"APIGetAllowedParams": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onAPIGetAllowedParams",
-		"ApiMakeParserOptions": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::onApiMakeParserOptions"
+		"EditPage::importFormData": "main",
+		"EditPage::showStandardInputs:options": "main",
+		"AlternateEditPreview": "main",
+		"APIGetAllowedParams": "main",
+		"ApiMakeParserOptions": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\TemplateSandbox\\Hooks"
+		}
 	},
 	"attributes": {
 		"VisualEditor": {

@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extension\TemplateSandbox;
 
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+
 use ApiBase;
 use ApiExpandTemplates;
 use ApiParse;
@@ -10,7 +12,12 @@ use Content;
 use ExtensionRegistry;
 use Html;
 use IContextSource;
+use MediaWiki\Api\Hook\APIGetAllowedParamsHook;
+use MediaWiki\Api\Hook\ApiMakeParserOptionsHook;
 use MediaWiki\EditPage\EditPage;
+use MediaWiki\Hook\AlternateEditPreviewHook;
+use MediaWiki\Hook\EditPage__importFormDataHook;
+use MediaWiki\Hook\EditPage__showStandardInputs_optionsHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Revision\RevisionRecord;
@@ -32,7 +39,13 @@ use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ScopedCallback;
 use Xml;
 
-class Hooks {
+class Hooks implements
+	EditPage__importFormDataHook,
+	EditPage__showStandardInputs_optionsHook,
+	AlternateEditPreviewHook,
+	APIGetAllowedParamsHook,
+	ApiMakeParserOptionsHook
+{
 	private static $counter = 0;
 
 	/**
@@ -44,9 +57,8 @@ class Hooks {
 	 *
 	 * @param EditPage $editpage
 	 * @param WebRequest $request
-	 * @return bool
 	 */
-	public static function importFormData( $editpage, $request ) {
+	public function onEditPage__importFormData( $editpage, $request ) {
 		$editpage->templatesandbox_template = $request->getText(
 			'wpTemplateSandboxTemplate', $editpage->getTitle()->getPrefixedText()
 		);
@@ -60,8 +72,6 @@ class Hooks {
 				$editpage->live = false;
 			}
 		}
-
-		return true;
 	}
 
 	/**
@@ -85,7 +95,7 @@ class Hooks {
 	 * @param ParserOutput &$parserOutput
 	 * @return bool
 	 */
-	public static function templateSandboxPreview( EditPage $editpage, &$content, &$out,
+	public function onAlternateEditPreview( $editpage, &$content, &$out,
 		&$parserOutput
 	) {
 		if ( empty( $editpage->templatesandbox_preview ) ) {
@@ -248,9 +258,8 @@ class Hooks {
 	 * @param EditPage $editpage
 	 * @param OutputPage $output
 	 * @param int &$tabindex
-	 * @return bool
 	 */
-	public static function injectOptions( $editpage, $output, &$tabindex ) {
+	public function onEditPage__showStandardInputs_options( $editpage, $output, &$tabindex ) {
 		global $wgTemplateSandboxEditNamespaces;
 
 		$namespaces = array_merge(
@@ -285,7 +294,7 @@ class Hooks {
 
 			$output->addHTML( $html . "\n" );
 
-			return true;
+			return;
 		}
 
 		$output->addModuleStyles( 'ext.TemplateSandbox.top' );
@@ -365,8 +374,6 @@ class Hooks {
 			] );
 		}
 		$output->addHTML( $fieldsetLayout );
-
-		return true;
 	}
 
 	/**
@@ -385,11 +392,10 @@ class Hooks {
 	 * @param ApiBase $module
 	 * @param array &$params
 	 * @param int $flags
-	 * @return bool
 	 */
-	public static function onAPIGetAllowedParams( $module, &$params, $flags ) {
+	public function onAPIGetAllowedParams( $module, &$params, $flags ) {
 		if ( !self::isUsableApiModule( $module ) ) {
-			return true;
+			return;
 		}
 
 		$contentHandlerFactory = MediaWikiServices::getInstance()->getContentHandlerFactory();
@@ -416,7 +422,6 @@ class Hooks {
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
 			],
 		];
-		return true;
 	}
 
 	/**
@@ -429,14 +434,13 @@ class Hooks {
 	 * @param ApiBase $module
 	 * @param null &$reset Set to a ScopedCallback used to reset any hooks set.
 	 * @param bool &$suppressCache
-	 * @return bool
 	 */
-	public static function onApiMakeParserOptions(
+	public function onApiMakeParserOptions(
 		$options, $title, $params, $module, &$reset, &$suppressCache
 	) {
 		// Shouldn't happen, but...
 		if ( !self::isUsableApiModule( $module ) ) {
-			return true;
+			return;
 		}
 
 		$params += [
@@ -539,8 +543,6 @@ class Hooks {
 				ScopedCallback::consume( $resetLogic );
 			} );
 		}
-
-		return true;
 	}
 
 	/**
