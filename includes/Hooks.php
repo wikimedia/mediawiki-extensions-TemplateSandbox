@@ -98,7 +98,7 @@ class Hooks implements
 	public function onAlternateEditPreview( $editpage, &$content, &$out,
 		&$parserOutput
 	) {
-		if ( empty( $editpage->templatesandbox_preview ) ) {
+		if ( !isset( $editpage->templatesandbox_preview ) ) {
 			return true;
 		}
 
