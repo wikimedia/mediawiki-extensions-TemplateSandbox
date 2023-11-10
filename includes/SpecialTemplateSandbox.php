@@ -21,11 +21,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
 
 	/**
-	 * @var null|Title
-	 */
-	private $title = null;
-
-	/**
 	 * @var null|ParserOutput
 	 */
 	private $output = null;
@@ -142,12 +137,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 				)
 			);
 		} elseif ( $this->output !== null ) {
-			// Wrap output in a div for proper language markup.
-			$pageLang = $this->title->getPageViewLanguage();
-			$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
-				'class' => 'mw-content-' . $pageLang->getDir() ];
-			$this->output->setText( Html::rawElement( 'div', $attribs, $this->output->getRawText() ) );
-
 			// Anons have predictable edit tokens, only do the JS/CSS preview for logged-in users.
 			if ( $user->isAnon() ) {
 				$output->addHTML(
@@ -282,7 +271,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts->setIsSectionPreview( false );
 		$logic = new Logic( $this->prefixes, null, null );
 		$reset = $logic->setupForParse( $popts );
-		$this->title = $title;
 		$this->output = $this->contentRenderer->getParserOutput( $content, $title, $rev->getId(), $popts );
 
 		return Status::newGood();

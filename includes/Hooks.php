@@ -241,11 +241,6 @@ class Hooks implements
 			)
 		);
 
-		$pageLang = $title->getPageViewLanguage();
-		$attribs = [ 'lang' => $pageLang->getHtmlCode(), 'dir' => $pageLang->getDir(),
-			'class' => 'mw-content-' . $pageLang->getDir() ];
-		$out = Html::rawElement( 'div', $attribs, $out );
-
 		$out = $previewhead . $out . $editpage->previewTextAfterContent;
 
 		return false;
