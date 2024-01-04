@@ -3,19 +3,19 @@
 namespace MediaWiki\Extension\TemplateSandbox;
 
 use Content;
-use Html;
 use HTMLForm;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\EditPage\EditPage;
+use MediaWiki\Html\Html;
 use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
-use ParserOutput;
-use SpecialPage;
-use Status;
 
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
