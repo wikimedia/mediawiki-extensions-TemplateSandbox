@@ -126,7 +126,7 @@ if (
 		}
 	} );
 
-	mw.hook( 've.deactivate' ).add( function () {
+	mw.hook( 've.deactivationComplete' ).add( function () {
 		// Set to undefined so value cannot be restored
 		titleInput = undefined;
 	} );
