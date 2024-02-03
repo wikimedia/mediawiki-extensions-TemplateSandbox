@@ -96,7 +96,7 @@ function showPreview() {
 }
 
 if (
-	( new mw.Uri() ).query.wpTemplateSandboxShow !== undefined ||
+	new URL( location.href ).searchParams.has( 'wpTemplateSandboxShow' ) ||
 	require( './namespaces.json' ).indexOf( mw.config.get( 'wgNamespaceNumber' ) ) !== -1
 ) {
 	mw.hook( 've.saveDialog.stateChanged' ).add( function () {
