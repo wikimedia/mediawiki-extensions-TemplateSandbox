@@ -40,6 +40,23 @@
 			"scripts": "ext.TemplateSandbox.js",
 			"dependencies": "ext.TemplateSandbox.top"
 		},
+		"ext.TemplateSandbox.preview": {
+			"messages": [
+				"templatesandbox-preview"
+			],
+			"packageFiles": [
+				"ext.TemplateSandbox.preview.js",
+				{
+					"name": "parsedMessages.json",
+					"callback": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::getParsedMessages"
+				}
+			],
+			"dependencies": [
+				"jquery.spinner",
+				"mediawiki.util",
+				"mediawiki.page.preview"
+			]
+		},
 		"ext.TemplateSandbox.visualeditor": {
 			"messages": [
 				"templatesandbox-editform-view-label",
@@ -54,7 +71,7 @@
 				"ext.TemplateSandbox.VisualEditor.js",
 				{
 					"name": "namespaces.json",
-					"callback": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::getResourceLoaderData"
+					"callback": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::getTemplateNamespaces"
 				}
 			],
 			"dependencies": [

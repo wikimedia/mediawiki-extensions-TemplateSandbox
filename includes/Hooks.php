@@ -369,6 +369,11 @@ class Hooks implements
 			] );
 		}
 		$output->addHTML( $fieldsetLayout );
+
+		$optionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+		if ( $optionsLookup->getOption( $context->getUser(), 'uselivepreview' ) ) {
+			$output->addModules( 'ext.TemplateSandbox.preview' );
+		}
 	}
 
 	/**
@@ -541,6 +546,19 @@ class Hooks implements
 	}
 
 	/**
+	 * Function that returns an array of parsed messages used in live preview
+	 * for the ResourceLoader
+	 *
+	 * @param RL\Context $context
+	 * @return array
+	 */
+	public static function getParsedMessages( $context ) {
+		return [
+			'templatesandbox-previewnote' => $context->msg( 'templatesandbox-previewnote' )->parse(),
+		];
+	}
+
+	/**
 	 * Function that returns an array of valid namespaces to show the page
 	 * preview form on for the ResourceLoader
 	 *
@@ -548,7 +566,7 @@ class Hooks implements
 	 * @param Config $config
 	 * @return array
 	 */
-	public static function getResourceLoaderData( $context, $config ) {
+	public static function getTemplateNamespaces( $context, $config ) {
 		return array_merge(
 			$config->get( 'TemplateSandboxEditNamespaces' ),
 			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
