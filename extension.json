@@ -58,6 +58,7 @@
 				}
 			],
 			"dependencies": [
+				"web2017-polyfills",
 				"oojs-ui",
 				"mediawiki.jqueryMsg",
 				"mediawiki.widgets"
