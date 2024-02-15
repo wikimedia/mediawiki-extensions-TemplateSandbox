@@ -271,7 +271,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$popts->setIsSectionPreview( false );
 		$logic = new Logic( $this->prefixes, null, null );
 		$reset = $logic->setupForParse( $popts );
-		$this->output = $this->contentRenderer->getParserOutput( $content, $title, $rev->getId(), $popts );
+		$this->output = $this->contentRenderer->getParserOutput( $content, $title, $rev, $popts );
 
 		return Status::newGood();
 	}

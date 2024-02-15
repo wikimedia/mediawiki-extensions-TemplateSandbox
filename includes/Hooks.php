@@ -202,7 +202,7 @@ class Hooks implements
 				$user
 			);
 			$contentRenderer = $services->getContentRenderer();
-			$parserOutput = $contentRenderer->getParserOutput( $pageContent, $title, $revRecord->getId(), $popts );
+			$parserOutput = $contentRenderer->getParserOutput( $pageContent, $title, $revRecord, $popts );
 
 			$output->addParserOutputMetadata( $parserOutput );
 			if ( $output->userCanPreview() ) {
