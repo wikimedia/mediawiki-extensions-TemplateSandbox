@@ -159,7 +159,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 
 			$titleText = $this->output->getTitleText();
 			if ( strval( $titleText ) !== '' ) {
-				$output->setPageTitle( $this->msg( 'templatesandbox-title-output', $titleText ) );
+				$output->setPageTitleMsg( $this->msg( 'templatesandbox-title-output', $titleText ) );
 			}
 		}
 	}
