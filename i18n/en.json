@@ -21,7 +21,7 @@
 	"templatesandbox-editform-view-label": "Show preview",
 	"templatesandbox-editform-helptext": "",
 	"templatesandbox-preview": "Preview of $2",
-	"templatesandbox-previewnote": "'''Remember that this is only a preview of [[:$1]].'''\nYour changes have not yet been saved!",
+	"templatesandbox-previewnote": "<strong>Remember that this is only a preview of [[:$1]].</strong>\nYour changes have not yet been saved!",
 	"templatesandbox-invalid-title": "The title you specified is invalid.",
 	"templatesandbox-title-not-exists": "The title you specified does not exist.",
 	"templatesandbox-revision-not-exists": "The revision you specified does not exist.",

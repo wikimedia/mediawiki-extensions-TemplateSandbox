@@ -41,19 +41,17 @@
 		"ext.TemplateSandbox.preview": {
 			"messages": [
 				"templatesandbox-preview",
+				"templatesandbox-previewnote",
 				"templatesandbox-template-not-used"
 			],
 			"packageFiles": [
-				"ext.TemplateSandbox.preview.js",
-				{
-					"name": "parsedMessages.json",
-					"callback": "MediaWiki\\Extension\\TemplateSandbox\\Hooks::getParsedMessages"
-				}
+				"ext.TemplateSandbox.preview.js"
 			],
 			"dependencies": [
 				"jquery.spinner",
 				"mediawiki.util",
 				"mediawiki.page.preview",
+				"mediawiki.jqueryMsg",
 				"ext.TemplateSandbox"
 			]
 		},

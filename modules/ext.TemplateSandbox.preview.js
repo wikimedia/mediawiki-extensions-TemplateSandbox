@@ -1,8 +1,7 @@
 /** extensions/TemplateSandbox/modules/ext.TemplateSandbox.preview.js */
 
 /* eslint-disable no-jquery/no-global-selector */
-const preview = require( 'mediawiki.page.preview' ),
-	parsedMessages = require( './parsedMessages.json' );
+const preview = require( 'mediawiki.page.preview' );
 
 /**
  * Modify the config and response objects based on the response.
@@ -28,22 +27,7 @@ function responseHandler( config, response ) {
 	// to be consistent with the server side.
 	config.previewHeader = mw.msg( 'templatesandbox-preview', response.parse.title, displayTitle );
 
-	const $previewNote = $( $.parseHTML( parsedMessages[ 'templatesandbox-previewnote' ] ) );
-
-	// Fix the parsed "[[:$1]]".
-	$previewNote.filter( 'a' ).add( $previewNote.find( 'a' ) ).filter( function () {
-		// Make sure this is the link we're looking for.
-		// href and title cannot be relied upon because they vary by whether
-		// the page "$1" exists.
-		return this.textContent === '$1';
-	} ).attr( {
-		href: mw.util.getUrl( response.parse.title ),
-		class: null,
-		title: response.parse.title
-	} ).text( response.parse.title );
-
-	// eslint-disable-next-line no-jquery/variable-pattern
-	config.previewNote = $previewNote;
+	config.previewNote = mw.message( 'templatesandbox-previewnote', response.parse.title ).parseDom();
 }
 
 /**
@@ -55,8 +39,6 @@ function doTemplateSandboxPreview( e ) {
 
 	const promise = preview.doPreview( {
 		isLivePreview: true,
-		previewHeader: mw.msg( 'preview' ),
-		previewNote: parsedMessages.previewnote,
 		// This is hidden and identical to wgPageName by default, but that
 		// may change in the future, and there already exist user scripts
 		// that allow customizing it.
