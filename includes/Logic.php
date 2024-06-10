@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\TemplateSandbox;
 
 use Content;
 use InvalidArgumentException;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
@@ -12,7 +13,6 @@ use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use ParserOptions;
-use RequestContext;
 use Wikimedia\ScopedCallback;
 
 /**
