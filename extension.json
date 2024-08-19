@@ -16,7 +16,8 @@
 				"RevisionLookup",
 				"ContentHandlerFactory",
 				"WikiPageFactory",
-				"ContentRenderer"
+				"ContentRenderer",
+				"TempUserConfig"
 			]
 		}
 	},

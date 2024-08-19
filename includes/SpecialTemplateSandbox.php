@@ -16,6 +16,7 @@ use MediaWiki\Revision\SlotRecord;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
+use MediaWiki\User\TempUser\TempUserConfig;
 
 class SpecialTemplateSandbox extends SpecialPage {
 	private $prefixes = [];
@@ -37,6 +38,9 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/** @var ContentRenderer */
 	private $contentRenderer;
 
+	/** @var TempUserConfig */
+	private $tempUserConfig;
+
 	/**
 	 * @param RevisionLookup $revisionLookup
 	 * @param IContentHandlerFactory $contentHandlerFactory
@@ -47,13 +51,15 @@ class SpecialTemplateSandbox extends SpecialPage {
 		RevisionLookup $revisionLookup,
 		IContentHandlerFactory $contentHandlerFactory,
 		WikiPageFactory $wikiPageFactory,
-		ContentRenderer $contentRenderer
+		ContentRenderer $contentRenderer,
+		TempUserConfig $tempUserConfig
 	) {
 		parent::__construct( 'TemplateSandbox' );
 		$this->revisionLookup = $revisionLookup;
 		$this->contentHandlerFactory = $contentHandlerFactory;
 		$this->wikiPageFactory = $wikiPageFactory;
 		$this->contentRenderer = $contentRenderer;
+		$this->tempUserConfig = $tempUserConfig;
 	}
 
 	protected function getGroupName() {
@@ -71,9 +77,14 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$request->setVal( 'page', $par );
 		}
 
-		$default_prefix = Title::makeTitle( NS_USER,
-			$this->getUser()->getName() . '/' . $this->msg( 'templatesandbox-suffix' )->plain()
-		)->getPrefixedText();
+		if ( $this->tempUserConfig->isEnabled() && $this->getUser()->isAnon() ) {
+			// Don't expose IP address for anonymous users if using temp accounts.
+			$default_prefix = null;
+		} else {
+			$default_prefix = Title::makeTitle( NS_USER,
+				$this->getUser()->getName() . '/' . $this->msg( 'templatesandbox-suffix' )->plain()
+			)->getPrefixedText();
+		}
 
 		$form = HTMLForm::factory( 'ooui', [
 			'prefix' => [
