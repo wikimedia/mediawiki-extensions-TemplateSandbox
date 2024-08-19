@@ -18,6 +18,7 @@ use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 
 class SpecialTemplateSandbox extends SpecialPage {
+	/** @var string[] */
 	private $prefixes = [];
 
 	/**
