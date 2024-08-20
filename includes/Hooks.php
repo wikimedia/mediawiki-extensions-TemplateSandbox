@@ -46,6 +46,7 @@ class Hooks implements
 	APIGetAllowedParamsHook,
 	ApiMakeParserOptionsHook
 {
+	/** @var int */
 	private static $counter = 0;
 
 	/**

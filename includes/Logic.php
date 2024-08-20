@@ -19,15 +19,16 @@ use Wikimedia\ScopedCallback;
  * Business logic class for TemplateSandbox
  */
 class Logic {
+	/** @var int */
 	private static $counter = 0;
 
-	/** Prefixes to search for sandbox templates */
+	/** @var string[] Prefixes to search for sandbox templates */
 	private $prefixes = [];
 
-	/** Title to replace with $content */
+	/** @var Title|null Title to replace with $content */
 	private $title = null;
 
-	/** Content to replace $title */
+	/** @var Content|null Content to replace $title */
 	private $content = null;
 
 	/**

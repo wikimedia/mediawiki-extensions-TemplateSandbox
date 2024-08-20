@@ -19,6 +19,7 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\TempUser\TempUserConfig;
 
 class SpecialTemplateSandbox extends SpecialPage {
+	/** @var string[] */
 	private $prefixes = [];
 
 	/**
