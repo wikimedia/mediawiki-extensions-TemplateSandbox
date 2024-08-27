@@ -256,10 +256,8 @@ class Hooks implements
 	 * @param int &$tabindex
 	 */
 	public function onEditPage__showStandardInputs_options( $editpage, $output, &$tabindex ) {
-		global $wgTemplateSandboxEditNamespaces;
-
 		$namespaces = array_merge(
-			$wgTemplateSandboxEditNamespaces,
+			$output->getConfig()->get( 'TemplateSandboxEditNamespaces' ),
 			ExtensionRegistry::getInstance()->getAttribute( 'TemplateSandboxEditNamespaces' )
 		);
 
