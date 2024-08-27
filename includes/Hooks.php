@@ -12,21 +12,26 @@ use ExtensionRegistry;
 use MediaWiki\Api\Hook\APIGetAllowedParamsHook;
 use MediaWiki\Api\Hook\ApiMakeParserOptionsHook;
 use MediaWiki\Config\Config;
+use MediaWiki\Content\IContentHandlerFactory;
+use MediaWiki\Content\Renderer\ContentRenderer;
+use MediaWiki\Content\Transform\ContentTransformer;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\AlternateEditPreviewHook;
 use MediaWiki\Hook\EditPage__importFormDataHook;
 use MediaWiki\Hook\EditPage__showStandardInputs_optionsHook;
+use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
+use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\Widget\TitleInputWidget;
 use MWContentSerializationException;
 use OOUI\ActionFieldLayout;
@@ -48,6 +53,29 @@ class Hooks implements
 {
 	/** @var int */
 	private static $counter = 0;
+
+	private IContentHandlerFactory $contentHandlerFactory;
+	private ContentRenderer $contentRenderer;
+	private ContentTransformer $contentTransformer;
+	private HookContainer $hookContainer;
+	private UserOptionsLookup $userOptionsLookup;
+	private WikiPageFactory $wikiPageFactory;
+
+	public function __construct(
+		IContentHandlerFactory $contentHandlerFactory,
+		ContentRenderer $contentRenderer,
+		ContentTransformer $contentTransformer,
+		HookContainer $hookContainer,
+		UserOptionsLookup $userOptionsLookup,
+		WikiPageFactory $wikiPageFactory
+	) {
+		$this->contentHandlerFactory = $contentHandlerFactory;
+		$this->contentRenderer = $contentRenderer;
+		$this->contentTransformer = $contentTransformer;
+		$this->hookContainer = $hookContainer;
+		$this->userOptionsLookup = $userOptionsLookup;
+		$this->wikiPageFactory = $wikiPageFactory;
+	}
 
 	/**
 	 * Hook for EditPage::importFormData to parse our new form fields, and if
@@ -170,11 +198,9 @@ class Hooks implements
 			$popts = $editpage->getArticle()->getPage()->makeParserOptions(
 				$context
 			);
-			$services = MediaWikiServices::getInstance();
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
-			$contentTransformer = $services->getContentTransformer();
-			$content = $contentTransformer->preSaveTransform(
+			$content = $this->contentTransformer->preSaveTransform(
 				$content,
 				$templatetitle,
 				$user,
@@ -185,7 +211,7 @@ class Hooks implements
 				' [[#' . EditPage::EDITFORM_ID . '|' . $lang->getArrow() . ' ' .
 				$context->msg( 'continue-editing' )->text() . ']]';
 
-			$page = $services->getWikiPageFactory()->newFromTitle( $title );
+			$page = $this->wikiPageFactory->newFromTitle( $title );
 			$popts = $page->makeParserOptions( $context );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
@@ -202,8 +228,7 @@ class Hooks implements
 				RevisionRecord::FOR_THIS_USER,
 				$user
 			);
-			$contentRenderer = $services->getContentRenderer();
-			$parserOutput = $contentRenderer->getParserOutput( $pageContent, $title, $revRecord, $popts );
+			$parserOutput = $this->contentRenderer->getParserOutput( $pageContent, $title, $revRecord, $popts );
 
 			$output->addParserOutputMetadata( $parserOutput );
 			if ( $output->userCanPreview() ) {
@@ -371,8 +396,7 @@ class Hooks implements
 		}
 		$output->addHTML( $fieldsetLayout );
 
-		$optionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
-		if ( $optionsLookup->getOption( $context->getUser(), 'uselivepreview' ) ) {
+		if ( $this->userOptionsLookup->getOption( $context->getUser(), 'uselivepreview' ) ) {
 			$output->addModules( 'ext.TemplateSandbox.preview' );
 		}
 	}
@@ -399,7 +423,6 @@ class Hooks implements
 			return;
 		}
 
-		$contentHandlerFactory = MediaWikiServices::getInstance()->getContentHandlerFactory();
 		$params += [
 			'templatesandboxprefix' => [
 				ParamValidator::PARAM_TYPE => 'string',
@@ -415,11 +438,11 @@ class Hooks implements
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-text',
 			],
 			'templatesandboxcontentmodel' => [
-				ParamValidator::PARAM_TYPE => $contentHandlerFactory->getContentModels(),
+				ParamValidator::PARAM_TYPE => $this->contentHandlerFactory->getContentModels(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentmodel',
 			],
 			'templatesandboxcontentformat' => [
-				ParamValidator::PARAM_TYPE => $contentHandlerFactory->getAllContentFormats(),
+				ParamValidator::PARAM_TYPE => $this->contentHandlerFactory->getAllContentFormats(),
 				ApiBase::PARAM_HELP_MSG => 'templatesandbox-apihelp-contentformat',
 			],
 		];
@@ -484,7 +507,7 @@ class Hooks implements
 			if ( $params['contentmodel'] == '' ) {
 				$contentHandler = $page->getContentHandler();
 			} else {
-				$contentHandler = MediaWikiServices::getInstance()->getContentHandlerFactory()
+				$contentHandler = $this->contentHandlerFactory
 					// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 					->getContentHandler( $params['contentmodel'] );
 			}
@@ -510,8 +533,7 @@ class Hooks implements
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$user = RequestContext::getMain()->getUser();
-			$contentTransformer = MediaWikiServices::getInstance()->getContentTransformer();
-			$content = $contentTransformer->preSaveTransform(
+			$content = $this->contentTransformer->preSaveTransform(
 				$content,
 				$templatetitle,
 				$user,
@@ -527,17 +549,19 @@ class Hooks implements
 			$resetLogic = $logic->setupForParse( $options );
 			$suppressCache = true;
 
-			$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
-			$resetHook = $hookContainer->scopedRegister( 'ApiParseMakeOutputPage', static function ( $module, $output )
-				use ( $prefixes, $templatetitle, $content )
-			{
-				if ( $prefixes ) {
-					Logic::addSubpageHandlerToOutput( $prefixes, $output );
+			$resetHook = $this->hookContainer->scopedRegister(
+				'ApiParseMakeOutputPage',
+				static function ( $module, $output )
+					use ( $prefixes, $templatetitle, $content )
+				{
+					if ( $prefixes ) {
+						Logic::addSubpageHandlerToOutput( $prefixes, $output );
+					}
+					if ( $templatetitle ) {
+						$output->addContentOverride( $templatetitle, $content );
+					}
 				}
-				if ( $templatetitle ) {
-					$output->addContentOverride( $templatetitle, $content );
-				}
-			} );
+			);
 
 			$reset = new ScopedCallback( static function () use ( &$resetLogic, &$resetHook ) {
 				ScopedCallback::consume( $resetHook );

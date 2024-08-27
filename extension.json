@@ -96,7 +96,15 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\TemplateSandbox\\Hooks"
+			"class": "MediaWiki\\Extension\\TemplateSandbox\\Hooks",
+			"services": [
+				"ContentHandlerFactory",
+				"ContentRenderer",
+				"ContentTransformer",
+				"HookContainer",
+				"UserOptionsLookup",
+				"WikiPageFactory"
+			]
 		}
 	},
 	"attributes": {
