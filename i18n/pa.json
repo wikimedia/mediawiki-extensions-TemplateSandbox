@@ -18,6 +18,6 @@
 	"templatesandbox-previewnote": "'''ਯਾਦ ਰੱਖੋ ਕਿ ਇਹ [[:$1]] ਦੀ ਸਿਰਫ਼ ਇੱਕ ਝਲਕ ਹੈ।'''\nਤੁਹਾਡੀਆਂ ਤਬਦੀਲੀਆਂ ਅਜੇ ਤੱਕ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ!",
 	"templatesandbox-invalid-title": "ਤੁਹਾਡੇ ਵੱਲੋਂ ਦਿੱਤਾ ਗਿਆ ਸਿਰਲੇਖ ਅਵੈਧ ਹੈ।",
 	"templatesandbox-title-not-exists": "ਤੁਹਾਡੇ ਵੱਲੋਂ ਦਿੱਤਾ ਗਿਆ ਸਿਰਲੇਖ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।",
-	"templatesandbox-invalid-prefix": "ਤੁਹਾਡੇ ਦੁਆਰਾ ਨਿਰਧਾਰਤ ਕੱਚਾ ਖ਼ਾਕਾ ਅਗੇਤਰ ਅਵੈਧ ਹੈ।",
-	"templatesandbox-prefix-not-local": "ਤੁਹਾਡੇ ਦੁਆਰਾ ਨਿਰਧਾਰਿਤ ਕੱਚਾ ਖ਼ਾਕਾ ਅਗੇਤਰ ਸਥਾਨਕ ਨਹੀਂ ਹੈ।"
+	"templatesandbox-invalid-prefix": "ਤੁਹਾਡੇ ਵੱਲੋਂ ਨਿਰਧਾਰਤ ਕੱਚਾ ਖ਼ਾਕਾ ਅਗੇਤਰ ਗਲਤ ਹੈ।",
+	"templatesandbox-prefix-not-local": "ਤੁਹਾਡੇ ਵੱਲੋਂ ਨਿਰਧਾਰਿਤ ਕੱਚਾ ਖ਼ਾਕਾ ਅਗੇਤਰ ਸਥਾਨਕ ਨਹੀਂ ਹੈ।"
 }
