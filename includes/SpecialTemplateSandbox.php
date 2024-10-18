@@ -63,10 +63,14 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$this->tempUserConfig = $tempUserConfig;
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'wiki';
 	}
 
+	/**
+	 * @param string|null $par
+	 */
 	public function execute( $par ) {
 		$this->setHeaders();
 		$this->addHelpLink( 'Help:Extension:TemplateSandbox' );
