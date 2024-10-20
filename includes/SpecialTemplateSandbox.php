@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\TemplateSandbox;
 
-use Content;
+use MediaWiki\Content\Content;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\EditPage\EditPage;

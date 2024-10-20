@@ -4,14 +4,13 @@ namespace MediaWiki\Extension\TemplateSandbox;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 
-use ApiBase;
-use ApiExpandTemplates;
-use ApiParse;
-use Content;
-use ExtensionRegistry;
+use MediaWiki\Api\ApiBase;
+use MediaWiki\Api\ApiExpandTemplates;
+use MediaWiki\Api\ApiParse;
 use MediaWiki\Api\Hook\APIGetAllowedParamsHook;
 use MediaWiki\Api\Hook\ApiMakeParserOptionsHook;
 use MediaWiki\Config\Config;
+use MediaWiki\Content\Content;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\Content\Transform\ContentTransformer;
@@ -25,7 +24,9 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Revision\RevisionRecord;
@@ -33,16 +34,15 @@ use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\Widget\TitleInputWidget;
+use MediaWiki\Xml\Xml;
 use MWContentSerializationException;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\FieldsetLayout;
 use OOUI\HtmlSnippet;
 use OOUI\Layout;
-use ParserOptions;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ScopedCallback;
-use Xml;
 
 class Hooks implements
 	EditPage__importFormDataHook,

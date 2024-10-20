@@ -2,17 +2,17 @@
 
 namespace MediaWiki\Extension\TemplateSandbox;
 
-use Content;
 use InvalidArgumentException;
+use MediaWiki\Content\Content;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageReference;
+use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
-use ParserOptions;
 use Wikimedia\ScopedCallback;
 
 /**
