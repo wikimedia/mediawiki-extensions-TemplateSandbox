@@ -238,11 +238,11 @@ class Hooks implements
 			$dtitle = $parserOutput->getDisplayTitle();
 			$parserOutput->setTitleText( '' );
 			$skinOptions = $output->getSkin()->getOptions();
-			$out = $parserOutput->getText( [
+			$out = $parserOutput->runOutputPipeline( $popts, [
 				'injectTOC' => $skinOptions['toc'],
 				'enableSectionEditLinks' => false,
 				'includeDebugInfo' => true,
-			] );
+			] )->getContentHolderText();
 
 			if ( count( $parserOutput->getWarnings() ) ) {
 				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
