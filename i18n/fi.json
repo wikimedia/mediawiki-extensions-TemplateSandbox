@@ -14,7 +14,7 @@
 	"templatesandbox-desc": "[[Special:TemplateSandbox|Renderöi sivun]] ottaen mukaan mallineet hiekkalaatikosta",
 	"templatesandbox-suffix": "hiekkalaatikko",
 	"templatesandbox-legend": "Mallinehiekkalaatikko",
-	"templatesandbox-text": "Voit valita joukon hiekkalaatikkosivuillesi tallentamia mallineita käyttämällä asianmukaista hiekkalaatikon etuliitettä.\nEsimerkiksi jos haluat esikatsella mallineen {{ns:Template}}:Testi versiota, jonka olet tallentanut nimellä ”{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Testi”, käytä etuliitteenä ”{{ns:User}}:Foo/{{int:templatesandbox-suffix}}”.",
+	"templatesandbox-text": "Voit valita joukon hiekkalaatikkosivuillesi tallentamia mallineita käyttämällä asianmukaista hiekkalaatikon etuliitettä.\nEsimerkiksi, jos haluat esikatsella mallineen {{ns:Template}}:Testi versiota, jonka olet tallentanut nimellä ”{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Testi”, käytä etuliitteenä ”{{ns:User}}:Foo/{{int:templatesandbox-suffix}}”.",
 	"templatesandbox-prefix-label": "Hiekkalaatikon etuliite:",
 	"templatesandbox-page-label": "Renderöi sivu:",
 	"templatesandbox-revid-label": "Renderöi versio:",
@@ -37,5 +37,6 @@
 	"templatesandbox-editform-need-title": "Esikatsellaksesi toista sivua tällä mallineella, täytyy sivun otsikko olla annettuna.",
 	"templatesandbox-editform-invalid-template": "Antamasi mallineen nimi ei kelpaa.",
 	"templatesandbox-editform-invalid-title": "Esikatselua varten antamasi otsikko ei kelpaa.",
-	"templatesandbox-editform-title-not-exists": "Esikatselua varten antamaasi otsikkoa ei ole."
+	"templatesandbox-editform-title-not-exists": "Esikatselua varten antamaasi otsikkoa ei ole.",
+	"templatesandbox-failed-replace-section": "Olemassa olevan sivun osion korvaaminen epäonnistui."
 }
