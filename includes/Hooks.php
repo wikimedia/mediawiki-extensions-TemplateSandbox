@@ -218,10 +218,7 @@ class Hooks implements
 			$logic = new Logic( [], $templatetitle, $content );
 			$reset = $logic->setupForParse( $popts );
 
-			$revRecord = call_user_func_array(
-				$popts->getCurrentRevisionRecordCallback(),
-				[ $title ]
-			);
+			$revRecord = $popts->getCurrentRevisionRecordCallback()( $title );
 
 			$pageContent = $revRecord->getContent(
 				SlotRecord::MAIN,
