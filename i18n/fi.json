@@ -32,7 +32,7 @@
 	"templatesandbox-revision-no-content": "Määrittämäässäsi versiossa ei ole sisältöä tai sinulla ei ole oikeuksia nähdä sitä.",
 	"templatesandbox-invalid-prefix": "Antamaasi hiekkalaatikon etuliitettä ei ole.",
 	"templatesandbox-prefix-not-local": "Antamasi hiekkalaatikon etuliite ei sijaitse tällä sivustolla.",
-	"templatesandbox-page-or-revid": "Anna joko sivun otsikko tai muokkaustunniste.",
+	"templatesandbox-page-or-revid": "Anna joko sivun otsikko tai versiotunniste.",
 	"templatesandbox-editform-need-template": "Esikatsellaksesi toista sivua tällä mallineella, täytyy mallineen nimi olla annettuna.",
 	"templatesandbox-editform-need-title": "Esikatsellaksesi toista sivua tällä mallineella, täytyy sivun otsikko olla annettuna.",
 	"templatesandbox-editform-invalid-template": "Antamasi mallineen nimi ei kelpaa.",
