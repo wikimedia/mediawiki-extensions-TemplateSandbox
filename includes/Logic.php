@@ -100,7 +100,7 @@ class Logic {
 						break;
 					}
 				}
-				return call_user_func( $oldCurrentRevisionRecordCallback, $title, $parser );
+				return $oldCurrentRevisionRecordCallback( $title, $parser );
 			}
 		);
 
