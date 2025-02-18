@@ -1,10 +1,10 @@
 /* eslint-disable no-implicit-globals */
 /* eslint-disable no-jquery/no-global-selector */
 
-var titleInput, submitButton, actionField, api, panelLayout;
+let titleInput, submitButton, actionField, api, panelLayout;
 
 function showPreview() {
-	var saveDialog = ve.init.target.saveDialog;
+	const saveDialog = ve.init.target.saveDialog;
 
 	saveDialog.pushPending();
 	submitButton.setDisabled( true );
@@ -13,7 +13,7 @@ function showPreview() {
 		api = new mw.Api();
 	}
 
-	var apiParams = {
+	const apiParams = {
 		action: 'parse',
 		page: titleInput.getQueryValue(),
 		pst: true,
@@ -35,11 +35,11 @@ function showPreview() {
 		apiParams.variant = mw.config.get( 'wgUserVariant' );
 	}
 
-	api.post( apiParams ).always( function () {
+	api.post( apiParams ).always( () => {
 		saveDialog.popPending();
 		submitButton.setDisabled( false );
-	} ).then( function ( res ) {
-		var veConfig = mw.config.get( 'wgVisualEditor' ),
+	} ).then( ( res ) => {
+		const veConfig = mw.config.get( 'wgVisualEditor' ),
 			$heading = $( '<h1>' )
 				.addClass( [ 'firstHeading', 'mw-first-heading' ] )
 				.html( res.parse.displaytitle ),
@@ -78,8 +78,8 @@ function showPreview() {
 
 		// Fire hook to allow scripts to process the new content
 		mw.hook( 'wikipage.content' ).fire( panelLayout.$element );
-	}, function ( code, data ) {
-		var msg;
+	}, ( code, data ) => {
+		let msg;
 		switch ( code ) {
 			case 'missingtitle':
 				msg = OO.ui.msg( 'templatesandbox-editform-title-not-exists' );
@@ -99,7 +99,7 @@ if (
 	new URL( location.href ).searchParams.has( 'wpTemplateSandboxShow' ) ||
 	require( './namespaces.json' ).indexOf( mw.config.get( 'wgNamespaceNumber' ) ) !== -1
 ) {
-	mw.hook( 've.saveDialog.stateChanged' ).add( function () {
+	mw.hook( 've.saveDialog.stateChanged' ).add( () => {
 		if ( $( '#wpTextbox1' ).length && !$( '#templatesandbox-editform' ).length ) {
 			titleInput = new mw.widgets.TitleInputWidget( {
 				placeholder: OO.ui.msg( 'templatesandbox-editform-page-label' ),
@@ -126,7 +126,7 @@ if (
 		}
 	} );
 
-	mw.hook( 've.deactivationComplete' ).add( function () {
+	mw.hook( 've.deactivationComplete' ).add( () => {
 		// Set to undefined so value cannot be restored
 		titleInput = undefined;
 	} );

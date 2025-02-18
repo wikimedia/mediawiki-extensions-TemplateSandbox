@@ -1,7 +1,7 @@
 /** extensions/TemplateSandbox/modules/ext.TemplateSandbox.preview.js */
 /* eslint-disable no-implicit-globals */
 /* eslint-disable no-jquery/no-global-selector */
-var preview = require( 'mediawiki.page.preview' ),
+const preview = require( 'mediawiki.page.preview' ),
 	parsedMessages = require( './parsedMessages.json' );
 
 /**
@@ -12,7 +12,7 @@ var preview = require( 'mediawiki.page.preview' ),
  * @param {Object} response Parse API response
  */
 function responseHandler( config, response ) {
-	var displayTitle = response.parse.displaytitle;
+	const displayTitle = response.parse.displaytitle;
 
 	// Prevent the live preview API from overwriting the heading,
 	// which should stay saying "Editing Template:Foo" etc.
@@ -22,7 +22,7 @@ function responseHandler( config, response ) {
 	// to be consistent with the server side.
 	config.previewHeader = mw.msg( 'templatesandbox-preview', response.parse.title, displayTitle );
 
-	var $previewNote = $( $.parseHTML( parsedMessages[ 'templatesandbox-previewnote' ] ) );
+	const $previewNote = $( $.parseHTML( parsedMessages[ 'templatesandbox-previewnote' ] ) );
 
 	// Fix the parsed "[[:$1]]".
 	$previewNote.filter( 'a' ).add( $previewNote.find( 'a' ) ).filter( function () {
@@ -45,9 +45,9 @@ function responseHandler( config, response ) {
  * @param {jQuery.Event} e
  */
 function doTemplateSandboxPreview( e ) {
-	var $editform = $( '#editform' );
+	const $editform = $( '#editform' );
 
-	var promise = preview.doPreview( {
+	const promise = preview.doPreview( {
 		isLivePreview: true,
 		previewHeader: mw.msg( 'preview' ),
 		previewNote: parsedMessages.previewnote,
@@ -72,6 +72,6 @@ function doTemplateSandboxPreview( e ) {
 	e.preventDefault();
 }
 
-$( function () {
+$( () => {
 	$( '#wpTemplateSandboxPreview' ).on( 'click', doTemplateSandboxPreview );
 } );
