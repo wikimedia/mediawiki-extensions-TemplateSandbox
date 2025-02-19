@@ -116,6 +116,10 @@ if (
 				expanded: false,
 				padded: true
 			} );
+			if ( mw.config.get( 'skin' ) === 'vector-2022' ) {
+				// HACK: T333665
+				panelLayout.$element.addClass( 've-ui-mwSaveDialog-preview' );
+			}
 
 			submitButton.on( 'click', showPreview );
 			titleInput.on( 'enter', showPreview );
