@@ -9,6 +9,7 @@ use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
@@ -22,10 +23,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 	/** @var string[] */
 	private $prefixes = [];
 
-	/**
-	 * @var null|ParserOutput
-	 */
-	private $output = null;
+	private ?ParserOptions $parserOptions = null;
+	private ?ParserOutput $output = null;
 
 	/** @var RevisionLookup */
 	private $revisionLookup;
@@ -164,7 +163,10 @@ class SpecialTemplateSandbox extends SpecialPage {
 			} else {
 				Logic::addSubpageHandlerToOutput( $this->prefixes, $output );
 			}
-			$output->addParserOutput( $this->output );
+			$output->addParserOutput(
+				$this->output,
+				$this->parserOptions ?? ParserOptions::newFromContext( $this->getContext() )
+			);
 
 			$output->addHTML( Html::rawElement(
 				'div',
@@ -288,6 +290,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 		$logic = new Logic( $this->prefixes, null, null );
 		$reset = $logic->setupForParse( $popts );
 		$this->output = $this->contentRenderer->getParserOutput( $content, $title, $rev, $popts );
+		$this->parserOptions = $popts;
 
 		return Status::newGood();
 	}
