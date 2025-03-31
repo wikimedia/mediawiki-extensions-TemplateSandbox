@@ -1,5 +1,5 @@
 /** extensions/TemplateSandbox/modules/ext.TemplateSandbox.preview.js */
-/* eslint-disable no-implicit-globals */
+
 /* eslint-disable no-jquery/no-global-selector */
 const preview = require( 'mediawiki.page.preview' ),
 	parsedMessages = require( './parsedMessages.json' );

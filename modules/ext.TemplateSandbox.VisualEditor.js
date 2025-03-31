@@ -1,4 +1,3 @@
-/* eslint-disable no-implicit-globals */
 /* eslint-disable no-jquery/no-global-selector */
 
 let titleInput, submitButton, actionField, api, panelLayout;
@@ -97,7 +96,7 @@ function showPreview() {
 
 if (
 	new URL( location.href ).searchParams.has( 'wpTemplateSandboxShow' ) ||
-	require( './namespaces.json' ).indexOf( mw.config.get( 'wgNamespaceNumber' ) ) !== -1
+	require( './namespaces.json' ).includes( mw.config.get( 'wgNamespaceNumber' ) )
 ) {
 	mw.hook( 've.saveDialog.stateChanged' ).add( () => {
 		if ( $( '#wpTextbox1' ).length && !$( '#templatesandbox-editform' ).length ) {
