@@ -35,7 +35,6 @@ use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\Widget\TitleInputWidget;
-use MediaWiki\Xml\Xml;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\FieldsetLayout;
@@ -296,7 +295,7 @@ class Hooks implements
 			// output the values in hidden fields so that a user
 			// using a gadget doesn't have to re-enter them every time
 
-			$html = Xml::openElement( 'span', [ 'id' => 'templatesandbox-editform' ] );
+			$html = Html::openElement( 'span', [ 'id' => 'templatesandbox-editform' ] );
 
 			$html .= Html::hidden( 'wpTemplateSandboxTemplate',
 				$editpage->templatesandbox_template, [ 'id' => 'wpTemplateSandboxTemplate' ]
@@ -306,7 +305,7 @@ class Hooks implements
 				$editpage->templatesandbox_page, [ 'id' => 'wpTemplateSandboxPage' ]
 			);
 
-			$html .= Xml::closeElement( 'span' );
+			$html .= Html::closeElement( 'span' );
 
 			$output->addHTML( $html . "\n" );
 
@@ -324,7 +323,7 @@ class Hooks implements
 			$textAttrs = [
 				'class' => 'mw-templatesandbox-editform-text',
 			];
-			$textHtml = Xml::tags( 'div', $textAttrs, $text->parse() );
+			$textHtml = Html::rawElement( 'div', $textAttrs, $text->parse() );
 		}
 
 		$helptextHtml = '';
@@ -333,7 +332,7 @@ class Hooks implements
 			$helptextAttrs = [
 				'class' => 'mw-templatesandbox-editform-helptext',
 			];
-			$helptextHtml = Xml::tags( 'span', $helptextAttrs, $helptext->parse() );
+			$helptextHtml = Html::rawElement( 'span', $helptextAttrs, $helptext->parse() );
 		}
 
 		$hiddenInputsHtml =
