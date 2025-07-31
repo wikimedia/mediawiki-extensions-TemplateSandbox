@@ -198,6 +198,11 @@ $specialPageAliases['yi'] = [
 	'TemplateSandbox' => [ 'מוסטער־זאמדקאסטן' ],
 ];
 
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'TemplateSandbox' => [ 'TemplateSandbox' ],
+];
+
 /** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'TemplateSandbox' => [ '模板沙盒' ],
