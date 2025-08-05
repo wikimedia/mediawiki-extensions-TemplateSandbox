@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"JeffreyKim"
+			"JeffreyKim",
+			"Ktchankt"
 		]
 	},
-	"templatesandbox": "模板沙盒",
+	"templatesandbox": "模沙盒",
 	"templatesandbox-desc": "[[Special:TemplateSandbox|渲染頁面]]喺沙盒入面包含嘅範本",
 	"templatesandbox-suffix": "沙盒",
-	"templatesandbox-legend": "模板沙盒",
+	"templatesandbox-legend": "模沙盒",
 	"templatesandbox-text": "你可以用適當嘅沙盒前綴揀一組儲存喺你嘅沙盒空間入面嘅範本。\n例如，如果你想預覽一個你已經儲存為\"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Test\"嘅版本嘅\"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\"作為。",
 	"templatesandbox-prefix-label": "沙盒前綴：",
 	"templatesandbox-page-label": "渲染頁面：",
 	"templatesandbox-revid-label": "渲染修訂版：",
 	"templatesandbox-text-label": "渲染維基文字：",
 	"templatesandbox-submit": "睇",
-	"templatesandbox-title-output": "模板沙盒: $1",
+	"templatesandbox-title-output": "模沙盒: $1",
 	"templatesandbox-editform-legend": "預覽頁面用呢個範本",
 	"templatesandbox-editform-page-label": "頁面呔圖",
 	"templatesandbox-editform-view-label": "顯示預覽",
