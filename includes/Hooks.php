@@ -469,7 +469,6 @@ class Hooks implements
 			'templatesandboxcontentformat' => null,
 		];
 		$params = [
-			// @phan-suppress-next-line PhanImpossibleCondition
 			'prefix' => $params['templatesandboxprefix'] ?: [],
 			'title' => $params['templatesandboxtitle'],
 			'text' => $params['templatesandboxtext'],
@@ -502,7 +501,6 @@ class Hooks implements
 				$contentHandler = $page->getContentHandler();
 			} else {
 				$contentHandler = $this->contentHandlerFactory
-					// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 					->getContentHandler( $params['contentmodel'] );
 			}
 
@@ -513,7 +511,6 @@ class Hooks implements
 				$module->dieWithError( [ 'apierror-no-direct-editing', $model, $escName ] );
 			}
 
-			// @phan-suppress-next-line PhanImpossibleCondition
 			$format = $params['contentformat'] ?: $contentHandler->getDefaultFormat();
 			if ( !$contentHandler->isSupportedFormat( $format ) ) {
 				$module->dieWithError( [ 'apierror-badformat', $format, $model, $escName ] );
