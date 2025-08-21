@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"H78c67c",
 			"JeffreyKim",
 			"Ktchankt"
 		]
@@ -16,7 +17,7 @@
 	"templatesandbox-text-label": "渲染維基文字：",
 	"templatesandbox-submit": "睇",
 	"templatesandbox-title-output": "模沙盒: $1",
-	"templatesandbox-editform-legend": "預覽頁面用呢個範本",
+	"templatesandbox-editform-legend": "用呢個模嚟預覽版面",
 	"templatesandbox-editform-page-label": "頁面標題",
 	"templatesandbox-editform-view-label": "顯示預覽",
 	"templatesandbox-preview": "預覽 $2",
