@@ -26,40 +26,14 @@ class SpecialTemplateSandbox extends SpecialPage {
 	private ?ParserOptions $parserOptions = null;
 	private ?ParserOutput $output = null;
 
-	/** @var RevisionLookup */
-	private $revisionLookup;
-
-	/** @var IContentHandlerFactory */
-	private $contentHandlerFactory;
-
-	/** @var WikiPageFactory */
-	private $wikiPageFactory;
-
-	/** @var ContentRenderer */
-	private $contentRenderer;
-
-	/** @var TempUserConfig */
-	private $tempUserConfig;
-
-	/**
-	 * @param RevisionLookup $revisionLookup
-	 * @param IContentHandlerFactory $contentHandlerFactory
-	 * @param WikiPageFactory $wikiPageFactory
-	 * @param ContentRenderer $contentRenderer
-	 */
 	public function __construct(
-		RevisionLookup $revisionLookup,
-		IContentHandlerFactory $contentHandlerFactory,
-		WikiPageFactory $wikiPageFactory,
-		ContentRenderer $contentRenderer,
-		TempUserConfig $tempUserConfig
+		private readonly RevisionLookup $revisionLookup,
+		private readonly IContentHandlerFactory $contentHandlerFactory,
+		private readonly WikiPageFactory $wikiPageFactory,
+		private readonly ContentRenderer $contentRenderer,
+		private readonly TempUserConfig $tempUserConfig,
 	) {
 		parent::__construct( 'TemplateSandbox' );
-		$this->revisionLookup = $revisionLookup;
-		$this->contentHandlerFactory = $contentHandlerFactory;
-		$this->wikiPageFactory = $wikiPageFactory;
-		$this->contentRenderer = $contentRenderer;
-		$this->tempUserConfig = $tempUserConfig;
 	}
 
 	/** @inheritDoc */

@@ -53,27 +53,14 @@ class Hooks implements
 	/** @var int */
 	private static $counter = 0;
 
-	private IContentHandlerFactory $contentHandlerFactory;
-	private ContentRenderer $contentRenderer;
-	private ContentTransformer $contentTransformer;
-	private HookContainer $hookContainer;
-	private UserOptionsLookup $userOptionsLookup;
-	private WikiPageFactory $wikiPageFactory;
-
 	public function __construct(
-		IContentHandlerFactory $contentHandlerFactory,
-		ContentRenderer $contentRenderer,
-		ContentTransformer $contentTransformer,
-		HookContainer $hookContainer,
-		UserOptionsLookup $userOptionsLookup,
-		WikiPageFactory $wikiPageFactory
+		private readonly IContentHandlerFactory $contentHandlerFactory,
+		private readonly ContentRenderer $contentRenderer,
+		private readonly ContentTransformer $contentTransformer,
+		private readonly HookContainer $hookContainer,
+		private readonly UserOptionsLookup $userOptionsLookup,
+		private readonly WikiPageFactory $wikiPageFactory,
 	) {
-		$this->contentHandlerFactory = $contentHandlerFactory;
-		$this->contentRenderer = $contentRenderer;
-		$this->contentTransformer = $contentTransformer;
-		$this->hookContainer = $hookContainer;
-		$this->userOptionsLookup = $userOptionsLookup;
-		$this->wikiPageFactory = $wikiPageFactory;
 	}
 
 	/**
