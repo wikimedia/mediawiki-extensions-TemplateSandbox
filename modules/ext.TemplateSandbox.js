@@ -9,7 +9,7 @@ $( () => {
 		// but they may not have loaded yet.
 		// Ideally, they would just be dependencies of this module,
 		// but OOUI mode is still optional.
-		mw.loader.using( [ 'oojs-ui-core', 'mediawiki.widgets' ] ).done( () => {
+		mw.loader.using( [ 'oojs-ui-core', 'mediawiki.widgets' ] ).then( () => {
 			const widget = OO.ui.infuse( $page );
 			widget.on( 'enter', ( e ) => {
 				$( '#wpTemplateSandboxPreview .oo-ui-inputWidget-input' ).trigger( 'click' );
