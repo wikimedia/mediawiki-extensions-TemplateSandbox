@@ -150,7 +150,7 @@ class SpecialTemplateSandbox extends SpecialPage {
 			$output->addModules( 'mediawiki.collapseFooterLists' );
 
 			$titleText = $this->output->getTitleText();
-			if ( strval( $titleText ) !== '' ) {
+			if ( $titleText !== '' ) {
 				$output->setPageTitleMsg( $this->msg( 'templatesandbox-title-output', $titleText ) );
 			}
 		}
