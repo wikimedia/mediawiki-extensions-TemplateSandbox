@@ -2,8 +2,6 @@
 
 namespace MediaWiki\Extension\TemplateSandbox;
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
-
 use MediaWiki\Api\ApiBase;
 use MediaWiki\Api\ApiExpandTemplates;
 use MediaWiki\Api\ApiParse;
