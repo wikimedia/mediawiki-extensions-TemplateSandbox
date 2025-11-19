@@ -25,6 +25,7 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
+use MediaWiki\Parser\ParserOutputLinkTypes;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\ResourceLoader as RL;
@@ -90,9 +91,16 @@ class Hooks implements
 	 * @return string
 	 */
 	private static function wrapErrorMsg( IContextSource $context, $msg ) {
-		return "<div id='mw-$msg'>\n"
-			. $context->msg( $msg )->parseAsBlock()
-			. "\n</div>";
+		return Html::errorBox( $context->msg( $msg )->parseAsBlock() );
+	}
+
+	private static function hasTemplate( ParserOutput $parserOutput, Title $title ): bool {
+		foreach ( $parserOutput->getLinkList( ParserOutputLinkTypes::TEMPLATE ) as $link ) {
+			if ( $title->isSameLinkAs( $link['link'] ) ) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -207,6 +215,11 @@ class Hooks implements
 				$user
 			);
 			$parserOutput = $this->contentRenderer->getParserOutput( $pageContent, $title, $revRecord, $popts );
+
+			if ( !self::hasTemplate( $parserOutput, $templatetitle ) ) {
+				$out = self::wrapErrorMsg( $context, 'templatesandbox-template-not-used' );
+				return false;
+			}
 
 			$output->addParserOutputMetadata( $parserOutput );
 			if ( $output->userCanPreview() ) {

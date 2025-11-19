@@ -42,5 +42,6 @@
 	"templatesandbox-editform-invalid-template": "Error message displayed when the template name specified for the editpage form is invalid.",
 	"templatesandbox-editform-invalid-title": "Error message displayed when the title specified for the editpage form is invalid.",
 	"templatesandbox-editform-title-not-exists": "Error message displayed when the title specified for the editpage form does not exist.",
-	"templatesandbox-failed-replace-section": "Error message displayed when replacing a section of existing page failed."
+	"templatesandbox-failed-replace-section": "Error message displayed when replacing a section of existing page failed.",
+	"templatesandbox-template-not-used": "Error message shown when the wrong page is used to preview a template."
 }

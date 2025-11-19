@@ -12,16 +12,18 @@ function showPreview() {
 		api = new mw.Api();
 	}
 
+	const templateTitle = mw.config.get( 'wgPageName' );
+
 	const apiParams = {
 		action: 'parse',
 		page: titleInput.getQueryValue(),
 		pst: true,
 		preview: true,
-		templatesandboxtitle: mw.config.get( 'wgPageName' ),
+		templatesandboxtitle: templateTitle,
 		templatesandboxtext: $( '#wpTextbox1' ).textSelection( 'getContents' ),
 		templatesandboxcontentmodel: mw.config.get( 'wgPageContentModel' ),
 		disableeditsection: true,
-		prop: [ 'text', 'categorieshtml', 'displaytitle' ],
+		prop: [ 'text', 'categorieshtml', 'displaytitle', 'templates' ],
 		errorformat: 'html',
 		errorlang: mw.config.get( 'wgUserLanguage' ),
 		errorsuselocal: true,
@@ -38,6 +40,13 @@ function showPreview() {
 		saveDialog.popPending();
 		submitButton.setDisabled( false );
 	} ).then( ( res ) => {
+		if ( !res.parse.templates.some( ( tpl ) => tpl.title === templateTitle ) ) {
+			saveDialog.showErrors( new OO.ui.Error(
+				OO.ui.msg( 'templatesandbox-template-not-used' ),
+				{ recoverable: false } )
+			);
+			return;
+		}
 		const veConfig = mw.config.get( 'wgVisualEditor' ),
 			$heading = $( '<h1>' )
 				.addClass( [ 'firstHeading', 'mw-first-heading' ] )

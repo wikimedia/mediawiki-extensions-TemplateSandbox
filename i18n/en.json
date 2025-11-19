@@ -37,5 +37,6 @@
 	"templatesandbox-editform-invalid-template": "The name of the template you specified is invalid.",
 	"templatesandbox-editform-invalid-title": "The title you specified for previewing is invalid.",
 	"templatesandbox-editform-title-not-exists": "The title you specified for previewing does not exist.",
-	"templatesandbox-failed-replace-section": "Failed to replace section of the existing page."
+	"templatesandbox-failed-replace-section": "Failed to replace section of the existing page.",
+	"templatesandbox-template-not-used": "The template was not used on the specified page."
 }
