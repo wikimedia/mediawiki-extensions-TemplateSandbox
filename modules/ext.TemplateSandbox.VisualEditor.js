@@ -1,5 +1,7 @@
 /* eslint-disable no-jquery/no-global-selector */
 
+const TitleInputWidget = require( 'ext.TemplateSandbox.TemplateSandboxTitleWidget' );
+
 let titleInput, submitButton, actionField, api, panelLayout;
 
 function showPreview() {
@@ -110,9 +112,10 @@ if (
 ) {
 	mw.hook( 've.saveDialog.stateChanged' ).add( () => {
 		if ( $( '#wpTextbox1' ).length && !$( '#templatesandbox-editform' ).length ) {
-			titleInput = new mw.widgets.TitleInputWidget( {
+			titleInput = new TitleInputWidget( {
 				placeholder: OO.ui.msg( 'templatesandbox-editform-page-label' ),
-				value: titleInput ? titleInput.getValue() : undefined
+				value: titleInput ? titleInput.getValue() : undefined,
+				templateTitleFunc: () => mw.config.get( 'wgPageName' )
 			} );
 			submitButton = new OO.ui.ButtonWidget( {
 				label: OO.ui.msg( 'templatesandbox-editform-view-label' )

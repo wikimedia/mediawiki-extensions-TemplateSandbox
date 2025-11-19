@@ -34,12 +34,9 @@
 		"MediaWiki\\Extension\\TemplateSandbox\\": "includes/"
 	},
 	"ResourceModules": {
-		"ext.TemplateSandbox.top": {
-			"styles": "ext.TemplateSandbox.less"
-		},
 		"ext.TemplateSandbox": {
 			"scripts": "ext.TemplateSandbox.js",
-			"dependencies": "ext.TemplateSandbox.top"
+			"dependencies": "ext.TemplateSandbox.TemplateSandboxTitleWidget"
 		},
 		"ext.TemplateSandbox.preview": {
 			"messages": [
@@ -56,7 +53,8 @@
 			"dependencies": [
 				"jquery.spinner",
 				"mediawiki.util",
-				"mediawiki.page.preview"
+				"mediawiki.page.preview",
+				"ext.TemplateSandbox"
 			]
 		},
 		"ext.TemplateSandbox.visualeditor": {
@@ -81,6 +79,13 @@
 				"web2017-polyfills",
 				"oojs-ui",
 				"mediawiki.jqueryMsg",
+				"ext.TemplateSandbox.TemplateSandboxTitleWidget"
+			]
+		},
+		"ext.TemplateSandbox.TemplateSandboxTitleWidget": {
+			"scripts": "ext.TemplateSandbox.TemplateSandboxTitleWidget.js",
+			"styles": "ext.TemplateSandbox.TemplateSandboxTitleWidget.less",
+			"dependencies": [
 				"mediawiki.widgets"
 			]
 		}

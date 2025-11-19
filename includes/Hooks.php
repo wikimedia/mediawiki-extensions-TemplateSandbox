@@ -33,7 +33,6 @@ use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsLookup;
-use MediaWiki\Widget\TitleInputWidget;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
 use OOUI\FieldsetLayout;
@@ -307,7 +306,7 @@ class Hooks implements
 			return;
 		}
 
-		$output->addModuleStyles( 'ext.TemplateSandbox.top' );
+		$output->enableOOUI();
 		$output->addModules( 'ext.TemplateSandbox' );
 
 		$context = $editpage->getContext();
@@ -337,10 +336,6 @@ class Hooks implements
 			// If they submit our form, pass the parameter along for not allowed namespaces
 			Html::hidden( 'wpTemplateSandboxShow', '' );
 
-		$output->enableOOUI();
-		$output->addModules( 'oojs-ui-core' );
-		$output->addModules( 'mediawiki.widgets' );
-
 		$fieldsetLayout =
 			new FieldsetLayout( [
 				'label' => new HtmlSnippet( $context->msg( 'templatesandbox-editform-legend' )->parse() ),
@@ -353,7 +348,7 @@ class Hooks implements
 						'content' => new HtmlSnippet( $textHtml . "\n" . $hiddenInputsHtml )
 					] ),
 					new ActionFieldLayout(
-						new TitleInputWidget( [
+						new TemplateSandboxTitleWidget( [
 							'id' => 'wpTemplateSandboxPage',
 							'name' => 'wpTemplateSandboxPage',
 							'value' => $editpage->templatesandbox_page,
