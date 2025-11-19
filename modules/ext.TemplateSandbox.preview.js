@@ -12,6 +12,12 @@ const preview = require( 'mediawiki.page.preview' ),
  * @param {Object} response Parse API response
  */
 function responseHandler( config, response ) {
+	// If the template was not used, generate an error response
+	if ( !response.parse.templates.some( ( tpl ) => tpl.title === config.title ) ) {
+		config.responseValidationError = mw.msg( 'templatesandbox-template-not-used' );
+		return;
+	}
+
 	const displayTitle = response.parse.displaytitle;
 
 	// Prevent the live preview API from overwriting the heading,
