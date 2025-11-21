@@ -12,7 +12,8 @@ function showPreview() {
 		api = new mw.Api();
 	}
 
-	const templateTitle = mw.config.get( 'wgPageName' );
+	const templateTitle = new mw.Title( mw.config.get( 'wgPageName' ) )
+		.getPrefixedText();
 
 	const apiParams = {
 		action: 'parse',
