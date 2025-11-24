@@ -41,5 +41,6 @@
 	"templatesandbox-editform-invalid-template": "اسم القالب الذي حددته غير صالح.",
 	"templatesandbox-editform-invalid-title": "العنوان الذي حددته للمعاينة غير صالح.",
 	"templatesandbox-editform-title-not-exists": "العنوان الذي حددته للمعاينة غير موجود.",
-	"templatesandbox-failed-replace-section": "فشل استبدال قسم من الصفحة الحالية."
+	"templatesandbox-failed-replace-section": "فشل استبدال قسم من الصفحة الحالية.",
+	"templatesandbox-template-not-used": "لم يتم استخدام الشكل على الصفحة المحددة."
 }

@@ -21,5 +21,6 @@
 	"templatesandbox-editform-view-label": "Претпреглед",
 	"templatesandbox-preview": "Преглед $2",
 	"templatesandbox-previewnote": "'''Ово је само преглед [[:$1]].'''\nВаше измене још нису сачуване!",
-	"templatesandbox-editform-need-title": "Да би се приказао претпреглед друге странице са овим шаблоном, наслов странице мора да буде одређен."
+	"templatesandbox-editform-need-title": "Да би се приказао претпреглед друге странице са овим шаблоном, наслов странице мора да буде одређен.",
+	"templatesandbox-template-not-used": "Шаблон се не користи на конкретној страници."
 }

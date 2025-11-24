@@ -41,5 +41,6 @@
 	"templatesandbox-editform-invalid-template": "نام الگویی که شما تعیین کرده‌اید نامعتبر است.",
 	"templatesandbox-editform-invalid-title": "عنوان مشخص‌شده توسط شما برای پیش‌نمایش نادرست است.",
 	"templatesandbox-editform-title-not-exists": "عنوان مشخص‌شده توسط شما برای پیش‌نمایش ناموجود است.",
-	"templatesandbox-failed-replace-section": "ناتوان در جایگزین بخش صفحهٔ موجود"
+	"templatesandbox-failed-replace-section": "ناتوان در جایگزین بخش صفحهٔ موجود",
+	"templatesandbox-template-not-used": "الگو در صفحهٔ مشخص‌شده استفاده نشده بود."
 }

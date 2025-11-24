@@ -37,5 +37,6 @@
 	"templatesandbox-editform-invalid-template": "O nome de modelo especificado non é válido.",
 	"templatesandbox-editform-invalid-title": "O título que especificou para a vista previa non é válido.",
 	"templatesandbox-editform-title-not-exists": "O título que especificou para a vista previa non existe.",
-	"templatesandbox-failed-replace-section": "Produciuse un erro ao substituír a sección da páxina existente."
+	"templatesandbox-failed-replace-section": "Produciuse un erro ao substituír a sección da páxina existente.",
+	"templatesandbox-template-not-used": "Non se utiliza o modelo na páxina especificada."
 }
