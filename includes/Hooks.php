@@ -308,6 +308,7 @@ class Hooks implements
 
 		$output->enableOOUI();
 		$output->addModules( 'ext.TemplateSandbox' );
+		$output->addModuleStyles( 'ext.TemplateSandbox.styles' );
 
 		$context = $editpage->getContext();
 
