@@ -34,6 +34,9 @@
 		"MediaWiki\\Extension\\TemplateSandbox\\": "includes/"
 	},
 	"ResourceModules": {
+		"ext.TemplateSandbox.styles": {
+			"styles": "ext.TemplateSandbox.less"
+		},
 		"ext.TemplateSandbox": {
 			"scripts": "ext.TemplateSandbox.js",
 			"dependencies": "ext.TemplateSandbox.TemplateSandboxTitleWidget"
