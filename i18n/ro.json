@@ -3,6 +3,7 @@
 		"authors": [
 			"Macofe",
 			"Minisarm",
+			"SZ475",
 			"Strainu",
 			"XXN"
 		]
@@ -21,7 +22,7 @@
 	"templatesandbox-editform-page-label": "Titlul paginii",
 	"templatesandbox-editform-view-label": "Arată previzualizarea",
 	"templatesandbox-preview": "Previzualizare $2",
-	"templatesandbox-previewnote": "'''Țineți cont că aceasta este doar o previzualizare a paginii [[:$1]].'''\nModificările dumneavoastră nu au fost încă salvate!",
+	"templatesandbox-previewnote": "<strong>Rețineți că acesta este doar o previzualizare a [[:$1]].</strong> \nModificările dvs. nu au fost încă salvate!",
 	"templatesandbox-invalid-title": "Titlul specificat nu este corect.",
 	"templatesandbox-title-not-exists": "Titlul specificat nu există.",
 	"templatesandbox-revision-not-exists": "Versiunea specificată nu există.",

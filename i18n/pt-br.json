@@ -27,7 +27,7 @@
 	"templatesandbox-editform-page-label": "Título da página",
 	"templatesandbox-editform-view-label": "Prever",
 	"templatesandbox-preview": "Pré-visualização de $2",
-	"templatesandbox-previewnote": "'''Lembre-se que esta é apenas uma prévia de [[:$1]].'''\nSuas alterações ainda não foram salvas!",
+	"templatesandbox-previewnote": "'''Lembre-se que esta é apenas uma previsão de [[:$1]].'''\nSuas alterações ainda não foram salvas!",
 	"templatesandbox-invalid-title": "O título que você especificou é inválido.",
 	"templatesandbox-title-not-exists": "O título que você especificado não existe.",
 	"templatesandbox-revision-not-exists": "A revisão que você especificou não existe.",

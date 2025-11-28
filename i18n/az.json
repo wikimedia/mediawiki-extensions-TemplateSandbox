@@ -21,7 +21,7 @@
 	"templatesandbox-editform-page-label": "Səhifənin adı",
 	"templatesandbox-editform-view-label": "İlkin baxış",
 	"templatesandbox-preview": "$2 üçün önbaxış",
-	"templatesandbox-previewnote": "Bunun \"[[:$1]]\" səhifəsinin sınaq görüntüsü olduğunu unutmayın.\nDəyişiklikləriniz hələ yayımlanmayıb!",
+	"templatesandbox-previewnote": "<strong>Bunun \"[[:$1]]\" səhifəsinin sınaq görüntüsü olduğunu unutmayın.</strong>\nDəyişiklikləriniz hələ yayımlanmayıb!",
 	"templatesandbox-invalid-title": "Göstərdiyiniz başlıq etibarsızdır.",
 	"templatesandbox-title-not-exists": "Göstərdiyiniz başlıq mövcud deyil.",
 	"templatesandbox-revision-not-exists": "Göstərdiyiniz versiya mövcud deyil.",

@@ -25,7 +25,7 @@
 	"templatesandbox-editform-page-label": "Sivun nimi",
 	"templatesandbox-editform-view-label": "Näytä esikatselu",
 	"templatesandbox-preview": "Sivun $2 esikatselu",
-	"templatesandbox-previewnote": "'''Muista, että tämä on sivun [[:$1]] esikatselu.'''\nMuutoksia ei ole tallennettu!",
+	"templatesandbox-previewnote": "<strong>Muista, että tämä on sivun [[:$1]] esikatselu.</strong>\nMuutoksiasi ei ole tallennettu!",
 	"templatesandbox-invalid-title": "Antamasi otsikko on virheellinen.",
 	"templatesandbox-title-not-exists": "Antamaasi otsikkoa ei ole.",
 	"templatesandbox-revision-not-exists": "Määrittämääsi versiota ei ole.",
@@ -33,10 +33,13 @@
 	"templatesandbox-invalid-prefix": "Antamaasi hiekkalaatikon etuliitettä ei ole.",
 	"templatesandbox-prefix-not-local": "Antamasi hiekkalaatikon etuliite ei sijaitse tällä sivustolla.",
 	"templatesandbox-page-or-revid": "Anna joko sivun otsikko tai versiotunniste.",
+	"templatesandbox-fail-post": "<em>Istuntotietojen menetyksen vuoksi esikatselu on piilotettu varotoimenpiteenä JavaScript-hyökkäyksien torjumiseksi.</em>\n\n<strong>Jos olet oikealla asialla, yritä uudelleen.</strong> \nJos se ei senkään jälkeen toimi, kokeile [[Special:UserLogout|kirjautua ulos]] ja kirjautua takaisin sisään.",
+	"templatesandbox-fail-post-anon": "<em>Koska et ole kirjautunut sisään, esikatselu on piilotettu JavaScript-hyökkäyksien torjumiseksi.</em>\n\n<strong>Jos olet oikealla asialla, [[Special:UserLogin|kirjaudu sisään]] ja yritä uudelleen.</strong>",
 	"templatesandbox-editform-need-template": "Esikatsellaksesi toista sivua tällä mallineella, täytyy mallineen nimi olla annettuna.",
 	"templatesandbox-editform-need-title": "Esikatsellaksesi toista sivua tällä mallineella, täytyy sivun otsikko olla annettuna.",
 	"templatesandbox-editform-invalid-template": "Antamasi mallineen nimi ei kelpaa.",
 	"templatesandbox-editform-invalid-title": "Esikatselua varten antamasi otsikko ei kelpaa.",
 	"templatesandbox-editform-title-not-exists": "Esikatselua varten antamaasi otsikkoa ei ole.",
-	"templatesandbox-failed-replace-section": "Olemassa olevan sivun osion korvaaminen epäonnistui."
+	"templatesandbox-failed-replace-section": "Olemassa olevan sivun osion korvaaminen epäonnistui.",
+	"templatesandbox-template-not-used": "Mallinetta ei käytetty annetulla sivulla."
 }

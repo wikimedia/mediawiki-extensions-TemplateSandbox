@@ -20,7 +20,7 @@
 	"templatesandbox-editform-page-label": "Seitentitel",
 	"templatesandbox-editform-view-label": "Vorschau zeigen",
 	"templatesandbox-preview": "Vorschau von $2",
-	"templatesandbox-previewnote": "'''Dies ist nur eine Vorschau von [[:$1]].'''\nDeine Änderungen wurden noch nicht gespeichert!",
+	"templatesandbox-previewnote": "<strong>Dies ist nur eine Vorschau von [[:$1]].</strong>\nDeine Änderungen wurden noch nicht gespeichert!",
 	"templatesandbox-invalid-title": "Der angegebene Titel ist ungültig.",
 	"templatesandbox-title-not-exists": "Der angegebene Titel ist nicht vorhanden.",
 	"templatesandbox-revision-not-exists": "Die angegebene Version ist nicht vorhanden.",

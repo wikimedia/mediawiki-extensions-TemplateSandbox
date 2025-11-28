@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Diskdance",
+			"ExoHyper2026",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Shizhao",
 			"Tranve",
@@ -26,7 +28,7 @@
 	"templatesandbox-editform-page-label": "页面标题",
 	"templatesandbox-editform-view-label": "显示预览",
 	"templatesandbox-preview": "$2的预览",
-	"templatesandbox-previewnote": "'''请记住这仅为[[:$1]]的预览。'''\n您的更改还未保存！",
+	"templatesandbox-previewnote": "<strong>请记住这仅为[[:$1]]的预览。</strong>\n您的更改还未保存！",
 	"templatesandbox-invalid-title": "您指定的标题无效。",
 	"templatesandbox-title-not-exists": "您指定的标题不存在。",
 	"templatesandbox-revision-not-exists": "您指定的修订版本不存在。",
@@ -42,5 +44,6 @@
 	"templatesandbox-editform-invalid-template": "您指定的模板名无效。",
 	"templatesandbox-editform-invalid-title": "您为预览指定的标题无效。",
 	"templatesandbox-editform-title-not-exists": "您为预览指定的标题不存在。",
-	"templatesandbox-failed-replace-section": "替换现存页面的章节失败了。"
+	"templatesandbox-failed-replace-section": "替换现存页面的章节失败了。",
+	"templatesandbox-template-not-used": "该模板未在指定页面上使用。"
 }
