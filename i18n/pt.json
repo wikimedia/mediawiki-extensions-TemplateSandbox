@@ -7,6 +7,7 @@
 			"Helder.wiki",
 			"Lijealso",
 			"Macofe",
+			"Maria Manuela Silva",
 			"MokaAkashiyaPT",
 			"Opraco",
 			"Vitorvicentevalente"
@@ -27,7 +28,7 @@
 	"templatesandbox-editform-page-label": "Título da página",
 	"templatesandbox-editform-view-label": "Mostrar antevisão",
 	"templatesandbox-preview": "Antevisão de $2",
-	"templatesandbox-previewnote": "'''Lembre-se que esta é apenas uma antevisão do resultado de [[:$1]].'''\nAs modificações ainda não foram gravadas!",
+	"templatesandbox-previewnote": "'''Lembre-se que isto é apenas uma pré-visualização do resultado de [[:$1]].'''\nAs alterações ainda não foram guardadas!",
 	"templatesandbox-invalid-title": "O título especificado é inválido.",
 	"templatesandbox-title-not-exists": "O título que especificou não existe.",
 	"templatesandbox-revision-not-exists": "A revisão que especificou não existe.",

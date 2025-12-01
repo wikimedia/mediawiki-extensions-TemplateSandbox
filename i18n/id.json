@@ -4,6 +4,7 @@
 			"Daud I.F. Argana",
 			"Iwan Novirion",
 			"Macofe",
+			"Penyuwangi",
 			"William Surya Permana"
 		]
 	},
@@ -22,7 +23,7 @@
 	"templatesandbox-editform-page-label": "Judul halaman",
 	"templatesandbox-editform-view-label": "Lihat pratayang",
 	"templatesandbox-preview": "Pratayang $2",
-	"templatesandbox-previewnote": "'''Harap diingat bahwa ini hanyalah pratayang [[:$1]].'''\nPerubahan yang Anda buat belum disimpan!",
+	"templatesandbox-previewnote": "<strong>Ingat bahwa ini hanya pratayang dari [[:$1]].</strong>\nPerubahan Anda belum diterbitkan!",
 	"templatesandbox-invalid-title": "Judul yang Anda masukkan tidak sah.",
 	"templatesandbox-title-not-exists": "Judul yang Anda masukkan belum tersedia.",
 	"templatesandbox-revision-not-exists": "Revisi yang Anda masukkan belum tersedia.",

@@ -22,7 +22,7 @@
 	"templatesandbox-editform-page-label": "Titolo della pagina",
 	"templatesandbox-editform-view-label": "Visualizza anteprima",
 	"templatesandbox-preview": "Anteprima di $2",
-	"templatesandbox-previewnote": "'''Ricorda che questa è solo un'anteprima di [[:$1]].'''\nLe tue modifiche NON sono ancora state salvate!",
+	"templatesandbox-previewnote": "<strong>Ricorda che questa è solo un'anteprima di [[:$1]].</strong>\nLe tue modifiche NON sono ancora state salvate!",
 	"templatesandbox-invalid-title": "Il titolo che hai specificato non è valido.",
 	"templatesandbox-title-not-exists": "Il titolo che hai specificato non esiste.",
 	"templatesandbox-revision-not-exists": "La versione che hai specificato non esiste.",

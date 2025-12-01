@@ -20,7 +20,7 @@
 	"templatesandbox-editform-page-label": "Lehekülje pealkiri",
 	"templatesandbox-editform-view-label": "Näita eelvaadet",
 	"templatesandbox-preview": "Lehekülje $2 eelvaade",
-	"templatesandbox-previewnote": "'''Pea meeles, et see on kõigest lehekülje [[:$1]] eelvaade.'''\nSinu muudatusi pole veel salvestatud!",
+	"templatesandbox-previewnote": "<strong>Pea meeles, et see on kõigest lehekülje [[:$1]] eelvaade.</strong>\nSinu muudatusi pole veel salvestatud!",
 	"templatesandbox-invalid-title": "Määratud pealkiri on vigane.",
 	"templatesandbox-title-not-exists": "Määratud pealkirja pole.",
 	"templatesandbox-revision-not-exists": "Määratud redaktsiooni pole.",
