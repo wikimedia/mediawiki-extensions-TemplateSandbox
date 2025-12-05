@@ -19,7 +19,7 @@
 	"templatesandbox-editform-page-label": "Titulo del pagina",
 	"templatesandbox-editform-view-label": "Monstrar previsualisation",
 	"templatesandbox-preview": "Previsualisation de $2",
-	"templatesandbox-previewnote": "'''Non oblida que isto es solmente un previsualisation de [[:$1]].'''\nTu modificationes non ha ancora essite salveguardate!",
+	"templatesandbox-previewnote": "<strong>Non oblida que isto es solmente un previsualisation de [[:$1]].</strong>\nTu modificationes non ha ancora essite salveguardate!",
 	"templatesandbox-invalid-title": "Le titulo que tu specificava es invalide.",
 	"templatesandbox-title-not-exists": "Le titulo que tu specificava non existe.",
 	"templatesandbox-revision-not-exists": "Le version que tu specificava non existe.",
