@@ -3,6 +3,7 @@
 		"authors": [
 			"Arkanosis",
 			"Crochet.david",
+			"Escargot bleu",
 			"Gomoko",
 			"Npettiaux",
 			"Od1n",
@@ -27,7 +28,7 @@
 	"templatesandbox-editform-page-label": "Titre de la page",
 	"templatesandbox-editform-view-label": "Afficher l’aperçu",
 	"templatesandbox-preview": "Aperçu de $2",
-	"templatesandbox-previewnote": "'''Rappelez-vous que ce n’est qu’une prévisualisation de [[:$1]].'''\nVos modifications n’ont pas encore été enregistrées !",
+	"templatesandbox-previewnote": "<strong>Rappelez-vous que ce n’est qu’une prévisualisation de [[:$1]].</strong>\nVos modifications n’ont pas encore été enregistrées !",
 	"templatesandbox-invalid-title": "Le titre que vous avez spécifié n’est pas valide.",
 	"templatesandbox-title-not-exists": "Le titre que vous avez spécifié n’existe pas.",
 	"templatesandbox-revision-not-exists": "La révision que vous avez spécifiée n’existe pas.",
@@ -43,5 +44,6 @@
 	"templatesandbox-editform-invalid-template": "Le nom du modèle que vous avez indiqué n’est pas valide.",
 	"templatesandbox-editform-invalid-title": "Le titre que vous avez spécifié pour l’aperçu n’est pas valide.",
 	"templatesandbox-editform-title-not-exists": "Le titre que vous avez spécifié pour l’aperçu n’existe pas.",
-	"templatesandbox-failed-replace-section": "Échec de remplacement de la section de la page existante."
+	"templatesandbox-failed-replace-section": "Échec de remplacement de la section de la page existante.",
+	"templatesandbox-template-not-used": "Le modèle n'est pas utilisé sur la page spécifiée."
 }
