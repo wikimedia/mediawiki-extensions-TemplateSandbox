@@ -26,7 +26,7 @@
 	"templatesandbox-editform-page-label": "Tytuł strony",
 	"templatesandbox-editform-view-label": "Pokaż podgląd",
 	"templatesandbox-preview": "Podgląd strony $2",
-	"templatesandbox-previewnote": "'''To jest tylko podgląd strony [[:$1]].'''\nZmiany nie zostały jeszcze zapisane!",
+	"templatesandbox-previewnote": "<strong>To jest tylko podgląd strony [[:$1]].</strong>\nZmiany nie zostały jeszcze zapisane!",
 	"templatesandbox-invalid-title": "Wprowadzony tytuł jest nieprawidłowy.",
 	"templatesandbox-title-not-exists": "Podany tytuł nie istnieje.",
 	"templatesandbox-revision-not-exists": "Wybrana wersja nie istnieje.",

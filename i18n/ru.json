@@ -13,6 +13,7 @@
 			"Olli",
 			"Pacha Tchernof",
 			"Stjn",
+			"Vonavy",
 			"Wikisaurus"
 		]
 	},
@@ -31,7 +32,7 @@
 	"templatesandbox-editform-page-label": "Название страницы",
 	"templatesandbox-editform-view-label": "Показать предпросмотр",
 	"templatesandbox-preview": "Предпросмотр $2",
-	"templatesandbox-previewnote": "'''Помните, что это только предпросмотр для [[:$1]].''' Ваши изменения в шаблоне ещё не были сохранены!",
+	"templatesandbox-previewnote": "<strong>Помните, что это только предпросмотр для [[:$1]].</strong> Ваши изменения в шаблоне ещё не были сохранены!",
 	"templatesandbox-invalid-title": "Указанное вами название недействительно.",
 	"templatesandbox-title-not-exists": "Заголовок, который вы указали, не существует.",
 	"templatesandbox-revision-not-exists": "Версия, которую вы указали, не существует.",
