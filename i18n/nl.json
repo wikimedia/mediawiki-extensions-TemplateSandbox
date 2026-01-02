@@ -42,5 +42,6 @@
 	"templatesandbox-editform-invalid-template": "De sjabloonnaam die u hebt opgegeven is ongeldig.",
 	"templatesandbox-editform-invalid-title": "De opgegeven titel voor de voorvertoning is ongeldig.",
 	"templatesandbox-editform-title-not-exists": "De opgegeven titel voor de voorvertoning bestaat niet.",
-	"templatesandbox-failed-replace-section": "Het is niet gelukt om een sectie van de bestaande pagina te vervangen."
+	"templatesandbox-failed-replace-section": "Het is niet gelukt om een sectie van de bestaande pagina te vervangen.",
+	"templatesandbox-template-not-used": "Het sjabloon wordt niet gebruikt op de opgegeven pagina."
 }
