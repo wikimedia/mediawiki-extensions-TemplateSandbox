@@ -22,7 +22,7 @@
 	"templatesandbox-editform-page-label": "Sidetittel",
 	"templatesandbox-editform-view-label": "Forhåndsvisning",
 	"templatesandbox-preview": "Forhåndsvisning av $2",
-	"templatesandbox-previewnote": "'''Husk at dette er bare en forhåndsvisning av [[:$1]].'''\nEndringene er ikke lagret ennå!",
+	"templatesandbox-previewnote": "<strong>Husk at dette er bare en forhåndsvisning av [[:$1]].</strong>\nEndringene er ikke lagret ennå!",
 	"templatesandbox-invalid-title": "Tittelen du oppga er ugyldig.",
 	"templatesandbox-title-not-exists": "Tittelen du oppga eksisterer ikke.",
 	"templatesandbox-revision-not-exists": "Sideversjonen du oppga eksisterer ikke.",
@@ -38,5 +38,6 @@
 	"templatesandbox-editform-invalid-template": "Navnet på malen da anga er ugyldig.",
 	"templatesandbox-editform-invalid-title": "Tittelen du har angitt for forhåndsvisning er ugyldig.",
 	"templatesandbox-editform-title-not-exists": "Tittelen du har angitt for forhåndsvisning finnes ikke.",
-	"templatesandbox-failed-replace-section": "Kunne ikke erstatte seksjon av eksisterende side."
+	"templatesandbox-failed-replace-section": "Kunne ikke erstatte seksjon av eksisterende side.",
+	"templatesandbox-template-not-used": "Malen ble ikke brukt på den angitte siden."
 }

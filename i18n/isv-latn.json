@@ -20,7 +20,7 @@
 	"templatesandbox-editform-page-label": "Nazva stranice",
 	"templatesandbox-editform-view-label": "Pokazati prědgled",
 	"templatesandbox-preview": "Prědgled stranice $2",
-	"templatesandbox-previewnote": "'''Pametajte, že tuto jest samo prědgled stranice [[:$1]].'''\nVaše izměny ješče ne sut zapisane!",
+	"templatesandbox-previewnote": "<strong>Pametajte, že tuto jest samo prědgled stranice [[:$1]].</strong>\nVaše izměny ješče ne sut zapisane!",
 	"templatesandbox-invalid-title": "Ukazana vami nazva jest nepravilna.",
 	"templatesandbox-title-not-exists": "Ukazana vami nazva ne jestvuje.",
 	"templatesandbox-revision-not-exists": "Ukazana vami versija ne jestvuje.",
@@ -36,5 +36,6 @@
 	"templatesandbox-editform-invalid-template": "Ukazana vami nazva šablona jest nepravilna.",
 	"templatesandbox-editform-invalid-title": "Ukazana vami nazva stranice za prědgled jest nepravilna.",
 	"templatesandbox-editform-title-not-exists": "Ukazana vami nazva stranice za prědgled ne jestvuje.",
-	"templatesandbox-failed-replace-section": "Zaměna razděla jestvujučej stranice ne udala se."
+	"templatesandbox-failed-replace-section": "Zaměna razděla jestvujučej stranice ne udala se.",
+	"templatesandbox-template-not-used": "Šablon ne jest upotrěbjeny na ukazanoj stranici."
 }
