@@ -110,6 +110,7 @@
 				"ContentRenderer",
 				"ContentTransformer",
 				"HookContainer",
+				"LinkRenderer",
 				"UserOptionsLookup",
 				"WikiPageFactory"
 			]

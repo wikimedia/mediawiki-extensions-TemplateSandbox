@@ -21,6 +21,7 @@ use MediaWiki\Hook\EditPage__importFormDataHook;
 use MediaWiki\Hook\EditPage__showStandardInputs_optionsHook;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
@@ -32,6 +33,7 @@ use MediaWiki\ResourceLoader as RL;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleValue;
 use MediaWiki\User\Options\UserOptionsLookup;
 use OOUI\ActionFieldLayout;
 use OOUI\ButtonInputWidget;
@@ -53,6 +55,7 @@ class Hooks implements
 		private readonly ContentRenderer $contentRenderer,
 		private readonly ContentTransformer $contentTransformer,
 		private readonly HookContainer $hookContainer,
+		private readonly LinkRenderer $linkRenderer,
 		private readonly UserOptionsLookup $userOptionsLookup,
 		private readonly WikiPageFactory $wikiPageFactory,
 	) {
@@ -152,13 +155,15 @@ class Hooks implements
 			return false;
 		}
 
-		$note = '';
 		$dtitle = false;
 		$parserOutput = null;
 
 		$user = $context->getUser();
 		$output = $context->getOutput();
 		$lang = $context->getLanguage();
+
+		$noteHtml = '';
+		$previewIssuesHtml = '';
 
 		try {
 			if ( $editpage->sectiontitle !== '' ) {
@@ -195,9 +200,18 @@ class Hooks implements
 				$popts
 			);
 
-			$note = $context->msg( 'templatesandbox-previewnote', $title->getPrefixedText() )->plain() .
-				' [[#' . EditPage::EDITFORM_ID . '|' . $lang->getArrow() . ' ' .
-				$context->msg( 'continue-editing' )->text() . ']]';
+			$continueEditingHtml = Html::rawElement(
+				'span',
+				[ 'class' => 'mw-continue-editing' ],
+				$this->linkRenderer->makePreloadedLink(
+					new TitleValue( NS_MAIN, '', EditPage::EDITFORM_ID ),
+					$lang->getArrow() . ' ' . $context->msg( 'continue-editing' )->text()
+				)
+			);
+			$noteHtml .= Html::noticeBox(
+				$context->msg( 'templatesandbox-previewnote', $title->getPrefixedText() )->parse() .
+					$continueEditingHtml
+			);
 
 			$page = $this->wikiPageFactory->newFromTitle( $title );
 			$popts = $page->makeParserOptions( $context );
@@ -234,14 +248,19 @@ class Hooks implements
 				'includeDebugInfo' => true,
 			] )->getContentHolderText();
 
-			if ( count( $parserOutput->getWarnings() ) ) {
-				$note .= "\n\n" . implode( "\n\n", $parserOutput->getWarnings() );
+			$parserWarnings = $parserOutput->getWarningMsgs();
+			if ( $parserWarnings ) {
+				$warningsHtml = '';
+				foreach ( $parserWarnings as $mv ) {
+					$warningsHtml .= $context->msg( $mv )->parse() . "<br>";
+				}
+				$previewIssuesHtml .= Html::warningBox( $warningsHtml );
 			}
 		} catch ( MWContentSerializationException $ex ) {
 			$m = $context->msg( 'content-failed-to-parse',
 				$editpage->contentModel, $editpage->contentFormat, $ex->getMessage()
 			);
-			$note .= "\n\n" . $m->parse();
+			$previewIssuesHtml .= Html::errorBox( $m->parse() );
 			$out = '';
 		}
 
@@ -251,10 +270,7 @@ class Hooks implements
 			Html::rawElement(
 				'h2', [ 'id' => 'mw-previewheader' ],
 				$context->msg( 'templatesandbox-preview', $title->getPrefixedText(), $dtitle )->parse()
-			) .
-			Html::warningBox(
-				$output->parseAsInterface( $note )
-			)
+			) . $previewIssuesHtml . $noteHtml
 		);
 
 		$out = $previewhead . $out . $editpage->previewTextAfterContent;
