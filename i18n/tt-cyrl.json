@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
+			"Ильгиз",
 			"Ильнар"
 		]
 	},
@@ -15,6 +16,6 @@
 	"templatesandbox-submit": "Карау",
 	"templatesandbox-title-output": "Калып өчен комлык: $1",
 	"templatesandbox-editform-page-label": "Битнең исеме",
-	"templatesandbox-editform-view-label": "Алдан карау",
+	"templatesandbox-editform-view-label": "Карап алу",
 	"templatesandbox-preview": "$2 өчен алдан карау"
 }

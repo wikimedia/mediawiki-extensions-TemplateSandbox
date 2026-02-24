@@ -8,6 +8,7 @@
 			"DixonD",
 			"Ice bulldog",
 			"Macofe",
+			"Movses",
 			"Piramidion",
 			"Wizardist",
 			"Ата"
@@ -28,7 +29,7 @@
 	"templatesandbox-editform-page-label": "Заголовок сторінки",
 	"templatesandbox-editform-view-label": "Попередній перегляд",
 	"templatesandbox-preview": "Попередній перегляд $2",
-	"templatesandbox-previewnote": "'''Це лише попередній перегляд [[:$1]].'''\nВаші зміни ще не збережено!",
+	"templatesandbox-previewnote": "<strong>Пам’ятайте, що це лише попередній перегляд [[:$1]].</strong> \nВаші зміни ще не збережено!",
 	"templatesandbox-invalid-title": "Вказана назва неприпустима.",
 	"templatesandbox-title-not-exists": "Вказана назва не існує.",
 	"templatesandbox-revision-not-exists": "Вказаної версії не існує.",

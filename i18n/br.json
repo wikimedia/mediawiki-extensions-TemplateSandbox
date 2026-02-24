@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Huñvreüs",
 			"Macofe",
 			"Y-M D"
 		]
@@ -12,7 +13,7 @@
 	"templatesandbox-editform-page-label": "Titl ar bajenn",
 	"templatesandbox-editform-view-label": "Rakwelet",
 	"templatesandbox-preview": "Rakwelet $2",
-	"templatesandbox-previewnote": "'''Diwallit mat, an destenn-mañ n'eo ken ur rakweled eus [[:$1]].'''\nN'eo ket bet enrollet ho kemmoù evit c'hoazh !",
+	"templatesandbox-previewnote": "<strong>Diwallit mat, an destenn-mañ n'eo ken ur rakweled eus [[:$1]].</strong>\nN'eo ket bet enrollet ho kemmoù evit c'hoazh !",
 	"templatesandbox-invalid-title": "Kamm eo an titl hoc'h eus merket.",
 	"templatesandbox-title-not-exists": "N'eus ket eus an titl spisaet ganeoc'h.",
 	"templatesandbox-revision-not-exists": "N'eus ket eus an adweladenn spisaet ganeoc'h.",
