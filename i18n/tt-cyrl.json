@@ -17,5 +17,5 @@
 	"templatesandbox-title-output": "Калып өчен комлык: $1",
 	"templatesandbox-editform-page-label": "Битнең исеме",
 	"templatesandbox-editform-view-label": "Карап алу",
-	"templatesandbox-preview": "$2 өчен алдан карау"
+	"templatesandbox-preview": "Карап алу: $2"
 }
