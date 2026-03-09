@@ -21,7 +21,7 @@
 	"templatesandbox-editform-page-label": "頁面標題",
 	"templatesandbox-editform-view-label": "顯示預覽",
 	"templatesandbox-preview": "預覽 $2",
-	"templatesandbox-previewnote": "'''記住呢個淨係[[:$1]]嘅預覽。'''\n你嘅變更仲未儲存！",
+	"templatesandbox-previewnote": "<strong>記住呢個只係 [[:$1]] 嘅預覽。</strong>\n你嘅變更仲未儲存！",
 	"templatesandbox-invalid-title": "你指定嘅標題無效。",
 	"templatesandbox-title-not-exists": "你指定嘅標題唔存在。",
 	"templatesandbox-revision-not-exists": "你指定嘅修訂版本唔存在。",
@@ -37,5 +37,6 @@
 	"templatesandbox-editform-invalid-template": "你指定嘅模名無效。",
 	"templatesandbox-editform-invalid-title": "你指定用嚟預覽嘅標題無效。",
 	"templatesandbox-editform-title-not-exists": "你指定嚟預覽嘅標題唔存在。",
-	"templatesandbox-failed-replace-section": "未能取代現有頁面嘅部分。"
+	"templatesandbox-failed-replace-section": "未能取代現有頁面嘅部分。",
+	"templatesandbox-template-not-used": "指定嘅版冇用過呢個模。"
 }
