@@ -258,6 +258,7 @@ class Hooks implements
 			}
 		} catch ( MWContentSerializationException $ex ) {
 			$m = $context->msg( 'content-failed-to-parse',
+				// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 				$editpage->contentModel, $editpage->contentFormat, $ex->getMessage()
 			);
 			$previewIssuesHtml .= Html::errorBox( $m->parse() );
@@ -395,7 +396,7 @@ class Hooks implements
 				] )
 			] );
 		}
-		$output->addHTML( $fieldsetLayout );
+		$output->addHTML( (string)$fieldsetLayout );
 
 		if ( $this->userOptionsLookup->getOption( $context->getUser(), 'uselivepreview' ) ) {
 			$output->addModules( 'ext.TemplateSandbox.preview' );
