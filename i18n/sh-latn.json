@@ -5,7 +5,7 @@
 			"Winston Sung"
 		]
 	},
-	"templatesandbox-desc": "[[Special:TemplateSandbox|Prikazuje stranicu]] s testnim predloškom",
+	"templatesandbox-desc": "[[Special:TemplateSandbox|Prikazuje stranicu]] s testnim šablonom",
 	"templatesandbox-suffix": "pijesak",
 	"templatesandbox-text": "Možete izabrati skup šablona sačuvanih u vašem korisničkom imenskom prostoru, koristeći prikladni prefiks za pijesak. Na primjer, ako želite pergledati verziju {{ns:Template}}:Pokus koji ste sačuvali kao \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}/{{ns:Template}}:Pokus\", koristite \"{{ns:User}}:Foo/{{int:templatesandbox-suffix}}\" kao prefiks.",
 	"templatesandbox-prefix-label": "Prefiks:",
