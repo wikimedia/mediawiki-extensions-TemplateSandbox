@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Noble Gasses"
+			"Noble Gasses",
+			"Tuwewanzi"
 		]
 	},
-	"templatesandbox-previewnote": "<strong>Remember that this is only a preview of [[:$1]].</strong>\nYour changes have not yet been saved!"
+	"templatesandbox-previewnote": "<strong>Íŋše [[:$1]] tȟaówaŋyaŋke-íȟaŋhaŋ héčha.</strong> \nHéčhena wóyutȟokča iyeyakiye šni!"
 }
