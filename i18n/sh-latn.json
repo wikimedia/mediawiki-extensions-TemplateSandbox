@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aca",
+			"Vipz",
 			"Winston Sung"
 		]
 	},
@@ -12,5 +13,6 @@
 	"templatesandbox-page-label": "Testna stranica:",
 	"templatesandbox-revid-label": "Izmjena:",
 	"templatesandbox-text-label": "Prikaži wikitekst:",
-	"templatesandbox-submit": "Vidi"
+	"templatesandbox-submit": "Vidi",
+	"templatesandbox-template-not-used": "Šablon se ne koristi na konkretnoj stranici."
 }
