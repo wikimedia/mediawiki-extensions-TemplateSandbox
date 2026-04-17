@@ -9,13 +9,13 @@ use MediaWiki\Api\Hook\APIGetAllowedParamsHook;
 use MediaWiki\Api\Hook\ApiMakeParserOptionsHook;
 use MediaWiki\Config\Config;
 use MediaWiki\Content\Content;
+use MediaWiki\Content\ContentSerializationException;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\Content\Transform\ContentTransformer;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\EditPage\EditPage;
-use MediaWiki\Exception\MWContentSerializationException;
 use MediaWiki\Hook\AlternateEditPreviewHook;
 use MediaWiki\Hook\EditPage__importFormDataHook;
 use MediaWiki\Hook\EditPage__showStandardInputs_optionsHook;
@@ -256,7 +256,7 @@ class Hooks implements
 				}
 				$previewIssuesHtml .= Html::warningBox( $warningsHtml );
 			}
-		} catch ( MWContentSerializationException $ex ) {
+		} catch ( ContentSerializationException $ex ) {
 			$m = $context->msg( 'content-failed-to-parse',
 				// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 				$editpage->contentModel, $editpage->contentFormat, $ex->getMessage()
