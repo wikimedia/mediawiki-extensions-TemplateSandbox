@@ -10,6 +10,7 @@
 			"Macofe",
 			"Movses",
 			"Piramidion",
+			"Repakr",
 			"Wizardist",
 			"Ата"
 		]
@@ -45,5 +46,6 @@
 	"templatesandbox-editform-invalid-template": "Неприпустиме ім'я шаблону, яке ви вказали.",
 	"templatesandbox-editform-invalid-title": "Вказаний заголовок для попереднього перегляду некоректний.",
 	"templatesandbox-editform-title-not-exists": "Вказаний заголовок для попереднього перегляду не існує.",
-	"templatesandbox-failed-replace-section": "Не вдалося замінити розділ наявної сторінки."
+	"templatesandbox-failed-replace-section": "Не вдалося замінити розділ наявної сторінки.",
+	"templatesandbox-template-not-used": "Шаблон не було використано на вказаній сторінці."
 }
