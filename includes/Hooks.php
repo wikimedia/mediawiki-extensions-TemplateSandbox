@@ -8,7 +8,6 @@ use MediaWiki\Api\ApiParse;
 use MediaWiki\Api\Hook\APIGetAllowedParamsHook;
 use MediaWiki\Api\Hook\ApiMakeParserOptionsHook;
 use MediaWiki\Config\Config;
-use MediaWiki\Content\Content;
 use MediaWiki\Content\ContentSerializationException;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Content\Renderer\ContentRenderer;
@@ -109,15 +108,11 @@ class Hooks implements
 	 * Hook for AlternateEditPreview to output an entirely different preview
 	 * when our button was clicked.
 	 *
-	 * @param EditPage $editpage
-	 * @param Content &$content
-	 * @param string &$out
-	 * @param ParserOutput &$parserOutput
-	 * @return bool
+	 * @inheritDoc
 	 */
 	public function onAlternateEditPreview( $editpage, &$content, &$out,
 		&$parserOutput
-	) {
+	): bool {
 		if ( !isset( $editpage->templatesandbox_preview ) ) {
 			return true;
 		}
