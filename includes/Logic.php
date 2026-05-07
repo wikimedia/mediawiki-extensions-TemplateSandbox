@@ -80,14 +80,9 @@ class Logic {
 			function ( $title, $parser = false ) use ( &$oldCurrentRevisionRecordCallback ) {
 				if ( $this->title && $this->title->equals( $title ) ) {
 					$user = RequestContext::getMain()->getUser();
-					$revRecord = new MutableRevisionRecord( $title );
-					$revRecord->setUser( $user );
-					$revRecord->setContent(
-						SlotRecord::MAIN,
-						$this->content
-					);
-					$revRecord->setParentId( $title->getLatestRevID() );
-					return $revRecord;
+					return MutableRevisionRecord::newFromContent( $title, $this->content )
+						->setUser( $user )
+						->setParentId( $title->getLatestRevID() );
 				}
 
 				foreach ( $this->prefixes as $prefix ) {
