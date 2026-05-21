@@ -4,5 +4,5 @@
 			"McDutchie"
 		]
 	},
-	"templatesandbox-previewnote": "'''Vergeet niet dat dit maar een voorvertoning is van [[:$1]].'''\nJe wijzigingen zijn nog niet opgeslagen!"
+	"templatesandbox-previewnote": "<strong>Vergeet niet dat dit maar een voorvertoning is van [[:$1]].</strong>\nJe wijzigingen zijn nog niet opgeslagen!"
 }
