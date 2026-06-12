@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Teslaton",
-			"TomášPolonec"
+			"TomášPolonec",
+			"Wizzard"
 		]
 	},
 	"templatesandbox": "Šablónové pieskovisko",
@@ -21,7 +22,7 @@
 	"templatesandbox-editform-page-label": "Názov stránky",
 	"templatesandbox-editform-view-label": "Zobraziť náhľad",
 	"templatesandbox-preview": "Náhľad stránky $2",
-	"templatesandbox-previewnote": "'''Nezabudnite, toto je iba náhľad stránky [[:$1]].'''\nZmeny zatiaľ nie sú uložené!",
+	"templatesandbox-previewnote": "<strong>Nezabudnite, že toto je iba náhľad stránky [[:$1]].</strong>\nVaše zmeny zatiaľ nie sú uložené!",
 	"templatesandbox-invalid-title": "Zadaný názov je neplatný.",
 	"templatesandbox-title-not-exists": "Zadaný názov neexistuje.",
 	"templatesandbox-revision-not-exists": "Zadaná revízia neexistuje.",
