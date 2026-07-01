@@ -22,6 +22,7 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\Article;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
@@ -208,8 +209,8 @@ class Hooks implements
 					$continueEditingHtml
 			);
 
-			$page = $this->wikiPageFactory->newFromTitle( $title );
-			$popts = $page->makeParserOptions( $context );
+			$article = Article::newFromTitle( $title, $context );
+			$popts = $article->getParserOptions();
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$logic = new Logic( [], $templatetitle, $content );

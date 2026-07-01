@@ -8,6 +8,7 @@ use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
+use MediaWiki\Page\Article;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
@@ -257,8 +258,8 @@ class SpecialTemplateSandbox extends SpecialPage {
 		'@phan-var Title $title';
 		'@phan-var Content $content';
 
-		$page = $this->wikiPageFactory->newFromTitle( $title );
-		$popts = $page->makeParserOptions( $this->getContext() );
+		$article = Article::newFromTitle( $title, $this->getContext() );
+		$popts = $article->getParserOptions();
 		$popts->setIsPreview( true );
 		$popts->setIsSectionPreview( false );
 		$logic = new Logic( $this->prefixes, null, null );
