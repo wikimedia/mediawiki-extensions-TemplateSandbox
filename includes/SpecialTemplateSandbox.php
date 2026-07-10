@@ -17,6 +17,7 @@ use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\TempUser\TempUserConfig;
+use MediaWiki\User\UserIdentity;
 
 class SpecialTemplateSandbox extends SpecialPage {
 	/** @var string[] */
@@ -162,7 +163,16 @@ class SpecialTemplateSandbox extends SpecialPage {
 					)
 				);
 			} else {
-				Logic::addSubpageHandlerToOutput( $this->prefixes, $output );
+				$prefixes = $this->getPrefixesOwnedByUser( $user );
+				if ( $prefixes !== $this->prefixes ) {
+					$output->addHTML(
+						Html::warningBox(
+							$output->msg( 'templatesandbox-js-css-limited-preview' )->parse(),
+							'previewnote'
+						)
+					);
+				}
+				Logic::addSubpageHandlerToOutput( $prefixes, $output );
 			}
 			$output->addParserOutput( $this->output );
 
@@ -178,6 +188,26 @@ class SpecialTemplateSandbox extends SpecialPage {
 				$output->setPageTitleMsg( $this->msg( 'templatesandbox-title-output', $titleText ) );
 			}
 		}
+	}
+
+	/**
+	 * Get sandbox prefixes in the user's own userspace, i.e. only the sandbox
+	 * templates they themselves saved.
+	 * @param UserIdentity $user
+	 * @return array
+	 */
+	private function getPrefixesOwnedByUser( UserIdentity $user ): array {
+		$prefixes = [];
+		foreach ( $this->prefixes as $prefix ) {
+			$prefixTitle = Title::newFromText( $prefix );
+			if ( $prefixTitle instanceof Title
+				&& $prefixTitle->getNamespace() === NS_USER
+				&& $prefixTitle->getRootText() === $user->getName()
+			) {
+				$prefixes[] = $prefix;
+			}
+		}
+		return $prefixes;
 	}
 
 	/**
