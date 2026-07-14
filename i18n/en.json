@@ -23,6 +23,7 @@
 	"templatesandbox-preview": "Preview of $2",
 	"templatesandbox-previewnote": "'''Remember that this is only a preview of [[:$1]].'''\nYour changes have not yet been saved!",
 	"templatesandbox-invalid-title": "The title you specified is invalid.",
+	"templatesandbox-cannot-view-title": "You are not allowed to view the title you specified.",
 	"templatesandbox-title-not-exists": "The title you specified does not exist.",
 	"templatesandbox-revision-not-exists": "The revision you specified does not exist.",
 	"templatesandbox-revision-no-content": "The revision you specified has no content, or you do not have permission to view it.",
@@ -37,6 +38,7 @@
 	"templatesandbox-editform-need-title": "To preview another page with this template, a page title must be specified.",
 	"templatesandbox-editform-invalid-template": "The name of the template you specified is invalid.",
 	"templatesandbox-editform-invalid-title": "The title you specified for previewing is invalid.",
+	"templatesandbox-editform-cannot-view-title": "You are not allowed to view the title you specified for previewing.",
 	"templatesandbox-editform-title-not-exists": "The title you specified for previewing does not exist.",
 	"templatesandbox-failed-replace-section": "Failed to replace section of the existing page."
 }
