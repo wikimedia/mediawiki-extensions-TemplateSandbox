@@ -199,6 +199,9 @@ class SpecialTemplateSandbox extends SpecialPage {
 		if ( !$title instanceof Title ) {
 			return $this->msg( 'templatesandbox-invalid-title' )->parseAsBlock();
 		}
+		if ( !$this->getAuthority()->authorizeRead( 'read', $title ) ) {
+			return $this->msg( 'templatesandbox-cannot-view-title' )->parseAsBlock();
+		}
 		if ( !$title->exists() ) {
 			return $this->msg( 'templatesandbox-title-not-exists' )->parseAsBlock();
 		}
