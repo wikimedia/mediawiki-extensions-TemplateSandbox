@@ -8,7 +8,8 @@
 			"Rail",
 			"Tar Lócesilion",
 			"WTM",
-			"Woytecr"
+			"Woytecr",
+			"PanWor"
 		]
 	},
 	"templatesandbox": "Brudnopis do szablonów",
@@ -19,7 +20,7 @@
 	"templatesandbox-prefix-label": "Prefiks do brudnopisu:",
 	"templatesandbox-page-label": "Przetestuj stronę:",
 	"templatesandbox-revid-label": "Przetestuj wersję:",
-	"templatesandbox-text-label": "Przetestuj wikitekst:",
+	"templatesandbox-text-label": "Przetestuj wikikod:",
 	"templatesandbox-submit": "Podgląd",
 	"templatesandbox-title-output": "Brudnopis do szablonów: $1",
 	"templatesandbox-editform-legend": "Podgląd strony z tym szablonem",
