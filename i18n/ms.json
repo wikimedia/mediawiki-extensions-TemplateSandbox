@@ -22,7 +22,7 @@
 	"templatesandbox-editform-page-label": "Tajuk halaman",
 	"templatesandbox-editform-view-label": "Paparkan pralihat",
 	"templatesandbox-preview": "Pralihat $2",
-	"templatesandbox-previewnote": "'''Ingat, ini hanya pralihat [[:$1]].'''\nSuntingan anda belum disimpan!",
+	"templatesandbox-previewnote": "<strong>Ingat bahawa paparan ini hanyalah pralihat [[:$1]].</strong> \nPerubahan anda belum disimpan!",
 	"templatesandbox-invalid-title": "Tajuk yang anda nyatakan tidak sah.",
 	"templatesandbox-title-not-exists": "Tajuk yang anda nyatakan tidak wujud.",
 	"templatesandbox-revision-not-exists": "Semakan yang anda nyatakan tidak wujud.",
@@ -38,5 +38,6 @@
 	"templatesandbox-editform-invalid-template": "Nama templat yang anda nyatakan adalah tidak sah.",
 	"templatesandbox-editform-invalid-title": "Halaman yang anda nyatakan untuk pralihat adalah tidak sah.",
 	"templatesandbox-editform-title-not-exists": "Halaman yang anda nyatakan untuk pralihat tidak wujud.",
-	"templatesandbox-failed-replace-section": "Gagal menggantikan bahagian halaman sedia ada."
+	"templatesandbox-failed-replace-section": "Gagal menggantikan bahagian halaman sedia ada.",
+	"templatesandbox-template-not-used": "Templat tersebut tidak digunakan pada laman yang dikhususkan."
 }
