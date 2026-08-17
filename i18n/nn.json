@@ -30,5 +30,6 @@
 	"templatesandbox-page-or-revid": "Du må oppgje anten ein tittel for ei side eller eit versjonsnummer.",
 	"templatesandbox-editform-need-title": "For å førhandsvise ei anna side med denne malen, må du oppgje ein tittel.",
 	"templatesandbox-editform-invalid-title": "Tittelen du oppgav for førehandsvising er ugild.",
-	"templatesandbox-editform-title-not-exists": "Tittelen du oppgav for førehandsvising finst ikkje."
+	"templatesandbox-editform-title-not-exists": "Tittelen du oppgav for førehandsvising finst ikkje.",
+	"templatesandbox-template-not-used": "Malen vert ikkje nytta på den oppgjevne sida."
 }
