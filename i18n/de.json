@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
-			"Metalhead64"
+			"Metalhead64",
+			"Brettchenweber"
 		]
 	},
 	"templatesandbox": "Vorlagenspielwiese",
@@ -22,7 +23,7 @@
 	"templatesandbox-preview": "Vorschau von $2",
 	"templatesandbox-previewnote": "'''Dies ist nur eine Vorschau von [[:$1]].'''\nDeine Änderungen wurden noch nicht gespeichert!",
 	"templatesandbox-invalid-title": "Der angegebene Titel ist ungültig.",
-	"templatesandbox-cannot-view-title": "Du hast keine Berechtigung, den von dir angegebenen Titel anzuzeigen.",
+	"templatesandbox-cannot-view-title": "Du hast keine Berechtigung, den von dir angegebenen Titel anzusehen.",
 	"templatesandbox-title-not-exists": "Der angegebene Titel ist nicht vorhanden.",
 	"templatesandbox-revision-not-exists": "Die angegebene Version ist nicht vorhanden.",
 	"templatesandbox-revision-no-content": "Die angegebene Version hat keinen Inhalt oder du hast keine Berechtigung, sie anzuzeigen.",
@@ -37,7 +38,7 @@
 	"templatesandbox-editform-need-title": "Es muss ein Seitentitel angegeben werden, um eine Vorschau einer anderen Seite mit dieser Vorlage anzuzeigen.",
 	"templatesandbox-editform-invalid-template": "Der angegebene Vorlagenname ist ungültig.",
 	"templatesandbox-editform-invalid-title": "Der angegebene Titel zur Vorschau ist ungültig.",
-	"templatesandbox-editform-cannot-view-title": "Du darfst den von dir zur Vorschau angegebenen Titel nicht anzeigen.",
+	"templatesandbox-editform-cannot-view-title": "Du darfst den von dir zur Vorschau angegebenen Titel nicht ansehen.",
 	"templatesandbox-editform-title-not-exists": "Der angegebene Titel zur Vorschau ist nicht vorhanden.",
 	"templatesandbox-failed-replace-section": "Der Abschnitt der bestehenden Seite konnte nicht ersetzt werden."
 }
