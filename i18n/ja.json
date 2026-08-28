@@ -3,6 +3,7 @@
 		"authors": [
 			"Kkairri",
 			"Macofe",
+			"Omotecho",
 			"Shirayuki",
 			"Tensama0415",
 			"Yusuke1109"
@@ -23,7 +24,7 @@
 	"templatesandbox-editform-page-label": "ページ名",
 	"templatesandbox-editform-view-label": "プレビューを表示",
 	"templatesandbox-preview": "$2 のプレビュー",
-	"templatesandbox-previewnote": "<strong>これはプレビューです。</strong>\n変更内容はまだ保存されていません!",
+	"templatesandbox-previewnote": "<strong>これは[[:$1]]の単なるプレビューです。</strong>\n変更内容はまだ保存されていません!",
 	"templatesandbox-invalid-title": "指定したページ名は無効です。",
 	"templatesandbox-title-not-exists": "指定したページは存在しません。",
 	"templatesandbox-revision-not-exists": "指定した版は存在しません。",
