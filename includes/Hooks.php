@@ -214,6 +214,7 @@ class Hooks implements
 
 			$article = Article::newFromTitle( $title, $context );
 			$popts = $article->getParserOptions();
+			$popts->setRenderReason( 'page-preview' );
 			$popts->setIsPreview( true );
 			$popts->setIsSectionPreview( false );
 			$logic = new Logic( [], $templatetitle, $content );
