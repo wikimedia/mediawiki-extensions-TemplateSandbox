@@ -82,7 +82,6 @@ class Hooks implements
 				$editpage->templatesandbox_preview = true;
 				$editpage->preview = true;
 				$editpage->save = false;
-				$editpage->live = false;
 			}
 		}
 	}
