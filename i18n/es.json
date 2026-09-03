@@ -6,6 +6,7 @@
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio",
+			"No se",
 			"Ovruni",
 			"Rodney Araujo",
 			"Vivaelcelta",
@@ -42,5 +43,6 @@
 	"templatesandbox-editform-need-title": "Para obtener una vista previa de otra página con esta plantilla, se debe especificar un título de página.",
 	"templatesandbox-editform-invalid-template": "El nombre de la plantilla que has especificado no es válido.",
 	"templatesandbox-editform-invalid-title": "El título especificado para la vista previa no es válido.",
-	"templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe."
+	"templatesandbox-editform-title-not-exists": "El título especificado para la vista previa no existe.",
+	"templatesandbox-template-not-used": "La plantilla no se utilizó en la página especificada."
 }
