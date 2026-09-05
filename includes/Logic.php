@@ -19,28 +19,19 @@ use Wikimedia\ScopedCallback;
  * Business logic class for TemplateSandbox
  */
 class Logic {
-	/** @var string[] Prefixes to search for sandbox templates */
-	private $prefixes = [];
-
-	/** @var Title|null Title to replace with $content */
-	private $title = null;
-
-	/** @var Content|null Content to replace $title */
-	private $content = null;
-
 	/**
 	 * @param string[] $prefixes Title prefixes to search for sandbox templates
 	 * @param Title|null $title Title to replace with 'content'
 	 * @param Content|null $content Content to use to replace 'title'
 	 */
-	public function __construct( $prefixes, $title, $content ) {
+	public function __construct(
+		private readonly array $prefixes,
+		private readonly ?Title $title,
+		private readonly ?Content $content,
+	) {
 		if ( ( $title === null ) !== ( $content === null ) ) {
 			throw new InvalidArgumentException( '$title and $content must both be given or both be null' );
 		}
-
-		$this->prefixes = $prefixes;
-		$this->title = $title;
-		$this->content = $content;
 	}
 
 	/**
