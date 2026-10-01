@@ -240,7 +240,7 @@ class Hooks implements
 			}
 
 			$dtitle = $parserOutput->getDisplayTitle();
-			$parserOutput->setTitleText( '' );
+			$parserOutput->setDisplayTitleParts( '', '', '' );
 			$skinOptions = $output->getSkin()->getOptions();
 			$out = $parserOutput->runOutputPipeline( $popts, [
 				'injectTOC' => $skinOptions['toc'],
