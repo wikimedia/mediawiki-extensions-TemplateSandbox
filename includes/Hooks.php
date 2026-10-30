@@ -23,7 +23,6 @@ use MediaWiki\Html\Html;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\Article;
-use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Parser\ParserOutputLinkTypes;
@@ -57,7 +56,6 @@ class Hooks implements
 		private readonly HookContainer $hookContainer,
 		private readonly LinkRenderer $linkRenderer,
 		private readonly UserOptionsLookup $userOptionsLookup,
-		private readonly WikiPageFactory $wikiPageFactory,
 	) {
 	}
 

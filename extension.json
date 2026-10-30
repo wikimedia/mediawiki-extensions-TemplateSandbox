@@ -15,7 +15,6 @@
 			"services": [
 				"RevisionLookup",
 				"ContentHandlerFactory",
-				"WikiPageFactory",
 				"ContentRenderer",
 				"TempUserConfig"
 			]
@@ -110,8 +109,7 @@
 				"ContentTransformer",
 				"HookContainer",
 				"LinkRenderer",
-				"UserOptionsLookup",
-				"WikiPageFactory"
+				"UserOptionsLookup"
 			]
 		}
 	},

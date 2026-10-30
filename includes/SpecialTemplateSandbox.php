@@ -9,7 +9,6 @@ use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\Page\Article;
-use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Revision\RevisionLookup;
@@ -31,7 +30,6 @@ class SpecialTemplateSandbox extends SpecialPage {
 	public function __construct(
 		private readonly RevisionLookup $revisionLookup,
 		private readonly IContentHandlerFactory $contentHandlerFactory,
-		private readonly WikiPageFactory $wikiPageFactory,
 		private readonly ContentRenderer $contentRenderer,
 		private readonly TempUserConfig $tempUserConfig,
 	) {
