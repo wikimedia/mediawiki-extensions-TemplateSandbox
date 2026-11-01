@@ -77,7 +77,6 @@
 				}
 			],
 			"dependencies": [
-				"web2017-polyfills",
 				"oojs-ui",
 				"mediawiki.jqueryMsg",
 				"ext.TemplateSandbox.TemplateSandboxTitleWidget"
